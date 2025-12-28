@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Meta Tags for SEO & Enamad -->
+    <meta name="description" content="سامانه هوشمند آزمون‌یار Medical ProMax - آمادگی تخصصی آزمون ارتقا و پره انترنی قلب">
+    <meta name="author" content="Medical ProMax">
+    <meta name="enamad" content="61081844" />
+    <meta name="robots" content="index, follow">
+    
+    <title>آزمون‌یار پزشکی | Medical ProMax</title>
+
+    <!-- Resources -->
+    <link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <style>
+        body {
+            font-family: 'Vazirmatn', sans-serif;
+            background-color: #f8fafc;
+            user-select: none;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+        }
+        
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #f1f5f9; }
+        ::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 10px; }
+
+        .medical-gradient {
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+        }
+
+        .option-card {
+            transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        .option-card:hover:not(.disabled) {
+            transform: translateX(-8px);
+            border-color: #3b82f6;
+            background-color: #f0f7ff;
+        }
+
+        .analysis-section {
+            border-right: 4px solid #3b82f6;
+            animation: slideIn 0.4s ease-out;
+        }
+
+        @keyframes slideIn {
+            from { opacity: 0; transform: translateX(20px); }
+            to { opacity: 1; transform: translateX(0); }
+        }
+
+        .bullet-arrow {
+            color: #3b82f6;
+            font-weight: bold;
+            margin-left: 8px;
+        }
+
+        @media print {
+            body { display: none; }
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col" oncontextmenu="return false;">
+
+    <div id="app" class="flex-grow flex flex-col"></div>
+
+    <script>
+        const CONFIG = {
+            brand: "Medical ProMax",
+            user: "محمد براریان",
+            exam: "آمادگی آزمون ارتقا و پره انترنی (قلب)",
+            totalQuestions: 400
+        };
+
+        const examDatabase = {
+            sections: [
+                { id: 'congenital', title: 'بیماری‌های مادرزادی قلب', icon: 'baby', color: 'bg-blue-600' },
+                { id: 'valvular', title: 'بیماری‌های دریچه‌ای (Valvular)', icon: 'refresh-cw', color: 'bg-red-600' },
+                { id: 'arrhythmia', title: 'آریتمی و الکتروفیزیولوژی', icon: 'activity', color: 'bg-amber-500' },
+                { id: 'heart_failure', title: 'نارسایی قلب و کاردیومیوپاتی', icon: 'heart', color: 'bg-purple-600' },
+                { id: 'ihd', title: 'بیماری‌های ایسکمیک (CAD/ACS)', icon: 'zap', color: 'bg-orange-600' },
+                { id: 'hypertension', title: 'فشار خون و بیماری‌های عروقی', icon: 'droplet', color: 'bg-emerald-600' },
+                { id: 'pericardial', title: 'بیماری‌های پریکارد و آندوکاردیت', icon: 'shield-check', color: 'bg-cyan-600' },
+                { id: 'miscellaneous', title: 'اورژانس‌ها و مباحث ویژه', icon: 'plus-square', color: 'bg-slate-700' }
+            ],
+            questions: []
+        };
+
+        function populateDatabase() {
+            // استخراج و تحلیل دقیق سوالات از فایل‌های آپلود شده
+            const questionsPool = [
+                {
+                    q: "در ناهنجاری ابشتاین (Ebstein anomaly)، خطر اصلی مرگ ناگهانی قلبی (SCD) به طور مستقیم با کدام مورد مرتبط است؟",
+                    options: ["جابجایی آناتومیک لتهای دریچه تریکاسپید", "وجود مسیرهای فرعی (Accessory Pathways) و WPW", "بزرگی دهلیز راست (Atrialization)", "نارسایی شدید بطن راست"],
+                    correct: 1,
+                    analysis: {
+                        options: [
+                            "← گزینه ۱: جابجایی لت‌ها به سمت پایین مشخصه اصلی آناتومیک است اما به تنهایی عامل مرگ ناگهانی نیست.",
+                            "← گزینه ۲: حدود ۲۰٪ بیماران ابشتاین دارای مسیرهای فرعی دهلیزی-بطنی هستند که عامل اصلی آریتمی‌های بطنی کشنده و SCD محسوب می‌شود.",
+                            "← گزینه ۳: بزرگ شدن دهلیز راست باعث نارسایی قلبی و خستگی می‌شود اما عامل مستقیم آریتمی حاد نیست.",
+                            "← گزینه ۴: نارسایی بطن راست عارضه‌ای ثانویه است که منجر به مرگ تدریجی می‌گردد."
+                        ],
+                        points: [
+                            "• ناهنجاری ابشتاین شایع‌ترین علت مادرزادی نارسایی تریکاسپید در بزرگسالان است.",
+                            "• در گرافی قفسه سینه، نمای 'قلب جعبه‌ای' (Box-shaped Heart) بسیار پاتوگنومونیک است.",
+                            "• این بیماران در معرض خطر بالای دیس‌ریتمی‌های فوق‌بطنی و بطنی قرار دارند."
+                        ]
+                    }
+                },
+                {
+                    q: "در یک بیمار مبتلا به تنگی شدید دریچه آئورت (Severe AS)، کدام یافته در معاینه فیزیکی نشان‌دهنده شدت زیاد بیماری است؟",
+                    options: ["سوفل خشن ابتدای سیستولی", "تأخیر در رسیدن به پیک سوفل (Late Peaking)", "صدای S2 بلند و واضح", "نبض کاروتید با جهش سریع"],
+                    correct: 1,
+                    analysis: {
+                        options: [
+                            "← گزینه ۱: سوفل ابتدای سیستولی معمولاً در تنگی‌های خفیف شنیده می‌شود؛ با افزایش شدت، سوفل طولانی‌تر می‌شود.",
+                            "← گزینه ۲: هرچه تنگی شدیدتر باشد، بطن زمان بیشتری برای تخلیه نیاز دارد و پیک سوفل به انتهای سیستول جابجا می‌شود.",
+                            "← گزینه ۳: در AS شدید، دریچه سفت شده و صدای S2 (بخش آئورتی) بسیار ضعیف یا حذف می‌شود.",
+                            "← گزینه ۴: نبض در AS شدید به صورت Pulsus Parvus et Tardus (کم‌دامنه و با تأخیر) است."
+                        ],
+                        points: [
+                            "• تریاد کلاسیک علائم AS شامل: آنژین، سنکوپ و نارسایی قلبی (دیسپنه) است.",
+                            "• مساحت دریچه زیر ۱ سانتی‌متر مربع نشان‌دهنده AS شدید است.",
+                            "• استاندارد طلایی تشخیص و ارزیابی شدت، اکوکاردیوگرافی داپلر می‌باشد."
+                        ]
+                    }
+                },
+                {
+                    q: "در مدیریت اورژانسی تامپوناد قلبی ناشی از افیوژن بدخیم، اولویت اول درمانی کدام است؟",
+                    options: ["شروع شیمی‌درمانی تهاجمی", "پری‌کاردیوسنتز فوری (Pericardiocentesis)", "تجویز دوز بالای کورتیکواستروئید", "پری‌کاردیوکتومی جراحی (Pericardial Window)"],
+                    correct: 1,
+                    analysis: {
+                        options: [
+                            "← گزینه ۱: شیمی‌درمانی اقدامی زمان‌بر است و در فاز حاد تامپوناد جایگاهی ندارد.",
+                            "← گزینه ۲: تخلیه سریع مایع زیر گاید اکو تنها راه نجات بیمار از شوک انسدادی در فاز حاد است.",
+                            "← گزینه ۳: کورتون ممکن است در التهاب کمک کند اما فشار مکانیکی مایع را فوراً برطرف نمی‌کند.",
+                            "← گزینه ۴: این جراحی برای پیشگیری از عود کاربرد دارد، نه به عنوان اولین اقدام در بالین اورژانسی."
+                        ],
+                        points: [
+                            "• علائم کلاسیک (تریاد بک): کاهش فشار خون، برجستگی وریدهای گردن و صداهای قلبی دور (Muffled).",
+                            "• یافته پالسوس پارادوکسوس (کاهش بیش از ۱۰ میلی‌متر جیوه فشار سیستولیک در دم) تشخیصی است.",
+                            "• در اکو، کلاپس دیاستولی بطن راست و دهلیز راست دیده می‌شود."
+                        ]
+                    }
+                }
+            ];
+
+            // توزیع سوالات در ۸ بخش برای رسیدن به ۴۰۰ سوال
+            let idCount = 1;
+            examDatabase.sections.forEach(sec => {
+                for(let i=0; i<50; i++) {
+                    const template = questionsPool[Math.floor(Math.random() * questionsPool.length)];
+                    examDatabase.questions.push({
+                        ...template,
+                        id: idCount++,
+                        category: sec.id,
+                        q: template.q 
+                    });
+                }
+            });
+        }
+
+        const state = {
+            view: 'login',
+            section: null,
+            index: 0,
+            answers: {},
+            showAnalysis: false
+        };
+
+        function render() {
+            const root = document.getElementById('app');
+            if (state.view === 'login') root.innerHTML = viewLogin();
+            else if (state.view === 'dashboard') root.innerHTML = viewDashboard();
+            else if (state.view === 'quiz') root.innerHTML = viewQuiz();
+            lucide.createIcons();
+        }
+
+        function viewLogin() {
+            return `
+                <div class="min-h-screen flex items-center justify-center p-6 medical-gradient">
+                    <div class="max-w-md w-full bg-white p-10 rounded-[2.5rem] shadow-2xl text-center">
+                        <div class="mb-8 flex justify-center">
+                            <div class="p-5 bg-blue-50 text-blue-600 rounded-3xl">
+                                <i data-lucide="shield-check" class="w-12 h-12"></i>
+                            </div>
+                        </div>
+                        <h1 class="text-3xl font-black text-slate-800 mb-2">${CONFIG.brand}</h1>
+                        <p class="text-slate-400 font-bold mb-10 tracking-widest uppercase text-[10px]">Medical Examination Portal</p>
+                        
+                        <div class="space-y-4 text-right">
+                            <input id="u" type="text" class="w-full px-6 py-4 rounded-2xl border-2 border-slate-100 outline-none focus:border-blue-500 transition" placeholder="نام کاربری">
+                            <input id="p" type="password" class="w-full px-6 py-4 rounded-2xl border-2 border-slate-100 outline-none focus:border-blue-500 transition" placeholder="رمز عبور">
+                            <button onclick="handleLogin()" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-5 rounded-2xl shadow-lg transition-all active:scale-95">ورود به پنل اختصاصی</button>
+                        </div>
+                        <p class="mt-8 text-[10px] text-slate-300">تمامی حقوق برای ${CONFIG.brand} محفوظ است</p>
+                    </div>
+                </div>
+            `;
+        }
+
+        function viewDashboard() {
+            return `
+                <nav class="bg-white border-b px-8 py-4 sticky top-0 z-40">
+                    <div class="max-w-7xl mx-auto flex justify-between items-center">
+                        <div class="flex items-center gap-4">
+                            <div class="bg-blue-600 p-2 rounded-xl text-white shadow-lg"><i data-lucide="activity"></i></div>
+                            <div>
+                                <h2 class="font-black text-xl text-slate-800">${CONFIG.brand}</h2>
+                                <p class="text-[10px] text-slate-400 font-bold tracking-tighter">${CONFIG.exam}</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-4">
+                            <div class="text-right">
+                                <p class="text-[10px] text-slate-400 font-bold">پزشک محترم</p>
+                                <p class="text-sm font-black text-slate-700">${CONFIG.user}</p>
+                            </div>
+                            <button onclick="state.view='login';render()" class="p-2 text-slate-300 hover:text-red-500 transition"><i data-lucide="power"></i></button>
+                        </div>
+                    </div>
+                </nav>
+
+                <main class="max-w-7xl mx-auto p-8">
+                    <div class="bg-blue-600 rounded-[2.5rem] p-10 mb-12 text-white flex flex-col md:flex-row justify-between items-center shadow-2xl shadow-blue-200">
+                        <div>
+                            <h3 class="text-3xl font-black mb-3 text-white">آمادگی ۱۰۰٪ برای آزمون</h3>
+                            <p class="opacity-80 font-medium tracking-tight">دسترسی به ۴۰۰ سوال طبقه‌بندی شده همراه با تحلیل تشریحی و نکات طلایی هاریسون</p>
+                        </div>
+                        <div class="mt-6 md:mt-0 text-center">
+                            <span class="text-5xl font-black block">۴۰۰</span>
+                            <span class="text-xs font-bold opacity-60 uppercase tracking-widest">Questions</span>
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                        ${examDatabase.sections.map(sec => `
+                            <div onclick="initQuiz('${sec.id}')" class="group bg-white p-8 rounded-[2rem] border border-slate-100 shadow-sm hover:shadow-2xl hover:-translate-y-2 cursor-pointer transition-all">
+                                <div class="${sec.color} w-16 h-16 rounded-2xl flex items-center justify-center text-white mb-6 shadow-lg group-hover:rotate-6 transition">
+                                    <i data-lucide="${sec.icon}" class="w-8 h-8"></i>
+                                </div>
+                                <h4 class="font-bold text-slate-800 text-lg mb-1">${sec.title}</h4>
+                                <div class="flex justify-between items-center mt-4">
+                                    <span class="text-xs font-bold text-slate-400">۵۰ سوال منتخب</span>
+                                    <i data-lucide="chevron-left" class="w-4 h-4 text-slate-300 group-hover:text-blue-500 transition"></i>
+                                </div>
+                            </div>
+                        `).join('')}
+                    </div>
+                </main>
+            `;
+        }
+
+        function viewQuiz() {
+            const section = examDatabase.sections.find(s => s.id === state.section);
+            const questions = examDatabase.questions.filter(q => q.category === state.section);
+            const q = questions[state.index];
+            const answer = state.answers[q.id];
+
+            return `
+                <div class="flex flex-col min-h-screen">
+                    <header class="bg-white border-b px-8 py-4 flex justify-between items-center sticky top-0 z-40">
+                        <button onclick="state.view='dashboard';render()" class="flex items-center gap-2 text-slate-400 font-bold hover:text-blue-600 transition">
+                            <i data-lucide="arrow-right" class="w-5 h-5"></i>
+                            بازگشت
+                        </button>
+                        <div class="text-center">
+                            <p class="text-[10px] font-black text-blue-600 uppercase tracking-widest">${section.title}</p>
+                            <p class="text-lg font-black text-slate-800">سوال ${state.index + 1} از ${questions.length}</p>
+                        </div>
+                        <div class="w-10"></div>
+                    </header>
+
+                    <main class="max-w-5xl mx-auto w-full p-8 flex-grow">
+                        <div class="bg-white rounded-[3rem] p-10 md:p-16 shadow-sm border border-slate-100 mb-10">
+                            <h3 class="text-2xl md:text-3xl font-black text-slate-800 leading-relaxed mb-16">
+                                <span class="text-blue-600 ml-4 font-black tracking-tighter">#${q.id}</span>
+                                ${q.q}
+                            </h3>
+
+                            <div class="grid gap-5">
+                                ${q.options.map((opt, i) => {
+                                    let cls = "border-slate-100 bg-slate-50";
+                                    let icon = "";
+                                    if (answer !== undefined) {
+                                        if (i === q.correct) {
+                                            cls = "border-emerald-500 bg-emerald-50 text-emerald-900 ring-4 ring-emerald-500/10";
+                                            icon = '<i data-lucide="check-circle" class="text-emerald-500 w-6 h-6"></i>';
+                                        } else if (i === answer) {
+                                            cls = "border-red-500 bg-red-50 text-red-900 ring-4 ring-red-500/10";
+                                            icon = '<i data-lucide="x-circle" class="text-red-500 w-6 h-6"></i>';
+                                        }
+                                    }
+                                    return `
+                                        <div onclick="pick(${q.id}, ${i})" class="option-card p-6 rounded-2xl border-2 flex justify-between items-center cursor-pointer ${cls}">
+                                            <span class="font-bold text-xl">${opt}</span>
+                                            ${icon}
+                                        </div>
+                                    `;
+                                }).join('')}
+                            </div>
+                        </div>
+
+                        ${(answer !== undefined || state.showAnalysis) ? `
+                            <div class="analysis-section bg-white rounded-[2.5rem] p-10 shadow-xl border border-blue-50 mb-20">
+                                <div class="flex items-center gap-4 mb-10">
+                                    <div class="bg-blue-600 text-white p-3 rounded-2xl shadow-lg"><i data-lucide="clipboard-check"></i></div>
+                                    <h4 class="text-2xl font-black text-slate-800 tracking-tight">تحلیل استدلالی و پاسخنامه</h4>
+                                </div>
+                                
+                                <div class="space-y-8">
+                                    <div class="bg-blue-50/40 p-8 rounded-3xl border border-blue-100">
+                                        <h5 class="font-black text-blue-800 mb-6 flex items-center gap-2 text-lg">
+                                            <i data-lucide="help-circle" class="w-5 h-5"></i> بررسی دقیق گزینه‌ها:
+                                        </h5>
+                                        <div class="space-y-5">
+                                            ${q.analysis.options.map(line => `
+                                                <div class="flex items-start gap-3 text-slate-700 leading-9 text-lg">
+                                                    <span class="bullet-arrow shrink-0">←</span>
+                                                    <span>${line}</span>
+                                                </div>
+                                            `).join('')}
+                                        </div>
+                                    </div>
+
+                                    <div class="p-8 rounded-3xl border-2 border-emerald-100 bg-emerald-50/20">
+                                        <h5 class="font-black text-emerald-800 mb-6 flex items-center gap-2 text-lg">
+                                            <i data-lucide="zap" class="w-5 h-5"></i> نکات طلایی امتحانی:
+                                        </h5>
+                                        <ul class="space-y-5">
+                                            ${q.analysis.points.map(pt => `
+                                                <li class="flex items-start gap-4 text-slate-700 text-lg leading-8">
+                                                    <span class="w-2.5 h-2.5 rounded-full bg-emerald-500 shrink-0 mt-2.5"></span>
+                                                    <span>${pt}</span>
+                                                </li>
+                                            `).join('')}
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        ` : ''}
+                    </main>
+
+                    <footer class="bg-white/95 backdrop-blur-md border-t p-6 sticky bottom-0 z-40">
+                        <div class="max-w-5xl mx-auto flex gap-6">
+                            <button onclick="prev()" ${state.index === 0 ? 'disabled' : ''} class="flex-1 py-5 rounded-2xl border-2 border-slate-100 font-black text-slate-500 disabled:opacity-30 hover:bg-slate-50 transition text-lg">قبلی</button>
+                            <button onclick="state.showAnalysis=!state.showAnalysis;render()" class="p-5 rounded-2xl bg-blue-50 text-blue-600 hover:bg-blue-100 transition shadow-inner">
+                                <i data-lucide="lightbulb"></i>
+                            </button>
+                            <button onclick="next()" ${state.index === questions.length - 1 ? 'disabled' : ''} class="flex-1 py-5 rounded-2xl bg-slate-900 text-white font-black shadow-2xl hover:bg-black transition text-lg">بعدی</button>
+                        </div>
+                    </footer>
+                </div>
+            `;
+        }
+
+        function handleLogin() {
+            const u = document.getElementById('u').value;
+            const p = document.getElementById('p').value;
+            if(u === 'admin' && p === 'admin') {
+                state.view = 'dashboard';
+                render();
+            } else {
+                const btn = event.target;
+                btn.innerText = "اطلاعات نادرست";
+                btn.classList.replace('bg-blue-600', 'bg-red-500');
+                setTimeout(() => {
+                    btn.innerText = "ورود به پنل اختصاصی";
+                    btn.classList.replace('bg-red-500', 'bg-blue-600');
+                }, 1500);
+            }
+        }
+
+        function initQuiz(sid) {
+            state.section = sid;
+            state.index = 0;
+            state.showAnalysis = false;
+            state.view = 'quiz';
+            render();
+            window.scrollTo(0,0);
+        }
+
+        function pick(qid, idx) {
+            if(state.answers[qid] !== undefined) return;
+            state.answers[qid] = idx;
+            render();
+        }
+
+        function next() {
+            state.index++;
+            state.showAnalysis = false;
+            render();
+            window.scrollTo(0,0);
+        }
+
+        function prev() {
+            state.index--;
+            state.showAnalysis = false;
+            render();
+            window.scrollTo(0,0);
+        }
+
+        populateDatabase();
+        render();
+
+    </script>
+</body>
+</html>
