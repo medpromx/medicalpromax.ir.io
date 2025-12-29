@@ -638,6 +638,51 @@
             margin-bottom: 8px;
         }
 
+        /* Structured analysis card + list styles */
+        .analysis-card {
+            margin-top: 12px;
+            padding: 12px;
+            border: 1px solid rgba(0,0,0,0.06);
+            border-radius: 12px;
+            background: rgba(255,255,255,0.95);
+        }
+
+        .analysis-card > summary {
+            cursor: pointer;
+            font-weight: 700;
+            padding: 6px 4px;
+            list-style: none;
+            color: var(--primary);
+        }
+
+        .analysis-section { margin-top: 10px; }
+        .analysis-section h4 { margin: 0 0 6px; font-size: 14px; }
+
+        .bullets { margin: 0; padding-right: 18px; }
+        .bullets li { margin: 6px 0; }
+
+        .option-analysis-row {
+            display: grid;
+            grid-template-columns: auto 1fr;
+            gap: 10px;
+            padding: 8px 0;
+            border-top: 1px dashed rgba(0,0,0,0.06);
+        }
+        .option-analysis-row:first-child { border-top: none; }
+
+        .badge {
+            font-weight: 800;
+            padding: 4px 10px;
+            border-radius: 999px;
+            border: 1px solid rgba(0,0,0,0.08);
+            white-space: nowrap;
+            background: var(--gray-50);
+        }
+
+        .text { unicode-bidi: plaintext; }
+
+        .ref { opacity: .9; font-size: 13px; margin-top: 8px; }
+
         /* ========== دکمه‌های navigation ========== */
         .quiz-buttons {
             display: flex;
@@ -857,6 +902,7 @@
         const state = {
             isLoggedIn: false,
             isAdmin: false,
+            userName: null,
             view: 'login',
             manifest: null,
             selectedSection: null,
@@ -871,11 +917,13 @@
         function init() {
             const savedLogin = localStorage.getItem('medpromax_login');
             const savedAdmin = localStorage.getItem('medpromax_admin');
+            const savedUser = localStorage.getItem('medpromax_user');
             
             if (savedLogin === 'true' && savedAdmin === 'true') {
                 state.isLoggedIn = true;
                 state.isAdmin = true;
                 state.view = 'dashboard';
+                state.userName = savedUser || 'محمد براریان';
             }
 
             fetchManifest();
@@ -896,6 +944,65 @@
                     console.error('خطا در بارگیری داده‌ها:', err);
                     render();
                 });
+        }
+
+        // ========== Helpers for safe HTML and structured rendering ==========
+        function escapeHtml(s) {
+            return String(s ?? '')
+                .replaceAll('&', '&amp;')
+                .replaceAll('<', '&lt;')
+                .replaceAll('>', '&gt;')
+                .replaceAll('"', '&quot;')
+                .replaceAll("'", '&#039;');
+        }
+
+        function renderBullets(items) {
+            if (!items) return '';
+            // if a single string was provided, try to split by newlines
+            if (!Array.isArray(items)) {
+                items = String(items).split(/\r?\n/).map(s => s.trim()).filter(Boolean);
+            }
+            if (!items.length) return '';
+            return `
+                <ul class="bullets">${items.map(it => `<li>${escapeHtml(it)}</li>`).join('')}</ul>
+            `;
+        }
+
+        function renderOptionAnalyses(optionTexts) {
+            if (!optionTexts) return '';
+            if (!Array.isArray(optionTexts)) optionTexts = [optionTexts];
+            return `
+                <div class="option-analysis">
+                    ${optionTexts.map((t, i) => `
+                        <div class="option-analysis-row">
+                            <div class="badge">${escapeHtml('پاسخ ' + String.fromCharCode(65 + i))}</div>
+                            <div class="text">${escapeHtml(t)}</div>
+                        </div>
+                    `).join('')}
+                </div>
+            `;
+        }
+
+        function renderAnalysis(q) {
+            const a = q.analysis || {};
+            const pointsHtml = renderBullets(a.points);
+            const optsHtml = renderOptionAnalyses(a.options);
+            const reference = a.reference || q.reference || '';
+
+            return `
+                <details class="analysis-card" ${state.showAnalysis ? 'open' : ''}>
+                    <summary>تحلیل جامع پاسخ</summary>
+                    <div class="analysis-section">
+                        <h4>نکات کلیدی</h4>
+                        ${pointsHtml || '<div class="analysis-points">تحلیل موجود نیست</div>'}
+                    </div>
+                    <div class="analysis-section">
+                        <h4>تحلیل گزینه‌ها</h4>
+                        ${optsHtml || '<div class="analysis-points">تحلیل گزینه‌ها موجود نیست</div>'}
+                    </div>
+                    ${reference ? `<div class="analysis-section ref"><strong>منبع:</strong> ${escapeHtml(reference)}</div>` : ''}
+                </details>
+            `;
         }
 
         // ========== Render Main ==========
@@ -930,7 +1037,7 @@
                                     type="text" 
                                     id="username" 
                                     class="form-input" 
-                                    placeholder="admin را وارد کنید"
+                                    placeholder="نام کاربری"
                                     required
                                 >
                             </div>
@@ -940,7 +1047,7 @@
                                     type="password" 
                                     id="password" 
                                     class="form-input" 
-                                    placeholder="رمز عبور را وارد کنید"
+                                    placeholder="رمز عبور"
                                     required
                                 >
                             </div>
@@ -961,8 +1068,11 @@
                 state.isLoggedIn = true;
                 state.isAdmin = true;
                 state.view = 'dashboard';
+                // show the admin name as محمد براریان regardless of typed username
+                state.userName = 'محمد براریان';
                 localStorage.setItem('medpromax_login', 'true');
                 localStorage.setItem('medpromax_admin', 'true');
+                localStorage.setItem('medpromax_user', state.userName);
                 render();
             } else {
                 document.getElementById('errorMessage').innerHTML = 
@@ -978,7 +1088,7 @@
                         <div class="navbar-content">
                             <div class="navbar-title">Medical ProMax</div>
                             <div class="navbar-actions">
-                                <div class="user-badge">👤 مدیر</div>
+                                <div class="user-badge">👤 ${escapeHtml(state.userName || 'مدیر')}</div>
                                 <button class="logout-btn" onclick="handleLogout()">خروج</button>
                             </div>
                         </div>
@@ -991,8 +1101,10 @@
             state.isLoggedIn = false;
             state.isAdmin = false;
             state.view = 'login';
+            state.userName = null;
             localStorage.removeItem('medpromax_login');
             localStorage.removeItem('medpromax_admin');
+            localStorage.removeItem('medpromax_user');
             render();
         }
 
@@ -1213,26 +1325,7 @@
             }
 
             if (state.showAnalysis && answered) {
-                html += `
-                    <div class="analysis-section">
-                        <div class="analysis-title">تحلیل جامع پاسخ</div>
-                        <div class="analysis-points">${q.analysis?.points || 'تحلیل موجود نیست'}</div>
-                        <div class="analysis-options">
-                `;
-
-                q.analysis?.options?.forEach((ana, idx) => {
-                    html += `
-                        <div class="analysis-option">
-                            <strong>پاسخ ${String.fromCharCode(65 + idx)}:</strong>
-                            ${ana}
-                        </div>
-                    `;
-                });
-
-                html += `
-                        </div>
-                    </div>
-                `;
+                html += renderAnalysis(q);
             }
 
             html += `
