@@ -2,5 +2,286 @@
   "section_id": "heart",
   "subsection_id": "pericardial",
   "title": "پریکارد",
-  "questions": []
+  "questions": [
+    {
+      "id": 1,
+      "q": "مردی 67 ساله با سرطان ریه فشردگی قلب (cardiac tamponade) ارائه شده است. علایم: dyspnea، hypotension (SBP 85 mmHg)، JVD، و pulsus paradoxus. Echo: effusion بزرگ با RV diastolic collapse. کدام اولویت اول است؟",
+      "options": [
+        "NSAIDs + colchicine برای pericarditis management",
+        "Echocardiography guided pericardiocentesis فوری",
+        "Conservative management + serial echoes",
+        "Pericardiectomy surgical"
+      ],
+      "correct": 1,
+      "analysis": {
+        "options": [
+          "NSAIDs/colchicine برای uncomplicated pericarditis است نه tamponade.",
+          "درست: Hemodynamically significant tamponade (hypotension + JVD) = pericardiocentesis فوری ضروری است.",
+          "Conservative waiting contraindicated در hemodynamic compromise.",
+          "Surgery definitive لکن اول drainage کند."
+        ],
+        "points": [
+          "Cardiac tamponade: hypotension + elevated JVP + muffled heart sounds + pulsus paradoxus.",
+          "RV diastolic collapse on echo = sign of raised intrapericardial pressure.",
+          "Pericardiocentesis: drainage of fluid → hemodynamic improvement فوری.",
+          "Post-drainage: maintain IV fluids + identify etiology (malignancy، TB، viral، idiopathic)."
+        ]
+      },
+      "difficulty": "hard",
+      "tags": ["tamponade", "pericardiocentesis", "emergency", "hemodynamics", "RV_collapse"],
+      "reference": "Harrison Ch 268 Pericardial Disease"
+    },
+    {
+      "id": 2,
+      "q": "زن 35 ساله با acute pericarditis (ECG با ST elevation diffuse + PR depression) و small pericardial effusion ارائه شده است. بدون tamponade. کدام management مناسب است؟",
+      "options": [
+        "NSAID (Indomethacin) + Colchicine + complete bed rest",
+        "Corticosteroids immediately برای reduce inflammation",
+        "Pericardiocentesis برای small effusion",
+        "ICU monitoring + antibiotics empiric"
+      ],
+      "correct": 0,
+      "analysis": {
+        "options": [
+          "درست: Acute pericarditis non-tamponade = NSAID + colchicine. Colchicine reduce recurrence 50%.",
+          "Steroids reserved برای recurrent/constrictive cases یا immunosuppressed.",
+          "Pericardiocentesis unnecessary برای small effusion without tamponade.",
+          "Empiric antibiotics not standard مگر clinical suspicion bacterial."
+        ],
+        "points": [
+          "Acute pericarditis diagnosis: pleuritic chest pain + pericardial friction rub + ST elevation diffuse (concave).",
+          "Colchicine 0.5 mg BID × 3 months reduce recurrence pericarditis.",
+          "NSAIDs: indomethacin 50 mg TID یا ibuprofen 800 mg TID × 2 weeks.",
+          "Bed rest initial; avoid strenuous activity برای prevent myocarditis exacerbation."
+        ]
+      },
+      "difficulty": "medium",
+      "tags": ["acute_pericarditis", "NSAID", "colchicine", "ST_elevation", "PR_depression"],
+      "reference": "ESC 2015 Pericarditis Guidelines; Harrison Ch 268"
+    },
+    {
+      "id": 3,
+      "q": "مردی 72 ساله با history of radiation therapy برای lymphoma دارای dyspnea exertional و edema. Echo: normal LVEF، large pericardial effusion. Catheterization: RA pressure elevated (15 cmH2O)، prominent y descent، equalized diastolic pressures. Post-pericardiocentesis: RA pressure NOT بالا نمی‌رود. کدام تشخیص؟",
+      "options": [
+        "Persistence of cardiac tamponade",
+        "Cor pulmonale (RV failure primary)",
+        "Effusive-constrictive pericarditis",
+        "Restrictive cardiomyopathy"
+      ],
+      "correct": 2,
+      "analysis": {
+        "options": [
+          "Tamponade resolved اگر intrapericardial pressure normalize; لکن RA still elevated = constriction.",
+          "درست: Effusive-constrictive = pericardial effusion + constriction physiology. Dip-plateau hemodynamics persist post-drainage.",
+          "Cor pulmonale history না; RV primary failure نیست.",
+          "Restrictive CMP similar hemodynamics لکن normal pericardium."
+        ],
+        "points": [
+          "Effusive-constrictive pericarditis: combination of fluid + constricted pericardium.",
+          "Post-pericardiocentesis: dip-plateau (Kussmaul sign) persist = constriction manifest.",
+          "History radiation therapy = risk effusive-constrictive pericarditis.",
+          "Management: consider pericardiectomy اگر symptoms persist (surgery improves 80% cases)."
+        ]
+      },
+      "difficulty": "hard",
+      "tags": ["effusive_constrictive", "pericardiocentesis", "y_descent", "hemodynamics", "radiation"],
+      "reference": "Harrison Ch 268 Pericarditis; ESC Guidelines"
+    },
+    {
+      "id": 4,
+      "q": "مردی 58 ساله with history tuberculosis (old) ارائه شده است with dyspnea progressive، edema، ascites. Echo: normal systolic function، prominent septal bounce. Catheterization: equalized diastolic pressures (RVDP = LVEDP = 20)، steep x و y descents، dip-plateau pattern. کدام diagnosis؟",
+      "options": [
+        "Constrictive pericarditis",
+        "Restrictive cardiomyopathy",
+        "Dilated cardiomyopathy with diastolic dysfunction",
+        "Cor pulmonale"
+      ],
+      "correct": 0,
+      "analysis": {
+        "options": [
+          "درست: Constrictive pericarditis classic: dip-plateau hemodynamics + equalized filling pressures + septal bounce على echo.",
+          "Restrictive CMP: similar pattern لکن RV pressure > LV pressure بیشتر (discordance with inspiration ممکن).",
+          "DCM: systolic function abnormal; اینجا normal.",
+          "Cor pulmonale: RV dominant; اینجا bilateral involvement."
+        ],
+        "points": [
+          "Constrictive pericarditis: fibrous pericardium restrict ventricular filling.",
+          "Hallmark: equalized diastolic pressures + restrictive filling pattern + prominent y descent.",
+          "TB = major cause constrictive pericarditis in developing countries.",
+          "Treatment: pericardiectomy (mortality 1-10% contemporary series). Surgery improve 80-90% symptomatic cases."
+        ]
+      },
+      "difficulty": "hard",
+      "tags": ["constrictive_pericarditis", "TB", "dip_plateau", "equalized_pressure", "pericardiectomy"],
+      "reference": "Harrison Ch 268 Pericardial Disease"
+    },
+    {
+      "id": 5,
+      "q": "زن 45 ساله acute pericarditis + pleurisy + arthralgia + malar rash. Labs: ANA positive، complement low. ECG: diffuse ST elevation. Diagnosis: lupus pericarditis. کدام treatment priority?",
+      "options": [
+        "Corticosteroids (prednisolone) + NSAIDs برای lupus pericarditis",
+        "Colchicine + NSAIDs alone",
+        "Immunosuppression (mycophenolate/azathioprine)",
+        "Cyclophosphamide IV"
+      ],
+      "correct": 0,
+      "analysis": {
+        "options": [
+          "درست: Lupus pericarditis → corticosteroids first-line (prednisolone 0.5-1 mg/kg/day). NSAIDs adjunctive.",
+          "Colchicine not standard برای lupus serositis.",
+          "Immunosuppression second-line اگر corticosteroid-resistant.",
+          "Cyclophosphamide reserved for severe/refractory lupus nephritis یا CNS involvement."
+        ],
+        "points": [
+          "SLE pericarditis: typically resolves with corticosteroids + NSAIDs.",
+          "ANA + complement low characteristic lupus; serology support diagnosis.",
+          "Monitor for lupus nephritis (urinalysis); may need additional immunosuppression.",
+          "ECG diffuse ST elevation with PR depression = pericarditis pattern (not STE-ACS)."
+        ]
+      },
+      "difficulty": "medium",
+      "tags": ["lupus_pericarditis", "SLE", "ANA", "corticosteroids", "serositis"],
+      "reference": "ESC Pericarditis Guidelines; Harrison Ch 356 SLE"
+    },
+    {
+      "id": 6,
+      "q": "مردی 52 ساله pleuritic chest pain + pericardial friction rub. ECG: normal (نه ST elevation). CXR: cardiac silhouette normal. Echo: minimal pericardial effusion (< 1 cm). Labs: troponin negative. Clinical diagnosis: acute pericarditis. کدام نادرست است?",
+      "options": [
+        "NSAIDs + colchicine are appropriate first-line therapy",
+        "Absence of ST elevation exclude pericarditis diagnosis",
+        "Troponin negative argue against myopericarditis",
+        "Small effusion NOT contraindication to conservative management"
+      ],
+      "correct": 1,
+      "analysis": {
+        "options": [
+          "ST elevation present در 60% pericarditis; absence NOT exclude diagnosis.",
+          "درست: ST elevation نیست pathognomonic; absent ST NOT rule out pericarditis.",
+          "Troponin negative fairly common in pure pericarditis (inflammatory).",
+          "Small effusion + hemodynamic stability = conservative approach safe."
+        ],
+        "points": [
+          "Pericarditis diagnosis: 2/4 criteria = pleuritic pain، friction rub، ST elevation (ECG)، pericardial effusion (echo).",
+          "ST elevation appear 1-2 weeks; PR depression more specific early.",
+          "Troponin rise = myopericarditis involvement (myocardial injury).",
+          "Echocardiography utility: characterize effusion (size، location)، exclude other causes (tamponade، cardiac masses)."
+        ]
+      },
+      "difficulty": "medium",
+      "tags": ["acute_pericarditis", "ECG_patterns", "diagnostic_criteria", "troponin"],
+      "reference": "ESC 2015 Pericarditis Guidelines"
+    },
+    {
+      "id": 7,
+      "q": "مردی 64 ساله with mantle field radiation (lymphoma) 10 years ago. Present: dyspnea، lower extremity edema، ascites. Echo: normal LVEF، dense calcium rim around heart. No coronary disease. Hemodynamics: dip-and-plateau RV/LV pressures. Best management?",
+      "options": [
+        "NSAID + diuretics برای symptom management",
+        "Pericardiectomy surgical",
+        "Corticosteroids + immunosuppression",
+        "Dialysis برای presumed renal failure"
+      ],
+      "correct": 1,
+      "analysis": {
+        "options": [
+          "Medical therapy temporary; definitive cure NOT possible.",
+          "درست: Pericardiectomy surgical curative برای constrictive pericarditis. Contemporary mortality < 1-5%.",
+          "Steroids ineffective constrictive physiology.",
+          "Renal failure not primary problem; ascites من pericardial constriction."
+        ],
+        "points": [
+          "Constrictive pericarditis post-radiation: calcified pericardium common.",
+          "Pericardiectomy goal: relieve pericardial constraint → hemodynamic normalization.",
+          "Success rate: 80-90% patients report symptom improvement. NYHA class improve.",
+          "Post-pericardiectomy complications: transient increase CO (pericardial constraint released); avoid aggressive diuretics initially."
+        ]
+      },
+      "difficulty": "hard",
+      "tags": ["constrictive_pericarditis", "pericardiectomy", "radiation", "calcium", "surgical_indication"],
+      "reference": "Harrison Ch 268; ESC Pericarditis Guidelines"
+    },
+    {
+      "id": 8,
+      "q": "زن 28 ساله acute pericarditis (pleuritic pain + friction rub). Etiology workup: negative viral serologies، negative tuberculin test، negative ANA. Self-limited course expected. کدام statement درباره idiopathic pericarditis درست نیست؟",
+      "options": [
+        "Most cases self-limited; resolve 2-4 weeks",
+        "NSAIDs + colchicine reduce recurrence risk",
+        "Recurrent pericarditis occur in 20-30% cases",
+        "Pericardial effusion always present in acute pericarditis"
+      ],
+      "correct": 3,
+      "analysis": {
+        "options": [
+          "Most idiopathic pericarditis self-resolve.",
+          "Colchicine 0.5 mg BID × 3 months reduce recurrence.",
+          "Recurrence rates 20-30% without colchicine prophylaxis.",
+          "درست: Effusion NOT always present; can have pericarditis (pain + friction rub + ECG changes) بدون effusion."
+        ],
+        "points": [
+          "Idiopathic pericarditis: likely viral (enterovirus، adenovirus) اگر no identifiable cause.",
+          "Pericardial effusion present in 70% cases؛ absence NOT exclude diagnosis.",
+          "Small effusion → large effusion possible progression; serial echos for monitoring.",
+          "Colchicine primarily prevent recurrent episodes; less effective acute phase."
+        ]
+      },
+      "difficulty": "medium",
+      "tags": ["idiopathic_pericarditis", "viral", "colchicine", "recurrence", "effusion"],
+      "reference": "ESC 2015 Pericarditis Guidelines"
+    },
+    {
+      "id": 9,
+      "q": "مردی 40 ساله post-cardiac surgery (CABG 2 weeks ago) دارای chest pain pleuritic، fever. Echo: pericardial effusion. کدام diagnosis probable?",
+      "options": [
+        "Acute myocardial infarction (graft thrombosis)",
+        "Post-cardiac injury syndrome (Dressler)",
+        "Bacterial pericarditis (surgical site infection)",
+        "Pulmonary embolism"
+      ],
+      "correct": 1,
+      "analysis": {
+        "options": [
+          "MI possible لکن Troponin/ECG typically abnormal; syndrome presentation less acute.",
+          "درست: Dressler syndrome (post-cardiac injury) = fever + pericarditis + effusion 2-3 weeks post-surgery.",
+          "Bacterial pericarditis rare post-surgical اگر prophylactic antibiotics دریافت شد.",
+          "PE possible لکن pericarditis component atypical."
+        ],
+        "points": [
+          "Dressler syndrome: autoimmune-mediated post-cardiac surgery/MI pericarditis.",
+          "Features: pleuritic pain، fever، pericardial/pleural effusion، elevated ESR/CRP.",
+          "Management: NSAIDs + colchicine similar acute pericarditis. Corticosteroids اگر resistant.",
+          "Self-limited usually؛ prognosis excellent."
+        ]
+      },
+      "difficulty": "medium",
+      "tags": ["Dressler_syndrome", "post_cardiac_surgery", "autoimmune", "pericarditis"],
+      "reference": "Harrison Ch 268; ESC Pericarditis Guidelines"
+    },
+    {
+      "id": 10,
+      "q": "مردی 56 ساله pericarditis + large effusion (4 cm). Fluid analysis: exudate (LDH > 2× serum، protein > 3.0 g/dL)، ADA = 25 U/L. کدام etiology most likely?",
+      "options": [
+        "Tuberculosis pericarditis",
+        "Malignancy (pericardial metastases)",
+        "Viral pericarditis",
+        "Idiopathic pericarditis"
+      ],
+      "correct": 0,
+      "analysis": {
+        "options": [
+          "درست: TB pericarditis → exudative + elevated ADA (> 20 U/L suggestive TB).",
+          "Malignancy exudative لکن cytology검색; ADA typical normal.",
+          "Viral: usually transudate; ADA low.",
+          "Idiopathic: small-moderate effusion عادی."
+        ],
+        "points": [
+          "TB pericarditis: most common cause constrictive pericarditis globally.",
+          "Pericardial fluid ADA > 10 U/L suggestive TB (sensitivity 80-85%).",
+          "Definitive diagnosis: pericardial biopsy (granuloma) یا fluid culture/PCR.",
+          "Management TB pericarditis: anti-TB drugs × 6 months + adjunctive corticosteroids (improve outcomes)."
+        ]
+      },
+      "difficulty": "hard",
+      "tags": ["TB_pericarditis", "ADA", "exudate", "pericardial_fluid", "constrictive"],
+      "reference": "Harrison Ch 268; TB pericarditis guidelines"
+    }
+  ]
 }
