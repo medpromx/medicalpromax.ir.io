@@ -5,14 +5,12 @@
   "questions": [
     {
       "id": 1,
-      "q": "بیماری ۶۵ ساله با sepsis و علائم شوک. در بررسی: HR ۱۲۰، BP ۸۵/۵۰، lactate ۴.۵ mmol/L، CVP ۳ cmH₂O، ScvO₂ ۶۵%. کدام اقدام اول‌ویت است؟",
       "options": [
         "تجویز آگریسیو fluid resuscitation (۳۰ mL/kg crystal) و norepinephrine برای MAP ۶۵+",
         "فوری norepinephrine بدون fluid (CVP پایین است)",
         "دوپامین dose tinggi برای inotropic effect",
         "ترنسفوزیون خون قبل از fluid"
       ],
-      "correct": 0,
       "analysis": {
         "options": [
           "Septic shock: fluid first (۳۰ mL/kg) + vasopressor برای MAP ۶۵",
@@ -27,19 +25,24 @@
         ]
       },
       "difficulty": "medium",
-      "tags": ["septic shock", "fluid resuscitation", "vasopressor", "lactate"],
-      "reference": "Surviving Sepsis Campaign Guidelines 2021"
+      "tags": [
+        "septic shock",
+        "fluid resuscitation",
+        "vasopressor",
+        "lactate"
+      ],
+      "reference": "Surviving Sepsis Campaign Guidelines 2021",
+      "question": "بیماری ۶۵ ساله با sepsis و علائم شوک. در بررسی: HR ۱۲۰، BP ۸۵/۵۰، lactate ۴.۵ mmol/L، CVP ۳ cmH₂O، ScvO₂ ۶۵%. کدام اقدام اول‌ویت است؟",
+      "correct_index": 0
     },
     {
       "id": 2,
-      "q": "بیماری در ICU با cardiogenic shock. در echocardiography: EF = ۲۵%، PCWP ۲۲ mmHg، CI = ۱.۸ L/min/m². کدام ترکیب درمانی بهترین است؟",
       "options": [
         "Diuretic + nitrate برای preload reduction",
         "Inotrope (dobutamine) + vasodilator",
         "Fluid loading برای افزایش preload",
         "Vasopressor تنها (norepinephrine)"
       ],
-      "correct": 1,
       "analysis": {
         "options": [
           "Diuretic در warm + wet: مناسب است لکن CI پایین",
@@ -54,19 +57,24 @@
         ]
       },
       "difficulty": "hard",
-      "tags": ["cardiogenic shock", "EF reduced", "inotrope", "hemodynamics"],
-      "reference": "Cardiogenic Shock Management Guidelines"
+      "tags": [
+        "cardiogenic shock",
+        "EF reduced",
+        "inotrope",
+        "hemodynamics"
+      ],
+      "reference": "Cardiogenic Shock Management Guidelines",
+      "question": "بیماری در ICU با cardiogenic shock. در echocardiography: EF = ۲۵%، PCWP ۲۲ mmHg، CI = ۱.۸ L/min/m². کدام ترکیب درمانی بهترین است؟",
+      "correct_index": 1
     },
     {
       "id": 3,
-      "q": "بیمار traumatized با hemorrhagic shock. HR ۱۳۰، BP ۷۰/۴۰، lactate ۶.۲ mmol/L. کدام ترتیب درمانی صحیح است؟",
       "options": [
         "۳۰ mL/kg crystal fluid + vasopressor بلافاصله",
         "Massive transfusion protocol: 1:1:1 (PRBC:FFP:platelet) + limited fluid",
         "فوری surgical hemostasis بدون resuscitation intensive",
         "Vasopressor اول برای بالا بردن BP، سپس fluid"
       ],
-      "correct": 1,
       "analysis": {
         "options": [
           "Aggressive crystalloid موجب dilution coagulopathy",
@@ -81,19 +89,24 @@
         ]
       },
       "difficulty": "hard",
-      "tags": ["hemorrhagic shock", "trauma", "transfusion", "massive resuscitation"],
-      "reference": "Trauma Hemorrhage Management Guidelines"
+      "tags": [
+        "hemorrhagic shock",
+        "trauma",
+        "transfusion",
+        "massive resuscitation"
+      ],
+      "reference": "Trauma Hemorrhage Management Guidelines",
+      "question": "بیمار traumatized با hemorrhagic shock. HR ۱۳۰، BP ۷۰/۴۰، lactate ۶.۲ mmol/L. کدام ترتیب درمانی صحیح است؟",
+      "correct_index": 1
     },
     {
       "id": 4,
-      "q": "بیمار ۵۲ ساله با pulmonary embolism و shock. معاینات: HR ۱۲۰، BP ۹۵/۶۰، CVP ۱۸ cmH₂O، CI = ۱.۹، mixed SvO₂ ۵۸%. نوار قلب: sinus tachycardia. کدام اقدام درست است؟",
       "options": [
         "Aggressive fluid resuscitation برای افزایش RV preload",
         "Thrombolysis یا embolectomy + careful fluid + inhaled pulmonary vasodilator",
         "Norepinephrine تنها برای BP",
         "Diuretic و morphine برای dyspnea"
       ],
-      "correct": 1,
       "analysis": {
         "options": [
           "Fluid موجب RV strain بیشتر می‌شود",
@@ -108,19 +121,24 @@
         ]
       },
       "difficulty": "hard",
-      "tags": ["obstructive shock", "PE", "pulmonary embolism", "thrombolysis"],
-      "reference": "Pulmonary Embolism and Shock Management"
+      "tags": [
+        "obstructive shock",
+        "PE",
+        "pulmonary embolism",
+        "thrombolysis"
+      ],
+      "reference": "Pulmonary Embolism and Shock Management",
+      "question": "بیمار ۵۲ ساله با pulmonary embolism و shock. معاینات: HR ۱۲۰، BP ۹۵/۶۰، CVP ۱۸ cmH₂O، CI = ۱.۹، mixed SvO₂ ۵۸%. نوار قلب: sinus tachycardia. کدام اقدام درست است؟",
+      "correct_index": 1
     },
     {
       "id": 5,
-      "q": "بیمار ۷۰ ساله با sepsis و lac­tate ۸ mmol/L، BP ۹۰/۵۵، على‌رغم fluid ۳۰mL/kg و norepinephrine ۰.۵ µg/kg/min. کدام اقدام بعدی است؟",
       "options": [
         "افزایش norepinephrine دوز تا ۲ µg/kg/min",
         "اضافه‌کردن vasopressin یا epinephrine برای refractory shock",
         "اضافه‌کردن inotrope (dobutamine) برای بهبود lactate clearance",
         "هرکدام از موارد بالا ممکن است"
       ],
-      "correct": 3,
       "analysis": {
         "options": [
           "Norepinephrine escalation: ۰.۵ تا ۱.۰ µg/kg/min پیش از دوم",
@@ -135,19 +153,24 @@
         ]
       },
       "difficulty": "hard",
-      "tags": ["refractory shock", "sepsis", "vasopressor", "lactate"],
-      "reference": "Refractory Septic Shock Management"
+      "tags": [
+        "refractory shock",
+        "sepsis",
+        "vasopressor",
+        "lactate"
+      ],
+      "reference": "Refractory Septic Shock Management",
+      "question": "بیمار ۷۰ ساله با sepsis و lac­tate ۸ mmol/L، BP ۹۰/۵۵، على‌رغم fluid ۳۰mL/kg و norepinephrine ۰.۵ µg/kg/min. کدام اقدام بعدی است؟",
+      "correct_index": 3
     },
     {
       "id": 6,
-      "q": "بیمار ۴۸ ساله با acute MI و cardiogenic shock. EF = ۲۰%، MAP = ۶۵ mmHg، lactate ۳.۸ mmol/L، cool extremities. کدام تصمیم درست است؟",
       "options": [
         "Dobutamine high-dose برای inotropy",
         "IABP + PCI emergent برای revascularization",
         "Vasopressor اول (phenylephrine) برای BP",
         "Levosimendan برای inotropy (اگر دسترس دارد)"
       ],
-      "correct": 1,
       "analysis": {
         "options": [
           "Dobutamine: tachycardia و ischemia بیشتر",
@@ -162,19 +185,24 @@
         ]
       },
       "difficulty": "hard",
-      "tags": ["cardiogenic shock", "acute MI", "mechanical support", "IABP"],
-      "reference": "Cardiogenic Shock Post-MI Management"
+      "tags": [
+        "cardiogenic shock",
+        "acute MI",
+        "mechanical support",
+        "IABP"
+      ],
+      "reference": "Cardiogenic Shock Post-MI Management",
+      "question": "بیمار ۴۸ ساله با acute MI و cardiogenic shock. EF = ۲۰%، MAP = ۶۵ mmHg، lactate ۳.۸ mmol/L، cool extremities. کدام تصمیم درست است؟",
+      "correct_index": 1
     },
     {
       "id": 7,
-      "q": "بیمار ۶۲ ساله با septic shock تحت norepinephrine ۰.۸ µg/kg/min. CVP ۸، lactate ۳.۲ mmol/L، ScvO₂ ۷۰%. اینتیباکتریال شده، source کنترل انجام شد. کدام اقدام بعدی؟",
       "options": [
         "افزایش norepinephrine تا ۱.۲ µg/kg/min برای MAP >۷۰",
         "اضافه‌کردن hydrocortisone ۵۰ mg Q۶H",
         "Monitor کردن و weaning شروع (hemodynamically stable)",
         "اضافه‌کردن vasopressin"
       ],
-      "correct": 2,
       "analysis": {
         "options": [
           "MAP ۶۵+ adequate است، aggressive escalation نیاز نیست",
@@ -189,19 +217,23 @@
         ]
       },
       "difficulty": "medium",
-      "tags": ["septic shock", "vasopressor weaning", "hemodynamic stability"],
-      "reference": "Septic Shock De-escalation Strategies"
+      "tags": [
+        "septic shock",
+        "vasopressor weaning",
+        "hemodynamic stability"
+      ],
+      "reference": "Septic Shock De-escalation Strategies",
+      "question": "بیمار ۶۲ ساله با septic shock تحت norepinephrine ۰.۸ µg/kg/min. CVP ۸، lactate ۳.۲ mmol/L، ScvO₂ ۷۰%. اینتیباکتریال شده، source کنترل انجام شد. کدام اقدام بعدی؟",
+      "correct_index": 2
     },
     {
       "id": 8,
-      "q": "بیمار ۳۶ ساله با hypovolemic shock از bleeding GI. BP ۷۰/۴۰، HR ہ۴۰، acidosis pH ۷.۲۲. دو لیتر crystalloid داده شده بهبودی نشده. کدام پروتکل بهترین است؟",
       "options": [
         "ادامه aggressive crystal fluid (۵+ L more)",
         "Permissive hypotension (MAP ۵۰-۶۰) + endoscopy/surgery",
         "transfuse PRBC و FFP",
         "رفزصراف PPI و prepaid endoscopy"
       ],
-      "correct": 1,
       "analysis": {
         "options": [
           "Aggressive fluid: dilution coagulopathy + worse bleeding",
@@ -216,19 +248,24 @@
         ]
       },
       "difficulty": "hard",
-      "tags": ["hypovolemic shock", "hemorrhage", "permissive hypotension", "GI bleed"],
-      "reference": "Hemorrhagic Shock and Permissive Hypotension Guidelines"
+      "tags": [
+        "hypovolemic shock",
+        "hemorrhage",
+        "permissive hypotension",
+        "GI bleed"
+      ],
+      "reference": "Hemorrhagic Shock and Permissive Hypotension Guidelines",
+      "question": "بیمار ۳۶ ساله با hypovolemic shock از bleeding GI. BP ۷۰/۴۰، HR ہ۴۰، acidosis pH ۷.۲۲. دو لیتر crystalloid داده شده بهبودی نشده. کدام پروتکل بهترین است؟",
+      "correct_index": 1
     },
     {
       "id": 9,
-      "q": "بیمار ۵۸ ساله با tension pneumothorax. BP ۶۵/۳۵، HR ۱۵۰، JVD، absent breath sound چپ. کدام اقدام فوری است؟",
       "options": [
         "Chest X-ray برای تأیید",
         "Needle decompression یا chest tube بلافاصله",
         "اکسیژن و vasopressor",
         "Intubation و ventilation"
       ],
-      "correct": 1,
       "analysis": {
         "options": [
           "CXR موجب تأخیر مرگبار است",
@@ -243,19 +280,24 @@
         ]
       },
       "difficulty": "easy",
-      "tags": ["tension pneumothorax", "obstructive shock", "emergency", "decompression"],
-      "reference": "Pneumothorax Management Emergency Guidelines"
+      "tags": [
+        "tension pneumothorax",
+        "obstructive shock",
+        "emergency",
+        "decompression"
+      ],
+      "reference": "Pneumothorax Management Emergency Guidelines",
+      "question": "بیمار ۵۸ ساله با tension pneumothorax. BP ۶۵/۳۵، HR ۱۵۰، JVD، absent breath sound چپ. کدام اقدام فوری است؟",
+      "correct_index": 1
     },
     {
       "id": 10,
-      "q": "بیمار ۷۴ ساله با septic shock on vasopressor. تازه اضافه شده: epinephrine ۰.۳ µg/kg/min و norepinephrine ۱.۲ µg/kg/min. HR ۱۳۵، MAP ۷۰، lactate ۴.۸ mmol/L. کدام تشخیص احتمالی است؟",
       "options": [
         "Adequate resuscitation (MAP ۷۰)",
         "Tissue dysoxia یا inadequate perfusion (high lactate despite MAP)",
         "تنها tachycardia علامت است",
         "کنترل خوب است"
       ],
-      "correct": 1,
       "analysis": {
         "options": [
           "MAP target met لکن lactate بالا: مسئله‌ای دیگر",
@@ -270,19 +312,24 @@
         ]
       },
       "difficulty": "hard",
-      "tags": ["lactate", "tissue perfusion", "septic shock", "vasopressor"],
-      "reference": "Lactate as Marker of Tissue Hypoperfusion"
+      "tags": [
+        "lactate",
+        "tissue perfusion",
+        "septic shock",
+        "vasopressor"
+      ],
+      "reference": "Lactate as Marker of Tissue Hypoperfusion",
+      "question": "بیمار ۷۴ ساله با septic shock on vasopressor. تازه اضافه شده: epinephrine ۰.۳ µg/kg/min و norepinephrine ۱.۲ µg/kg/min. HR ۱۳۵، MAP ۷۰، lactate ۴.۸ mmol/L. کدام تشخیص احتمالی است؟",
+      "correct_index": 1
     },
     {
       "id": 11,
-      "q": "بیمار ۶۰ ساله در ICU با pneumonia و sepsis. MAP ۷۸ mmHg، HR ۱۰۵، lactate ۲.۱ mmol/L. آیا fluid bolus ۵۰۰ mL مناسب است؟",
       "options": [
         "بلی، همه sepsis مریضان به fluid نیاز دارند",
         "نه، بیمار hemodynamically stable است",
         "بلی اگر CVP <۵",
         "نه، اگر پالس pressure variation <۱۳% یا پاسخی نیست"
       ],
-      "correct": 3,
       "analysis": {
         "options": [
           "Routine fluid: not indicated in all sepsis",
@@ -297,19 +344,24 @@
         ]
       },
       "difficulty": "hard",
-      "tags": ["fluid responsiveness", "sepsis", "hemodynamics", "PPV"],
-      "reference": "Fluid Responsiveness Assessment in ICU"
+      "tags": [
+        "fluid responsiveness",
+        "sepsis",
+        "hemodynamics",
+        "PPV"
+      ],
+      "reference": "Fluid Responsiveness Assessment in ICU",
+      "question": "بیمار ۶۰ ساله در ICU با pneumonia و sepsis. MAP ۷۸ mmHg، HR ۱۰۵، lactate ۲.۱ mmol/L. آیا fluid bolus ۵۰۰ mL مناسب است؟",
+      "correct_index": 3
     },
     {
       "id": 12,
-      "q": "بیمار ۴۵ ساله با anaphylaxis. BP ۷۵/۴۰، stridor، urticaria و angioedema. کدام اقدام فوری است؟",
       "options": [
         "IV fluid bolus ۵۰۰ mL و antihistamine",
         "Epinephrine IM ۰.۳-۰.۵ mg بلافاصله",
         "Airway assessment و oxygen",
         "Corticosteroid"
       ],
-      "correct": 1,
       "analysis": {
         "options": [
           "Fluid + antihistamine: late interventions",
@@ -324,19 +376,24 @@
         ]
       },
       "difficulty": "medium",
-      "tags": ["anaphylaxis", "shock", "epinephrine", "emergency"],
-      "reference": "Anaphylaxis Emergency Management"
+      "tags": [
+        "anaphylaxis",
+        "shock",
+        "epinephrine",
+        "emergency"
+      ],
+      "reference": "Anaphylaxis Emergency Management",
+      "question": "بیمار ۴۵ ساله با anaphylaxis. BP ۷۵/۴۰، stridor، urticaria و angioedema. کدام اقدام فوری است؟",
+      "correct_index": 1
     },
     {
       "id": 13,
-      "q": "بیمار ۶۸ ساله با hypovolemic shock from dehydration. MAP ۶۲ mmHg، HR ۱۰۸، Hct ۴۸%. کدام fluid انتخاب مناسب است؟",
       "options": [
         "Hypotonic fluid (0.45% saline)",
         "Hypertonic saline (3%) برای rapid expansion",
         "Isotonic crystalloid (۰.۹% saline) + monitor electrolytes",
         "colloid (albumin)"
       ],
-      "correct": 2,
       "analysis": {
         "options": [
           "Hypotonic: contraindicated in shock",
@@ -351,19 +408,23 @@
         ]
       },
       "difficulty": "medium",
-      "tags": ["hypovolemic shock", "dehydration", "fluid choice"],
-      "reference": "Crystalloid vs Colloid in Fluid Resuscitation"
+      "tags": [
+        "hypovolemic shock",
+        "dehydration",
+        "fluid choice"
+      ],
+      "reference": "Crystalloid vs Colloid in Fluid Resuscitation",
+      "question": "بیمار ۶۸ ساله با hypovolemic shock from dehydration. MAP ۶۲ mmHg، HR ۱۰۸، Hct ۴۸%. کدام fluid انتخاب مناسب است؟",
+      "correct_index": 2
     },
     {
       "id": 14,
-      "q": "بیمار ۵۵ ساله با distributive shock از bacterial peritonitis. CI = ۲.۲ L/min/m²، SVR = ۵۵۰ dynes/sec/cm⁻⁵. کدام vasopressor انتخاب درست است؟",
       "options": [
         "Phenylephrine (pure α): increase SVR",
         "Norepinephrine (α + β): maintain CO و SVR",
         "Dopamine low-dose برای renal protection",
         "Vasopressin تنهایی"
       ],
-      "correct": 1,
       "analysis": {
         "options": [
           "Phenylephrine: ریسک reflex bradycardia و reduced CO",
@@ -378,19 +439,24 @@
         ]
       },
       "difficulty": "hard",
-      "tags": ["distributive shock", "vasopressor", "CI", "SVR"],
-      "reference": "Vasopressor Selection in Distributive Shock"
+      "tags": [
+        "distributive shock",
+        "vasopressor",
+        "CI",
+        "SVR"
+      ],
+      "reference": "Vasopressor Selection in Distributive Shock",
+      "question": "بیمار ۵۵ ساله با distributive shock از bacterial peritonitis. CI = ۲.۲ L/min/m²، SVR = ۵۵۰ dynes/sec/cm⁻⁵. کدام vasopressor انتخاب درست است؟",
+      "correct_index": 1
     },
     {
       "id": 15,
-      "q": "بیمار ۷۲ ساله با ARDS و septic shock. FiO₂ = ۱.۰، PaO₂ ۶۲ mmHg، MAP ۶۳ mmHg، lactate ۲.۸ mmol/L. اقدام؟",
       "options": [
         "افزایش PEEP تا ۱۵ cmH₂O برای بهبود oxygenation",
         "Norepinephrine برای MAP + optimization ventilator settings",
         "Prone positioning برای ARDS",
         "Extracorporeal membrane oxygenation (ECMO)"
       ],
-      "correct": 1,
       "analysis": {
         "options": [
           "PEEP ۱۵: may ریسک RV function در sepsis",
@@ -405,8 +471,15 @@
         ]
       },
       "difficulty": "hard",
-      "tags": ["ARDS", "septic shock", "oxygenation", "hypoxemia"],
-      "reference": "ARDS and Sepsis Co-management Guidelines"
+      "tags": [
+        "ARDS",
+        "septic shock",
+        "oxygenation",
+        "hypoxemia"
+      ],
+      "reference": "ARDS and Sepsis Co-management Guidelines",
+      "question": "بیمار ۷۲ ساله با ARDS و septic shock. FiO₂ = ۱.۰، PaO₂ ۶۲ mmHg، MAP ۶۳ mmHg، lactate ۲.۸ mmol/L. اقدام؟",
+      "correct_index": 1
     }
   ]
 }

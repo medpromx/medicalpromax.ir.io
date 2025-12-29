@@ -5,14 +5,12 @@
   "questions": [
     {
       "id": 1,
-      "q": "در برخورد با اریتمی در بیماران کانژنیتال کدام گزینه صحیح نمی‌باشد؟",
       "options": [
         "در اریتمی‌های دهلیزی بیماران مادرزادی قلب ریتم کنترل بر ریت کنترل ارجح می‌باشد",
         "در بیماریهای مادرزادی قلب با IART کاتتر ابلیشن موثرترین و اولین اقدام درمانی است",
         "inducible sustained VT در بیماران TOF ریسک فاکتور SCD و کلینیکال VT است",
         "استفاده از NOAC‌ها در بیماران congenital heart disease با اریتمی دهلیزی اندیکاسیون دارد"
       ],
-      "correct": 3,
       "analysis": {
         "options": [
           "در آریتمی‌های دهلیزی rate control نسبت به rhythm control ارجح است",
@@ -27,19 +25,25 @@
         ]
       },
       "difficulty": "hard",
-      "tags": ["CHD", "arrhythmia", "IART", "NOAC", "rhythm management"],
-      "reference": "AHA/ACC Guidelines on Congenital Heart Disease Arrhythmias"
+      "tags": [
+        "CHD",
+        "arrhythmia",
+        "IART",
+        "NOAC",
+        "rhythm management"
+      ],
+      "reference": "AHA/ACC Guidelines on Congenital Heart Disease Arrhythmias",
+      "question": "در برخورد با اریتمی در بیماران کانژنیتال کدام گزینه صحیح نمی‌باشد؟",
+      "correct_index": 3
     },
     {
       "id": 2,
-      "q": "درخصوص PVC و آریتمی‌های بطنی، کدام جمله صحیح نمی‌باشد؟",
       "options": [
         "PVC زودرس که گره سینوسی را ریست کند یک وقفه جبرانی ناقص ایجاد می‌کند",
         "اگر فاصله جفت‌شدن PVC با بیت سینوسی ثابت باشد مکانیسم آن automaticity abnormal است",
         "میزان موفقیت ابلیشن PVC در ناحیه بیس سپتوم بطن چپ بیشتر از ناحیه RVOT است",
         "در ورزشکاران رقابتی بدون شواهد بیماری قلبی 7% PVC در طی تست ورزش مشاهده می‌شود"
       ],
-      "correct": 2,
       "analysis": {
         "options": [
           "PVC زودرس با ریست سینوسی وقفه ناقص ایجاد می‌کند",
@@ -54,19 +58,24 @@
         ]
       },
       "difficulty": "hard",
-      "tags": ["PVC", "ablation", "RVOT", "mechanism"],
-      "reference": "ACC/AHA Catheter Ablation Guidelines"
+      "tags": [
+        "PVC",
+        "ablation",
+        "RVOT",
+        "mechanism"
+      ],
+      "reference": "ACC/AHA Catheter Ablation Guidelines",
+      "question": "درخصوص PVC و آریتمی‌های بطنی، کدام جمله صحیح نمی‌باشد؟",
+      "correct_index": 2
     },
     {
       "id": 3,
-      "q": "کدام مورد از مکانیسم‌های اثر رانولازین در درمان آنژین نیست؟",
       "options": [
         "استفاده از گلوکز به جای اسید چرب در ماهیچه‌های قلب",
         "کم کردن overload کلسیم در میوسیت‌های ایسکمیک",
         "کم کردن جریان ورودی سدیم در میوسیت‌ها",
         "نگهداشتن سطح بافتی ATP"
       ],
-      "correct": 3,
       "analysis": {
         "options": [
           "رانولازین بر تفاضل شارژ گلوتیمات اثر می‌گذارد",
@@ -81,19 +90,24 @@
         ]
       },
       "difficulty": "medium",
-      "tags": ["ranolazine", "angina", "mechanism", "metabolism"],
-      "reference": "Clinical Pharmacology of Ranolazine"
+      "tags": [
+        "ranolazine",
+        "angina",
+        "mechanism",
+        "metabolism"
+      ],
+      "reference": "Clinical Pharmacology of Ranolazine",
+      "question": "کدام مورد از مکانیسم‌های اثر رانولازین در درمان آنژین نیست؟",
+      "correct_index": 3
     },
     {
       "id": 4,
-      "q": "بیماری با نوار زیر (SVT) و فشار خون نرمال به بیمارستان مراجعه کرده است. کدام درمان را انتخاب می‌کنید؟",
       "options": [
         "پروکائین آمید",
         "آدنوزین",
         "آمیودارون",
         "دیلتیازم"
       ],
-      "correct": 1,
       "analysis": {
         "options": [
           "پروکائین‌آمید خطرناک در AVNRT/AVRT با هموپلنازی است",
@@ -108,19 +122,24 @@
         ]
       },
       "difficulty": "medium",
-      "tags": ["SVT", "AVNRT", "adenosine", "acute management"],
-      "reference": "AHA/ACC SVT Management Guidelines"
+      "tags": [
+        "SVT",
+        "AVNRT",
+        "adenosine",
+        "acute management"
+      ],
+      "reference": "AHA/ACC SVT Management Guidelines",
+      "question": "بیماری با نوار زیر (SVT) و فشار خون نرمال به بیمارستان مراجعه کرده است. کدام درمان را انتخاب می‌کنید؟",
+      "correct_index": 1
     },
     {
       "id": 5,
-      "q": "در نوار قلب زیر PVC از کدام ناحیه منشاء می‌گیرد؟",
       "options": [
         "Para-His",
         "RVOT",
         "Right sinus of valsalva",
         "Epicardium"
       ],
-      "correct": 2,
       "analysis": {
         "options": [
           "Para-His منشاء نادر است با mQRS کوتاه",
@@ -135,19 +154,24 @@
         ]
       },
       "difficulty": "hard",
-      "tags": ["PVC", "ECG", "localization", "ablation"],
-      "reference": "ECG-Based PVC Localization for Ablation"
+      "tags": [
+        "PVC",
+        "ECG",
+        "localization",
+        "ablation"
+      ],
+      "reference": "ECG-Based PVC Localization for Ablation",
+      "question": "در نوار قلب زیر PVC از کدام ناحیه منشاء می‌گیرد؟",
+      "correct_index": 2
     },
     {
       "id": 6,
-      "q": "کدام یک از بتا‌بلاکرهای زیر برای درمان آنژین در بیماران SIHD انتخاب بهتر است؟",
       "options": [
         "Nadolol",
         "Bisoprolol",
         "Carvedilol",
         "Sotalol"
       ],
-      "correct": 1,
       "analysis": {
         "options": [
           "Nadolol: طول عمر طولانی و non-selective (عوارض عروقی)",
@@ -162,19 +186,24 @@
         ]
       },
       "difficulty": "medium",
-      "tags": ["beta-blocker", "SIHD", "angina", "pharmacology"],
-      "reference": "Beta-Blocker Selection in Stable Angina"
+      "tags": [
+        "beta-blocker",
+        "SIHD",
+        "angina",
+        "pharmacology"
+      ],
+      "reference": "Beta-Blocker Selection in Stable Angina",
+      "question": "کدام یک از بتا‌بلاکرهای زیر برای درمان آنژین در بیماران SIHD انتخاب بهتر است؟",
+      "correct_index": 1
     },
     {
       "id": 7,
-      "q": "آقای ۳۸ ساله با درد سینه فشارنده و نوار قلب با ST elevation در لیدهای II، III، aVF مراجعه کرده. بیمار ناپایدار است. کدام اقدام اولویت است؟",
       "options": [
         "انجام اکوکاردیوگرافی",
         "انجام آنژیوگرافی برای Primary PCI",
         "چک کردن تروپونین",
         "انجام CT-scan"
       ],
-      "correct": 1,
       "analysis": {
         "options": [
           "اکوکاردیوگرافی بعدی برای ارزیابی function است",
@@ -189,19 +218,24 @@
         ]
       },
       "difficulty": "easy",
-      "tags": ["STEMI", "acute MI", "primary PCI", "emergency"],
-      "reference": "ACC/AHA STEMI Guidelines 2023"
+      "tags": [
+        "STEMI",
+        "acute MI",
+        "primary PCI",
+        "emergency"
+      ],
+      "reference": "ACC/AHA STEMI Guidelines 2023",
+      "question": "آقای ۳۸ ساله با درد سینه فشارنده و نوار قلب با ST elevation در لیدهای II، III، aVF مراجعه کرده. بیمار ناپایدار است. کدام اقدام اولویت است؟",
+      "correct_index": 1
     },
     {
       "id": 8,
-      "q": "بیمار جوان با سنکوپ تکراری و تاریخچه حملات کوتاه‌مدت confusion بدون ارتباط با فعالیت. نوار قلب نشان می‌دهد: Brugada pattern. کدام اقدام توصیه می‌شود؟",
       "options": [
         "هولتر مانیتورینگ ۲۴ ساعت",
         "مطالعه الکتروفیزیولوژی",
         "آنژیوگرافی عروق کرونر",
         "تعبیه پیس‌میکر"
       ],
-      "correct": 1,
       "analysis": {
         "options": [
           "هولتر ۲۴ ساعت شامل سنکوپ طولانی نیست",
@@ -216,19 +250,25 @@
         ]
       },
       "difficulty": "hard",
-      "tags": ["Brugada", "syncope", "VF", "ICD", "risk stratification"],
-      "reference": "Brugada Syndrome Management Guidelines"
+      "tags": [
+        "Brugada",
+        "syncope",
+        "VF",
+        "ICD",
+        "risk stratification"
+      ],
+      "reference": "Brugada Syndrome Management Guidelines",
+      "question": "بیمار جوان با سنکوپ تکراری و تاریخچه حملات کوتاه‌مدت confusion بدون ارتباط با فعالیت. نوار قلب نشان می‌دهد: Brugada pattern. کدام اقدام توصیه می‌شود؟",
+      "correct_index": 1
     },
     {
       "id": 9,
-      "q": "بیمار ۷۲ ساله با HFrEF و QRS >۱۲۰ms بدون موارد contraindication به کدام درمان نیاز دارد؟",
       "options": [
         "Implantable Cardioverter Defibrillator (ICD) تنها",
         "Cardiac Resynchronization Therapy (CRT) تنها",
         "CRT-D (CRT + Defibrillator)",
         "دارو‌درمانی بهینه‌شده"
       ],
-      "correct": 2,
       "analysis": {
         "options": [
           "ICD تنها برای بیماری نارسایی قلب شدید و VT/VF است",
@@ -243,19 +283,24 @@
         ]
       },
       "difficulty": "medium",
-      "tags": ["HFrEF", "CRT-D", "device therapy", "LBBB"],
-      "reference": "ACC/AHA HF Device Therapy Guidelines"
+      "tags": [
+        "HFrEF",
+        "CRT-D",
+        "device therapy",
+        "LBBB"
+      ],
+      "reference": "ACC/AHA HF Device Therapy Guidelines",
+      "question": "بیمار ۷۲ ساله با HFrEF و QRS >۱۲۰ms بدون موارد contraindication به کدام درمان نیاز دارد؟",
+      "correct_index": 2
     },
     {
       "id": 10,
-      "q": "خانمی ۲۸ ساله بدون سابقه قلبی با تاکی‌کاردی ناگهانی ۲۰۰ bpm و دایزی در سینه مراجعه می‌کند. ECG: دوری QRS ضیق. کدام الگوریتم انتخاب است؟",
       "options": [
         "Valsalva/بطریقه ویلسون بدون دارو اول",
         "فوری آدنوزین IV",
         "فوری کاردیورژن synchronized",
         "فوری آمیودارون IV"
       ],
-      "correct": 0,
       "analysis": {
         "options": [
           "Valsalva/Valsalva اولین درمان SVT/AVNRT بدون علامت حاد است",
@@ -270,19 +315,24 @@
         ]
       },
       "difficulty": "medium",
-      "tags": ["SVT", "AVNRT", "acute management", "algorithm"],
-      "reference": "AHA/ACC SVT Acute Management Algorithm"
+      "tags": [
+        "SVT",
+        "AVNRT",
+        "acute management",
+        "algorithm"
+      ],
+      "reference": "AHA/ACC SVT Acute Management Algorithm",
+      "question": "خانمی ۲۸ ساله بدون سابقه قلبی با تاکی‌کاردی ناگهانی ۲۰۰ bpm و دایزی در سینه مراجعه می‌کند. ECG: دوری QRS ضیق. کدام الگوریتم انتخاب است؟",
+      "correct_index": 0
     },
     {
       "id": 11,
-      "q": "بیمار با AF و RVR (۱۲۰ bpm) ناپایدار hemodynamically. کدام اقدام فوری است؟",
       "options": [
         "آدنوزین IV fast bolus",
         "Synchronized DC cardioversion ۱۰۰J",
         "دیلتیازم IV مرحله‌ای",
         "Digoxin IV ۰.۵mg"
       ],
-      "correct": 1,
       "analysis": {
         "options": [
           "آدنوزین برای AF نامؤثر است (بلوکاده AV نه termination)",
@@ -297,19 +347,24 @@
         ]
       },
       "difficulty": "easy",
-      "tags": ["AF", "RVR", "hemodynamically unstable", "cardioversion"],
-      "reference": "ACC/AHA AF Management in Emergency"
+      "tags": [
+        "AF",
+        "RVR",
+        "hemodynamically unstable",
+        "cardioversion"
+      ],
+      "reference": "ACC/AHA AF Management in Emergency",
+      "question": "بیمار با AF و RVR (۱۲۰ bpm) ناپایدار hemodynamically. کدام اقدام فوری است؟",
+      "correct_index": 1
     },
     {
       "id": 12,
-      "q": "بیمار با LBBB و افت EF جدید و لنفادنوپاتی و هپاتومگالی و first degree AVB. بهترین راه تشخیص چیست؟",
       "options": [
         "بیوپسی مایوکارد",
         "PCR از خون",
         "CMR",
         "کشت خون و اسمیر خون محیطی"
       ],
-      "correct": 2,
       "analysis": {
         "options": [
           "بیوپسی مایوکارد برای specific pathology است (granuloma/infiltrate)",
@@ -324,19 +379,24 @@
         ]
       },
       "difficulty": "hard",
-      "tags": ["sarcoidosis", "CMR", "myocarditis", "cardiac infiltration"],
-      "reference": "Cardiac Sarcoidosis Diagnosis and Management"
+      "tags": [
+        "sarcoidosis",
+        "CMR",
+        "myocarditis",
+        "cardiac infiltration"
+      ],
+      "reference": "Cardiac Sarcoidosis Diagnosis and Management",
+      "question": "بیمار با LBBB و افت EF جدید و لنفادنوپاتی و هپاتومگالی و first degree AVB. بهترین راه تشخیص چیست؟",
+      "correct_index": 2
     },
     {
       "id": 13,
-      "q": "خانمی ۴۵ ساله با palpitation و dyspnea و نوار قلب با AF و RVR ۱۳۰. فشار خون ۱۲۰/۷۵. کدام داروی اول‌ویت برای rate control است؟",
       "options": [
         "لنز (دیلتیازم) IV",
         "بتا‌بلاکر (metoprolol) IV",
         "دیگوکسین IV",
         "آمیودارون IV"
       ],
-      "correct": 1,
       "analysis": {
         "options": [
           "دیلتیازم موثر است لکن بتا‌بلاکر اول‌ویت‌تر",
@@ -351,19 +411,24 @@
         ]
       },
       "difficulty": "medium",
-      "tags": ["AF", "RVR", "rate control", "beta-blocker"],
-      "reference": "AF Rate Control Strategies"
+      "tags": [
+        "AF",
+        "RVR",
+        "rate control",
+        "beta-blocker"
+      ],
+      "reference": "AF Rate Control Strategies",
+      "question": "خانمی ۴۵ ساله با palpitation و dyspnea و نوار قلب با AF و RVR ۱۳۰. فشار خون ۱۲۰/۷۵. کدام داروی اول‌ویت برای rate control است؟",
+      "correct_index": 1
     },
     {
       "id": 14,
-      "q": "بیمار باrepaired TOF و علائم syncope و nonfatal sustained VT. کدام اقدام نشان می‌دهد خطر SCD؟",
       "options": [
         "QRS >۱۸۰ms در ECG",
         "RV enlargement در imaging",
         "RV systolic/diastolic dysfunction",
         "همه موارد بالا"
       ],
-      "correct": 3,
       "analysis": {
         "options": [
           "QRS >۱۸۰ms نشانگر تأخیر رسانایی و خطر است",
@@ -378,19 +443,24 @@
         ]
       },
       "difficulty": "hard",
-      "tags": ["TOF", "VT", "SCD risk", "ICD"],
-      "reference": "Arrhythmia in Repaired TOF"
+      "tags": [
+        "TOF",
+        "VT",
+        "SCD risk",
+        "ICD"
+      ],
+      "reference": "Arrhythmia in Repaired TOF",
+      "question": "بیمار باrepaired TOF و علائم syncope و nonfatal sustained VT. کدام اقدام نشان می‌دهد خطر SCD؟",
+      "correct_index": 3
     },
     {
       "id": 15,
-      "q": "درمورد WPW و AVRT، کدام صحیح نیست؟",
       "options": [
         "الگوی pre-excitation: delta wave و PR قصیر",
         "AVRT orthodromic: AV node فوق‌العاده، AP گردش برگشت",
         "درمان حاد: IV adenosine یا calcium channel blocker",
         "کاتتر ablation داخلی نمی‌تواند منطقه AP را حذف کند"
       ],
-      "correct": 3,
       "analysis": {
         "options": [
           "Pre-excitation: delta wave و short PR pathognomonic",
@@ -405,19 +475,24 @@
         ]
       },
       "difficulty": "medium",
-      "tags": ["WPW", "AVRT", "pre-excitation", "ablation"],
-      "reference": "WPW and AVRT Management"
+      "tags": [
+        "WPW",
+        "AVRT",
+        "pre-excitation",
+        "ablation"
+      ],
+      "reference": "WPW and AVRT Management",
+      "question": "درمورد WPW و AVRT، کدام صحیح نیست؟",
+      "correct_index": 3
     },
     {
       "id": 16,
-      "q": "بیماری ۵۲ ساله با long QT syndrome و history syncope در حال تست ورزش است. ناگهانی دچار Torsades de Pointes شد. کدام اقدام فوری است؟",
       "options": [
         "IV magnesium sulfate و ایسوپروترنول",
         "β-blocker IV",
         "Immediate defibrillation",
         "IV amiodarone"
       ],
-      "correct": 0,
       "analysis": {
         "options": [
           "Magnesium + isoproterenol (increase HR) درمان است",
@@ -432,8 +507,15 @@
         ]
       },
       "difficulty": "hard",
-      "tags": ["long QT", "Torsades de Pointes", "emergency", "magnesium"],
-      "reference": "Long QT Syndrome and Torsades Management"
+      "tags": [
+        "long QT",
+        "Torsades de Pointes",
+        "emergency",
+        "magnesium"
+      ],
+      "reference": "Long QT Syndrome and Torsades Management",
+      "question": "بیماری ۵۲ ساله با long QT syndrome و history syncope در حال تست ورزش است. ناگهانی دچار Torsades de Pointes شد. کدام اقدام فوری است؟",
+      "correct_index": 0
     }
   ]
 }

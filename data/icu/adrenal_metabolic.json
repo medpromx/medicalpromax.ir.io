@@ -5,14 +5,12 @@
   "questions": [
     {
       "id": 1,
-      "q": "بیمار ۶۲ ساله با سابقه دیابت که ناگهانی دچار hypoglycemia شدید شد. HR ۱۲۰، BP ۸۰/۵۰، GCS ۸. کدام اقدام فوری است؟",
       "options": [
         "۵۰% dextrose IV (۲۵ mL) فوری + monitoring glucose",
         "D۵W infusion آهسته",
         "Glucagon IM + D۵W",
         "Observation و recheck glucose تا ۵ دقیقه"
       ],
-      "correct": 0,
       "analysis": {
         "options": [
           "۵۰% dextrose: rapid restoration glucose برای consciousness",
@@ -27,19 +25,24 @@
         ]
       },
       "difficulty": "easy",
-      "tags": ["hypoglycemia", "emergency", "dextrose", "mental status"],
-      "reference": "Severe Hypoglycemia Management in ICU"
+      "tags": [
+        "hypoglycemia",
+        "emergency",
+        "dextrose",
+        "mental status"
+      ],
+      "reference": "Severe Hypoglycemia Management in ICU",
+      "question": "بیمار ۶۲ ساله با سابقه دیابت که ناگهانی دچار hypoglycemia شدید شد. HR ۱۲۰، BP ۸۰/۵۰، GCS ۸. کدام اقدام فوری است؟",
+      "correct_index": 0
     },
     {
       "id": 2,
-      "q": "بیمار ۵۸ ساله با DKA و pH ۷.۰۵، PaCO₂ ۲۲ mmHg، HCO₃⁻ ۶ mmol/L، glucose ۶۲۰ mg/dL، K⁺ ۶.۸ meq/L. کدام اقدام اول‌ویت است؟",
       "options": [
         "IV insulin rapid (۲۰ units IV bolus)",
         "Fluid resuscitation (۱-۱.۵ L/hr) + insulin infusion (۰.۱ units/kg/hr)",
         "Sodium bicarbonate + insulin",
         "Potassium supplementation + insulin"
       ],
-      "correct": 1,
       "analysis": {
         "options": [
           "Insulin bolus: risky بدون fluid expansion",
@@ -54,19 +57,24 @@
         ]
       },
       "difficulty": "hard",
-      "tags": ["DKA", "diabetic ketoacidosis", "insulin", "fluid resuscitation"],
-      "reference": "DKA Management Protocol in ICU"
+      "tags": [
+        "DKA",
+        "diabetic ketoacidosis",
+        "insulin",
+        "fluid resuscitation"
+      ],
+      "reference": "DKA Management Protocol in ICU",
+      "question": "بیمار ۵۸ ساله با DKA و pH ۷.۰۵، PaCO₂ ۲۲ mmHg، HCO₃⁻ ۶ mmol/L، glucose ۶۲۰ mg/dL، K⁺ ۶.۸ meq/L. کدام اقدام اول‌ویت است؟",
+      "correct_index": 1
     },
     {
       "id": 3,
-      "q": "بیمار ۶۵ ساله در DKA treatment. بعد از ۶ ساعت insulin infusion: glucose ۲۸۰ mg/dL، K⁺ ۳.۲ meq/L، HCO₃⁻ ۱۲ mmol/L. کدام اقدام بعدی است؟",
       "options": [
         "Increase insulin rate برای further glucose reduction",
         "Decrease insulin rate + KCl supplementation (۲۰-۴۰ meq/L)",
         "Stop insulin تا K normalize شود",
         "Add potassium chloride + continue insulin rate"
       ],
-      "correct": 1,
       "analysis": {
         "options": [
           "Increase insulin: hypoglycemia risk + hypokalemia بدتر",
@@ -81,19 +89,24 @@
         ]
       },
       "difficulty": "hard",
-      "tags": ["DKA", "hypokalemia", "insulin adjustment", "management"],
-      "reference": "DKA Continuation and Electrolyte Management"
+      "tags": [
+        "DKA",
+        "hypokalemia",
+        "insulin adjustment",
+        "management"
+      ],
+      "reference": "DKA Continuation and Electrolyte Management",
+      "question": "بیمار ۶۵ ساله در DKA treatment. بعد از ۶ ساعت insulin infusion: glucose ۲۸۰ mg/dL، K⁺ ۳.۲ meq/L، HCO₃⁻ ۱۲ mmol/L. کدام اقدام بعدی است؟",
+      "correct_index": 1
     },
     {
       "id": 4,
-      "q": "بیمار ۷۲ ساله با HHS (hyperosmolar hyperglycemic state). Glucose ۹۸۰ mg/dL، osmolality ۳۲۰ mOsm/kg، Na⁺ ۱۳۸ meq/L، K⁺ ۵.۲ meq/L. کدام rژیم اول‌ویت است؟",
       "options": [
         "Rapid insulin (۱۰۰ units IV bolus)",
         "Normal saline ۱-۱.۵ L/hr + lower insulin rate (۰.۰۵ units/kg/hr)",
         "Hypotonic saline + insulin",
         "Dextrose + insulin برای metabolic correction"
       ],
-      "correct": 1,
       "analysis": {
         "options": [
           "Rapid insulin: excessive، HHS fragile hemodynamics",
@@ -108,19 +121,24 @@
         ]
       },
       "difficulty": "hard",
-      "tags": ["HHS", "hyperosmolar state", "insulin rate", "fluid management"],
-      "reference": "HHS vs DKA Management Differences"
+      "tags": [
+        "HHS",
+        "hyperosmolar state",
+        "insulin rate",
+        "fluid management"
+      ],
+      "reference": "HHS vs DKA Management Differences",
+      "question": "بیمار ۷۲ ساله با HHS (hyperosmolar hyperglycemic state). Glucose ۹۸۰ mg/dL، osmolality ۳۲۰ mOsm/kg، Na⁺ ۱۳۸ meq/L، K⁺ ۵.۲ meq/L. کدام rژیم اول‌ویت است؟",
+      "correct_index": 1
     },
     {
       "id": 5,
-      "q": "بیمار ۵۵ ساله با adrenal crisis (shock-like picture). BP ۷۰/۴۵، HR ۱ۂ۰، Na⁺ ۱۲۰ meq/L، K⁺ ۶.۲ meq/L، glucose ۶۰ mg/dL. کدام اقدام فوری است؟",
       "options": [
         "Dexamethasone ۴ mg IV Q۶H + fluid + vasopressor",
         "Hydrocortisone ۵۰ mg IV Q۶H + aggressive fluid + vasopressor",
         "Fluid resuscitation تنها (بدون steroid اول)",
         "Sodium chloride 3% برای hyponatremia correction"
       ],
-      "correct": 1,
       "analysis": {
         "options": [
           "Dexamethasone: may interfere cortisol assay لاحق",
@@ -135,19 +153,24 @@
         ]
       },
       "difficulty": "hard",
-      "tags": ["adrenal crisis", "hyponatremia", "hypoglycemia", "hydrocortisone"],
-      "reference": "Adrenal Crisis Emergency Management"
+      "tags": [
+        "adrenal crisis",
+        "hyponatremia",
+        "hypoglycemia",
+        "hydrocortisone"
+      ],
+      "reference": "Adrenal Crisis Emergency Management",
+      "question": "بیمار ۵۵ ساله با adrenal crisis (shock-like picture). BP ۷۰/۴۵، HR ۱ۂ۰، Na⁺ ۱۲۰ meq/L، K⁺ ۶.۲ meq/L، glucose ۶۰ mg/dL. کدام اقدام فوری است؟",
+      "correct_index": 1
     },
     {
       "id": 6,
-      "q": "بیمار ۶۰ ساله پس از پیوند کلیه با acute hyponatremia. Na⁺ ۱۲۲ meq/L، seizure activity. GCS بعد از سزیور ۹. کدام درمان درست است؟",
       "options": [
         "۳% NaCl IV rapid (۱-۲ mL/kg bolus) + seizure control",
         "۰.۹% NaCl infusion آهسته",
         "Free water restriction + desmopressin",
         "Hypotonic fluid (D۵W)"
       ],
-      "correct": 0,
       "analysis": {
         "options": [
           "۳% NaCl rapid: appropriate برای symptomatic hyponatremia",
@@ -162,19 +185,24 @@
         ]
       },
       "difficulty": "hard",
-      "tags": ["hyponatremia", "symptomatic", "seizure", "hypertonic saline"],
-      "reference": "Symptomatic Hyponatremia Acute Management"
+      "tags": [
+        "hyponatremia",
+        "symptomatic",
+        "seizure",
+        "hypertonic saline"
+      ],
+      "reference": "Symptomatic Hyponatremia Acute Management",
+      "question": "بیمار ۶۰ ساله پس از پیوند کلیه با acute hyponatremia. Na⁺ ۱۲۲ meq/L، seizure activity. GCS بعد از سزیور ۹. کدام درمان درست است؟",
+      "correct_index": 0
     },
     {
       "id": 7,
-      "q": "بیمار ۶۸ ساله با renal failure و hyperkalemia شدید. K⁺ ۷.۸ meq/L، ECG: peaked T waves. کدام اقدام اول‌ویت است؟",
       "options": [
         "Calcium gluconate ۱۰% (۱۰-۲۰ mL IV) برای cardiac protection",
         "Insulin + dextrose infusion",
         "Sodium polystyrene sulfonate (Kayexalate) PO/PR",
         "Dialysis نهایت"
       ],
-      "correct": 0,
       "analysis": {
         "options": [
           "Calcium gluconate: immediate cardiac stabilization before shifting K",
@@ -189,19 +217,24 @@
         ]
       },
       "difficulty": "medium",
-      "tags": ["hyperkalemia", "ECG changes", "calcium gluconate", "cardiac stabilization"],
-      "reference": "Acute Hyperkalemia Management Guidelines"
+      "tags": [
+        "hyperkalemia",
+        "ECG changes",
+        "calcium gluconate",
+        "cardiac stabilization"
+      ],
+      "reference": "Acute Hyperkalemia Management Guidelines",
+      "question": "بیمار ۶۸ ساله با renal failure و hyperkalemia شدید. K⁺ ۷.۸ meq/L، ECG: peaked T waves. کدام اقدام اول‌ویت است؟",
+      "correct_index": 0
     },
     {
       "id": 8,
-      "q": "بیمار ۵۲ ساله با hyperkalemia K⁺ ۷.۱ meq/L (بدون ECG changes). کدام ترتیب اقدامات صحیح است؟",
       "options": [
         "Insulin ۱۰ units IV + dextrose ۲۵ g IV",
         "Beta-agonist (albuterol) ۱۰-۲۰ mg nebulized",
         "Sodium bicarbonate IV",
         "Calcium gluconate ابتدایی"
       ],
-      "correct": 1,
       "analysis": {
         "options": [
           "Insulin + dextrose: effective لکن slow start",
@@ -216,19 +249,24 @@
         ]
       },
       "difficulty": "medium",
-      "tags": ["hyperkalemia", "asymptomatic", "shift agents", "beta-agonist"],
-      "reference": "Asymptomatic Hyperkalemia Management"
+      "tags": [
+        "hyperkalemia",
+        "asymptomatic",
+        "shift agents",
+        "beta-agonist"
+      ],
+      "reference": "Asymptomatic Hyperkalemia Management",
+      "question": "بیمار ۵۲ ساله با hyperkalemia K⁺ ۷.۱ meq/L (بدون ECG changes). کدام ترتیب اقدامات صحیح است؟",
+      "correct_index": 1
     },
     {
       "id": 9,
-      "q": "بیمار ۶۵ ساله با profound hypocalcemia. Ca²⁺ ۶.۲ mg/dL، symptomatic (paresthesias، tetany). کدام rژیم درست است؟",
       "options": [
         "Calcium chloride ۱۰% (۵-۱۰ mL IV fast)",
         "Calcium gluconate ۱۰% (۱۰-۲۰ mL IV slow)",
         "Vitamin D + oral calcium",
         "Magnesium supplementation تنهایی"
       ],
-      "correct": 1,
       "analysis": {
         "options": [
           "Calcium chloride: irritating، safe in central line فقط",
@@ -243,19 +281,24 @@
         ]
       },
       "difficulty": "medium",
-      "tags": ["hypocalcemia", "symptomatic", "calcium gluconate", "tetany"],
-      "reference": "Acute Hypocalcemia Management"
+      "tags": [
+        "hypocalcemia",
+        "symptomatic",
+        "calcium gluconate",
+        "tetany"
+      ],
+      "reference": "Acute Hypocalcemia Management",
+      "question": "بیمار ۶۵ ساله با profound hypocalcemia. Ca²⁺ ۶.۲ mg/dL، symptomatic (paresthesias، tetany). کدام rژیم درست است؟",
+      "correct_index": 1
     },
     {
       "id": 10,
-      "q": "بیمار ۵۸ ساله در DKA recovery. Day ۲: anion gap closed لکن glucose still ۴۵۰. K⁺ ۳.۸ meq/L. کدام strategy مناسب است؟",
       "options": [
         "Continue insulin ۰.۱ units/kg/hr without dextrose",
         "Switch تا subcutaneous insulin + D۵W infusion",
         "Decrease insulin rate + start D₅ saline infusion",
         "Stop insulin، ketoacidosis resolved"
       ],
-      "correct": 2,
       "analysis": {
         "options": [
           "Continue high-rate insulin: hypoglycemia risk",
@@ -270,19 +313,24 @@
         ]
       },
       "difficulty": "hard",
-      "tags": ["DKA recovery", "transition phase", "dextrose", "insulin reduction"],
-      "reference": "DKA to Subcutaneous Transition Management"
+      "tags": [
+        "DKA recovery",
+        "transition phase",
+        "dextrose",
+        "insulin reduction"
+      ],
+      "reference": "DKA to Subcutaneous Transition Management",
+      "question": "بیمار ۵۸ ساله در DKA recovery. Day ۲: anion gap closed لکن glucose still ۴۵۰. K⁺ ۳.۸ meq/L. کدام strategy مناسب است؟",
+      "correct_index": 2
     },
     {
       "id": 11,
-      "q": "بیمار ۶۰ ساله با HHS و severe dehydration. مجموع fluid deficit: ۱۰ لیتر. کدام fluid replacement اول‌ویت است؟",
       "options": [
         "۰.۹% saline ۱-۱.۵ L/hr (first ۴ ساعت)",
         "۰.۴۵% saline ۳-۵ L/hr",
         "D۵W ۲-۳ L/hr برای glucose dilution",
         "Hypotonic mixture (۰.۴۵% NaCl + D۵W)"
       ],
-      "correct": 0,
       "analysis": {
         "options": [
           "۰.۹% saline: initial choice برای dehydration",
@@ -297,19 +345,24 @@
         ]
       },
       "difficulty": "medium",
-      "tags": ["HHS", "dehydration", "fluid replacement", "isotonic saline"],
-      "reference": "HHS Fluid Resuscitation Strategy"
+      "tags": [
+        "HHS",
+        "dehydration",
+        "fluid replacement",
+        "isotonic saline"
+      ],
+      "reference": "HHS Fluid Resuscitation Strategy",
+      "question": "بیمار ۶۰ ساله با HHS و severe dehydration. مجموع fluid deficit: ۱۰ لیتر. کدام fluid replacement اول‌ویت است؟",
+      "correct_index": 0
     },
     {
       "id": 12,
-      "q": "بیمار ۷۰ ساله با secondary adrenal insufficiency (pituitary apoplexy history). Hypotension و hyponatremia. کدام treatment اول‌ویت است؟",
       "options": [
         "Hydrocortisone ۵۰ mg IV Q۶H + fluid",
         "Dexamethasone ۴ mg IV + fluid",
         "Florinef (fludrocortisone) + hydrocortisone",
         "Fluid restoration تنهایی"
       ],
-      "correct": 0,
       "analysis": {
         "options": [
           "Hydrocortisone: covers glucocorticoid + mineralocorticoid (at high doses)",
@@ -324,19 +377,24 @@
         ]
       },
       "difficulty": "hard",
-      "tags": ["secondary adrenal insufficiency", "pituitary", "hydrocortisone", "hyponatremia"],
-      "reference": "Secondary Adrenal Insufficiency Emergency Management"
+      "tags": [
+        "secondary adrenal insufficiency",
+        "pituitary",
+        "hydrocortisone",
+        "hyponatremia"
+      ],
+      "reference": "Secondary Adrenal Insufficiency Emergency Management",
+      "question": "بیمار ۷۰ ساله با secondary adrenal insufficiency (pituitary apoplexy history). Hypotension و hyponatremia. کدام treatment اول‌ویت است؟",
+      "correct_index": 0
     },
     {
       "id": 13,
-      "q": "بیمار ۵۵ ساله با severe hypercalcemia. Ca²⁺ ۱۴ mg/dL، altered consciousness، polyuria. کدام اقدام اول‌ویت است؟",
       "options": [
         "Normal saline aggressive (۲۰۰-۳۰۰ mL/hr)",
         "Calcitonin IV + bisphosphonate",
         "Hydration + corticosteroid",
         "Hemodialysis"
       ],
-      "correct": 0,
       "analysis": {
         "options": [
           "Normal saline: dilution + urine output برای calcium removal",
@@ -351,19 +409,24 @@
         ]
       },
       "difficulty": "medium",
-      "tags": ["hypercalcemia", "severe", "saline", "emergency management"],
-      "reference": "Severe Hypercalcemia Acute Management"
+      "tags": [
+        "hypercalcemia",
+        "severe",
+        "saline",
+        "emergency management"
+      ],
+      "reference": "Severe Hypercalcemia Acute Management",
+      "question": "بیمار ۵۵ ساله با severe hypercalcemia. Ca²⁺ ۱۴ mg/dL، altered consciousness، polyuria. کدام اقدام اول‌ویت است؟",
+      "correct_index": 0
     },
     {
       "id": 14,
-      "q": "بیمار ۶۲ ساله با profound hypomagnesemia. Mg²⁺ ۰.۸ mg/dL، arrhythmias و tetany. کدام rژیم درست است؟",
       "options": [
         "MgSO₄ ۲۰ g IV (in divided doses) + cardiac monitoring",
         "Magnesium chloride ۱۰-۲۰ meq IV slow",
         "Oral magnesium oxide",
         "Calcium supplementation (hypomagnesemia related)"
       ],
-      "correct": 0,
       "analysis": {
         "options": [
           "MgSO₄: rapid IV supplementation برای symptomatic",
@@ -378,19 +441,24 @@
         ]
       },
       "difficulty": "medium",
-      "tags": ["hypomagnesemia", "arrhythmia", "MgSO4", "symptomatic"],
-      "reference": "Hypomagnesemia Acute Management Guidelines"
+      "tags": [
+        "hypomagnesemia",
+        "arrhythmia",
+        "MgSO4",
+        "symptomatic"
+      ],
+      "reference": "Hypomagnesemia Acute Management Guidelines",
+      "question": "بیمار ۶۲ ساله با profound hypomagnesemia. Mg²⁺ ۰.۸ mg/dL، arrhythmias و tetany. کدام rژیم درست است؟",
+      "correct_index": 0
     },
     {
       "id": 15,
-      "q": "بیمار ۶۸ ساله post-op با hypophosphatemia. Phosphate ۱.۲ mg/dL، respiratory weakness. کدام اقدام مناسب است؟",
       "options": [
         "Phosphate IV (Potassium phosphate) ۰.۰۸-۰.۱۶ mmol/kg",
         "Oral phosphate supplement (Neutra-Phos)",
         "Calcium supplementation",
         "Observation (معمولا benign)"
       ],
-      "correct": 0,
       "analysis": {
         "options": [
           "IV phosphate: urgent برای symptomatic (respiratory weakness)",
@@ -405,8 +473,15 @@
         ]
       },
       "difficulty": "hard",
-      "tags": ["hypophosphatemia", "respiratory weakness", "IV phosphate", "critical"],
-      "reference": "Hypophosphatemia Critical Management in ICU"
+      "tags": [
+        "hypophosphatemia",
+        "respiratory weakness",
+        "IV phosphate",
+        "critical"
+      ],
+      "reference": "Hypophosphatemia Critical Management in ICU",
+      "question": "بیمار ۶۸ ساله post-op با hypophosphatemia. Phosphate ۱.۲ mg/dL، respiratory weakness. کدام اقدام مناسب است؟",
+      "correct_index": 0
     }
   ]
 }

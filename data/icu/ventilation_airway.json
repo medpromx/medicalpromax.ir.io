@@ -5,14 +5,12 @@
   "questions": [
     {
       "id": 1,
-      "q": "بیمار ۶۸ ساله با COPD exacerbation و respiratory failure. ABG: pH ۷.۲۵، PaCO₂ ۷۰ mmHg، PaO₂ ۵۵ mmHg، HCO₃⁻ ۲۸. وی بیدار و پاسخ‌دهنده است. کدام اقدام اولویت است؟",
       "options": [
         "فوری intubation و mechanical ventilation",
         "Non-invasive ventilation (NIV) - CPAP/BiPAP اول",
         "اکسیژن therapy تنها",
         "سیگار‌کشی ترک و دیورتیک"
       ],
-      "correct": 1,
       "analysis": {
         "options": [
           "Intubation برای حالت‌های مختل هوشیاری یا فشل NIV",
@@ -27,19 +25,24 @@
         ]
       },
       "difficulty": "medium",
-      "tags": ["COPD exacerbation", "respiratory failure", "NIV", "hypercapnia"],
-      "reference": "COPD Exacerbation and Non-invasive Ventilation Guidelines"
+      "tags": [
+        "COPD exacerbation",
+        "respiratory failure",
+        "NIV",
+        "hypercapnia"
+      ],
+      "reference": "COPD Exacerbation and Non-invasive Ventilation Guidelines",
+      "question": "بیمار ۶۸ ساله با COPD exacerbation و respiratory failure. ABG: pH ۷.۲۵، PaCO₂ ۷۰ mmHg، PaO₂ ۵۵ mmHg، HCO₃⁻ ۲۸. وی بیدار و پاسخ‌دهنده است. کدام اقدام اولویت است؟",
+      "correct_index": 1
     },
     {
       "id": 2,
-      "q": "بیمار ۵۲ ساله intubated و mechanical ventilation تحت. ABG: pH ۷.۳۲، PaCO₂ ۴۸ mmHg، PaO₂ ۸۵ mmHg (FiO₂ ۰.۶، PEEP ۸)، HCO₃⁻ ۲۲. کدام تنظیم ونتیلاتور مناسب است؟",
       "options": [
         "افزایش tidal volume تا ۸۰۰ mL برای بهبود CO₂",
         "افزایش respiratory rate تا ۲۰ بدون تغییر TV",
         "کاهش PEEP تا ۵ برای بهبود oxygenation",
         "اکسیژن پایین کن به ۰.۴۰ برای O₂ toxicity"
       ],
-      "correct": 1,
       "analysis": {
         "options": [
           "۸۰۰ mL: volutrauma risk در ALI/ARDS",
@@ -54,19 +57,24 @@
         ]
       },
       "difficulty": "hard",
-      "tags": ["mechanical ventilation", "lung-protective", "ABG", "ventilator settings"],
-      "reference": "Lung-Protective Ventilation Strategy Guidelines"
+      "tags": [
+        "mechanical ventilation",
+        "lung-protective",
+        "ABG",
+        "ventilator settings"
+      ],
+      "reference": "Lung-Protective Ventilation Strategy Guidelines",
+      "question": "بیمار ۵۲ ساله intubated و mechanical ventilation تحت. ABG: pH ۷.۳۲، PaCO₂ ۴۸ mmHg، PaO₂ ۸۵ mmHg (FiO₂ ۰.۶، PEEP ۸)، HCO₃⁻ ۲۲. کدام تنظیم ونتیلاتور مناسب است؟",
+      "correct_index": 1
     },
     {
       "id": 3,
-      "q": "بیمار ۶۴ ساله intubated برای acute pancreatitis و ARDS. ABG: pH ۷.۳۵، PaCO₂ ۴۲، PaO₂ ۶۸ (FiO₂ ۰.۸، PEEP ۱۲). کدام اقدام برای بهبود oxygenation مناسب است؟",
       "options": [
         "افزایش FiO₂ تا ۱.۰ برای rapid O₂ repletion",
         "افزایش PEEP تا ۱۵-۱۸ برای recruitment",
         "تغییر ventilation mode تا Airway Pressure Release (APRV)",
         "Prone positioning اگر P/F ۱۰۰ و ناموفق PEEP"
       ],
-      "correct": 3,
       "analysis": {
         "options": [
           "FiO₂ ۱.۰: O₂ toxicity + absorption atelectasis risk",
@@ -81,19 +89,24 @@
         ]
       },
       "difficulty": "hard",
-      "tags": ["ARDS", "oxygenation", "PEEP", "prone positioning"],
-      "reference": "ARDS Oxygenation Management Guidelines"
+      "tags": [
+        "ARDS",
+        "oxygenation",
+        "PEEP",
+        "prone positioning"
+      ],
+      "reference": "ARDS Oxygenation Management Guidelines",
+      "question": "بیمار ۶۴ ساله intubated برای acute pancreatitis و ARDS. ABG: pH ۷.۳۵، PaCO₂ ۴۲، PaO₂ ۶۸ (FiO₂ ۰.۸، PEEP ۱۲). کدام اقدام برای بهبود oxygenation مناسب است؟",
+      "correct_index": 3
     },
     {
       "id": 4,
-      "q": "بیمار ۴۸ ساله برای ۶ روز intubated است. کدام معیار ریسک برای successful weaning دارد؟",
       "options": [
         "PS ۸ cmH₂O، PEEP ۵، FiO₂ ۰.۳۵، f/Vt = ۶۰",
         "PS ۲۰ cmH₂O، PEEP ۸، FiO₂ ۰.۶، f/Vt = ۹۵",
         "PS ۵ cmH₂O، PEEP ۲، FiO₂ ۰.۲۵، f/Vt = ۸۰",
         "PS ۱۲ cmH₂O، PEEP ۸، FiO₂ ۰.۴۵، f/Vt = ۱۲۰"
       ],
-      "correct": 0,
       "analysis": {
         "options": [
           "PS ۸ + low PEEP/FiO₂ + f/Vt <۱۰۰: قابل توجه معیارهای موفقیت",
@@ -108,19 +121,24 @@
         ]
       },
       "difficulty": "medium",
-      "tags": ["weaning", "extubation readiness", "SBT", "f/Vt ratio"],
-      "reference": "Weaning Parameters and Extubation Readiness"
+      "tags": [
+        "weaning",
+        "extubation readiness",
+        "SBT",
+        "f/Vt ratio"
+      ],
+      "reference": "Weaning Parameters and Extubation Readiness",
+      "question": "بیمار ۴۸ ساله برای ۶ روز intubated است. کدام معیار ریسک برای successful weaning دارد؟",
+      "correct_index": 0
     },
     {
       "id": 5,
-      "q": "بیمار ۶۲ ساله پس از SBT ۳۰ دقیقه‌ای: RR ۲۸، HR ۱۱۸، BP ۱۴۵/۹۵، نشانه‌های تنگی نفس و sweating. کدام اقدام درست است؟",
       "options": [
         "Extubate کن (درت‌ها معمول است)",
         "Extubate و نظارت کن،ی پذیر reintubation اگر فشل",
         "تکرار SBT بعد از ۲۴ ساعت و optimization",
         "فوری extubate، بیمار ready است"
       ],
-      "correct": 2,
       "analysis": {
         "options": [
           "علائم فشل SBT واضح هستند",
@@ -135,19 +153,24 @@
         ]
       },
       "difficulty": "medium",
-      "tags": ["extubation failure", "SBT", "weaning", "respiratory parameters"],
-      "reference": "Failed SBT and Extubation Failure Management"
+      "tags": [
+        "extubation failure",
+        "SBT",
+        "weaning",
+        "respiratory parameters"
+      ],
+      "reference": "Failed SBT and Extubation Failure Management",
+      "question": "بیمار ۶۲ ساله پس از SBT ۳۰ دقیقه‌ای: RR ۲۸، HR ۱۱۸، BP ۱۴۵/۹۵، نشانه‌های تنگی نفس و sweating. کدام اقدام درست است؟",
+      "correct_index": 2
     },
     {
       "id": 6,
-      "q": "بیمار ۵۸ ساله با acute epiglottitis و stridor. تصمیم برای intubation. کدام رویه محفوظ‌ترین است؟",
       "options": [
         "Blind finger sweep و oral intubation اول",
         "Immediate cricothyrotomy",
         "Fiberoptic-guided intubation awake یا بدون anesthesia inhalation",
         "انتظار تا airway بدتر شود"
       ],
-      "correct": 2,
       "analysis": {
         "options": [
           "Blind تکنیک: بادی گرفتگی و swelling بیشتر",
@@ -162,19 +185,24 @@
         ]
       },
       "difficulty": "hard",
-      "tags": ["epiglottitis", "difficult airway", "fiberoptic intubation", "emergency"],
-      "reference": "Difficult Airway Management in Acute Epiglottitis"
+      "tags": [
+        "epiglottitis",
+        "difficult airway",
+        "fiberoptic intubation",
+        "emergency"
+      ],
+      "reference": "Difficult Airway Management in Acute Epiglottitis",
+      "question": "بیمار ۵۸ ساله با acute epiglottitis و stridor. تصمیم برای intubation. کدام رویه محفوظ‌ترین است؟",
+      "correct_index": 2
     },
     {
       "id": 7,
-      "q": "بیمار ۷۲ ساله ventilated برای ARDS. روز ۵: tracheal secretions زیاد و thick، tube blockage علامت. کدام مدل انتحار مناسب است؟",
       "options": [
         "Endotracheal tube replacement فوری",
         "Aggressive suctioning و instillation saline",
         "مات‌سیون + سدیم carbonate inhalation + scheduled suctioning",
         "Blind bougie passage برای unblock"
       ],
-      "correct": 2,
       "analysis": {
         "options": [
           "Replacement: اگر مطلق blockage یا tube damage",
@@ -189,19 +217,24 @@
         ]
       },
       "difficulty": "medium",
-      "tags": ["endotracheal tube", "secretion management", "blockage", "weaning"],
-      "reference": "Endotracheal Tube Care and Blockage Management"
+      "tags": [
+        "endotracheal tube",
+        "secretion management",
+        "blockage",
+        "weaning"
+      ],
+      "reference": "Endotracheal Tube Care and Blockage Management",
+      "question": "بیمار ۷۲ ساله ventilated برای ARDS. روز ۵: tracheal secretions زیاد و thick، tube blockage علامت. کدام مدل انتحار مناسب است؟",
+      "correct_index": 2
     },
     {
       "id": 8,
-      "q": "بیمار ۶۵ ساله post-op از abdominal surgery. ABG: pH ۷.۳۲، PaCO₂ ۵۲، PaO₂ ۹۲ (room air). RR ۱۸، HR ۹۸. کدام علت احتمالی hypercapnia است؟",
       "options": [
         "Hypoventilation از pain/sedation/paralysis",
         "Increased CO₂ production (fever/agitation)",
         "Pulmonary embolism",
         "تنها increased dead space"
       ],
-      "correct": 0,
       "analysis": {
         "options": [
           "Post-op pain: ventilation inadequate → hypercapnia",
@@ -216,19 +249,24 @@
         ]
       },
       "difficulty": "medium",
-      "tags": ["hypercapnia", "post-operative", "hypoventilation", "pain"],
-      "reference": "Post-operative Respiratory Management"
+      "tags": [
+        "hypercapnia",
+        "post-operative",
+        "hypoventilation",
+        "pain"
+      ],
+      "reference": "Post-operative Respiratory Management",
+      "question": "بیمار ۶۵ ساله post-op از abdominal surgery. ABG: pH ۷.۳۲، PaCO₂ ۵۲، PaO₂ ۹۲ (room air). RR ۱۸، HR ۹۸. کدام علت احتمالی hypercapnia است؟",
+      "correct_index": 0
     },
     {
       "id": 9,
-      "q": "بیمار ۵۶ ساله intubated، CMV mode. اکنون: ABG pH ۷.۴۲، PaCO₂ ۳۴ mmHg. ونتیلاتور: RR ۱۶، Vt ۶۵۰. کدام تنظیم مناسب است؟",
       "options": [
         "کاهش RR تا ۱۲ برای PaCO₂ normalization",
         "کاهش Vt تا ۵۵۰ mL",
         "افزایش dead space",
         "اسید مثبت مثبت"
       ],
-      "correct": 0,
       "analysis": {
         "options": [
           "RR کاهش: minute ventilation reduce → PaCO₂ up",
@@ -243,19 +281,23 @@
         ]
       },
       "difficulty": "easy",
-      "tags": ["respiratory alkalosis", "hyperventilation", "ventilator adjustment"],
-      "reference": "Ventilator Setting Adjustments for ABG Correction"
+      "tags": [
+        "respiratory alkalosis",
+        "hyperventilation",
+        "ventilator adjustment"
+      ],
+      "reference": "Ventilator Setting Adjustments for ABG Correction",
+      "question": "بیمار ۵۶ ساله intubated، CMV mode. اکنون: ABG pH ۷.۴۲، PaCO₂ ۳۴ mmHg. ونتیلاتور: RR ۱۶، Vt ۶۵۰. کدام تنظیم مناسب است؟",
+      "correct_index": 0
     },
     {
       "id": 10,
-      "q": "بیمار ۴۹ ساله intubated روز ۳ برای asthma exacerbation. ABG: pH ۷.۲۸، PaCO₂ ۶۲، PaO₂ ۷۲ (FiO₂ ۰.۷). ونتیلاتور: RR ۲۴، Vt ۴۰۰ mL. کدام اقدام درست است؟",
       "options": [
         "افزایش RR تا ۳۰ برای بهتر CO₂ clearance",
         "افزایش Vt تا ۶۵۰ برای adequate ventilation",
         "کاهش RR تا ۱۲ و Vt تا ۳۰۰ (permissive hypercapnia)",
         "تغییر mode تا SIMV"
       ],
-      "correct": 2,
       "analysis": {
         "options": [
           "بالای RR: air trapping و auto-PEEP بیشتر",
@@ -270,19 +312,24 @@
         ]
       },
       "difficulty": "hard",
-      "tags": ["asthma exacerbation", "permissive hypercapnia", "air trapping", "auto-PEEP"],
-      "reference": "Asthma Exacerbation Ventilation Strategy"
+      "tags": [
+        "asthma exacerbation",
+        "permissive hypercapnia",
+        "air trapping",
+        "auto-PEEP"
+      ],
+      "reference": "Asthma Exacerbation Ventilation Strategy",
+      "question": "بیمار ۴۹ ساله intubated روز ۳ برای asthma exacerbation. ABG: pH ۷.۲۸، PaCO₂ ۶۲، PaO₂ ۷۲ (FiO₂ ۰.۷). ونتیلاتور: RR ۲۴، Vt ۴۰۰ mL. کدام اقدام درست است؟",
+      "correct_index": 2
     },
     {
       "id": 11,
-      "q": "بیمار ۶۱ ساله ventilated، SIMV ۸ + PS ۱۲. اکنون: HR ۹۲، RR ۱۸ (breaths/min، total), ABG normal. کدام اقدام weaning است؟",
       "options": [
         "SIMV rate تا ۶ و PS تا ۸",
         "تغییر تا T-piece trial ۱ ساعت",
         "Decrease SIMV تا ۴ و PS تا ۸، نظارت ۲۴-۴۸ ساعت",
         "فوری extubation"
       ],
-      "correct": 2,
       "analysis": {
         "options": [
           "SIMV ۶: intermediate step، معقول است",
@@ -297,19 +344,24 @@
         ]
       },
       "difficulty": "medium",
-      "tags": ["weaning", "SIMV", "ventilator weaning", "gradual reduction"],
-      "reference": "Gradual Ventilator Weaning Strategy"
+      "tags": [
+        "weaning",
+        "SIMV",
+        "ventilator weaning",
+        "gradual reduction"
+      ],
+      "reference": "Gradual Ventilator Weaning Strategy",
+      "question": "بیمار ۶۱ ساله ventilated، SIMV ۸ + PS ۱۲. اکنون: HR ۹۲، RR ۱۸ (breaths/min، total), ABG normal. کدام اقدام weaning است؟",
+      "correct_index": 2
     },
     {
       "id": 12,
-      "q": "بیمار ۵۰ ساله برای ۷ روز intubated. Tube obstruction هست. گذاری tube جدید: aortic arch injury suspected. کدام اقدام درست است؟",
       "options": [
         "Reintubate blindly",
         "Fiberoptic-guided intubation + CT اورژانس برای injury",
         "Cricothyrotomy فوری",
         "Extubate و ninvoke NIV"
       ],
-      "correct": 1,
       "analysis": {
         "options": [
           "Blind reintubation: لوله اضافی tissue injury",
@@ -324,19 +376,24 @@
         ]
       },
       "difficulty": "hard",
-      "tags": ["tube obstruction", "aortic injury", "reintubation", "fiberoptic"],
-      "reference": "Complex Airway Management in ICU Complications"
+      "tags": [
+        "tube obstruction",
+        "aortic injury",
+        "reintubation",
+        "fiberoptic"
+      ],
+      "reference": "Complex Airway Management in ICU Complications",
+      "question": "بیمار ۵۰ ساله برای ۷ روز intubated. Tube obstruction هست. گذاری tube جدید: aortic arch injury suspected. کدام اقدام درست است؟",
+      "correct_index": 1
     },
     {
       "id": 13,
-      "q": "بیمار ۵۵ ساله intubated، ventilated CMV. Radiograph: bilateral lower lobes infiltrates، sputum purulent. Temperature ۳۸.۵°C. Clinical VAP؟ کدام گام اول؟",
       "options": [
         "Start empiric antibiotics فوری (triple coverage)",
         "Endotracheal aspirate culture + semiquantitative cultures",
         "TAP (Tracheobronchial Aspirate) + Gram stain",
         "Switch تا APRV برای بهتر clearance"
       ],
-      "correct": 1,
       "analysis": {
         "options": [
           "Empiric antibiotics: reasonable اما culture اول",
@@ -351,19 +408,24 @@
         ]
       },
       "difficulty": "medium",
-      "tags": ["VAP", "ventilator-associated pneumonia", "diagnosis", "culture"],
-      "reference": "VAP Diagnosis and Management in ICU"
+      "tags": [
+        "VAP",
+        "ventilator-associated pneumonia",
+        "diagnosis",
+        "culture"
+      ],
+      "reference": "VAP Diagnosis and Management in ICU",
+      "question": "بیمار ۵۵ ساله intubated، ventilated CMV. Radiograph: bilateral lower lobes infiltrates، sputum purulent. Temperature ۳۸.۵°C. Clinical VAP؟ کدام گام اول؟",
+      "correct_index": 1
     },
     {
       "id": 14,
-      "q": "بیمار ۶۸ ساله post-extubation stridor و اضطراب. RR ۲۸، O₂ sat ۹۲% room air. کدام درمان فوری است؟",
       "options": [
         "Reintubate فوری",
         "Racemic epinephrine مه + dexamethasone IV",
         "Heliox inhalation",
         "Steroids تنهایی"
       ],
-      "correct": 1,
       "analysis": {
         "options": [
           "Reintubate: اگر failed medical therapy",
@@ -378,19 +440,24 @@
         ]
       },
       "difficulty": "medium",
-      "tags": ["post-extubation stridor", "laryngeal edema", "epinephrine", "emergency"],
-      "reference": "Post-extubation Stridor Management"
+      "tags": [
+        "post-extubation stridor",
+        "laryngeal edema",
+        "epinephrine",
+        "emergency"
+      ],
+      "reference": "Post-extubation Stridor Management",
+      "question": "بیمار ۶۸ ساله post-extubation stridor و اضطراب. RR ۲۸، O₂ sat ۹۲% room air. کدام درمان فوری است؟",
+      "correct_index": 1
     },
     {
       "id": 15,
-      "q": "بیمار ۷۶ ساله با acute respiratory distress. ABG: pH ۷.۲۰، PaCO₂ ۸۵، PaO₂ ۴۸ (room air)، HCO₃⁻ ۳۲. سابقه COPD. کدام اقدام اول‌ویت است؟",
       "options": [
         "Aggressive فوری intubation",
         "Trial NIV (BiPAP/CPAP) با close monitoring",
         "Albuterol/ipratropium اول برای bronchospasm",
         "oxygen supplementation تا PaO₂ ۹۰+ بدون ventilation"
       ],
-      "correct": 1,
       "analysis": {
         "options": [
           "Intubation: بعد از failed NIV",
@@ -405,8 +472,15 @@
         ]
       },
       "difficulty": "medium",
-      "tags": ["COPD exacerbation", "respiratory acidosis", "NIV", "hypercapnia"],
-      "reference": "COPD Exacerbation Acute Management"
+      "tags": [
+        "COPD exacerbation",
+        "respiratory acidosis",
+        "NIV",
+        "hypercapnia"
+      ],
+      "reference": "COPD Exacerbation Acute Management",
+      "question": "بیمار ۷۶ ساله با acute respiratory distress. ABG: pH ۷.۲۰، PaCO₂ ۸۵، PaO₂ ۴۸ (room air)، HCO₃⁻ ۳۲. سابقه COPD. کدام اقدام اول‌ویت است؟",
+      "correct_index": 1
     }
   ]
 }

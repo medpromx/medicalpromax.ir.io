@@ -5,14 +5,12 @@
   "questions": [
     {
       "id": 1,
-      "q": "مردی 45 ساله با تب و TIA 5 ماه بعد از جایگذاری دریچه aortic artificial، TEE یک vegetation بزرگ روی دریچه prosthetic aortic نشان می‌دهد. کدام میکروارگانیسم شایع‌ترین علت endocarditis در این بیمار است؟",
       "options": [
         "Streptococcus viridans",
         "Staphylococcus aureus",
         "Staphylococcus epidermidis",
         "Enterococcus"
       ],
-      "correct": 1,
       "analysis": {
         "options": [
           "Strep viridans برای native valve endocarditis معمول است (نه prosthetic).",
@@ -28,19 +26,25 @@
         ]
       },
       "difficulty": "medium",
-      "tags": ["endocarditis", "prosthetic_valve", "Staph_aureus", "PVE", "TEE"],
-      "reference": "Harrison Ch 128; Infective Endocarditis guidelines"
+      "tags": [
+        "endocarditis",
+        "prosthetic_valve",
+        "Staph_aureus",
+        "PVE",
+        "TEE"
+      ],
+      "reference": "Harrison Ch 128; Infective Endocarditis guidelines",
+      "question": "مردی 45 ساله با تب و TIA 5 ماه بعد از جایگذاری دریچه aortic artificial، TEE یک vegetation بزرگ روی دریچه prosthetic aortic نشان می‌دهد. کدام میکروارگانیسم شایع‌ترین علت endocarditis در این بیمار است؟",
+      "correct_index": 1
     },
     {
       "id": 2,
-      "q": "در بیمار با endocarditis دریچه aortic، کدام یک از موارد زیر آشکارتر‌ترین بیانگر نیاز فوری جراحی است؟",
       "options": [
         "ظهور sudden first degree AV block در ECG",
         "تب مستمر بیش از یک هفته بدون پاسخ به آنتی‌بیوتیک",
         "AR متوسط تا شدید بدون علایم نارسایی قلبی",
         "Brucella به عنوان علت endocarditis"
       ],
-      "correct": 0,
       "analysis": {
         "options": [
           "درست: AV block جدید = perivalvular abscess → نیاز جراحی فوری برای drain و repair.",
@@ -56,19 +60,25 @@
         ]
       },
       "difficulty": "hard",
-      "tags": ["endocarditis", "surgical_indication", "AV_block", "abscess", "periannular"],
-      "reference": "Harrison Ch 128 Endocarditis; ESC 2015 IE Guidelines"
+      "tags": [
+        "endocarditis",
+        "surgical_indication",
+        "AV_block",
+        "abscess",
+        "periannular"
+      ],
+      "reference": "Harrison Ch 128 Endocarditis; ESC 2015 IE Guidelines",
+      "question": "در بیمار با endocarditis دریچه aortic، کدام یک از موارد زیر آشکارتر‌ترین بیانگر نیاز فوری جراحی است؟",
+      "correct_index": 0
     },
     {
       "id": 3,
-      "q": "کدام شرایط زیر نیاز به prophylaxis آنتی‌بیوتیکی قبل از دندان‌پزشکی (extraction) ندارد؟",
       "options": [
         "Prosthetic mitral valve replacement",
         "Closure of ASD (2 ماه قبل انجام شده)",
         "Bicuspid aortic valve with severe AR",
         "Unrepaired Tetralogy of Fallot"
       ],
-      "correct": 1,
       "analysis": {
         "options": [
           "Prosthetic valve = highest risk برای IE → always prophylaxis required.",
@@ -84,19 +94,25 @@
         ]
       },
       "difficulty": "medium",
-      "tags": ["IE_prophylaxis", "dental", "ASD", "endocarditis_prevention", "prosthetic_valve"],
-      "reference": "AHA 2007 IE Prophylaxis Guidelines; Harrison Ch 128"
+      "tags": [
+        "IE_prophylaxis",
+        "dental",
+        "ASD",
+        "endocarditis_prevention",
+        "prosthetic_valve"
+      ],
+      "reference": "AHA 2007 IE Prophylaxis Guidelines; Harrison Ch 128",
+      "question": "کدام شرایط زیر نیاز به prophylaxis آنتی‌بیوتیکی قبل از دندان‌پزشکی (extraction) ندارد؟",
+      "correct_index": 1
     },
     {
       "id": 4,
-      "q": "زن 38 ساله با mitral stenosis (MS) rheumatic دارای نشانه‌های NYHA FC II است. Echocardiography: MVA 1.3 cm²، SPAP 60 mmHg، PTMC score 14 (echo score for valvotomy). بهترین مرحله بعدی تیمان چیست؟",
       "options": [
         "Monitoring (تحت نظارت) تا FC III شود",
         "Percutaneous transvenous mitral commissurotomy (PTMC)",
         "Surgical mitral valve replacement (MVR)",
         "Conservative اما با start diuretics و β-blockers"
       ],
-      "correct": 1,
       "analysis": {
         "options": [
           "Monitoring too late چون SPAP بالاست و PTMC مرشح قابل درمان است.",
@@ -112,19 +128,25 @@
         ]
       },
       "difficulty": "medium",
-      "tags": ["mitral_stenosis", "PTMC", "echocardiography", "echo_score", "rheumatic_heart"],
-      "reference": "Harrison Ch 272; ESC Valvular Disease Guidelines"
+      "tags": [
+        "mitral_stenosis",
+        "PTMC",
+        "echocardiography",
+        "echo_score",
+        "rheumatic_heart"
+      ],
+      "reference": "Harrison Ch 272; ESC Valvular Disease Guidelines",
+      "question": "زن 38 ساله با mitral stenosis (MS) rheumatic دارای نشانه‌های NYHA FC II است. Echocardiography: MVA 1.3 cm²، SPAP 60 mmHg، PTMC score 14 (echo score for valvotomy). بهترین مرحله بعدی تیمان چیست؟",
+      "correct_index": 1
     },
     {
       "id": 5,
-      "q": "مردی 68 ساله با aortic stenosis شدید (AS) بدون علایم تحت نظارت قرار دارد. Echo: AVA 0.8 cm²، peak systolic gradient 92 mmHg، LVEF 55%. کدام یک از موارد جراحی indication را satisfy نمی‌کند؟",
       "options": [
         "Asymptomatic LVEF drop to 50%",
         "Symptom onset (angina، syncope، dyspnea)",
         "Left ventricular ejection fraction ≥ 50% with very high gradient (peak > 80) at rest",
         "Concentric LVH alone without symptoms یا EF drop"
       ],
-      "correct": 3,
       "analysis": {
         "options": [
           "EF drop 55% → 50% = hemodynamic deterioration → AVR indication است.",
@@ -140,19 +162,25 @@
         ]
       },
       "difficulty": "hard",
-      "tags": ["aortic_stenosis", "AVR_indication", "asymptomatic", "LVEF", "severe_AS"],
-      "reference": "ACC/AHA 2020 Valvular Disease Guidelines; Harrison Ch 272"
+      "tags": [
+        "aortic_stenosis",
+        "AVR_indication",
+        "asymptomatic",
+        "LVEF",
+        "severe_AS"
+      ],
+      "reference": "ACC/AHA 2020 Valvular Disease Guidelines; Harrison Ch 272",
+      "question": "مردی 68 ساله با aortic stenosis شدید (AS) بدون علایم تحت نظارت قرار دارد. Echo: AVA 0.8 cm²، peak systolic gradient 92 mmHg، LVEF 55%. کدام یک از موارد جراحی indication را satisfy نمی‌کند؟",
+      "correct_index": 3
     },
     {
       "id": 6,
-      "q": "مردی 62 ساله با AS شدید (Vmax 4.2 m/s) و EF preserved (55%) asymptomatic است. اگر exercise stress test inducible symptoms نشان ندهد، کدام intervention مناسب است؟",
       "options": [
         "فوری AVR (surgical aortic valve replacement)",
         "TAVI (transcatheter aortic valve implantation)",
         "Watchful waiting با serial echo هر 6-12 ماه",
         "Balloon valvuloplasty temporary"
       ],
-      "correct": 2,
       "analysis": {
         "options": [
           "Surgical AVR indications require یا symptoms یا LV dysfunction - asymptomatic + normal EF نیست indication.",
@@ -168,19 +196,25 @@
         ]
       },
       "difficulty": "medium",
-      "tags": ["aortic_stenosis", "watchful_waiting", "asymptomatic", "AVR", "exercise_stress"],
-      "reference": "ACC/AHA 2020 Guidelines; ESC Valvular Disease"
+      "tags": [
+        "aortic_stenosis",
+        "watchful_waiting",
+        "asymptomatic",
+        "AVR",
+        "exercise_stress"
+      ],
+      "reference": "ACC/AHA 2020 Guidelines; ESC Valvular Disease",
+      "question": "مردی 62 ساله با AS شدید (Vmax 4.2 m/s) و EF preserved (55%) asymptomatic است. اگر exercise stress test inducible symptoms نشان ندهد، کدام intervention مناسب است؟",
+      "correct_index": 2
     },
     {
       "id": 7,
-      "q": "زن 56 ساله با mitral regurgitation شدید (severe MR) و LVEF 65% asymptomatic است. چه یکی از اینها AVR indication را ارائه نمی‌دهد؟",
       "options": [
         "LV dilatation (LVEDD > 40 mm) + preserved EF",
         "LVEF drop to 60% (from prior 65%)",
         "Atrial fibrillation جدید",
         "Normal LVEDD و LVEF with mild symptoms (NYHA I)"
       ],
-      "correct": 3,
       "analysis": {
         "options": [
           "LV dilatation + preserved EF = sign of progressive disease → intervention indicated (class 2a).",
@@ -196,19 +230,25 @@
         ]
       },
       "difficulty": "medium",
-      "tags": ["mitral_regurgitation", "surgical_indication", "LV_function", "LVEDD", "asymptomatic_MR"],
-      "reference": "ACC/AHA 2020 Valvular Guidelines; Harrison Ch 272"
+      "tags": [
+        "mitral_regurgitation",
+        "surgical_indication",
+        "LV_function",
+        "LVEDD",
+        "asymptomatic_MR"
+      ],
+      "reference": "ACC/AHA 2020 Valvular Guidelines; Harrison Ch 272",
+      "question": "زن 56 ساله با mitral regurgitation شدید (severe MR) و LVEF 65% asymptomatic است. چه یکی از اینها AVR indication را ارائه نمی‌دهد؟",
+      "correct_index": 3
     },
     {
       "id": 8,
-      "q": "مردی 55 ساله با AR شدید (aortic regurgitation)، Vmax 5.2 m/s، ERO (effective regurgitant orifice) 0.5 cm²، و regurgitant volume > 60 mL/beat. LVEF 58%، LVEDD 52 mm. کدام statement درست نیست؟",
       "options": [
         "LVEDD > 50 mm = علامت early LV dilatation به دلیل chronic AR",
         "ERO > 0.3 cm² + regurgitation volume > 30 mL = severe AR",
         "LVEF 58% preserved است لکن declining trend نیاز دارد AVR",
         "ACE inhibitor monotherapy sufficient برای long-term management"
       ],
-      "correct": 3,
       "analysis": {
         "options": [
           "LVEDD > 50 mm = sign of LV remodeling در chronic AR - correct.",
@@ -224,19 +264,25 @@
         ]
       },
       "difficulty": "hard",
-      "tags": ["aortic_regurgitation", "ERO", "LVEDD", "surgical_indication", "vasodilators"],
-      "reference": "ACC/AHA 2020 Valve Guidelines; Harrison Ch 272"
+      "tags": [
+        "aortic_regurgitation",
+        "ERO",
+        "LVEDD",
+        "surgical_indication",
+        "vasodilators"
+      ],
+      "reference": "ACC/AHA 2020 Valve Guidelines; Harrison Ch 272",
+      "question": "مردی 55 ساله با AR شدید (aortic regurgitation)، Vmax 5.2 m/s، ERO (effective regurgitant orifice) 0.5 cm²، و regurgitant volume > 60 mL/beat. LVEF 58%، LVEDD 52 mm. کدام statement درست نیست؟",
+      "correct_index": 3
     },
     {
       "id": 9,
-      "q": "مردی 48 ساله با بیمنی rheumatic mitral stenosis و atrial fibrillation جدید ارائه شده است. چه مورد بهترین مرحله بعدی management است؟",
       "options": [
         "Rate control with β-blockers + anticoagulation فقط",
         "Cardioversion دنبال شده توسط PTMC یا valve surgery",
         "Aggressive diuretics + continue monitoring",
         "TAVI برای mechanical relief"
       ],
-      "correct": 1,
       "analysis": {
         "options": [
           "Rate control alone insufficient؛ MS + AF = stasis risk + stroke + hemodynamic مشکل.",
@@ -252,19 +298,25 @@
         ]
       },
       "difficulty": "medium",
-      "tags": ["mitral_stenosis", "atrial_fibrillation", "cardioversion", "PTMC", "anticoagulation"],
-      "reference": "ESC Valvular Guidelines; Harrison Ch 272"
+      "tags": [
+        "mitral_stenosis",
+        "atrial_fibrillation",
+        "cardioversion",
+        "PTMC",
+        "anticoagulation"
+      ],
+      "reference": "ESC Valvular Guidelines; Harrison Ch 272",
+      "question": "مردی 48 ساله با بیمنی rheumatic mitral stenosis و atrial fibrillation جدید ارائه شده است. چه مورد بهترین مرحله بعدی management است؟",
+      "correct_index": 1
     },
     {
       "id": 10,
-      "q": "در echocardiography، «aortic stenosis» با bicuspid aortic valve و LVEF 25%، peak gradient 27 mmHg، mean gradient 17 mmHg ارائه شده است. شما فکر می‌کنید این «pseudosevere» یا «true severe low-gradient» AS است؟ کدام test بعدی؟",
       "options": [
         "فوری AVR بدون further testing",
         "Dobutamine stress echocardiography برای assess contractility reserve",
         "Medical therapy conservative ",
         "Computed tomography aortic root"
       ],
-      "correct": 1,
       "analysis": {
         "options": [
           "AVR bدون contractility reserve assessment risky اگر pseudo-severe باشد.",
@@ -280,8 +332,16 @@
         ]
       },
       "difficulty": "hard",
-      "tags": ["aortic_stenosis", "low_gradient", "pseudosevere", "dobutamine_echo", "contractility_reserve"],
-      "reference": "Harrison Ch 272; ACC/AHA Valve Guidelines"
+      "tags": [
+        "aortic_stenosis",
+        "low_gradient",
+        "pseudosevere",
+        "dobutamine_echo",
+        "contractility_reserve"
+      ],
+      "reference": "Harrison Ch 272; ACC/AHA Valve Guidelines",
+      "question": "در echocardiography، «aortic stenosis» با bicuspid aortic valve و LVEF 25%، peak gradient 27 mmHg، mean gradient 17 mmHg ارائه شده است. شما فکر می‌کنید این «pseudosevere» یا «true severe low-gradient» AS است؟ کدام test بعدی؟",
+      "correct_index": 1
     }
   ]
 }

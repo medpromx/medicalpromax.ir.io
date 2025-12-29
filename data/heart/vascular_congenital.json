@@ -5,14 +5,12 @@
   "questions": [
     {
       "id": 1,
-      "q": "آقای ۶۵ ساله با سابقه فشارخون بالا با درد شدید ناگهانی در ناحیه پشت و افت گذرای سطح هوشیاری به اورژانس مراجعه کرده است. در معاینات: صدای قلبی به سختی شنیده شده و فشار ۹۰/۵۰ است. در نوار قلب: ST-elevation در لیدهای II، III، aVF. کدام اقدام در اولویت است؟",
       "options": [
         "انجام اکوکاردیوگرافی",
         "انجام آنژیوگرافی برای Primary PCI",
         "انجام CT-scan اورژانس برای تشخیص دایسکشن",
         "چک کردن تروپونین"
       ],
-      "correct": 2,
       "analysis": {
         "options": [
           "اکوکاردیوگرافی بعدی برای ارزیابی function است",
@@ -27,19 +25,24 @@
         ]
       },
       "difficulty": "hard",
-      "tags": ["aortic dissection", "Type A", "hemodynamic instability", "emergency"],
-      "reference": "ACC/AHA Aortic Dissection Guidelines 2023"
+      "tags": [
+        "aortic dissection",
+        "Type A",
+        "hemodynamic instability",
+        "emergency"
+      ],
+      "reference": "ACC/AHA Aortic Dissection Guidelines 2023",
+      "question": "آقای ۶۵ ساله با سابقه فشارخون بالا با درد شدید ناگهانی در ناحیه پشت و افت گذرای سطح هوشیاری به اورژانس مراجعه کرده است. در معاینات: صدای قلبی به سختی شنیده شده و فشار ۹۰/۵۰ است. در نوار قلب: ST-elevation در لیدهای II، III، aVF. کدام اقدام در اولویت است؟",
+      "correct_index": 2
     },
     {
       "id": 2,
-      "q": "بیمار ۳۸ ساله با aortic dissection Type A در معاینه: فشارخون ۱۶۰/۱۱۰، HR ۹۵ bpm. کدام درمان دارویی در بیمار ارجح است؟",
       "options": [
         "Labetolol ۲۰mg IV stat و ۰.۵ mg/min infusion",
         "IV verapamil ۵mg هر ۱۰ دقیقه",
         "IV nitroprusside ۰.۵ µg/kg/min",
         "Nicardipin ۲.۵ mg/Hr"
       ],
-      "correct": 0,
       "analysis": {
         "options": [
           "Labetolol combined alpha/beta blockade است و برای dP/dt کاهش بهترین",
@@ -54,19 +57,24 @@
         ]
       },
       "difficulty": "hard",
-      "tags": ["aortic dissection", "Type A", "acute management", "beta-blocker"],
-      "reference": "Acute Aortic Dissection Management Guidelines"
+      "tags": [
+        "aortic dissection",
+        "Type A",
+        "acute management",
+        "beta-blocker"
+      ],
+      "reference": "Acute Aortic Dissection Management Guidelines",
+      "question": "بیمار ۳۸ ساله با aortic dissection Type A در معاینه: فشارخون ۱۶۰/۱۱۰، HR ۹۵ bpm. کدام درمان دارویی در بیمار ارجح است؟",
+      "correct_index": 0
     },
     {
       "id": 3,
-      "q": "بیمار ۴۴ ساله با تشخیص acute Type A aortic dissection کاندید جراحی است. در خصوص آنژیوگرافی کرونر قبل از جراحی کدام مورد صحیح نیست؟",
       "options": [
         "انجام آنژیوگرافی به دلیل ایجاد تأخیر در emergency surgery توصیه نمی‌شود",
         "انجام آنژیوگرافی در setting دایسکشن از نظر تکنیکی سخت است",
         "انجام coronary CT angiography در setting دایسکشن جایگزین مناسب است",
         "درگیری coronary arteries بدلیل dissection در زمان جراحی تشخیص و اصلاح نمی‌شود"
       ],
-      "correct": 3,
       "analysis": {
         "options": [
           "تأخیر جراحی خطرناک است، آنژیوگرافی توصیه نشود",
@@ -81,19 +89,24 @@
         ]
       },
       "difficulty": "hard",
-      "tags": ["aortic dissection", "Type A", "coronary involvement", "surgery"],
-      "reference": "Surgical Management of Aortic Dissection"
+      "tags": [
+        "aortic dissection",
+        "Type A",
+        "coronary involvement",
+        "surgery"
+      ],
+      "reference": "Surgical Management of Aortic Dissection",
+      "question": "بیمار ۴۴ ساله با تشخیص acute Type A aortic dissection کاندید جراحی است. در خصوص آنژیوگرافی کرونر قبل از جراحی کدام مورد صحیح نیست؟",
+      "correct_index": 3
     },
     {
       "id": 4,
-      "q": "بیمار ۷۸ ساله سیگاری با درد پای راست در حین راه رفتن با فاصله زیر ۲۰ متر مراجعه کرده است. در بررسی: right SFA با فاصله ۸ سانتی‌متر بسته و در قسمت پایین تنگی مهمی ندارد. بهترین درمان چیست؟",
       "options": [
         "درمان دارویی (آسپیرین + کلوپیدوگرل)",
         "آنژیوپلاستی و استنت",
         "توانبخشی و ورزش کنترول‌شده",
         "عمل جراحی bypass"
       ],
-      "correct": 2,
       "analysis": {
         "options": [
           "دارویی اول برای intermittent claudication است",
@@ -108,19 +121,24 @@
         ]
       },
       "difficulty": "medium",
-      "tags": ["PAD", "claudication", "SFA stenosis", "exercise therapy"],
-      "reference": "ACC/AHA PAD Management Guidelines"
+      "tags": [
+        "PAD",
+        "claudication",
+        "SFA stenosis",
+        "exercise therapy"
+      ],
+      "reference": "ACC/AHA PAD Management Guidelines",
+      "question": "بیمار ۷۸ ساله سیگاری با درد پای راست در حین راه رفتن با فاصله زیر ۲۰ متر مراجعه کرده است. در بررسی: right SFA با فاصله ۸ سانتی‌متر بسته و در قسمت پایین تنگی مهمی ندارد. بهترین درمان چیست؟",
+      "correct_index": 2
     },
     {
       "id": 5,
-      "q": "خانم ۳۵ ساله غیر سیگاری با ورم دو پا و تغییر رنگ و تیرگی از ۱۱ سال قبل، با زخم سیاه و بزرگ بدون ترشح در بالای قوزک. علی‌رغم بزرگی زخم دردی احساس نمی‌کند. در سونوگرافی داپلر کدام یافته محتملتر است؟",
       "options": [
         "کاهش فلوی سرخرگ پا و پالس منوفازیک",
         "درگیری گسترده سرخرگهای انتهایی با عدم فلو",
         "واریس گسترده و آنوریزم در وریدها",
         "نرمال بودن داپلر سرخرگ و ورید با احتمال زخم نورولوژیک"
       ],
-      "correct": 3,
       "analysis": {
         "options": [
           "PAD معمول: claudication و فلو کاهش",
@@ -135,19 +153,24 @@
         ]
       },
       "difficulty": "hard",
-      "tags": ["neuropathic ulcer", "diabetic foot", "normal flow", "PAD"],
-      "reference": "Neuropathic vs Ischemic Ulcers Classification"
+      "tags": [
+        "neuropathic ulcer",
+        "diabetic foot",
+        "normal flow",
+        "PAD"
+      ],
+      "reference": "Neuropathic vs Ischemic Ulcers Classification",
+      "question": "خانم ۳۵ ساله غیر سیگاری با ورم دو پا و تغییر رنگ و تیرگی از ۱۱ سال قبل، با زخم سیاه و بزرگ بدون ترشح در بالای قوزک. علی‌رغم بزرگی زخم دردی احساس نمی‌کند. در سونوگرافی داپلر کدام یافته محتملتر است؟",
+      "correct_index": 3
     },
     {
       "id": 6,
-      "q": "درخصوص کوارکتاسیون آئورت، کدام مورد صحیح نیست؟",
       "options": [
         "قوس آئورت هیپوپلاستیک شایع است و با فشار بالا بدون انسداد باقیمانده همراه",
         "در حضور collateral گسترده، گرادیان سیستولیک/دیاستولیک توسط اکو برای تعیین شدت قابل اعتماد نیست",
         "اگر مداخله در سنین بالا صورت بگیرد تا ۲۰% موارد عود فشار خون داریم",
         "در کاتتریسم peak-to-peak gradient بیش از ۴۰ mmHg قابل توجه است"
       ],
-      "correct": 2,
       "analysis": {
         "options": [
           "قوس gothic shaped: PAH و collateral غنی",
@@ -162,19 +185,24 @@
         ]
       },
       "difficulty": "hard",
-      "tags": ["coarctation", "aortic", "hypertension", "intervention"],
-      "reference": "Aortic Coarctation Management in Adults"
+      "tags": [
+        "coarctation",
+        "aortic",
+        "hypertension",
+        "intervention"
+      ],
+      "reference": "Aortic Coarctation Management in Adults",
+      "question": "درخصوص کوارکتاسیون آئورت، کدام مورد صحیح نیست؟",
+      "correct_index": 2
     },
     {
       "id": 7,
-      "q": "درخصوص انجام prophylactic ascending aortic aneurysm resection، کدام گزینه غلط است؟",
       "options": [
         "Turner syndrome با aneurysm > ۲.۵ cm",
         "Marfan syndrome با aneurysm ≥ ۴ cm",
         "Bicuspid aortic valve نیاز به AVR ≥ ۴.۵ cm",
         "Degenerate aneurysm ≥ ۵.۵ cm"
       ],
-      "correct": 0,
       "analysis": {
         "options": [
           "Turner: ۲.۰-۲.۲ cm اندیکاسیون است، نه ۲.۵ cm",
@@ -189,19 +217,24 @@
         ]
       },
       "difficulty": "hard",
-      "tags": ["aortic aneurysm", "Turner", "Marfan", "surgical threshold"],
-      "reference": "Aortic Aneurysm Prophylactic Surgery Guidelines"
+      "tags": [
+        "aortic aneurysm",
+        "Turner",
+        "Marfan",
+        "surgical threshold"
+      ],
+      "reference": "Aortic Aneurysm Prophylactic Surgery Guidelines",
+      "question": "درخصوص انجام prophylactic ascending aortic aneurysm resection، کدام گزینه غلط است؟",
+      "correct_index": 0
     },
     {
       "id": 8,
-      "q": "خانم ۲۶ ساله باردار ۲۲ هفتگی با تشخیص Marfan syndrome. در اکوکاردیوگرافی: LVEF = ۶۰%، ascending aorta = ۴۲ mm، normal AV. در معاینه: HR = ۸۸، BP = ۱۳۰/۷۰. تمام موارد زیر توصیه می‌شود بجز؟",
       "options": [
         "شروع درمان پروفیلاکتیک بتا‌بلاکر",
         "انجام اکوکاردیوگرافی سریال در هر ۵ هفته",
         "ختم بارداری قبل از هفته ۳۲",
         "انتخاب elective C/S برای زایمان"
       ],
-      "correct": 2,
       "analysis": {
         "options": [
           "بتا‌بلاکر prophylaxis برای Marfan در بارداری توصیه‌شده",
@@ -216,19 +249,24 @@
         ]
       },
       "difficulty": "hard",
-      "tags": ["Marfan syndrome", "pregnancy", "aortic aneurysm", "delivery"],
-      "reference": "Marfan Syndrome in Pregnancy Management"
+      "tags": [
+        "Marfan syndrome",
+        "pregnancy",
+        "aortic aneurysm",
+        "delivery"
+      ],
+      "reference": "Marfan Syndrome in Pregnancy Management",
+      "question": "خانم ۲۶ ساله باردار ۲۲ هفتگی با تشخیص Marfan syndrome. در اکوکاردیوگرافی: LVEF = ۶۰%، ascending aorta = ۴۲ mm، normal AV. در معاینه: HR = ۸۸، BP = ۱۳۰/۷۰. تمام موارد زیر توصیه می‌شود بجز؟",
+      "correct_index": 2
     },
     {
       "id": 9,
-      "q": "بیماری با aortic dissection Type B (descending) و refractory hypertension رغم درمان دارویی optimal. کدام اندیکاسیون TEVAR را تأیید می‌کند؟",
       "options": [
         "Refractory hypertension تنهایی",
         "Refractory pain + hypertension",
         "Hemothorax یا رشد aorta",
         "Simple type B dissection بدون علامت"
       ],
-      "correct": 2,
       "analysis": {
         "options": [
           "Refractory HTN برای TEVAR معمول اندیکاسیون نیست",
@@ -243,19 +281,24 @@
         ]
       },
       "difficulty": "hard",
-      "tags": ["aortic dissection", "Type B", "TEVAR", "intervention"],
-      "reference": "Type B Aortic Dissection Management"
+      "tags": [
+        "aortic dissection",
+        "Type B",
+        "TEVAR",
+        "intervention"
+      ],
+      "reference": "Type B Aortic Dissection Management",
+      "question": "بیماری با aortic dissection Type B (descending) و refractory hypertension رغم درمان دارویی optimal. کدام اندیکاسیون TEVAR را تأیید می‌کند؟",
+      "correct_index": 2
     },
     {
       "id": 10,
-      "q": "درخصوص vascular ring، کدام مورد درست می‌باشد؟",
       "options": [
         "شایعترین فرم: double aortic arch و right aortic arch with aberrant left subclavian",
         "در بیماران علامتدار با دو قوس: diverticulum Kommerell معمول وجود دارد",
         "شایعترین علامت در بالغین: تنگی نفس فعالیتی است",
         "تمام موارد بالا"
       ],
-      "correct": 3,
       "analysis": {
         "options": [
           "Double aortic arch شایعترین است",
@@ -270,19 +313,24 @@
         ]
       },
       "difficulty": "medium",
-      "tags": ["vascular ring", "congenital", "compression", "surgery"],
-      "reference": "Vascular Ring Classification and Management"
+      "tags": [
+        "vascular ring",
+        "congenital",
+        "compression",
+        "surgery"
+      ],
+      "reference": "Vascular Ring Classification and Management",
+      "question": "درخصوص vascular ring، کدام مورد درست می‌باشد؟",
+      "correct_index": 3
     },
     {
       "id": 11,
-      "q": "بیماری جوان با نقص دهلیزی-بطنی (AVSD) و پله تاپس. کدامیک از ویژگی‌های آناتومیک نمی‌باشد؟",
       "options": [
         "Elongation of LVOT",
         "Aortic valve posterior displacement",
         "Shortened LV inlet",
         "Cleft in anterior mitral valve leaflet"
       ],
-      "correct": 0,
       "analysis": {
         "options": [
           "LVOT elongated نیست، narrowed و anterior است",
@@ -297,19 +345,23 @@
         ]
       },
       "difficulty": "hard",
-      "tags": ["AVSD", "endocardial cushion defect", "anatomy"],
-      "reference": "AVSD Anatomical Features and Pathology"
+      "tags": [
+        "AVSD",
+        "endocardial cushion defect",
+        "anatomy"
+      ],
+      "reference": "AVSD Anatomical Features and Pathology",
+      "question": "بیماری جوان با نقص دهلیزی-بطنی (AVSD) و پله تاپس. کدامیک از ویژگی‌های آناتومیک نمی‌باشد؟",
+      "correct_index": 0
     },
     {
       "id": 12,
-      "q": "بیماری ۳۸ ساله با سابقه repaired tetralogy of Fallot و علائم syncope و nonfatal sustained VT مراجعه کرده است. کدام عامل خطر SCD نیست؟",
       "options": [
         "QRS > ۱۸۰ms در ECG",
         "RV enlargement در imaging",
         "RV systolic/diastolic dysfunction",
         "Normal RV size با normal function"
       ],
-      "correct": 3,
       "analysis": {
         "options": [
           "QRS >۱۸۰: delayed conduction و ریسک",
@@ -324,19 +376,24 @@
         ]
       },
       "difficulty": "hard",
-      "tags": ["TOF", "repaired", "SCD risk", "VT"],
-      "reference": "Arrhythmia Risk Stratification in Repaired TOF"
+      "tags": [
+        "TOF",
+        "repaired",
+        "SCD risk",
+        "VT"
+      ],
+      "reference": "Arrhythmia Risk Stratification in Repaired TOF",
+      "question": "بیماری ۳۸ ساله با سابقه repaired tetralogy of Fallot و علائم syncope و nonfatal sustained VT مراجعه کرده است. کدام عامل خطر SCD نیست؟",
+      "correct_index": 3
     },
     {
       "id": 13,
-      "q": "مرد ۵۶ ساله سیگاری با درد تیر‌کشنده شدید در دست و پا، گرفتگی گسترده عروق زیر زانو و زیر آرنج در سونوگرافی. کدام جمله در درمان صحیح است؟",
       "options": [
         "دوز بالای استاتین درمان اصلی و موثر است",
         "درمان اصلی جراحی و bypass عروق است",
         "Ileoprost موثر است",
         "آسپیرین درمان اصلی است"
       ],
-      "correct": 1,
       "analysis": {
         "options": [
           "Statin برای atherosclerosis است، نه Buerger's disease",
@@ -351,19 +408,23 @@
         ]
       },
       "difficulty": "hard",
-      "tags": ["Buerger's disease", "thromboangiitis obliterans", "small vessel"],
-      "reference": "Buerger's Disease Management"
+      "tags": [
+        "Buerger's disease",
+        "thromboangiitis obliterans",
+        "small vessel"
+      ],
+      "reference": "Buerger's Disease Management",
+      "question": "مرد ۵۶ ساله سیگاری با درد تیر‌کشنده شدید در دست و پا، گرفتگی گسترده عروق زیر زانو و زیر آرنج در سونوگرافی. کدام جمله در درمان صحیح است؟",
+      "correct_index": 1
     },
     {
       "id": 14,
-      "q": "مرد ۷۵ ساله سیگاری با سابقه intermittent claudication پای راست شدید شده و دچار درد rest شد. در معاینه: نبض پای راست از popliteal پایین لمس نشده، پا پارستزی و rubor دارد. بهترین درمان چیست؟",
       "options": [
         "درمان جراحی Thrombectomy فوری",
         "Thrombolysis موضعی از راه کتتر",
         "Systemic anticoagulation",
         "Conservative management"
       ],
-      "correct": 1,
       "analysis": {
         "options": [
           "Thrombectomy برای fresh thrombus در surgical context",
@@ -378,19 +439,24 @@
         ]
       },
       "difficulty": "hard",
-      "tags": ["CLI", "critical limb ischemia", "thrombosis", "acute"],
-      "reference": "Acute Limb Ischemia Management Guidelines"
+      "tags": [
+        "CLI",
+        "critical limb ischemia",
+        "thrombosis",
+        "acute"
+      ],
+      "reference": "Acute Limb Ischemia Management Guidelines",
+      "question": "مرد ۷۵ ساله سیگاری با سابقه intermittent claudication پای راست شدید شده و دچار درد rest شد. در معاینه: نبض پای راست از popliteal پایین لمس نشده، پا پارستزی و rubor دارد. بهترین درمان چیست؟",
+      "correct_index": 1
     },
     {
       "id": 15,
-      "q": "درخصوص عوامل ریسک AAA، کدام مورد محسوب نمی‌شود؟",
       "options": [
         "فشار خون بالا",
         "مصرف سیگار",
         "دیابت",
         "سابقه خانوادگی"
       ],
-      "correct": 2,
       "analysis": {
         "options": [
           "Hypertension: major risk factor AAA",
@@ -405,19 +471,23 @@
         ]
       },
       "difficulty": "medium",
-      "tags": ["AAA", "risk factors", "epidemiology"],
-      "reference": "Abdominal Aortic Aneurysm Risk Factors"
+      "tags": [
+        "AAA",
+        "risk factors",
+        "epidemiology"
+      ],
+      "reference": "Abdominal Aortic Aneurysm Risk Factors",
+      "question": "درخصوص عوامل ریسک AAA، کدام مورد محسوب نمی‌شود؟",
+      "correct_index": 2
     },
     {
       "id": 16,
-      "q": "کدامیک از افراد زیر نیازی به اسکرین برای AAA ندارند؟",
       "options": [
         "آقای ۵۰ ساله که ۹۲ سال پیش سیگار را ترک کرده",
         "آقای ۳۰ ساله با سابقه AAA در برادرش",
         "خانم ۵۶ ساله دیابتی که ۹۳ سال انسولین دریافت می‌کند",
         "خانم ۵۰ ساله با سابقه AAA در برادرش"
       ],
-      "correct": 0,
       "analysis": {
         "options": [
           "۹۲ سال سابقه smoking: risk پایین نسبتاً",
@@ -432,19 +502,23 @@
         ]
       },
       "difficulty": "hard",
-      "tags": ["AAA", "screening", "risk stratification"],
-      "reference": "AAA Screening Guidelines and Risk Stratification"
+      "tags": [
+        "AAA",
+        "screening",
+        "risk stratification"
+      ],
+      "reference": "AAA Screening Guidelines and Risk Stratification",
+      "question": "کدامیک از افراد زیر نیازی به اسکرین برای AAA ندارند؟",
+      "correct_index": 0
     },
     {
       "id": 17,
-      "q": "درخصوص pulmonary regurgitation بعد از repair TOF، کدام مورد صحیح نیست؟",
       "options": [
         "نارسایی بطن راست از اندیکاسیون‌های مداخله برای valve replacement",
         "بیماران علامتدار با significant PR باید تحت valve replacement قرار بگیرند",
         "وقتی RV end-systolic volume به ۶۳ cc برسد pulmonary valve replacement باید مدنظر قرار گیرد",
         "بیماران repaired TOF و PR تا مدتها بدون علامت باقی می‌مانند"
       ],
-      "correct": 2,
       "analysis": {
         "options": [
           "RV dysfunction: valve replacement indication",
@@ -459,8 +533,15 @@
         ]
       },
       "difficulty": "hard",
-      "tags": ["TOF", "pulmonary regurgitation", "RV", "valve replacement"],
-      "reference": "Pulmonary Regurgitation Management in TOF"
+      "tags": [
+        "TOF",
+        "pulmonary regurgitation",
+        "RV",
+        "valve replacement"
+      ],
+      "reference": "Pulmonary Regurgitation Management in TOF",
+      "question": "درخصوص pulmonary regurgitation بعد از repair TOF، کدام مورد صحیح نیست؟",
+      "correct_index": 2
     }
   ]
 }

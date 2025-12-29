@@ -47,6 +47,15 @@
             border-right: 4px solid rgba(59,130,246,.9);
             animation: slideIn 0.22s ease-out;
         }
+        
+        .section-card {
+            cursor: pointer;
+            transition: transform 0.2s ease;
+        }
+        
+        .section-card:hover {
+            transform: translateY(-4px);
+        }
     </style>
 </head>
 <body class="min-h-screen flex flex-col" oncontextmenu="return false;">
@@ -103,57 +112,56 @@
                 {
                     id: "nephro",
                     title: "نفرو",
-                    icon: "droplet",
-                    color: "from-purple-600 to-violet-700",
+                    icon: "droplets",
+                    color: "from-blue-600 to-cyan-600",
                     subsections: [
-                        { id: "aki_nephrotoxins", title: "AKI و نفروتوکسین‌ها", path: "data/nephro/aki_nephrotoxins.json" },
+                        { id: "aki_nephrotoxins", title: "AKI و نفروتوکسین", path: "data/nephro/aki_nephrotoxins.json" },
                         { id: "glomerular_structural", title: "گلومرولی و ساختاری", path: "data/nephro/glomerular_structural.json" },
                         { id: "ckd_dialysis", title: "CKD و دیالیز", path: "data/nephro/ckd_dialysis.json" },
-                        { id: "electrolytes_acidbase", title: "الکترولیت/اسید-باز", path: "data/nephro/electrolytes_acidbase.json" },
+                        { id: "electrolytes_acidbase", title: "الکترولیت و اسیدبیس", path: "data/nephro/electrolytes_acidbase.json" },
                         { id: "stones_uti", title: "سنگ و UTI", path: "data/nephro/stones_uti.json" },
-                        { id: "transplant", title: "پیوند", path: "data/nephro/transplant.json" }
+                        { id: "transplant", title: "پیوند کلیه", path: "data/nephro/transplant.json" }
                     ]
                 }
             ]
         };
 
-        // Cache for question counts
-        const questionCountCache = {};
-
-        let state = {
-            view: 'login',
+        // State management
+        const state = {
+            view: 'dashboard',
             section: null,
             subsection: null,
             index: 0,
+            currentQuestions: [],
             answers: {},
-            showAnalysis: false,
-            currentQuestions: []
+            showAnalysis: false
         };
 
+        const questionCountCache = {};
+
         function save() {
-            localStorage.setItem('mp_state', JSON.stringify({
-                answers: state.answers,
-                view: state.view,
-                section: state.section,
-                subsection: state.subsection,
-                index: state.index
-            }));
+            try {
+                sessionStorage.setItem('state', JSON.stringify({
+                    view: state.view,
+                    section: state.section,
+                    subsection: state.subsection,
+                    index: state.index,
+                    answers: state.answers
+                }));
+            } catch (e) {
+                console.error('Error saving state:', e);
+            }
         }
 
         function load() {
             try {
-                const saved = localStorage.getItem('mp_state');
-                if (saved) {
-                    const data = JSON.parse(saved);
+                const data = JSON.parse(sessionStorage.getItem('state'));
+                if (data) {
+                    state.view = data.view || 'dashboard';
+                    state.section = data.section;
+                    state.subsection = data.subsection;
+                    state.index = data.index || 0;
                     state.answers = data.answers || {};
-                    
-                    // بازگرداندن کاربر به جایی که بود (اگر وارد بود)
-                    if (data.view && data.view !== 'login') {
-                        state.view = data.view;
-                        state.section = data.section;
-                        state.subsection = data.subsection;
-                        state.index = data.index || 0;
-                    }
                 }
             } catch (e) {
                 console.error('Error loading state:', e);
@@ -171,281 +179,221 @@
                 questionCountCache[path] = count;
                 return count;
             } catch (e) {
+                console.error('Error fetching:', path, e);
                 return 0;
             }
         }
 
         function render() {
             const root = document.getElementById('app');
-            if (state.view === 'login') root.innerHTML = viewLogin();
-            else if (state.view === 'dashboard') root.innerHTML = viewDashboard();
+            if (state.view === 'dashboard') root.innerHTML = viewDashboard();
             else if (state.view === 'subsections') root.innerHTML = viewSubsections();
             else if (state.view === 'quiz') root.innerHTML = viewQuiz();
             lucide.createIcons();
         }
 
-        function viewLogin() {
-            return `
-                <div class="min-h-screen flex items-center justify-center p-6 medical-gradient">
-                    <div class="max-w-md w-full glass p-10 rounded-[2.5rem] shadow-2xl text-center">
-                        <div class="mb-8 flex justify-center">
-                            <div class="p-5 bg-blue-50 text-blue-600 rounded-3xl">
-                                <i data-lucide="shield-check" class="w-12 h-12"></i>
-                            </div>
-                        </div>
-                        <h1 class="text-3xl font-black text-slate-800 mb-2">${CONFIG.brand}</h1>
-                        <p class="text-slate-400 font-bold mb-10 tracking-widest uppercase text-[10px]">Medical Examination Portal</p>
-
-                        <div class="space-y-4 text-right">
-                            <input id="u" type="text" class="w-full px-6 py-4 rounded-2xl border-2 border-slate-100 outline-none focus:border-blue-500 transition" placeholder="نام کاربری">
-                            <input id="p" type="password" class="w-full px-6 py-4 rounded-2xl border-2 border-slate-100 outline-none focus:border-blue-500 transition" placeholder="رمز عبور">
-                            <button onclick="handleLogin()" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-5 rounded-2xl shadow-lg transition-all active:scale-95">ورود به پنل</button>
-                        </div>
-                    </div>
-                </div>
-            `;
-        }
-
         function viewDashboard() {
-            const totalDone = Object.keys(state.answers).length;
-
             return `
-                <nav class="bg-white border-b px-8 py-4 sticky top-0 z-40">
-                    <div class="max-w-7xl mx-auto flex justify-between items-center">
-                        <div class="flex items-center gap-4">
-                            <div class="bg-blue-600 p-2 rounded-xl text-white shadow-lg"><i data-lucide="activity"></i></div>
-                            <div>
-                                <h2 class="font-black text-xl text-slate-800">${CONFIG.brand}</h2>
-                                <p class="text-[10px] text-slate-400 font-bold tracking-tighter">${CONFIG.exam}</p>
-                            </div>
+                <div class="min-h-screen medical-gradient py-12 px-4">
+                    <div class="max-w-6xl mx-auto">
+                        <div class="text-center mb-16">
+                            <h1 class="text-5xl font-black text-white mb-3">${CONFIG.brand}</h1>
+                            <p class="text-xl text-blue-100">${CONFIG.exam}</p>
                         </div>
-                        <button onclick="logout()" class="p-2 text-slate-300 hover:text-red-500 transition"><i data-lucide="power"></i></button>
-                    </div>
-                </nav>
-
-                <main class="max-w-7xl mx-auto p-8">
-                    <div class="bg-blue-600 rounded-[2.5rem] p-10 mb-12 text-white flex flex-col md:flex-row justify-between items-center shadow-2xl shadow-blue-200">
-                        <div>
-                            <h3 class="text-3xl font-black mb-3 text-white">آمادگی برای آزمون</h3>
-                            <p class="opacity-80 font-medium tracking-tight">دسترسی به سوالات تخصصی پزشکی داخلی</p>
-                        </div>
-                        <div class="mt-6 md:mt-0 text-center">
-                            <span class="text-5xl font-black block">${totalDone}</span>
-                            <span class="text-xs font-bold opacity-60 uppercase tracking-widest">سوال پاسخ داده</span>
-                        </div>
-                    </div>
-
-                    <h3 class="text-2xl font-black text-slate-800 mb-6">بخش‌های درسی</h3>
-
-                    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-                        ${manifest.sections.map(sec => `
-                            <div onclick="initSubsections('${sec.id}')" class="group bg-white p-8 rounded-[2rem] border border-slate-100 shadow-sm hover:shadow-2xl hover:-translate-y-2 cursor-pointer transition-all">
-                                <div class="bg-gradient-to-br ${sec.color} w-16 h-16 rounded-2xl flex items-center justify-center text-white mb-6 shadow-lg group-hover:rotate-6 transition">
-                                    <i data-lucide="${sec.icon}" class="w-8 h-8"></i>
-                                </div>
-                                <h4 class="font-bold text-slate-800 text-lg mb-4">${sec.title}</h4>
-                                <div class="flex justify-between items-center">
-                                    <span class="text-xs font-bold text-slate-400">${sec.subsections.length} درس</span>
-                                </div>
-                            </div>
-                        `).join('')}
-                    </div>
-                </main>
-            `;
-        }
-
-        async function viewSubsections() {
-            const section = manifest.sections.find(s => s.id === state.section);
-            if (!section) return `<div>خطا</div>`;
-
-            // بارگیری تعداد سوالات برای هر subsection
-            let subsectionsHtml = '';
-            for (const sub of section.subsections) {
-                const count = await getQuestionCount(sub.path);
-                subsectionsHtml += `
-                    <div onclick="initQuiz('${section.id}', '${sub.id}', '${sub.path}')" class="group bg-white p-8 rounded-2xl border border-slate-100 shadow-sm hover:shadow-xl hover:-translate-y-1 cursor-pointer transition-all">
-                        <div class="flex items-start justify-between mb-4">
-                            <h4 class="font-bold text-slate-800 text-lg flex-1">${sub.title}</h4>
-                            <i data-lucide="chevron-left" class="text-slate-300 group-hover:text-blue-600 transition"></i>
-                        </div>
-                        <p class="text-xs text-slate-400 font-bold">${count} سوال</p>
-                        <div class="mt-4 h-1.5 bg-slate-100 rounded-full overflow-hidden">
-                            <div class="h-1.5 bg-blue-600 rounded-full" style="width: 0%"></div>
-                        </div>
-                    </div>
-                `;
-            }
-
-            return `
-                <nav class="bg-white border-b px-8 py-4 sticky top-0 z-40">
-                    <div class="max-w-7xl mx-auto flex items-center justify-between">
-                        <button onclick="state.view='dashboard';render()" class="flex items-center gap-2 text-slate-400 font-bold hover:text-blue-600 transition">
-                            <i data-lucide="arrow-right" class="w-5 h-5"></i>
-                            بازگشت
-                        </button>
-                        <h2 class="font-black text-xl text-slate-800">${section.title}</h2>
-                        <div class="w-10"></div>
-                    </div>
-                </nav>
-
-                <main class="max-w-7xl mx-auto p-8">
-                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                        ${subsectionsHtml}
-                    </div>
-                </main>
-            `;
-        }
-
-        function viewQuiz() {
-            const questions = state.currentQuestions;
-            if (!questions.length) {
-                return `
-                    <nav class="bg-white border-b px-8 py-4 sticky top-0 z-40">
-                        <div class="max-w-7xl mx-auto flex items-center justify-between">
-                            <button onclick="state.view='subsections';render()" class="flex items-center gap-2 text-slate-400 font-bold hover:text-blue-600 transition">
-                                <i data-lucide="arrow-right" class="w-5 h-5"></i>
-                                بازگشت
-                            </button>
-                            <div></div>
-                            <div class="w-10"></div>
-                        </div>
-                    </nav>
-                    <div class="flex items-center justify-center min-h-[60vh] p-8">
-                        <p class="text-xl text-slate-500">هنوز سوالی اضافه نشده</p>
-                    </div>
-                `;
-            }
-
-            const q = questions[state.index];
-            const answer = state.answers[q.id || state.index];
-
-            return `
-                <div class="flex flex-col min-h-screen">
-                    <header class="bg-white border-b px-8 py-4 flex justify-between items-center sticky top-0 z-40">
-                        <button onclick="state.view='subsections';render()" class="flex items-center gap-2 text-slate-400 font-bold hover:text-blue-600 transition">
-                            <i data-lucide="arrow-right" class="w-5 h-5"></i>
-                            بازگشت
-                        </button>
-                        <div class="text-center">
-                            <p class="text-[10px] font-black text-blue-600 uppercase tracking-widest">${state.subsection}</p>
-                            <p class="text-lg font-black text-slate-800">سوال ${state.index + 1} از ${questions.length}</p>
-                        </div>
-                        <div class="w-10"></div>
-                    </header>
-
-                    <main class="max-w-5xl mx-auto w-full p-8 flex-grow">
-                        <div class="bg-white rounded-[3rem] p-10 md:p-16 shadow-sm border border-slate-100 mb-10">
-                            <h3 class="text-2xl md:text-3xl font-black text-slate-800 leading-relaxed mb-16">
-                                <span class="text-blue-600 ml-4 font-black tracking-tighter">#${state.index + 1}</span>
-                                ${q.question || q.q || ''}
-                            </h3>
-
-                            <div class="grid gap-5">
-                                ${(q.options || q.option || []).map((opt, i) => {
-                                    let cls = "border-slate-100 bg-slate-50";
-                                    let icon = "";
-                                    if (answer !== undefined) {
-                                        if (i === (q.correct_index || q.correct)) {
-                                            cls = "border-emerald-500 bg-emerald-50 text-emerald-900 ring-4 ring-emerald-500/10";
-                                            icon = '<i data-lucide="check-circle" class="text-emerald-500 w-6 h-6"></i>';
-                                        } else if (i === answer) {
-                                            cls = "border-red-500 bg-red-50 text-red-900 ring-4 ring-red-500/10";
-                                            icon = '<i data-lucide="x-circle" class="text-red-500 w-6 h-6"></i>';
-                                        }
-                                    }
-                                    return `
-                                        <div onclick="pick(${state.index}, ${i})" class="option-card p-6 rounded-2xl border-2 flex justify-between items-center cursor-pointer ${cls}">
-                                            <span class="font-bold text-lg">${opt}</span>
-                                            ${icon}
+                        
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            ${manifest.sections.map(section => `
+                                <div class="section-card glass rounded-3xl p-8 shadow-xl hover:shadow-2xl transition" onclick="selectSection('${section.id}')">
+                                    <div class="flex items-center gap-4 mb-6">
+                                        <div class="p-4 bg-gradient-to-br ${section.color} rounded-2xl">
+                                            <i data-lucide="${section.icon}" class="w-8 h-8 text-white"></i>
                                         </div>
-                                    `;
-                                }).join('')}
-                            </div>
-                        </div>
-
-                        ${(answer !== undefined || state.showAnalysis) ? `
-                            <div class="analysis-section bg-white rounded-[2.5rem] p-10 shadow-xl border border-blue-50 mb-20">
-                                <div class="flex items-center gap-4 mb-10">
-                                    <div class="bg-blue-600 text-white p-3 rounded-2xl shadow-lg"><i data-lucide="clipboard-check"></i></div>
-                                    <h4 class="text-2xl font-black text-slate-800 tracking-tight">نکات طلایی</h4>
+                                        <h2 class="text-2xl font-bold text-slate-800">${section.title}</h2>
+                                    </div>
+                                    <p class="text-slate-600 mb-4">${section.subsections.length} بخش</p>
+                                    <button class="w-full px-6 py-3 bg-gradient-to-r ${section.color} text-white rounded-xl font-bold hover:shadow-lg transition">
+                                        مشاهده سوالات
+                                    </button>
                                 </div>
-
-                                <div class="p-8 rounded-3xl border-2 border-emerald-100 bg-emerald-50/20">
-                                    ${(q.analysis && q.analysis.points) ? `<p class="text-slate-700 text-lg leading-8 mb-6">${q.analysis.points}</p>` : ''}
-                                    
-                                    ${(q.analysis && q.analysis.options && Array.isArray(q.analysis.options)) ? `
-                                        <ul class="space-y-5">
-                                            ${q.analysis.options.map((pt, idx) => `
-                                                <li class="flex items-start gap-4 text-slate-700 text-lg leading-8">
-                                                    <span class="w-2.5 h-2.5 rounded-full bg-emerald-500 shrink-0 mt-2.5"></span>
-                                                    <strong>${String.fromCharCode(65 + idx)}:</strong> ${pt}
-                                                </li>
-                                            `).join('')}
-                                        </ul>
-                                    ` : ''}
-                                </div>
-                            </div>
-                        ` : ''}
-                    </main>
-
-                    <footer class="bg-white/95 backdrop-blur-md border-t p-6 sticky bottom-0 z-40">
-                        <div class="max-w-5xl mx-auto flex gap-6">
-                            <button onclick="prev()" ${state.index === 0 ? 'disabled' : ''} class="flex-1 py-5 rounded-2xl border-2 border-slate-100 font-black text-slate-500 disabled:opacity-30 hover:bg-slate-50 transition text-lg">قبلی</button>
-                            <button onclick="state.showAnalysis=!state.showAnalysis;render()" class="p-5 rounded-2xl bg-blue-50 text-blue-600 hover:bg-blue-100 transition shadow-inner">
-                                <i data-lucide="lightbulb"></i>
-                            </button>
-                            <button onclick="next()" ${state.index === questions.length - 1 ? 'disabled' : ''} class="flex-1 py-5 rounded-2xl bg-slate-900 text-white font-black shadow-2xl hover:bg-black transition text-lg">بعدی</button>
+                            `).join('')}
                         </div>
-                    </footer>
+                    </div>
                 </div>
             `;
         }
 
-        async function initSubsections(sectionId) {
-            state.view = 'subsections';
+        function selectSection(sectionId) {
             state.section = sectionId;
+            state.view = 'subsections';
             state.subsection = null;
             state.index = 0;
             state.currentQuestions = [];
+            state.answers = {};
             save();
             render();
+            window.scrollTo(0, 0);
         }
 
-        async function initQuiz(sectionId, subsectionId, path) {
-            state.section = sectionId;
-            state.subsection = subsectionId;
+        function viewSubsections() {
+            const section = manifest.sections.find(s => s.id === state.section);
+            if (!section) return '<div>خطا</div>';
+
+            return `
+                <div class="min-h-screen bg-gradient-to-b from-blue-50 to-slate-50 py-8 px-4">
+                    <div class="max-w-4xl mx-auto">
+                        <button onclick="goBack()" class="flex items-center gap-2 text-blue-600 font-bold mb-8 hover:text-blue-700">
+                            <i data-lucide="arrow-right" class="w-5 h-5"></i>
+                            بازگشت
+                        </button>
+                        
+                        <h1 class="text-4xl font-black text-slate-800 mb-12">${section.title}</h1>
+                        
+                        <div class="space-y-4">
+                            ${section.subsections.map(sub => `
+                                <div class="glass rounded-2xl p-6 shadow-lg hover:shadow-xl transition cursor-pointer" 
+                                     onclick="selectSubsection('${sub.id}', '${sub.path.replace(/"/g, '\\\"')}')">
+                                    <div class="flex items-center justify-between">
+                                        <h3 class="text-xl font-bold text-slate-800">${sub.title}</h3>
+                                        <i data-lucide="chevron-left" class="w-6 h-6 text-slate-400"></i>
+                                    </div>
+                                </div>
+                            `).join('')}
+                        </div>
+                    </div>
+                </div>
+            `;
+        }
+
+        function selectSubsection(subId, path) {
+            state.subsection = subId;
+            state.view = 'quiz';
             state.index = 0;
+            state.answers = {};
             state.showAnalysis = false;
             
-            try {
-                const response = await fetch(path);
-                const data = await response.json();
-                state.currentQuestions = data.questions || [];
-                state.view = 'quiz';
-            } catch (e) {
-                console.error('Error loading questions:', e);
-                state.currentQuestions = [];
+            fetch(path)
+                .then(r => r.json())
+                .then(data => {
+                    state.currentQuestions = data.questions || [];
+                    save();
+                    render();
+                    window.scrollTo(0, 0);
+                })
+                .catch(e => {
+                    console.error('خطا در بارگیری سوالات:', e);
+                    alert('خطا در بارگیری سوالات!');
+                });
+        }
+
+        function viewQuiz() {
+            if (!state.currentQuestions.length) {
+                return `
+                    <div class="min-h-screen flex items-center justify-center">
+                        <div class="text-center">
+                            <p class="text-xl text-slate-600">بارگیری سوالات...</p>
+                        </div>
+                    </div>
+                `;
             }
-            
+
+            const q = state.currentQuestions[state.index];
+            const selectedIdx = state.answers[state.index];
+            const isAnswered = selectedIdx !== undefined;
+
+            return `
+                <div class="min-h-screen bg-gradient-to-b from-blue-50 to-slate-50 py-8 px-4">
+                    <div class="max-w-3xl mx-auto">
+                        <button onclick="goBack()" class="flex items-center gap-2 text-blue-600 font-bold mb-6 hover:text-blue-700">
+                            <i data-lucide="arrow-right" class="w-5 h-5"></i>
+                            بازگشت
+                        </button>
+
+                        <!-- Progress -->
+                        <div class="mb-8">
+                            <div class="flex justify-between text-sm text-slate-600 mb-2">
+                                <span>سوال ${state.index + 1} از ${state.currentQuestions.length}</span>
+                                <span>${Math.round((state.index / state.currentQuestions.length) * 100)}%</span>
+                            </div>
+                            <div class="w-full bg-slate-200 rounded-full h-2">
+                                <div class="bg-blue-600 h-2 rounded-full transition-all" style="width: ${(state.index / state.currentQuestions.length) * 100}%"></div>
+                            </div>
+                        </div>
+
+                        <!-- Question -->
+                        <div class="glass rounded-3xl p-8 shadow-xl mb-8">
+                            <h2 class="text-2xl font-bold text-slate-800 mb-8 leading-relaxed">${q.question}</h2>
+
+                            <!-- Options -->
+                            <div class="space-y-3">
+                                ${q.options.map((opt, idx) => `
+                                    <div class="option-card glass rounded-xl p-6 cursor-pointer transition
+                                        ${isAnswered && idx === q.correct_index ? 'border-2 border-green-500 bg-green-50' : ''}
+                                        ${isAnswered && selectedIdx === idx && idx !== q.correct_index ? 'border-2 border-red-500 bg-red-50' : ''}
+                                        ${!isAnswered ? 'hover:bg-white hover:border-2 hover:border-blue-300' : ''}"
+                                        ${!isAnswered ? `onclick="pick(${state.index}, ${idx})"` : ''}>
+                                        <div class="flex items-start gap-4">
+                                            <div class="w-10 h-10 rounded-full bg-slate-100 flex items-center justify-center flex-shrink-0 font-bold text-slate-600 ${isAnswered && idx === q.correct_index ? 'bg-green-200 text-green-700' : ''} ${isAnswered && selectedIdx === idx && idx !== q.correct_index ? 'bg-red-200 text-red-700' : ''}">
+                                                ${String.fromCharCode(65 + idx)}
+                                            </div>
+                                            <p class="text-lg text-slate-800 leading-relaxed">${opt}</p>
+                                        </div>
+                                    </div>
+                                `).join('')}
+                            </div>
+
+                            <!-- Analysis -->
+                            ${isAnswered && !state.showAnalysis ? `
+                                <button onclick="toggleAnalysis()" class="w-full mt-8 px-6 py-3 bg-blue-600 text-white rounded-xl font-bold hover:bg-blue-700 transition">
+                                    <i data-lucide="book-open" class="inline w-5 h-5 ml-2"></i>
+                                    نمایش تحلیل
+                                </button>
+                            ` : ''}
+
+                            ${state.showAnalysis && isAnswered ? `
+                                <div class="analysis-section mt-8 p-6 bg-blue-50 rounded-2xl">
+                                    <h3 class="text-lg font-bold text-blue-900 mb-4">تحلیل:</h3>
+                                    <p class="text-slate-700 mb-6 leading-relaxed">${q.analysis?.points || ''}</p>
+                                    <div class="space-y-3">
+                                        ${(q.analysis?.options || []).map((ana, idx) => `
+                                            <div class="flex gap-4 p-4 ${idx === q.correct_index ? 'bg-green-100 rounded-lg' : ''}">
+                                                <span class="font-bold text-slate-700 flex-shrink-0">${String.fromCharCode(65 + idx)}:</span>
+                                                <p class="text-slate-700">${ana}</p>
+                                            </div>
+                                        `).join('')}
+                                    </div>
+                                </div>
+                            ` : ''}
+                        </div>
+
+                        <!-- Navigation -->
+                        <div class="flex gap-4 justify-between">
+                            <button onclick="prev()" ${state.index === 0 ? 'disabled' : ''} class="flex-1 px-6 py-3 bg-slate-300 text-slate-800 rounded-xl font-bold hover:bg-slate-400 transition disabled:opacity-50">
+                                <i data-lucide="arrow-right" class="inline w-5 h-5 ml-2"></i>
+                                قبلی
+                            </button>
+                            <button onclick="next()" ${state.index === state.currentQuestions.length - 1 ? 'disabled' : ''} class="flex-1 px-6 py-3 bg-blue-600 text-white rounded-xl font-bold hover:bg-blue-700 transition disabled:opacity-50">
+                                بعدی
+                                <i data-lucide="arrow-left" class="inline w-5 h-5 mr-2"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            `;
+        }
+
+        function goBack() {
+            state.view = state.view === 'subsections' ? 'dashboard' : 'subsections';
+            state.index = 0;
+            state.currentQuestions = [];
+            state.answers = {};
+            state.showAnalysis = false;
             save();
             render();
+            window.scrollTo(0, 0);
         }
 
-        function handleLogin() {
-            const u = document.getElementById('u').value;
-            const p = document.getElementById('p').value;
-            if (u === 'admin' && p === 'admin') {
-                state.view = 'dashboard';
-                save();
-                render();
-            } else {
-                alert('نام کاربری یا رمز عبور نادرست است');
-            }
-        }
-
-        function logout() {
-            save(); // ذخیره وضعیت قبل از خروج
-            state.view = 'login';
+        function toggleAnalysis() {
+            state.showAnalysis = !state.showAnalysis;
             render();
         }
 
@@ -480,33 +428,5 @@
         load();
         render();
     </script>
-</body>
-<!DOCTYPE html>
-<html lang="fa" dir="rtl">
-<head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>بانک سوالات پزشکی</title>
-        <script src="https://cdn.tailwindcss.com"></script>
-        <style>
-                @import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@100;400;700&display=swap');
-                body {
-                        font-family: 'Vazirmatn', sans-serif;
-                        background-color: #f8fafc;
-                }
-        </style>
-<script type="importmap">
-{
-    "imports": {
-        "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
-        "react/": "https://esm.sh/react@^19.2.3/",
-        "react": "https://esm.sh/react@^19.2.3"
-    }
-}
-</script>
-</head>
-<body>
-        <div id="root"></div>
-        <script type="module" src="/index.tsx"></script>
 </body>
 </html>

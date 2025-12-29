@@ -5,14 +5,12 @@
   "questions": [
     {
       "id": 1,
-      "q": "بیمار ۶۵ ساله ventilated روز ۵ برای ARDS. درجه حرارت ۳۸.۷°C، سفید خون ۱۳.۲، lactate ۲.۱. تصویر قفسه سینه: bilateral lower lobe infiltrates، purulent sputum. کدام گام اول است؟",
       "options": [
         "Start empiric antibiotics فوری (piperacillin-tazobactam + fluoroquinolone)",
         "Endotracheal aspirate (ETA) برای Gram stain + culture + PCR",
         "Bronchoalveolar lavage (BAL) برای quantitative culture",
         "Start empiric antifungal + antibiotics"
       ],
-      "correct": 1,
       "analysis": {
         "options": [
           "Empiric antibiotics: reasonable لکن بدون culture بیش‌رو",
@@ -27,19 +25,24 @@
         ]
       },
       "difficulty": "medium",
-      "tags": ["VAP", "ventilator-associated pneumonia", "diagnosis", "culture"],
-      "reference": "VAP Clinical Diagnosis and Microbiological Sampling"
+      "tags": [
+        "VAP",
+        "ventilator-associated pneumonia",
+        "diagnosis",
+        "culture"
+      ],
+      "reference": "VAP Clinical Diagnosis and Microbiological Sampling",
+      "question": "بیمار ۶۵ ساله ventilated روز ۵ برای ARDS. درجه حرارت ۳۸.۷°C، سفید خون ۱۳.۲، lactate ۲.۱. تصویر قفسه سینه: bilateral lower lobe infiltrates، purulent sputum. کدام گام اول است؟",
+      "correct_index": 1
     },
     {
       "id": 2,
-      "q": "بیمار ۵۸ ساله در ICU روز ۸. ETA: Gram negative bacilli (GNB) و gram positive cocci (chains). کدام رژیم آنتی‌بیوتیکی مناسب است؟",
       "options": [
         "Ceftriaxone + vancomycin (single agent therapy)",
         "Piperacillin-tazobactam + ciprofloxacin + vancomycin",
         "Meropenem + tobramycin",
         "Imipenem + levofloxacin"
       ],
-      "correct": 1,
       "analysis": {
         "options": [
           "Ceftriaxone + vancomycin: inadequate coverage برای GNB",
@@ -54,19 +57,24 @@
         ]
       },
       "difficulty": "hard",
-      "tags": ["VAP", "antibiotic empiric therapy", "gram stain", "coverage"],
-      "reference": "VAP Empiric Antibiotic Selection Guidelines"
+      "tags": [
+        "VAP",
+        "antibiotic empiric therapy",
+        "gram stain",
+        "coverage"
+      ],
+      "reference": "VAP Empiric Antibiotic Selection Guidelines",
+      "question": "بیمار ۵۸ ساله در ICU روز ۸. ETA: Gram negative bacilli (GNB) و gram positive cocci (chains). کدام رژیم آنتی‌بیوتیکی مناسب است؟",
+      "correct_index": 1
     },
     {
       "id": 3,
-      "q": "بیمار ۶۲ ساله با ventilator-associated pneumonia. ETA: Pseudomonas aeruginosa (susceptible تنها برای fluoroquinolone و amikacin). کدام انتخاب مناسب است؟",
       "options": [
         "Ciprofloxacin IV high-dose (800 mg Q8H)",
         "Amikacin IV (۲۰ mg/kg) + fluoroquinolone",
         "Colistin (polymyxin E)",
         "Fluoroquinolone تنهایی (monotherapy)"
       ],
-      "correct": 1,
       "analysis": {
         "options": [
           "Ciprofloxacin تنها: resistance development risk",
@@ -81,19 +89,24 @@
         ]
       },
       "difficulty": "hard",
-      "tags": ["Pseudomonas", "VAP", "antibiotic combination", "resistance"],
-      "reference": "Pseudomonas aeruginosa VAP Management"
+      "tags": [
+        "Pseudomonas",
+        "VAP",
+        "antibiotic combination",
+        "resistance"
+      ],
+      "reference": "Pseudomonas aeruginosa VAP Management",
+      "question": "بیمار ۶۲ ساله با ventilator-associated pneumonia. ETA: Pseudomonas aeruginosa (susceptible تنها برای fluoroquinolone و amikacin). کدام انتخاب مناسب است؟",
+      "correct_index": 1
     },
     {
       "id": 4,
-      "q": "بیمار ۴۸ ساله در ICU روز ۳ با fever و chills پس از CVC insertion. Hemolytic، HR ۱۱۵، BP ۹۲/۶۰. کدام تشخیص احتمالی است؟",
       "options": [
         "CRBSI (Central Line-Related Bloodstream Infection)",
         "Septic thrombophlebitis",
         "Contamination نمونه خون",
         "SIRS از دیگر source"
       ],
-      "correct": 0,
       "analysis": {
         "options": [
           "CRBSI: fever + chills پس از CVC within ۴۸ ساعت",
@@ -108,19 +121,24 @@
         ]
       },
       "difficulty": "medium",
-      "tags": ["CRBSI", "catheter-related", "bloodstream infection", "fever"],
-      "reference": "CRBSI Diagnosis and Management Guidelines"
+      "tags": [
+        "CRBSI",
+        "catheter-related",
+        "bloodstream infection",
+        "fever"
+      ],
+      "reference": "CRBSI Diagnosis and Management Guidelines",
+      "question": "بیمار ۴۸ ساله در ICU روز ۳ با fever و chills پس از CVC insertion. Hemolytic، HR ۱۱۵، BP ۹۲/۶۰. کدام تشخیص احتمالی است؟",
+      "correct_index": 0
     },
     {
       "id": 5,
-      "q": "بیمار ۵۵ ساله با CRBSI. Paired blood cultures: MRSA از هر دو (peripheral و via line). کدام اقدام درست است؟",
       "options": [
         "Remove CVC + vancomycin IV × ۱۰-۱۴ روز",
         "Antibiotic lock therapy فقط (بدون removal)",
         "Remove CVC + vancomycin ۱۴-۲۸ روز + echocardiography",
         "Culture-directed therapy بدون CVC removal اگر clinically stable"
       ],
-      "correct": 2,
       "analysis": {
         "options": [
           "Remove + ۱۰-۱۴ روز: برای غیر-complicated CRBSI",
@@ -135,19 +153,24 @@
         ]
       },
       "difficulty": "hard",
-      "tags": ["CRBSI", "MRSA", "line removal", "endocarditis"],
-      "reference": "CRBSI Management and CVC Removal Decisions"
+      "tags": [
+        "CRBSI",
+        "MRSA",
+        "line removal",
+        "endocarditis"
+      ],
+      "reference": "CRBSI Management and CVC Removal Decisions",
+      "question": "بیمار ۵۵ ساله با CRBSI. Paired blood cultures: MRSA از هر دو (peripheral و via line). کدام اقدام درست است؟",
+      "correct_index": 2
     },
     {
       "id": 6,
-      "q": "بیمار ۶۸ ساله در ICU روز ۱۲ با fever، sputum مورد بررسی: Candida albicans. کدام تصمیم درست است؟",
       "options": [
         "Start fluconazole IV (monotherapy)",
         "Assess risk: if risk factors → treat؛ if not → monitor",
         "Start echinocandin + voriconazole (combination)",
         "Antifungal نه توصیه شده (Candida oral flora است)"
       ],
-      "correct": 1,
       "analysis": {
         "options": [
           "Fluconazole: reasonable لکن risk assessment ضروری",
@@ -162,19 +185,24 @@
         ]
       },
       "difficulty": "hard",
-      "tags": ["Candida", "respiratory", "colonization", "antifungal"],
-      "reference": "Candida Respiratory Infection vs Colonization Guidelines"
+      "tags": [
+        "Candida",
+        "respiratory",
+        "colonization",
+        "antifungal"
+      ],
+      "reference": "Candida Respiratory Infection vs Colonization Guidelines",
+      "question": "بیمار ۶۸ ساله در ICU روز ۱۲ با fever، sputum مورد بررسی: Candida albicans. کدام تصمیم درست است؟",
+      "correct_index": 1
     },
     {
       "id": 7,
-      "q": "بیمار ۶۲ ساله با candidemia. Candida parapsilosis از blood culture. کدام انتخاب مناسب است؟",
       "options": [
         "Fluconazole IV (۴۰۰ mg loading پھر ۲۰۰-۴۰۰ mg)",
         "Echinocandin (micafungin/anidulafungin) اول",
         "Amphotericin B liposomal",
         "Voriconazole"
       ],
-      "correct": 0,
       "analysis": {
         "options": [
           "Fluconazole: مناسب برای C. parapsilosis (non-albicans susceptible)",
@@ -189,19 +217,24 @@
         ]
       },
       "difficulty": "medium",
-      "tags": ["candidemia", "Candida parapsilosis", "fluconazole", "bloodstream infection"],
-      "reference": "Candidemia Management Guidelines IDSA"
+      "tags": [
+        "candidemia",
+        "Candida parapsilosis",
+        "fluconazole",
+        "bloodstream infection"
+      ],
+      "reference": "Candidemia Management Guidelines IDSA",
+      "question": "بیمار ۶۲ ساله با candidemia. Candida parapsilosis از blood culture. کدام انتخاب مناسب است؟",
+      "correct_index": 0
     },
     {
       "id": 8,
-      "q": "بیمار ۵۲ ساله با presumed VAP. Day ۲ therapy: سوخت‌طلب antibiotics (کنترل‌نشده). دوباره culture: ESBL-producing E. coli. کدام escalation مناسب است؟",
       "options": [
         "Continue same therapy (ESBL E. coli تا اکنون تحت کنترل)",
         "Carbapenem (meropenem یا imipenem) + aminoglycoside",
         "Colistin monotherapy",
         "Add vancomycin (supplemental coverage)"
       ],
-      "correct": 1,
       "analysis": {
         "options": [
           "Continue: ESBL مقاوم به beta-lactam/inhibitor است",
@@ -216,19 +249,24 @@
         ]
       },
       "difficulty": "hard",
-      "tags": ["ESBL", "VAP", "escalation", "carbapenem"],
-      "reference": "ESBL Gram-Negative Infection Management"
+      "tags": [
+        "ESBL",
+        "VAP",
+        "escalation",
+        "carbapenem"
+      ],
+      "reference": "ESBL Gram-Negative Infection Management",
+      "question": "بیمار ۵۲ ساله با presumed VAP. Day ۲ therapy: سوخت‌طلب antibiotics (کنترل‌نشده). دوباره culture: ESBL-producing E. coli. کدام escalation مناسب است؟",
+      "correct_index": 1
     },
     {
       "id": 9,
-      "q": "بیمار ۶۵ ساله با HAP (بیمارستانی اما غیر ICU). Sputum: Streptococcus pneumoniae (penicillin-susceptible)، no Pseudomonas risk. کدام رژیم مناسب است؟",
       "options": [
         "Ceftriaxone IV (۱ g Q۸H)",
         "Piperacillin-tazobactam + ciprofloxacin",
         "Vancomycin + carbapenem",
         "Levofloxacin monotherapy"
       ],
-      "correct": 0,
       "analysis": {
         "options": [
           "Ceftriaxone: adequate برای penicillin-susceptible pneumococcus",
@@ -243,19 +281,24 @@
         ]
       },
       "difficulty": "medium",
-      "tags": ["HAP", "hospital-acquired pneumonia", "penicillin-susceptible", "streptococcus"],
-      "reference": "HAP vs VAP Management Distinction"
+      "tags": [
+        "HAP",
+        "hospital-acquired pneumonia",
+        "penicillin-susceptible",
+        "streptococcus"
+      ],
+      "reference": "HAP vs VAP Management Distinction",
+      "question": "بیمار ۶۵ ساله با HAP (بیمارستانی اما غیر ICU). Sputum: Streptococcus pneumoniae (penicillin-susceptible)، no Pseudomonas risk. کدام رژیم مناسب است؟",
+      "correct_index": 0
     },
     {
       "id": 10,
-      "q": "بیمار ۵۹ ساله ventilated روز ۷ با VAP. Day ۳ therapy: کاهش fever، WBC normalizing، sputum کاهش. کدام اقدام مناسب است؟",
       "options": [
         "Continue same antibiotics تا ۷ روز کامل",
         "De-escalate به narrow-spectrum antibiotics",
         "Stop antibiotics (clinical improvement)",
         "Extend تا ۱۴ روز (prophylaxis)"
       ],
-      "correct": 0,
       "analysis": {
         "options": [
           "Continue: standard duration ۷-۸ روز VAP",
@@ -270,19 +313,24 @@
         ]
       },
       "difficulty": "medium",
-      "tags": ["VAP", "duration therapy", "clinical improvement", "de-escalation"],
-      "reference": "Duration of Antibiotic Therapy in VAP"
+      "tags": [
+        "VAP",
+        "duration therapy",
+        "clinical improvement",
+        "de-escalation"
+      ],
+      "reference": "Duration of Antibiotic Therapy in VAP",
+      "question": "بیمار ۵۹ ساله ventilated روز ۷ با VAP. Day ۳ therapy: کاهش fever، WBC normalizing، sputum کاهش. کدام اقدام مناسب است؟",
+      "correct_index": 0
     },
     {
       "id": 11,
-      "q": "بیمار ۶۰ ساله در ICU روز ۴ بعد از abdominal surgery. Fever ۳۸.۹°C، peritoneal drain: turbid fluid. کدام تشخیص احتمالی است؟",
       "options": [
         "Surgical site infection (superficial incisional)",
         "Intra-abdominal infection/anastomotic leak",
         "Bloodstream infection فقط",
         "SIRS post-operative معمول"
       ],
-      "correct": 1,
       "analysis": {
         "options": [
           "Superficial: عام‌تر لکن turbid drainage نشان‌دهنده deeper",
@@ -297,19 +345,24 @@
         ]
       },
       "difficulty": "medium",
-      "tags": ["post-operative infection", "intra-abdominal", "drainage", "fever"],
-      "reference": "Post-operative Intra-abdominal Infection Diagnosis"
+      "tags": [
+        "post-operative infection",
+        "intra-abdominal",
+        "drainage",
+        "fever"
+      ],
+      "reference": "Post-operative Intra-abdominal Infection Diagnosis",
+      "question": "بیمار ۶۰ ساله در ICU روز ۴ بعد از abdominal surgery. Fever ۳۸.۹°C، peritoneal drain: turbid fluid. کدام تشخیص احتمالی است؟",
+      "correct_index": 1
     },
     {
       "id": 12,
-      "q": "بیمار ۵۶ ساله با sepsis و multi-drug-resistant Acinetobacter baumannii (MDR-AB) از blood. Only susceptible تا colistin. کدام شود؟",
       "options": [
         "Colistin (polymyxin E) میلی‌گرم/کیلو‌گرم/روز",
         "Tigecycline monotherapy",
         "Colistin + rifampicin (synergy)",
         "Aerosolized colistin (برای VAP)"
       ],
-      "correct": 2,
       "analysis": {
         "options": [
           "Colistin: monotherapy inadequate برای serious infection",
@@ -324,19 +377,24 @@
         ]
       },
       "difficulty": "hard",
-      "tags": ["MDR", "Acinetobacter baumannii", "colistin", "bloodstream infection"],
-      "reference": "MDR-AB Management and Colistin Use"
+      "tags": [
+        "MDR",
+        "Acinetobacter baumannii",
+        "colistin",
+        "bloodstream infection"
+      ],
+      "reference": "MDR-AB Management and Colistin Use",
+      "question": "بیمار ۵۶ ساله با sepsis و multi-drug-resistant Acinetobacter baumannii (MDR-AB) از blood. Only susceptible تا colistin. کدام شود؟",
+      "correct_index": 2
     },
     {
       "id": 13,
-      "q": "بیمار ۶۳ ساله در ICU با fungemia (Candida auris). Echinocandin treatment شروع‌شده. Day ۵: repeat culture still positive. کدام اقدام درست است؟",
       "options": [
         "Continue echinocandin، cultures may persist",
         "Switch تا voriconazole (alternative coverage)",
         "Add lipid formulation amphotericin B",
         "Line removal + source control assessment"
       ],
-      "correct": 3,
       "analysis": {
         "options": [
           "Continue: Candida auris خطرناک است، persistence sign",
@@ -351,19 +409,24 @@
         ]
       },
       "difficulty": "hard",
-      "tags": ["Candida auris", "fungemia", "persistent", "source control"],
-      "reference": "Candida auris Infection Management MMWR"
+      "tags": [
+        "Candida auris",
+        "fungemia",
+        "persistent",
+        "source control"
+      ],
+      "reference": "Candida auris Infection Management MMWR",
+      "question": "بیمار ۶۳ ساله در ICU با fungemia (Candida auris). Echinocandin treatment شروع‌شده. Day ۵: repeat culture still positive. کدام اقدام درست است؟",
+      "correct_index": 3
     },
     {
       "id": 14,
-      "q": "بیمار ۵۲ ساله ventilated روز ۶ با مشکوک VAP. Early-onset VAP vs late-onset؟ کدام مقسوم‌بندی صحیح است؟",
       "options": [
         "Early: <۲ روز intubation؛ Late: ≥۲ روز",
         "Early: <۴۸ ساعت intubation؛ Late: ≥۴۸ ساعت",
         "Early: <۳ روز intubation؛ Late: ≥۳ روز",
         "تقسیم‌بندی بر اساس severity آن نه timing"
       ],
-      "correct": 1,
       "analysis": {
         "options": [
           "۲ روز: غیر‌دقیق، بیشتر sources ۴۸ ساعت",
@@ -378,19 +441,24 @@
         ]
       },
       "difficulty": "easy",
-      "tags": ["VAP", "early-onset", "late-onset", "classification"],
-      "reference": "VAP Early vs Late Onset Classification"
+      "tags": [
+        "VAP",
+        "early-onset",
+        "late-onset",
+        "classification"
+      ],
+      "reference": "VAP Early vs Late Onset Classification",
+      "question": "بیمار ۵۲ ساله ventilated روز ۶ با مشکوک VAP. Early-onset VAP vs late-onset؟ کدام مقسوم‌بندی صحیح است؟",
+      "correct_index": 1
     },
     {
       "id": 15,
-      "q": "بیمار ۶۴ ساله با early-onset VAP (day ۲ ventilation). Sputum Gram stain: Haemophilus influenzae (presumed). کدام rژیم مناسب است؟",
       "options": [
         "Ceftriaxone IV یا ampicillin-sulbactam",
         "Piperacillin-tazobactam + vancomycin + ciprofloxacin",
         "Meropenem + tobramycin",
         "Fluoroquinolone تنهایی"
       ],
-      "correct": 0,
       "analysis": {
         "options": [
           "Ceftriaxone/ampicillin-sulbactam: adequate برای early H. influenzae",
@@ -405,8 +473,14 @@
         ]
       },
       "difficulty": "medium",
-      "tags": ["early-onset VAP", "Haemophilus influenzae", "de-escalation"],
-      "reference": "Early-onset VAP Antibiotic Selection"
+      "tags": [
+        "early-onset VAP",
+        "Haemophilus influenzae",
+        "de-escalation"
+      ],
+      "reference": "Early-onset VAP Antibiotic Selection",
+      "question": "بیمار ۶۴ ساله با early-onset VAP (day ۲ ventilation). Sputum Gram stain: Haemophilus influenzae (presumed). کدام rژیم مناسب است؟",
+      "correct_index": 0
     }
   ]
 }

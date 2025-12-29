@@ -5,14 +5,12 @@
   "questions": [
     {
       "id": 1,
-      "q": "بیمار ۶۵ ساله with CKD. eGFR = ۱۵ mL/min/۱.۷۳m²، asymptomatic. Creatinine stable ۶ months. Indications for starting dialysis؟",
       "options": [
         "Start dialysis (eGFR <۲۰ automatic indication)",
         "Continue conservative management + monitor (no urgent symptoms)",
         "Start dialysis only if symptoms/complications develop (AEIOU criteria)",
         "Start PD instead of hemodialysis"
       ],
-      "correct": 2,
       "analysis": {
         "options": [
           "Automatic eGFR: not evidence-based",
@@ -27,19 +25,24 @@
         ]
       },
       "difficulty": "hard",
-      "tags": ["CKD", "dialysis initiation", "AEIOU criteria", "eGFR"],
-      "reference": "KDIGO Dialysis Initiation Guidelines"
+      "tags": [
+        "CKD",
+        "dialysis initiation",
+        "AEIOU criteria",
+        "eGFR"
+      ],
+      "reference": "KDIGO Dialysis Initiation Guidelines",
+      "question": "بیمار ۶۵ ساله with CKD. eGFR = ۱۵ mL/min/۱.۷۳m²، asymptomatic. Creatinine stable ۶ months. Indications for starting dialysis؟",
+      "correct_index": 2
     },
     {
       "id": 2,
-      "q": "بیمار ۷۲ ساله CKD stage ۴ (eGFR = ۲۳). Normal K+ = ۴.۲ mEq/L، normal acid-base. Asymptomatic. Preparing for dialysis. کدام step؟",
       "options": [
         "Start hemodialysis immediately",
         "Create arteriovenous fistula (AV fistula) for future access",
         "Start peritoneal dialysis (PD)",
         "Kidney transplant evaluation"
       ],
-      "correct": 1,
       "analysis": {
         "options": [
           "Immediate dialysis: not indicated asymptomatic",
@@ -54,19 +57,24 @@
         ]
       },
       "difficulty": "medium",
-      "tags": ["CKD stage 4", "vascular access", "AV fistula", "preparation"],
-      "reference": "Vascular Access Planning in CKD"
+      "tags": [
+        "CKD stage 4",
+        "vascular access",
+        "AV fistula",
+        "preparation"
+      ],
+      "reference": "Vascular Access Planning in CKD",
+      "question": "بیمار ۷۲ ساله CKD stage ۴ (eGFR = ۲۳). Normal K+ = ۴.۲ mEq/L، normal acid-base. Asymptomatic. Preparing for dialysis. کدام step؟",
+      "correct_index": 1
     },
     {
       "id": 3,
-      "q": "بیمار ۵ۈ ساله on hemodialysis ۳ months. Now with muscle cramps during dialysis + hypotension. BP drops ۲۰ mmHg during session. Management؟",
       "options": [
         "Increase dialysate sodium concentration",
         "Reduce ultrafiltration rate (UF)",
         "Increase session frequency",
         "Any combination above (sodium + UF reduction)"
       ],
-      "correct": 3,
       "analysis": {
         "options": [
           "Sodium: expands intravascular volume",
@@ -81,19 +89,24 @@
         ]
       },
       "difficulty": "medium",
-      "tags": ["hemodialysis", "intradialytic hypotension", "ultrafiltration", "cramping"],
-      "reference": "Intradialytic Hypotension Management"
+      "tags": [
+        "hemodialysis",
+        "intradialytic hypotension",
+        "ultrafiltration",
+        "cramping"
+      ],
+      "reference": "Intradialytic Hypotension Management",
+      "question": "بیمار ۵ۈ ساله on hemodialysis ۳ months. Now with muscle cramps during dialysis + hypotension. BP drops ۲۰ mmHg during session. Management؟",
+      "correct_index": 3
     },
     {
       "id": 4,
-      "q": "بیمار ۶۰ ساله on peritoneal dialysis (PD) ۶ months. Now with fever + cloudy peritoneal fluid. WBC ۲۵۰۰/µL (>۵۰% neutrophils). Culture pending. کدام اقدام اول‌ویت؟",
       "options": [
         "Start empiric antibiotics (cefazolin + ceftazidime) IP",
         "Wait for culture results before antibiotics",
         "Remove PD catheter immediately",
         "Switch to hemodialysis temporarily"
       ],
-      "correct": 0,
       "analysis": {
         "options": [
           "Empiric: diagnostic + therapeutic",
@@ -108,19 +121,23 @@
         ]
       },
       "difficulty": "medium",
-      "tags": ["peritoneal dialysis", "peritonitis", "empiric antibiotics"],
-      "reference": "PD Peritonitis Diagnosis and Treatment"
+      "tags": [
+        "peritoneal dialysis",
+        "peritonitis",
+        "empiric antibiotics"
+      ],
+      "reference": "PD Peritonitis Diagnosis and Treatment",
+      "question": "بیمار ۶۰ ساله on peritoneal dialysis (PD) ۶ months. Now with fever + cloudy peritoneal fluid. WBC ۲۵۰۰/µL (>۵۰% neutrophils). Culture pending. کدام اقدام اول‌ویت؟",
+      "correct_index": 0
     },
     {
       "id": 5,
-      "q": "بیمار ۵۵ ساله with CKD stage ۵ (eGFR ۸ mL/min). Prepared for dialysis. Which vascular access has BEST long-term survival؟",
       "options": [
         "Temporary central venous catheter (CVC)",
         "Permanent tunneled catheter",
         "Arteriovenous fistula (AV fistula)",
         "Arteriovenous graft (AV graft)"
       ],
-      "correct": 2,
       "analysis": {
         "options": [
           "CVC: temporary، infection risk high",
@@ -135,19 +152,24 @@
         ]
       },
       "difficulty": "easy",
-      "tags": ["vascular access", "AV fistula", "hemodialysis", "long-term"],
-      "reference": "Vascular Access Selection Guidelines"
+      "tags": [
+        "vascular access",
+        "AV fistula",
+        "hemodialysis",
+        "long-term"
+      ],
+      "reference": "Vascular Access Selection Guidelines",
+      "question": "بیمار ۵۵ ساله with CKD stage ۵ (eGFR ۸ mL/min). Prepared for dialysis. Which vascular access has BEST long-term survival؟",
+      "correct_index": 2
     },
     {
       "id": 6,
-      "q": "بیمار ۶۸ ساله on hemodialysis ۲ years. Now with bone pain + high PTH (۹۵۰ pg/mL) + calcium ۹.۸ mg/dL + phosphate ۷.۵ mg/dL. Management?",
       "options": [
         "Increase dialysate calcium",
         "Start calcium-based phosphate binder + vitamin D analog",
         "Subtotal parathyroidectomy",
         "Switch to nocturnal dialysis"
       ],
-      "correct": 1,
       "analysis": {
         "options": [
           "Increase dialysate calcium: risks hypercalcemia",
@@ -162,19 +184,24 @@
         ]
       },
       "difficulty": "medium",
-      "tags": ["secondary hyperparathyroidism", "CKD-MBD", "PTH", "phosphate"],
-      "reference": "CKD-Mineral Bone Disorder Management"
+      "tags": [
+        "secondary hyperparathyroidism",
+        "CKD-MBD",
+        "PTH",
+        "phosphate"
+      ],
+      "reference": "CKD-Mineral Bone Disorder Management",
+      "question": "بیمار ۶۸ ساله on hemodialysis ۲ years. Now with bone pain + high PTH (۹۵۰ pg/mL) + calcium ۹.۸ mg/dL + phosphate ۷.۵ mg/dL. Management?",
+      "correct_index": 1
     },
     {
       "id": 7,
-      "q": "بیمار ۵۲ ساله on PD ۳ years. Now with exit-site infection (erythema + drainage). Culture: Staphylococcus aureus. Management?",
       "options": [
         "Continue PD + empiric antibiotics (oral ciprofloxacin)",
         "Topical antibiotics only (mupirocin)",
         "Remove catheter (exit-site infection = contraindication)",
         "Continue PD + IV antibiotics (vancomycin)"
       ],
-      "correct": 3,
       "analysis": {
         "options": [
           "Oral ciprofloxacin: may be insufficient",
@@ -189,19 +216,24 @@
         ]
       },
       "difficulty": "medium",
-      "tags": ["PD", "exit-site infection", "Staphylococcus aureus", "vancomycin"],
-      "reference": "PD Catheter-Related Infections Management"
+      "tags": [
+        "PD",
+        "exit-site infection",
+        "Staphylococcus aureus",
+        "vancomycin"
+      ],
+      "reference": "PD Catheter-Related Infections Management",
+      "question": "بیمار ۵۲ ساله on PD ۳ years. Now with exit-site infection (erythema + drainage). Culture: Staphylococcus aureus. Management?",
+      "correct_index": 3
     },
     {
       "id": 8,
-      "q": "بیمار ۶۵ ساله with CKD stage ۳b (eGFR ۳۰ mL/min). BP ۱۵۰/۹۰ (on lisinopril). Proteinuria ۲.۱ g/day. Target blood pressure?",
       "options": [
         "<۱۳۰/۸۰ mmHg (KDIGO target)",
         "<۱۴۰/۹۰ mmHg (standard target)",
         "<۱۲۰/۸۰ mmHg (aggressive)",
         "Any <۱۵۰ systolic acceptable"
       ],
-      "correct": 0,
       "analysis": {
         "options": [
           "KDIGO: <۱۳۰/۸۰ for CKD with albuminuria",
@@ -216,19 +248,24 @@
         ]
       },
       "difficulty": "medium",
-      "tags": ["CKD", "blood pressure target", "proteinuria", "KDIGO"],
-      "reference": "KDIGO CKD Blood Pressure Management"
+      "tags": [
+        "CKD",
+        "blood pressure target",
+        "proteinuria",
+        "KDIGO"
+      ],
+      "reference": "KDIGO CKD Blood Pressure Management",
+      "question": "بیمار ۶۵ ساله with CKD stage ۳b (eGFR ۳۰ mL/min). BP ۱۵۰/۹۰ (on lisinopril). Proteinuria ۲.۱ g/day. Target blood pressure?",
+      "correct_index": 0
     },
     {
       "id": 9,
-      "q": "بیمار ۷۰ ساله on hemodialysis (eGFR → ۴ mL/min). Now with anemia (Hgb ۸.۸ g/dL). Ferritin ۳۵۰ ng/mL (normal-high). TSAT ۲۲%. Management?",
       "options": [
         "Increase ESA (erythropoiesis-stimulating agent) dose",
         "Add IV iron supplementation",
         "Transfusion (target Hgb ۱۰ g/dL)",
         "Check hepcidin level"
       ],
-      "correct": 1,
       "analysis": {
         "options": [
           "ESA: may be adequate if iron-replete",
@@ -243,19 +280,24 @@
         ]
       },
       "difficulty": "medium",
-      "tags": ["CKD anemia", "ESA", "iron supplementation", "TSAT"],
-      "reference": "CKD Anemia Management KDIGO"
+      "tags": [
+        "CKD anemia",
+        "ESA",
+        "iron supplementation",
+        "TSAT"
+      ],
+      "reference": "CKD Anemia Management KDIGO",
+      "question": "بیمار ۷۰ ساله on hemodialysis (eGFR → ۴ mL/min). Now with anemia (Hgb ۸.۸ g/dL). Ferritin ۳۵۰ ng/mL (normal-high). TSAT ۲۲%. Management?",
+      "correct_index": 1
     },
     {
       "id": 10,
-      "q": "بیمار ۵۸ ساله with CKD stage ۵. Decide: hemodialysis vs peritoneal dialysis. Age، no comorbidities، intact hands. Which modality?",
       "options": [
         "Hemodialysis only (standard)",
         "Peritoneal dialysis only (preferred)",
         "Either appropriate (individualize)",
         "Combined modality (both)"
       ],
-      "correct": 2,
       "analysis": {
         "options": [
           "HD only: not mandatory",
@@ -270,19 +312,24 @@
         ]
       },
       "difficulty": "medium",
-      "tags": ["dialysis modality", "hemodialysis", "peritoneal dialysis", "individualization"],
-      "reference": "Dialysis Modality Selection Guidelines"
+      "tags": [
+        "dialysis modality",
+        "hemodialysis",
+        "peritoneal dialysis",
+        "individualization"
+      ],
+      "reference": "Dialysis Modality Selection Guidelines",
+      "question": "بیمار ۵۸ ساله with CKD stage ۵. Decide: hemodialysis vs peritoneal dialysis. Age، no comorbidities، intact hands. Which modality?",
+      "correct_index": 2
     },
     {
       "id": 11,
-      "q": "بیمار ۶۲ ساله on hemodialysis ۱ year. Now with access thrombosis (no blood flow AV fistula). Imaging: clotted fistula. Management?",
       "options": [
         "Surgical revision (anastomosis)",
         "Thrombolysis (declot procedure)",
         "Create new access (different site)",
         "Temporary CVC while planning"
       ],
-      "correct": 3,
       "analysis": {
         "options": [
           "Revision: option اگر salvageable",
@@ -297,19 +344,24 @@
         ]
       },
       "difficulty": "medium",
-      "tags": ["vascular access", "thrombosis", "AV fistula", "emergency"],
-      "reference": "Hemodialysis Vascular Access Thrombosis Management"
+      "tags": [
+        "vascular access",
+        "thrombosis",
+        "AV fistula",
+        "emergency"
+      ],
+      "reference": "Hemodialysis Vascular Access Thrombosis Management",
+      "question": "بیمار ۶۲ ساله on hemodialysis ۱ year. Now with access thrombosis (no blood flow AV fistula). Imaging: clotted fistula. Management?",
+      "correct_index": 3
     },
     {
       "id": 12,
-      "q": "بیمار ۶۵ ساله CKD stage ۳a (eGFR ۴۵). Medications: lisinopril، metformin، aspirin. eGFR declining ۵ mL/min/year. Adjust medications?",
       "options": [
         "Continue all (eGFR ۴۵ tolerates)",
         "Hold metformin (eGFR <۴۵ contraindicated)",
         "Hold metformin (eGFR <۳۰ contraindicated)",
         "Hold aspirin (CKD bleeding risk)"
       ],
-      "correct": 2,
       "analysis": {
         "options": [
           "Continue: metformin threshold approaching",
@@ -324,19 +376,24 @@
         ]
       },
       "difficulty": "medium",
-      "tags": ["CKD", "medication adjustment", "metformin", "eGFR threshold"],
-      "reference": "Metformin Use in CKD KDIGO Update"
+      "tags": [
+        "CKD",
+        "medication adjustment",
+        "metformin",
+        "eGFR threshold"
+      ],
+      "reference": "Metformin Use in CKD KDIGO Update",
+      "question": "بیمار ۶۵ ساله CKD stage ۳a (eGFR ۴۵). Medications: lisinopril، metformin، aspirin. eGFR declining ۵ mL/min/year. Adjust medications?",
+      "correct_index": 2
     },
     {
       "id": 13,
-      "q": "بیمار ۷۵ ساله on hemodialysis ۵ years. Now with restless legs + muscle twitching + delirium. Corrected calcium = ۸.۲ mg/dL. Management؟",
       "options": [
         "Increase dialysis intensity (remove uremic toxins)",
         "Start calcium supplementation",
         "Stop phosphate binder",
         "Reduce dialysate potassium"
       ],
-      "correct": 0,
       "analysis": {
         "options": [
           "Uremia: dialysis inadequate",
@@ -351,19 +408,24 @@
         ]
       },
       "difficulty": "hard",
-      "tags": ["hemodialysis", "uremia", "inadequate dialysis", "Kt/V"],
-      "reference": "Dialysis Adequacy Assessment Kt/V"
+      "tags": [
+        "hemodialysis",
+        "uremia",
+        "inadequate dialysis",
+        "Kt/V"
+      ],
+      "reference": "Dialysis Adequacy Assessment Kt/V",
+      "question": "بیمار ۷۵ ساله on hemodialysis ۵ years. Now with restless legs + muscle twitching + delirium. Corrected calcium = ۸.۲ mg/dL. Management؟",
+      "correct_index": 0
     },
     {
       "id": 14,
-      "q": "بیمار ۵۰ ساله with CKD stage ۴ (eGFR = ۲۸). Offered: preemptive living-related kidney transplant. Current creatinine ۲.۸ mg/dL (stable). Advantage of preemptive transplant؟",
       "options": [
         "Avoid dialysis altogether",
         "Better graft survival (no dialysis exposure)",
         "Improved quality of life (freedom from dialysis)",
         "All above correct"
       ],
-      "correct": 3,
       "analysis": {
         "options": [
           "Avoid dialysis: true",
@@ -378,19 +440,24 @@
         ]
       },
       "difficulty": "medium",
-      "tags": ["preemptive transplant", "living donor", "CKD stage 4", "quality of life"],
-      "reference": "Preemptive Kidney Transplantation Benefits"
+      "tags": [
+        "preemptive transplant",
+        "living donor",
+        "CKD stage 4",
+        "quality of life"
+      ],
+      "reference": "Preemptive Kidney Transplantation Benefits",
+      "question": "بیمار ۵۰ ساله with CKD stage ۴ (eGFR = ۲۸). Offered: preemptive living-related kidney transplant. Current creatinine ۲.۸ mg/dL (stable). Advantage of preemptive transplant؟",
+      "correct_index": 3
     },
     {
       "id": 15,
-      "q": "بیمار ۶۰ ساله on hemodialysis ۳ years. Predialysis BUN = ۶۸ mg/dL، postdialysis = ۱۲ mg/dL. Urea reduction ratio (URR) = ۸۲%. Assessment؟",
       "options": [
         "Adequate dialysis (URR >۶۵%)",
         "Inadequate (target Kt/V ۱.۲)",
         "Adequate but symptoms persist (uremia)",
         "Over-dialysis (risk hypotension)"
       ],
-      "correct": 0,
       "analysis": {
         "options": [
           "URR ۸۲%: >۶۵% = adequate",
@@ -405,8 +472,14 @@
         ]
       },
       "difficulty": "medium",
-      "tags": ["dialysis adequacy", "URR", "urea reduction ratio"],
-      "reference": "Dialysis Adequacy Measurement URR and Kt/V"
+      "tags": [
+        "dialysis adequacy",
+        "URR",
+        "urea reduction ratio"
+      ],
+      "reference": "Dialysis Adequacy Measurement URR and Kt/V",
+      "question": "بیمار ۶۰ ساله on hemodialysis ۳ years. Predialysis BUN = ۶۸ mg/dL، postdialysis = ۱۲ mg/dL. Urea reduction ratio (URR) = ۸۲%. Assessment؟",
+      "correct_index": 0
     }
   ]
 }

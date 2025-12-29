@@ -5,14 +5,12 @@
   "questions": [
     {
       "id": 1,
-      "q": "بیمار ۶۵ ساله با pneumonia. ABG: pH ۷.۳۸، PaCO₂ ۳۸ mmHg، PaO₂ ۶۵ mmHg، FiO₂ ۰.۴۵. A–a gradient؟ کدام است؟",
       "options": [
         "A–a gradient = ۱۵ mmHg",
         "A–a gradient = ۴۸ mmHg",
         "A–a gradient = ۳۰ mmHg",
         "A–a gradient = ۸ mmHg"
       ],
-      "correct": 2,
       "analysis": {
         "options": [
           "۱۵: دقیق نیست",
@@ -27,19 +25,24 @@
         ]
       },
       "difficulty": "medium",
-      "tags": ["A-a gradient", "hypoxemia", "ABG", "oxygenation"],
-      "reference": "A–a Gradient Calculation and Interpretation"
+      "tags": [
+        "A-a gradient",
+        "hypoxemia",
+        "ABG",
+        "oxygenation"
+      ],
+      "reference": "A–a Gradient Calculation and Interpretation",
+      "question": "بیمار ۶۵ ساله با pneumonia. ABG: pH ۷.۳۸، PaCO₂ ۳۸ mmHg، PaO₂ ۶۵ mmHg، FiO₂ ۰.۴۵. A–a gradient؟ کدام است؟",
+      "correct_index": 2
     },
     {
       "id": 2,
-      "q": "بیمار با PaO₂ ۷۰ mmHg (FiO₂ ۰.۵). بعد از اکسیژن ۱۰۰%: PaO₂ ۷۵ mmHg. کدام مسئله احتمالی است؟",
       "options": [
         "V/Q mismatch (مناطق کم perfusion)",
         "Diffusion impairment (تنهایی)",
         "True shunt (perfused non-ventilated areas)",
         "Hypoventilation"
       ],
-      "correct": 2,
       "analysis": {
         "options": [
           "V/Q: O₂ بهبودی ۵۰+ mmHg معمول",
@@ -54,19 +57,23 @@
         ]
       },
       "difficulty": "hard",
-      "tags": ["shunt physiology", "FiO₂ response", "oxygen challenge test"],
-      "reference": "Shunt vs V/Q Mismatch Differentiation"
+      "tags": [
+        "shunt physiology",
+        "FiO₂ response",
+        "oxygen challenge test"
+      ],
+      "reference": "Shunt vs V/Q Mismatch Differentiation",
+      "question": "بیمار با PaO₂ ۷۰ mmHg (FiO₂ ۰.۵). بعد از اکسیژن ۱۰۰%: PaO₂ ۷۵ mmHg. کدام مسئله احتمالی است؟",
+      "correct_index": 2
     },
     {
       "id": 3,
-      "q": "بیمار ۵۸ ساله در ICU. ABG: pH ۷.۴۲، PaCO₂ ۲۸ mmHg، PaO₂ ۸۰ mmHg (FiO₂ ۰.۶). A–a gradient ۴۵ mmHg. کدام مکانیسم hypoxemia است؟",
       "options": [
         "Hypoventilation (PaCO₂ پایین نفی می‌کند)",
         "Diffusion impairment",
         "V/Q mismatch یا shunt (elevated A–a)",
         "Reduced FiO₂ محیطی"
       ],
-      "correct": 2,
       "analysis": {
         "options": [
           "Hypoventilation: PaCO₂ بالا باید باشد",
@@ -81,19 +88,24 @@
         ]
       },
       "difficulty": "hard",
-      "tags": ["A-a gradient", "V/Q mismatch", "hypoxemia mechanism", "diagnosis"],
-      "reference": "Hypoxemia Differential Diagnosis Using A–a Gradient"
+      "tags": [
+        "A-a gradient",
+        "V/Q mismatch",
+        "hypoxemia mechanism",
+        "diagnosis"
+      ],
+      "reference": "Hypoxemia Differential Diagnosis Using A–a Gradient",
+      "question": "بیمار ۵۸ ساله در ICU. ABG: pH ۷.۴۲، PaCO₂ ۲۸ mmHg، PaO₂ ۸۰ mmHg (FiO₂ ۰.۶). A–a gradient ۴۵ mmHg. کدام مکانیسم hypoxemia است؟",
+      "correct_index": 2
     },
     {
       "id": 4,
-      "q": "بیمار ۷۰ ساله post-op. ABG: pH ۷.۳۲، PaCO₂ ۵۲ mmHg، PaO₂ ۵۸ mmHg (FiO₂ ۰.۳). A–a gradient ۲۲ mmHg. علت هیپوکسمی چیست؟",
       "options": [
         "Hypoventilation (PaCO₂ بالا + low A–a)",
         "V/Q mismatch",
         "Shunt",
         "Diffusion impairment"
       ],
-      "correct": 0,
       "analysis": {
         "options": [
           "Hypoventilation: PaCO₂ بالا + normal A–a → hypoxemia",
@@ -108,19 +120,24 @@
         ]
       },
       "difficulty": "medium",
-      "tags": ["hypoventilation", "hypoxemia", "A-a gradient", "PaCO₂"],
-      "reference": "Hypoventilation-Related Hypoxemia"
+      "tags": [
+        "hypoventilation",
+        "hypoxemia",
+        "A-a gradient",
+        "PaCO₂"
+      ],
+      "reference": "Hypoventilation-Related Hypoxemia",
+      "question": "بیمار ۷۰ ساله post-op. ABG: pH ۷.۳۲، PaCO₂ ۵۲ mmHg، PaO₂ ۵۸ mmHg (FiO₂ ۰.۳). A–a gradient ۲۲ mmHg. علت هیپوکسمی چیست؟",
+      "correct_index": 0
     },
     {
       "id": 5,
-      "q": "بیمار ۶۲ ساله با ILD. ABG: pH ۷.۳۸، PaCO₂ ۳۴ mmHg، PaO₂ ۶۰ mmHg (FiO₂ ۰.۵). A–a gradient ۵۲ mmHg. بعد از O₂ ۱۰۰%: PaO₂ ۱۲۵ mmHg. علت هیپوکسمی؟",
       "options": [
         "True shunt",
         "V/Q mismatch",
         "Diffusion impairment",
         "Hypoventilation"
       ],
-      "correct": 2,
       "analysis": {
         "options": [
           "Shunt: PaO₂ change <۲۰ mmHg",
@@ -135,19 +152,24 @@
         ]
       },
       "difficulty": "hard",
-      "tags": ["diffusion impairment", "ILD", "oxygen response", "A-a gradient"],
-      "reference": "Diffusion Impairment in Interstitial Lung Disease"
+      "tags": [
+        "diffusion impairment",
+        "ILD",
+        "oxygen response",
+        "A-a gradient"
+      ],
+      "reference": "Diffusion Impairment in Interstitial Lung Disease",
+      "question": "بیمار ۶۲ ساله با ILD. ABG: pH ۷.۳۸، PaCO₂ ۳۴ mmHg، PaO₂ ۶۰ mmHg (FiO₂ ۰.۵). A–a gradient ۵۲ mmHg. بعد از O₂ ۱۰۰%: PaO₂ ۱۲۵ mmHg. علت هیپوکسمی؟",
+      "correct_index": 2
     },
     {
       "id": 6,
-      "q": "بیمار ۵۵ ساله با acute stroke. ABG: pH ۷.۳۵، PaCO₂ ۳۶، PaO₂ ۷۲ (FiO₂ ۰.۴). A–a gradient ۳۵ mmHg. کدام مکانیسم؟",
       "options": [
         "Aspiration pneumonia → V/Q mismatch",
         "Pulmonary edema → shunt",
         "Neurogenic mechanisms (both)",
         "هر سه ممکن است"
       ],
-      "correct": 3,
       "analysis": {
         "options": [
           "Aspiration: V/Q usual pattern",
@@ -162,19 +184,23 @@
         ]
       },
       "difficulty": "hard",
-      "tags": ["neurogenic hypoxemia", "aspiration", "stroke complication"],
-      "reference": "Post-stroke Pulmonary Complications"
+      "tags": [
+        "neurogenic hypoxemia",
+        "aspiration",
+        "stroke complication"
+      ],
+      "reference": "Post-stroke Pulmonary Complications",
+      "question": "بیمار ۵۵ ساله با acute stroke. ABG: pH ۷.۳۵، PaCO₂ ۳۶، PaO₂ ۷۲ (FiO₂ ۰.۴). A–a gradient ۳۵ mmHg. کدام مکانیسم؟",
+      "correct_index": 3
     },
     {
       "id": 7,
-      "q": "بیمار ۶۸ ساله با PE suspicion. ABG: pH ۷.۴۲، PaCO₂ ۳۰ mmHg، PaO₂ ۶۸ mmHg (FiO₂ ۰.۲۱). A–a gradient ۴۲ mmHg. تشخیص احتمالی؟",
       "options": [
         "PE (V/Q mismatch + hyperventilation)",
         "Pneumonia",
         "Diffusion impairment",
         "Shunt"
       ],
-      "correct": 0,
       "analysis": {
         "options": [
           "PE: V/Q mismatch + respiratory alkalosis = pattern",
@@ -189,19 +215,24 @@
         ]
       },
       "difficulty": "hard",
-      "tags": ["pulmonary embolism", "V/Q mismatch", "respiratory alkalosis", "ABG pattern"],
-      "reference": "PE and Ventilation-Perfusion Mismatch"
+      "tags": [
+        "pulmonary embolism",
+        "V/Q mismatch",
+        "respiratory alkalosis",
+        "ABG pattern"
+      ],
+      "reference": "PE and Ventilation-Perfusion Mismatch",
+      "question": "بیمار ۶۸ ساله با PE suspicion. ABG: pH ۷.۴۲، PaCO₂ ۳۰ mmHg، PaO₂ ۶۸ mmHg (FiO₂ ۰.۲۱). A–a gradient ۴۲ mmHg. تشخیص احتمالی؟",
+      "correct_index": 0
     },
     {
       "id": 8,
-      "q": "بیمار با ARDS. ABG: pH ۷.۲۸، PaCO₂ ۴۸، PaO₂ ۶۵ (FiO₂ ۰.۸). A–a gradient ۶۰ mmHg. بعد از prone positioning: PaO₂ ۹۵. کدام شد؟",
       "options": [
         "V/Q mismatch بهبود یافت (recruitment)",
         "Shunt کاملاً شناخت نشده",
         "Ventilation بهبود یافت",
         "کاهش diffusion barrier"
       ],
-      "correct": 0,
       "analysis": {
         "options": [
           "Prone: dorsal lung recruitment → V/Q بهبودی",
@@ -216,19 +247,24 @@
         ]
       },
       "difficulty": "hard",
-      "tags": ["ARDS", "prone positioning", "V/Q matching", "recruitment"],
-      "reference": "Prone Positioning Effects on Oxygenation in ARDS"
+      "tags": [
+        "ARDS",
+        "prone positioning",
+        "V/Q matching",
+        "recruitment"
+      ],
+      "reference": "Prone Positioning Effects on Oxygenation in ARDS",
+      "question": "بیمار با ARDS. ABG: pH ۷.۲۸، PaCO₂ ۴۸، PaO₂ ۶۵ (FiO₂ ۰.۸). A–a gradient ۶۰ mmHg. بعد از prone positioning: PaO₂ ۹۵. کدام شد؟",
+      "correct_index": 0
     },
     {
       "id": 9,
-      "q": "بیمار ۶۰ ساله room air. ABG: pH ۷.۳۹، PaCO₂ ۴۱، PaO₂ ۸۸. A–a gradient = ۱۲ mmHg. وضعیت اکسیژن‌ناسازی؟",
       "options": [
         "Hypoxemia خفیف (oxygenation issue)",
         "وضعیت نرمال (normal A–a برای سن)",
         "Shunt undetected",
         "Diffusion impairment early"
       ],
-      "correct": 1,
       "analysis": {
         "options": [
           "PaO₂ ۸۸: نرمال برای سن ۶۰",
@@ -243,19 +279,24 @@
         ]
       },
       "difficulty": "medium",
-      "tags": ["A-a gradient", "normal values", "age-dependent", "ABG interpretation"],
-      "reference": "Age-Adjusted A–a Gradient Normal Values"
+      "tags": [
+        "A-a gradient",
+        "normal values",
+        "age-dependent",
+        "ABG interpretation"
+      ],
+      "reference": "Age-Adjusted A–a Gradient Normal Values",
+      "question": "بیمار ۶۰ ساله room air. ABG: pH ۷.۳۹، PaCO₂ ۴۱، PaO₂ ۸۸. A–a gradient = ۱۲ mmHg. وضعیت اکسیژن‌ناسازی؟",
+      "correct_index": 1
     },
     {
       "id": 10,
-      "q": "بیمار ۷۲ ساله با COPD exacerbation. ABG: pH ۷.۲۸، PaCO₂ ۷۰، PaO₂ ۵۵ (FiO₂ ۰.۲۴). A–a gradient = ۱۸ mmHg. علت hypoxemia؟",
       "options": [
         "Hypoventilation primary (normal A–a، high CO₂)",
         "V/Q mismatch (high CO₂ + A–a)",
         "Shunt",
         "Diffusion impairment"
       ],
-      "correct": 0,
       "analysis": {
         "options": [
           "Hypoventilation: PaCO₂ ۷۰ + normal A–a diagnostic",
@@ -270,19 +311,24 @@
         ]
       },
       "difficulty": "medium",
-      "tags": ["COPD exacerbation", "hypoventilation", "A-a gradient", "hypercapnia"],
-      "reference": "COPD Exacerbation Oxygenation Pattern"
+      "tags": [
+        "COPD exacerbation",
+        "hypoventilation",
+        "A-a gradient",
+        "hypercapnia"
+      ],
+      "reference": "COPD Exacerbation Oxygenation Pattern",
+      "question": "بیمار ۷۲ ساله با COPD exacerbation. ABG: pH ۷.۲۸، PaCO₂ ۷۰، PaO₂ ۵۵ (FiO₂ ۰.۲۴). A–a gradient = ۱۸ mmHg. علت hypoxemia؟",
+      "correct_index": 0
     },
     {
       "id": 11,
-      "q": "بیمار ۵۲ ساله post-op aspiration suspected. ABG: pH ۷.۳۸، PaCO₂ ۳۹، PaO₂ ۷۲ (FiO₂ ۰.۶). A–a gradient ۷۲ mmHg. مکانیسم؟",
       "options": [
         "Ventilation-perfusion mismatch (aspiration pneumonia)",
         "True shunt (aspiration complete)",
         "Diffusion impairment",
         "V/Q + some shunt combination"
       ],
-      "correct": 3,
       "analysis": {
         "options": [
           "V/Q mismatch: part of aspiration pattern",
@@ -297,19 +343,24 @@
         ]
       },
       "difficulty": "hard",
-      "tags": ["aspiration pneumonia", "V/Q mismatch", "shunt", "post-operative"],
-      "reference": "Aspiration Pneumonia Physiology and Oxygenation"
+      "tags": [
+        "aspiration pneumonia",
+        "V/Q mismatch",
+        "shunt",
+        "post-operative"
+      ],
+      "reference": "Aspiration Pneumonia Physiology and Oxygenation",
+      "question": "بیمار ۵۲ ساله post-op aspiration suspected. ABG: pH ۷.۳۸، PaCO₂ ۳۹، PaO₂ ۷۲ (FiO₂ ۰.۶). A–a gradient ۷۲ mmHg. مکانیسم؟",
+      "correct_index": 3
     },
     {
       "id": 12,
-      "q": "بیمار ۶۵ ساله with cyanotic heart disease. ABG: pH ۷.۳۸، PaCO₂ ۴۰، PaO₂ ۵۸ (FiO₂ ۱.۰). A–a gradient = ۲۸۲ mmHg. چه شود؟",
       "options": [
         "Massive true shunt (right-to-left)",
         "Ventilation problem",
         "Diffusion impairment",
         "V/Q mismatch"
       ],
-      "correct": 0,
       "analysis": {
         "options": [
           "Right-to-left shunt: PaO₂ ۱۰۰% O₂ poorly responsive",
@@ -324,19 +375,24 @@
         ]
       },
       "difficulty": "hard",
-      "tags": ["right-to-left shunt", "cyanotic heart disease", "A-a gradient", "true shunt"],
-      "reference": "Right-to-Left Shunt Physiology in Heart Disease"
+      "tags": [
+        "right-to-left shunt",
+        "cyanotic heart disease",
+        "A-a gradient",
+        "true shunt"
+      ],
+      "reference": "Right-to-Left Shunt Physiology in Heart Disease",
+      "question": "بیمار ۶۵ ساله with cyanotic heart disease. ABG: pH ۷.۳۸، PaCO₂ ۴۰، PaO₂ ۵۸ (FiO₂ ۱.۰). A–a gradient = ۲۸۲ mmHg. چه شود؟",
+      "correct_index": 0
     },
     {
       "id": 13,
-      "q": "بیمار ۴۸ ساله with pneumothorax. ABG: pH ۷.۳۹، PaCO₂ ۴۲، PaO₂ ۷۵ (FiO₂ ۰.۲۱). A–a gradient ۲۸ mmHg. این نتیجه چه نشان می‌دهد؟",
       "options": [
         "V/Q mismatch از atelektیس",
         "Shunt",
         "Diffusion impairment",
         "نرمال، تنها hypoxemia minor"
       ],
-      "correct": 0,
       "analysis": {
         "options": [
           "V/Q: atelectatic lung + normal ventilation = mismatch",
@@ -351,19 +407,24 @@
         ]
       },
       "difficulty": "medium",
-      "tags": ["pneumothorax", "atelectasis", "V/Q mismatch", "A-a gradient"],
-      "reference": "Pneumothorax and Ventilation-Perfusion Physiology"
+      "tags": [
+        "pneumothorax",
+        "atelectasis",
+        "V/Q mismatch",
+        "A-a gradient"
+      ],
+      "reference": "Pneumothorax and Ventilation-Perfusion Physiology",
+      "question": "بیمار ۴۸ ساله with pneumothorax. ABG: pH ۷.۳۹، PaCO₂ ۴۲، PaO₂ ۷۵ (FiO₂ ۰.۲۱). A–a gradient ۲۸ mmHg. این نتیجه چه نشان می‌دهد؟",
+      "correct_index": 0
     },
     {
       "id": 14,
-      "q": "بیمار ۶۰ ساله with pulmonary fibrosis. ABG room air: pH ۷.۴۱، PaCO₂ ۳۵، PaO₂ ۶۲ (FiO₲ ۰.۲۱). A–a gradient ۴۷ mmHg. بعد از exercise: PaO₂ ۵۲. علت تفاوت؟",
       "options": [
         "V/Q worsening از increased perfusion",
         "Diffusion limitation + increased exercise",
         "Shunt development",
         "Hypoventilation compensation lost"
       ],
-      "correct": 1,
       "analysis": {
         "options": [
           "V/Q: typically stable با exercise",
@@ -378,19 +439,24 @@
         ]
       },
       "difficulty": "hard",
-      "tags": ["pulmonary fibrosis", "diffusion impairment", "exercise limitation", "diffusion time"],
-      "reference": "Diffusion Limitation in Fibrosis During Exercise"
+      "tags": [
+        "pulmonary fibrosis",
+        "diffusion impairment",
+        "exercise limitation",
+        "diffusion time"
+      ],
+      "reference": "Diffusion Limitation in Fibrosis During Exercise",
+      "question": "بیمار ۶۰ ساله with pulmonary fibrosis. ABG room air: pH ۷.۴۱، PaCO₂ ۳۵، PaO₂ ۶۲ (FiO₲ ۰.۲۱). A–a gradient ۴۷ mmHg. بعد از exercise: PaO₂ ۵۲. علت تفاوت؟",
+      "correct_index": 1
     },
     {
       "id": 15,
-      "q": "بیمار ۶۸ ساله with ARDS. ABG: pH ۷.۲۵، PaCO₂ ۶۵، PaO₂ ۵۸ (FiO₂ ۰.۹). A–a gradient ۷۲ mmHg. کدام بیان نادرست است؟",
       "options": [
         "High A–a نشان‌دهنده significant V/Q mismatch یا shunt است",
         "PaCO₂ ۶۵ نشان‌دهنده hypoventilation مجموعه است",
         "O₂ supplementation ۰.۹ مناسب است برای این hypoxemia",
         "A–a بر respiratory drive تأثیر می‌گذارد"
       ],
-      "correct": 3,
       "analysis": {
         "options": [
           "A–a ۷۲: V/Q و/یا shunt واضح",
@@ -405,8 +471,15 @@
         ]
       },
       "difficulty": "hard",
-      "tags": ["ARDS", "A-a gradient", "hypercapnia", "respiratory mechanics"],
-      "reference": "ARDS Oxygenation and Ventilation Integration"
+      "tags": [
+        "ARDS",
+        "A-a gradient",
+        "hypercapnia",
+        "respiratory mechanics"
+      ],
+      "reference": "ARDS Oxygenation and Ventilation Integration",
+      "question": "بیمار ۶۸ ساله with ARDS. ABG: pH ۷.۲۵، PaCO₂ ۶۵، PaO₂ ۵۸ (FiO₂ ۰.۹). A–a gradient ۷۲ mmHg. کدام بیان نادرست است؟",
+      "correct_index": 3
     }
   ]
 }

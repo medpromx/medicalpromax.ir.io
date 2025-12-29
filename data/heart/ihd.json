@@ -5,14 +5,12 @@
   "questions": [
     {
       "id": 1,
-      "q": "مردی 56 ساله با فشار خون 180/110 میلی‌متر جیوه و درد قفسه سینه ناگهانی شروع شده است. ECG تغییرات ST معکوس در لیدهای II، III و aVF نشان می‌دهد. تروپونین I پس از 3 ساعت منفی است. نسبت LDH به AST بالاتر از 1 است. دومین نمونه تروپونین 6 ساعت بعد مثبت شد. تشخیص و مرحله بعدی چیست؟",
       "options": [
         "STEMI تحتانی - فوری PCI",
         "NSTEMI - ترومبولیز داخل‌وریدی",
         "NSTEMI - داروهای ضدانعقاد + P2Y12",
         "ناپایدار آنژین - مراقبت محتاط"
       ],
-      "correct": 2,
       "analysis": {
         "options": [
           "STEMI می‌خواهد ST بالار (نه معکوس) در لیدهای تحتانی. این NSTEMI است",
@@ -28,19 +26,25 @@
         ]
       },
       "difficulty": "medium",
-      "tags": ["NSTEMI", "troponin", "DAPT", "anticoagulation", "ECG"],
-      "reference": "Harrison Ch 275-276; ESC Guidelines 2020 ACS"
+      "tags": [
+        "NSTEMI",
+        "troponin",
+        "DAPT",
+        "anticoagulation",
+        "ECG"
+      ],
+      "reference": "Harrison Ch 275-276; ESC Guidelines 2020 ACS",
+      "question": "مردی 56 ساله با فشار خون 180/110 میلی‌متر جیوه و درد قفسه سینه ناگهانی شروع شده است. ECG تغییرات ST معکوس در لیدهای II، III و aVF نشان می‌دهد. تروپونین I پس از 3 ساعت منفی است. نسبت LDH به AST بالاتر از 1 است. دومین نمونه تروپونین 6 ساعت بعد مثبت شد. تشخیص و مرحله بعدی چیست؟",
+      "correct_index": 2
     },
     {
       "id": 2,
-      "q": "زن 48 ساله با درد سینه 2 ساعت قبل ورود EC شده است. ECG ST بالار 2 میلی‌متر در V1-V4 نشان می‌دهد. تروپونین تک نمونه منفی است. BP 95/60 میلی‌متر جیوه، HR 110/دقیقه. JVD و کریپ‌های ریه فحص می‌شود. PCI یا ترومبولیز؟",
       "options": [
         "فوری انتقال برای پی‌سی‌آی (PCI)",
         "انجام ترومبولیز آنجا (fibrinolytic)",
         "ECG دوبار چک کن - منتظر بمان",
         "کاتترزیم قلب درجه الف - تشخیصی"
       ],
-      "correct": 0,
       "analysis": {
         "options": [
           "درست: STEMI + hemodynamic instability (shock علائم) = PCI الف انتخاب اگر door-to-balloon < 120 دقیقه",
@@ -56,19 +60,25 @@
         ]
       },
       "difficulty": "medium",
-      "tags": ["STEMI", "anterior", "PCI", "cardiogenic_shock", "reperfusion"],
-      "reference": "Harrison Ch 275; ESC 2017 ACS STEMI"
+      "tags": [
+        "STEMI",
+        "anterior",
+        "PCI",
+        "cardiogenic_shock",
+        "reperfusion"
+      ],
+      "reference": "Harrison Ch 275; ESC 2017 ACS STEMI",
+      "question": "زن 48 ساله با درد سینه 2 ساعت قبل ورود EC شده است. ECG ST بالار 2 میلی‌متر در V1-V4 نشان می‌دهد. تروپونین تک نمونه منفی است. BP 95/60 میلی‌متر جیوه، HR 110/دقیقه. JVD و کریپ‌های ریه فحص می‌شود. PCI یا ترومبولیز؟",
+      "correct_index": 0
     },
     {
       "id": 3,
-      "q": "مردی 62 ساله 6 ساعت بعد STEMI تحتانی (به واسطه PCI با stent) با فشار خون ناگهان 100/60 میلی‌متر جیوه، HR 45/دقیقه، Bradycardia شدید ورود شده. ECG AV dissociation نشان می‌دهد. درجه بندی AV block چیست؟ مرحله بعدی؟",
       "options": [
         "First degree - observe",
         "Mobitz type I - atropine 0.5 mg IV",
         "Complete heart block (CHB) / Third degree - pacing required",
         "Mobitz type II - beta-blockers"
       ],
-      "correct": 2,
       "analysis": {
         "options": [
           "First degree = PR > 0.20s فقط. اینجا AV dissociation = خیلی بدتر",
@@ -84,19 +94,25 @@
         ]
       },
       "difficulty": "hard",
-      "tags": ["CHB", "inferior_MI", "RV_infarction", "AV_block", "pacing"],
-      "reference": "Harrison Ch 275-276; AHA 2019 ACS Guidelines"
+      "tags": [
+        "CHB",
+        "inferior_MI",
+        "RV_infarction",
+        "AV_block",
+        "pacing"
+      ],
+      "reference": "Harrison Ch 275-276; AHA 2019 ACS Guidelines",
+      "question": "مردی 62 ساله 6 ساعت بعد STEMI تحتانی (به واسطه PCI با stent) با فشار خون ناگهان 100/60 میلی‌متر جیوه، HR 45/دقیقه، Bradycardia شدید ورود شده. ECG AV dissociation نشان می‌دهد. درجه بندی AV block چیست؟ مرحله بعدی؟",
+      "correct_index": 2
     },
     {
       "id": 4,
-      "q": "مردی 55 ساله 2 ساعت بعد STEMI قدامی شامل PCI با stent، echocardiography اظهار می‌کند: LVEF 35%، motion abnormality قدامی، یک فرم جدید systolic murmur نقطه‌ای در LSB نشان می‌دهد. کدام عارضه مکانیکی بیشتر احتمال دارد؟",
       "options": [
         "Papillary muscle rupture",
         "Ventricular free wall rupture",
         "Ventricular septal rupture (VSR)",
         "Dressler syndrome"
       ],
-      "correct": 2,
       "analysis": {
         "options": [
           "Papillary muscle rupture → acute MR، murmur اپکس (not LSB)",
@@ -112,19 +128,25 @@
         ]
       },
       "difficulty": "hard",
-      "tags": ["mechanical_complication", "VSR", "anterior_MI", "systolic_murmur", "septal_rupture"],
-      "reference": "Harrison Ch 275; Topol Textbook Interventional Cardiology"
+      "tags": [
+        "mechanical_complication",
+        "VSR",
+        "anterior_MI",
+        "systolic_murmur",
+        "septal_rupture"
+      ],
+      "reference": "Harrison Ch 275; Topol Textbook Interventional Cardiology",
+      "question": "مردی 55 ساله 2 ساعت بعد STEMI قدامی شامل PCI با stent، echocardiography اظهار می‌کند: LVEF 35%، motion abnormality قدامی، یک فرم جدید systolic murmur نقطه‌ای در LSB نشان می‌دهد. کدام عارضه مکانیکی بیشتر احتمال دارد؟",
+      "correct_index": 2
     },
     {
       "id": 5,
-      "q": "بیمار 60 ساله STEMI تحتانی 4 ساعت قبل. Anterior wall MI از RCA (variant) تشخیص داده شده است. PCI موفق. اما اکنون JVD، Kussmaul sign، و echo نشان می‌دهد: dilated RV با حفظ LVEF. BP 90/55 میلی‌متر جیوه. تجویز تیپ شامل ACE inhibitor است. چه اتفاقی افتاده؟",
       "options": [
         "LV dysfunction - standard ACEI therapy",
         "RV infarction - AVOID ACEI, fluid bolus",
         "Post-MI cardiogenic shock standard",
         "Pulmonary embolism concurrent"
       ],
-      "correct": 1,
       "analysis": {
         "options": [
           "LV dysfunction می‌خواهد dilated LV. اینجا LVEF preserved است",
@@ -140,19 +162,25 @@
         ]
       },
       "difficulty": "hard",
-      "tags": ["RV_infarction", "preload", "ACEI_contraindicated", "fluid_therapy", "hemodynamics"],
-      "reference": "Harrison Ch 275; ESC 2017 ACS"
+      "tags": [
+        "RV_infarction",
+        "preload",
+        "ACEI_contraindicated",
+        "fluid_therapy",
+        "hemodynamics"
+      ],
+      "reference": "Harrison Ch 275; ESC 2017 ACS",
+      "question": "بیمار 60 ساله STEMI تحتانی 4 ساعت قبل. Anterior wall MI از RCA (variant) تشخیص داده شده است. PCI موفق. اما اکنون JVD، Kussmaul sign، و echo نشان می‌دهد: dilated RV با حفظ LVEF. BP 90/55 میلی‌متر جیوه. تجویز تیپ شامل ACE inhibitor است. چه اتفاقی افتاده؟",
+      "correct_index": 1
     },
     {
       "id": 6,
-      "q": "مرد 50 ساله NSTEMI تشخیص داده شده است. Troponin 0.85 ng/mL (normal < 0.04). تروپونین 3 ساعت بعد 1.2 ng/mL. قلب‌گرافی: LVEF 40%، wall motion abnormality anterior. طول PR 0.22 ثانیه. TIMI score محاسبه شود و درجه ریسک چیست؟",
       "options": [
         "TIMI 3 - Low risk",
         "TIMI 5-6 - Intermediate risk",
         "TIMI 7 - High risk",
         "GRACE score بهتر TIMI است"
       ],
-      "correct": 2,
       "analysis": {
         "options": [
           "TIMI score 3 نمی‌تواند باشد: troponin positive = 1 point، age > 65 = 1، prior MI = varies",
@@ -168,19 +196,25 @@
         ]
       },
       "difficulty": "medium",
-      "tags": ["TIMI_score", "risk_stratification", "troponin", "NSTEMI", "prognosis"],
-      "reference": "Harrison Ch 275; Antman NEJM 2000 TIMI risk score"
+      "tags": [
+        "TIMI_score",
+        "risk_stratification",
+        "troponin",
+        "NSTEMI",
+        "prognosis"
+      ],
+      "reference": "Harrison Ch 275; Antman NEJM 2000 TIMI risk score",
+      "question": "مرد 50 ساله NSTEMI تشخیص داده شده است. Troponin 0.85 ng/mL (normal < 0.04). تروپونین 3 ساعت بعد 1.2 ng/mL. قلب‌گرافی: LVEF 40%، wall motion abnormality anterior. طول PR 0.22 ثانیه. TIMI score محاسبه شود و درجه ریسک چیست؟",
+      "correct_index": 2
     },
     {
       "id": 7,
-      "q": "بیمار با NSTEMI PCI دریافت کرد. بدون استروک. فشار خون کنترل شده. اکنون برنامه DAPT برای دوران post-PCI چیست؟",
       "options": [
         "ASA 75 mg روزانه (بدون محدودیت مدت)",
         "ASA 75 mg + ticagrelor 60 mg BD برای 12 ماه",
         "ASA 75 mg + clopidogrel 75 mg برای 6 ماه، سپس ASA تنها",
         "ASA 75 mg + ticagrelor 90 mg BD برای 12 ماه (یا clopidogrel اگر تناقض)"
       ],
-      "correct": 3,
       "analysis": {
         "options": [
           "ASA تنها ناکافی است برای stent thrombosis prevention",
@@ -196,19 +230,25 @@
         ]
       },
       "difficulty": "easy",
-      "tags": ["DAPT", "dual_antiplatelet", "P2Y12", "12_months", "stent_thrombosis"],
-      "reference": "ESC 2017 ACS Guidelines; ACC/AHA 2015"
+      "tags": [
+        "DAPT",
+        "dual_antiplatelet",
+        "P2Y12",
+        "12_months",
+        "stent_thrombosis"
+      ],
+      "reference": "ESC 2017 ACS Guidelines; ACC/AHA 2015",
+      "question": "بیمار با NSTEMI PCI دریافت کرد. بدون استروک. فشار خون کنترل شده. اکنون برنامه DAPT برای دوران post-PCI چیست؟",
+      "correct_index": 3
     },
     {
       "id": 8,
-      "q": "مردی 58 ساله anterior STEMI LAD دریافت PCI با stent. 24 ساعت بعد: درد سینه نورانی، dyspnea، hypoxemia SpO2 88%، رال‌های دو طرفه ریه. Cardiogenic pulmonary edema تشخیص داده شده. تشریح درمان:",
       "options": [
         "Furosemide 40 mg IV، nitroglycerin، oxygen",
         "Dobutamine infusion برای inotropic support",
         "Intra-aortic balloon pump (IABP) فوری",
         "Milrinone برای inotropy + vasodilation"
       ],
-      "correct": 0,
       "analysis": {
         "options": [
           "درست: acute pulmonary edema → diuretic (furosemide) + vasodilator (NTG) + oxygen. First line",
@@ -224,19 +264,25 @@
         ]
       },
       "difficulty": "medium",
-      "tags": ["pulmonary_edema", "cardiogenic", "diuretics", "acute_HF", "post_MI"],
-      "reference": "Harrison Ch 275; ACCF/AHA 2013 HF Guidelines"
+      "tags": [
+        "pulmonary_edema",
+        "cardiogenic",
+        "diuretics",
+        "acute_HF",
+        "post_MI"
+      ],
+      "reference": "Harrison Ch 275; ACCF/AHA 2013 HF Guidelines",
+      "question": "مردی 58 ساله anterior STEMI LAD دریافت PCI با stent. 24 ساعت بعد: درد سینه نورانی، dyspnea، hypoxemia SpO2 88%، رال‌های دو طرفه ریه. Cardiogenic pulmonary edema تشخیص داده شده. تشریح درمان:",
+      "correct_index": 0
     },
     {
       "id": 9,
-      "q": "بیمار STEMI 2 ساعت بعد از onset عرضه شده است. ECG: ST elevation در V1-V4 + ST depression در II، III، aVF. Troponin still negative 3 ساعت. کدام سناریو را مطرح می‌کند؟",
       "options": [
         "STEMI قدامی LAD standard",
         "STEMI قدامی + reciprocal inferior depression فقط",
         "Posterior wall STEMI (RCA) با reciprocal anterior depression",
         "Aortic dissection dissection mimicking STEMI"
       ],
-      "correct": 2,
       "analysis": {
         "options": [
           "STEMI قدامی simple = ST ↑ anterior، reciprocal ↓ inferior normal pattern",
@@ -252,19 +298,25 @@
         ]
       },
       "difficulty": "hard",
-      "tags": ["posterior_MI", "reciprocal_change", "ECG_interpretation", "RCA", "diagnostic_pitfall"],
-      "reference": "Harrison Ch 275; Sgarbossa et al ECG posterior MI"
+      "tags": [
+        "posterior_MI",
+        "reciprocal_change",
+        "ECG_interpretation",
+        "RCA",
+        "diagnostic_pitfall"
+      ],
+      "reference": "Harrison Ch 275; Sgarbossa et al ECG posterior MI",
+      "question": "بیمار STEMI 2 ساعت بعد از onset عرضه شده است. ECG: ST elevation در V1-V4 + ST depression در II، III، aVF. Troponin still negative 3 ساعت. کدام سناریو را مطرح می‌کند؟",
+      "correct_index": 2
     },
     {
       "id": 10,
-      "q": "مردی 70 ساله 2 هفته بعد از STEMI anterior (PCI + stent) به clinic آمد. Echo: LVEF 30%، anterior wall dyskinesis. Arrhythmia نیافت. دارو: ASA، ticagrelor، lisinopril، metoprolol، atorvastatin. کدام therapies بیفزائید برای secondary prevention و HF management؟",
       "options": [
         "Aldosterone antagonist (spironolactone) + SGLT2i",
         "ACE inhibitor dose optimize (نه داشتن)",
         "Beta-blocker dose optimize + stop ticagrelor بعد 6 ماه",
         "HMG-CoA reductase inhibitor فقط sufficient"
       ],
-      "correct": 0,
       "analysis": {
         "options": [
           "درست: post-MI HFrEF + anterior infarction = GDMT: ACE-I (داریم)، beta-blocker (داریم)، + MRA (spironolactone) + SGLT2i (نه داریم)",
@@ -280,8 +332,17 @@
         ]
       },
       "difficulty": "medium",
-      "tags": ["HFrEF", "post_MI_therapy", "GDMT", "MRA", "SGLT2i", "secondary_prevention"],
-      "reference": "ACC/AHA 2022 HF Guidelines; ESC 2021 ACS"
+      "tags": [
+        "HFrEF",
+        "post_MI_therapy",
+        "GDMT",
+        "MRA",
+        "SGLT2i",
+        "secondary_prevention"
+      ],
+      "reference": "ACC/AHA 2022 HF Guidelines; ESC 2021 ACS",
+      "question": "مردی 70 ساله 2 هفته بعد از STEMI anterior (PCI + stent) به clinic آمد. Echo: LVEF 30%، anterior wall dyskinesis. Arrhythmia نیافت. دارو: ASA، ticagrelor، lisinopril، metoprolol، atorvastatin. کدام therapies بیفزائید برای secondary prevention و HF management؟",
+      "correct_index": 0
     }
   ]
 }
