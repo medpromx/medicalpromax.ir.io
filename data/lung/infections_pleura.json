@@ -2,5 +2,411 @@
   "section_id": "lung",
   "subsection_id": "infections_pleura",
   "title": "عفونی و پلور",
-  "questions": []
+  "questions": [
+    {
+      "id": 1,
+      "q": "آقای ۶۲ ساله with CAP presentation: fever ۳۸.۹°C، cough، dyspnea. Chest X-ray: lobar consolidation RLL. WBC ۱۴.۲K، CRP elevated. کدام درمان empiric مناسب است؟",
+      "options": [
+        "Amoxicillin-clavulanate PO",
+        "Respiratory fluoroquinolone (levofloxacin) IV/PO",
+        "Penicillin G IV + gentamicin",
+        "Doxycycline PO"
+      ],
+      "correct": 1,
+      "analysis": {
+        "options": [
+          "Amoxicillin: برای outpatient mild CAP",
+          "Respiratory FQ: covers pneumococcus + atypicals",
+          "Penicillin + gentamicin: outdated regimen",
+          "Doxycycline: atypical فقط insufficient"
+        ],
+        "points": [
+          "CAP hospitalized: respiratory fluoroquinolone یا cephalosporin",
+          "Levofloxacin covers streptococcus pneumoniae و atypicals",
+          "Lobar consolidation: typical pneumococcal pattern"
+        ]
+      },
+      "difficulty": "medium",
+      "tags": ["CAP", "community-acquired pneumonia", "empiric antibiotic", "fluoroquinolone"],
+      "reference": "IDSA CAP Guidelines 2019"
+    },
+    {
+      "id": 2,
+      "q": "بیمار ۵۸ ساله with severe CAP hospitalized. Comorbidities: COPD و CKD stage 3. Sputum culture pending. Empiric therapy?",
+      "options": [
+        "Ceftriaxone ۱g IV Q۸H + azithromycin IV",
+        "Levofloxacin ۷۵۰ mg IV Q۲۴H (adjusted)",
+        "Meropenem IV",
+        "Cefepime + tobramycin"
+      ],
+      "correct": 0,
+      "analysis": {
+        "options": [
+          "Ceftriaxone + azithromycin: guideline-recommended severe CAP",
+          "Fluoroquinolone: monotherapy insufficient severe",
+          "Meropenem: not indicated without resistant gram-negative",
+          "Cefepime + tobramycin: excessive for typical CAP"
+        ],
+        "points": [
+          "Severe CAP: combination therapy (cephalosporin + macrolide)",
+          "Covers streptococcus pneumoniae + atypicals (Legionella, mycoplasma)",
+          "CKD: standard doses mostly acceptable stage 3"
+        ]
+      },
+      "difficulty": "medium",
+      "tags": ["severe CAP", "hospitalized", "empiric therapy", "cephalosporin"],
+      "reference": "IDSA Severe CAP Management"
+    },
+    {
+      "id": 3,
+      "q": "بیمار ۶۵ ساله with CAP، sputum culture: MRSA (susceptible vancomycin و linezolid). کدام therapy?",
+      "options": [
+        "Vancomycin ۱۵-۲۰ mg/kg IV Q۸-۱۲H",
+        "Linezolid ۶۰۰ mg IV Q۱۲H",
+        "Trimethoprim-sulfamethoxazole IV",
+        "Cephalosporin ۳rd generation"
+      ],
+      "correct": 0,
+      "analysis": {
+        "options": [
+          "Vancomycin: gold standard MRSA pneumonia",
+          "Linezolid: alternative اگر vancomycin contraindicated",
+          "TMP-SMX: alternative لکن inferior respiratory penetration",
+          "Cephalosporin: not reliable MRSA coverage"
+        ],
+        "points": [
+          "MRSA CAP: vancomycin بر linezolid ترجیح دارد",
+          "Vancomycin dosing: ۱۵-۲۰ mg/kg برای pneumonia",
+          "Target trough: ۱۵-۲۰ µg/mL"
+        ]
+      },
+      "difficulty": "medium",
+      "tags": ["MRSA", "CAP", "vancomycin", "respiratory infection"],
+      "reference": "MRSA Pneumonia Treatment IDSA"
+    },
+    {
+      "id": 4,
+      "q": "بیمار ۵۲ ساله with lung abscess. Chest CT: cavitary lesion RLL + air-fluid level. Sputum: mixed flora including anaerobes. درمان؟",
+      "options": [
+        "Ampicillin-sulbactam ۳g IV Q۶H",
+        "Clindamycin ۶۰۰ mg IV Q۶-۸H",
+        "Cephalosporin ۳rd generation",
+        "Piperacillin-tazobactam ۴.۵g IV Q۶H"
+      ],
+      "correct": 1,
+      "analysis": {
+        "options": [
+          "Ampicillin-sulbactam: reasonable لکن clindamycin penetration بهتر",
+          "Clindamycin: lung abscess gold standard",
+          "Cephalosporin: insufficient anaerobic coverage",
+          "Piperacillin-tazobactam: alternative لکن clindamycin preferred"
+        ],
+        "points": [
+          "Lung abscess: anaerobic + microaerophilic organisms",
+          "Clindamycin: excellent lung tissue penetration",
+          "Drainage: often necessary بعد از antibiotics"
+        ]
+      },
+      "difficulty": "hard",
+      "tags": ["lung abscess", "anaerobes", "clindamycin", "cavitary lesion"],
+      "reference": "Lung Abscess Treatment Recommendations"
+    },
+    {
+      "id": 5,
+      "q": "بیمار ۶۸ ساله with pleural effusion. Thoracentesis: pH ۶.۸، LDH ۱۸۰۰ U/L، glucose ۳۰ mg/dL، protein ۵.۲ g/dL. Serum: LDH ۴۵۰، protein ۷.۲، glucose ۱۲۰. تشخیص؟",
+      "options": [
+        "Parapneumonic effusion (uncomplicated)",
+        "Empyema یا complicated parapneumonic",
+        "Pulmonary infarction",
+        "Congestive heart failure"
+      ],
+      "correct": 1,
+      "analysis": {
+        "options": [
+          "Uncomplicated: pH >۷.۲، glucose >۶۰، LDH <۱۰۰۰",
+          "Empyema: pH <۷.۲ + glucose <۶۰ + LDH >۱۰۰۰",
+          "Pulmonary infarction: transudative pattern",
+          "CHF: transudative، protein <۲.۵"
+        ],
+        "points": [
+          "Empyema diagnostic criteria: pH <۷.۲، glucose <۶۰، LDH >۱۰۰۰",
+          "This effusion: تمام 3 criteria met = empyema",
+          "Management: drainage urgent (tube thoracostomy یا VATS)"
+        ]
+      },
+      "difficulty": "hard",
+      "tags": ["pleural effusion", "empyema", "Light's criteria", "thoracentesis"],
+      "reference": "Empyema Diagnosis Light's Criteria"
+    },
+    {
+      "id": 6,
+      "q": "بیمار ۶۰ ساله with uncomplicated parapneumonic effusion (pH ۷.۲۵، glucose ۶۸، LDH ۶۵۰). کدام management?",
+      "options": [
+        "Tube thoracostomy فوری",
+        "Antibiotics (pneumonia treatment) + observation",
+        "VATS decortication",
+        "Repeat thoracentesis هر ۲۴ ساعت"
+      ],
+      "correct": 1,
+      "analysis": {
+        "options": [
+          "Tube thoracostomy: برای complicated/empyema",
+          "Antibiotics: adequate برای uncomplicated cases",
+          "VATS: later اگر failed medical management",
+          "Repeat tap: monitoring فقط، therapy نیست"
+        ],
+        "points": [
+          "Uncomplicated parapneumonic: medical management sufficient",
+          "Antibiotics cause resorption of effusion",
+          "Drainage: indicated اگر complicated یا no improvement"
+        ]
+      },
+      "difficulty": "medium",
+      "tags": ["parapneumonic effusion", "uncomplicated", "antibiotic management"],
+      "reference": "Parapneumonic Effusion Management"
+    },
+    {
+      "id": 7,
+      "q": "بیمار ۵۵ ساله with empyema confirmed. Tube thoracostomy placed. کدام indication برای VATS/open drainage?",
+      "options": [
+        "Initial diagnosis",
+        "Thick fibrin/loculations + failed tube drainage",
+        "Any empyema for definitive drainage",
+        "Chronic empyema >۳ months تنهایی"
+      ],
+      "correct": 1,
+      "analysis": {
+        "options": [
+          "Tube: initial drainage method",
+          "VATS: indicated اگر complex anatomy یا failed tube",
+          "Not all: tube adequate many cases برای",
+          "Chronic: may need decortication لکن نه تنهایی"
+        ],
+        "points": [
+          "VATS indications: loculation، fibrin deposition، failed tube",
+          "Early VATS (day ۳-۵): may improve outcomes",
+          "Tube thoracostomy: majority adequate"
+        ]
+      },
+      "difficulty": "hard",
+      "tags": ["empyema", "VATS", "tube thoracostomy", "intervention"],
+      "reference": "Empyema VATS vs Tube Comparison"
+    },
+    {
+      "id": 8,
+      "q": "بیمار ۶۸ ساله hospitalized CAP with sepsis. Empiric antibiotics started. Day 3: fever persists، infiltrate spreading. Blood cultures: negative. کدام step?",
+      "options": [
+        "Escalate تا broad-spectrum immediately",
+        "Repeat cultures + CT chest imaging",
+        "Continue same therapy (still early)",
+        "Add antifungal (immunocompromised)"
+      ],
+      "correct": 1,
+      "analysis": {
+        "options": [
+          "Escalate: premature بدون culture data",
+          "Repeat cultures + imaging: exclude complications",
+          "Continue: concerning با spreading infiltrate",
+          "Antifungal: اگر immunocompromised risk"
+        ],
+        "points": [
+          "Persistent fever + spreading infiltrate: treatment failure",
+          "Imaging assess: abscess، empyema، atelectasis extent",
+          "Repeat cultures: may reveal atypical یا resistant"
+        ]
+      },
+      "difficulty": "hard",
+      "tags": ["CAP", "treatment failure", "persistent fever", "imaging"],
+      "reference": "CAP Non-response Management"
+    },
+    {
+      "id": 9,
+      "q": "بیمار ۵۲ ساله with small pleural effusion on CXR (post-pneumonia recovery). Asymptomatic، no dyspnea. Recommendation?",
+      "options": [
+        "Thoracentesis for diagnosis",
+        "Observation + repeat CXR in 2-4 weeks",
+        "Tube thoracostomy",
+        "Escalate antibiotics"
+      ],
+      "correct": 1,
+      "analysis": {
+        "options": [
+          "Thoracentesis: اگر symptomatic یا diagnostic uncertainty",
+          "Observation: uncomplicated parapneumonic resorb",
+          "Tube thoracostomy: contraindicated asymptomatic",
+          "Antibiotics: already adequate course"
+        ],
+        "points": [
+          "Small parapneumonic: typically resolve antibiotics",
+          "No intervention: asymptomatic small effusion",
+          "Follow-up imaging: ensure resolution"
+        ]
+      },
+      "difficulty": "medium",
+      "tags": ["pleural effusion", "parapneumonic", "asymptomatic", "follow-up"],
+      "reference": "Asymptomatic Pleural Effusion"
+    },
+    {
+      "id": 10,
+      "q": "بیمار ۶۵ ساله with CAP و renal failure (Cr ۴.۵، eGFR ۱۲). MRSA isolated. Vancomycin dosing?",
+      "options": [
+        "۱۰۰۰ mg IV Q۲۴-۴۸H (severe renal failure)",
+        "۱۵-۲۰ mg/kg Q۸H standard dosing",
+        "۱۵-۲۰ mg/kg Q۱۲H (moderate renal)",
+        "Linezolid preferred (no renal adjustment)"
+      ],
+      "correct": 0,
+      "analysis": {
+        "options": [
+          "eGFR ۱۲: ۱۰۰۰ mg Q۲۴-۴۸H + trough monitoring",
+          "Standard: eGFR >۵۰ برای",
+          "Q۱۲H: eGFR ۳۰-۵۰",
+          "Linezolid: no renal adjustment لکن cost/adverse"
+        ],
+        "points": [
+          "Vancomycin: renally cleared entirely",
+          "Severe renal: significant interval prolongation",
+          "Trough monitoring: ۱۵-۲۰ µg/mL target"
+        ]
+      },
+      "difficulty": "hard",
+      "tags": ["vancomycin", "renal failure", "dosing adjustment", "MRSA"],
+      "reference": "Vancomycin Renal Dosing Guidelines"
+    },
+    {
+      "id": 11,
+      "q": "خانم ۴۸ ساله with CAP. سابقه aspiration risk (dysphagia). Sputum culture: anaerobes only. کدام therapy?",
+      "options": [
+        "Respiratory fluoroquinolone",
+        "Clindamycin IV",
+        "Penicillin G + gentamicin",
+        "Cephalosporin ۳rd generation"
+      ],
+      "correct": 1,
+      "analysis": {
+        "options": [
+          "Fluoroquinolone: insufficient anaerobic coverage",
+          "Clindamycin: anaerobic pneumonia gold standard",
+          "Penicillin + gent: outdated regimen",
+          "Cephalosporin: poor anaerobic penetration"
+        ],
+        "points": [
+          "Aspiration CAP: anaerobic organism cover",
+          "Clindamycin: excellent lung penetration",
+          "Lung abscess risk: drainage evaluation"
+        ]
+      },
+      "difficulty": "medium",
+      "tags": ["aspiration pneumonia", "anaerobes", "clindamycin", "dysphagia"],
+      "reference": "Aspiration Pneumonia Management"
+    },
+    {
+      "id": 12,
+      "q": "بیمار ۷۲ ساله with effusion. Fluid analysis: protein ۳.۱ g/dL، LDH ۳۲۰ U/L. Serum: protein ۷.۲، LDH ۵۰۰. Albumin gradient ۳.۸. تشخیص؟",
+      "options": [
+        "Exudate (Light's criteria مثبت)",
+        "Transudate",
+        "Borderline (requires clinical correlation)",
+        "Empyema"
+      ],
+      "correct": 1,
+      "analysis": {
+        "options": [
+          "Exudate: protein >۳ یا LDH ratio >۰.۶",
+          "Transudate: protein <۳ و LDH ratio <۰.۶",
+          "Borderline: exceptional",
+          "Empyema: exudate + specific markers"
+        ],
+        "points": [
+          "Light's criteria: protein ۳.۱ < ۳.۰ borderline",
+          "LDH ratio: ۳۲۰/۵۰۰ = ۰.۶۴ > ۰.۶ = exudate",
+          "Protein/albumin gradient: evaluate cirrhosis"
+        ]
+      },
+      "difficulty": "hard",
+      "tags": ["pleural effusion", "Light's criteria", "transudate vs exudate"],
+      "reference": "Light's Criteria for Pleural Effusion Classification"
+    },
+    {
+      "id": 13,
+      "q": "بیمار ۶۳ ساله with parapneumonic effusion. Thoracentesis: gram stain positive cocci. Culture not available yet. Management?",
+      "options": [
+        "Antibiotics + observation (culture pending)",
+        "Tube thoracostomy فوری (presumed bacteria)",
+        "Repeat thoracentesis in ۲۴ hours",
+        "VATS بدون further workup"
+      ],
+      "correct": 0,
+      "analysis": {
+        "options": [
+          "Gram stain positive: start antibiotics + await culture",
+          "Tube: اگر fulﻻfilis diagnostic criteria",
+          "Repeat tap: unnecessary اگر gram stain positive",
+          "VATS: premature بدون full assessment"
+        ],
+        "points": [
+          "Gram stain positive: presumed bacterial infection",
+          "Tube placement: حسب Light's criteria + symptoms",
+          "Antibiotics: start immediately بدون delay"
+        ]
+      },
+      "difficulty": "medium",
+      "tags": ["parapneumonic effusion", "gram stain", "culture", "antibiotics"],
+      "reference": "Parapneumonic Effusion Diagnosis"
+    },
+    {
+      "id": 14,
+      "q": "بیمار ۵۸ ساله hospitalized CAP. Day 4 therapy: doing well، fever resolved، infiltrate improving. Sputum culture: Streptococcus pneumoniae (penicillin-susceptible)، originally on ceftriaxone + azithromycin. De-escalation?",
+      "options": [
+        "Switch تا penicillin G IV monotherapy",
+        "Continue ceftriaxone + discontinue azithromycin",
+        "Continue combination therapy 7 days total",
+        "Switch تا amoxicillin PO"
+      ],
+      "correct": 1,
+      "analysis": {
+        "options": [
+          "Penicillin monotherapy: reasonable لکن cephalosporin also appropriate",
+          "Discontinue macrolide: adequate penicillin/cephalosporin coverage",
+          "Continue combination: not necessary اگر culture results",
+          "Amoxicillin PO: premature، still hospitalized"
+        ],
+        "points": [
+          "De-escalation: حسب culture + clinical response",
+          "Penicillin-susceptible: single agent sufficient",
+          "Cephalosporin adequate: continue if tolerated"
+        ]
+      },
+      "difficulty": "medium",
+      "tags": ["CAP", "de-escalation", "penicillin-susceptible", "culture-directed"],
+      "reference": "CAP De-escalation Strategy"
+    },
+    {
+      "id": 15,
+      "q": "بیمار ۶۰ ساله with contraindication thoracentesis (coagulopathy uncontrolled). Effusion likely empyema. Alternative diagnostic?",
+      "options": [
+        "Ultrasound-guided aspiration (high-risk)",
+        "CT imaging (characterize) + empiric antibiotics",
+        "Observation without diagnosis",
+        "Prophylactic drainage tube (empiric)"
+      ],
+      "correct": 1,
+      "analysis": {
+        "options": [
+          "US-guided: may help لکن coagulopathy still risk",
+          "CT imaging: characterize + start antibiotics empirically",
+          "Observation: risky اگر empyema",
+          "Prophylactic tube: drainage بدون diagnosis"
+        ],
+        "points": [
+          "Coagulopathy: relative contraindication thoracentesis",
+          "CT imaging: assess complexity + septation",
+          "Empiric antibiotics: reasonable approach"
+        ]
+      },
+      "difficulty": "hard",
+      "tags": ["empyema", "coagulopathy", "thoracentesis contraindication", "imaging"],
+      "reference": "Thoracentesis Contraindications and Alternatives"
+    }
+  ]
 }
