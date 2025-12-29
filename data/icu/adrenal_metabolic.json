@@ -5,483 +5,408 @@
   "questions": [
     {
       "id": 1,
+      "question": "بیمار ۶۲ ساله با سابقه دیابت که ناگهانی دچار هیپوگلایسمی شدید شده است. HR ۱۲۰، BP ۸۰/۵۰، GCS ۸. کدام اقدام فوری است؟",
       "options": [
-        "۵۰% dextrose IV (۲۵ mL) فوری + monitoring glucose",
-        "D۵W infusion آهسته",
-        "Glucagon IM + D۵W",
-        "Observation و recheck glucose تا ۵ دقیقه"
+        "دکستروز ۵۰٪ وریدی (۲۵ mL) فوری + پایش مکرر گلوکز",
+        "انفوزیون آهسته D5W",
+        "گلوکاگون عضلانی + D5W",
+        "فقط مشاهده و چک مجدد گلوکز تا ۵ دقیقه"
       ],
+      "correct_index": 0,
       "analysis": {
         "options": [
-          "۵۰% dextrose: rapid restoration glucose برای consciousness",
-          "D۵W: too slow برای severe hypoglycemia",
-          "Glucagon: جایگزین اگر no IV access",
-          "Observation: خطرناک در altered mental status"
+          "دکستروز ۵۰٪: بازگردانی سریع گلوکز برای بهبود سطح هوشیاری.",
+          "D5W: برای هیپوگلایسمی شدید بسیار کند و ناکافی است.",
+          "گلوکاگون: جایگزین در صورت نبود دسترسی وریدی.",
+          "مشاهده: در اختلال هوشیاری خطرناک است و درمان را به تأخیر می‌اندازد."
         ],
         "points": [
-          "Severe hypoglycemia: immediate IV dextrose اول‌ویت",
-          "۵۰% dextrose IV: rapid normalization glucose",
-          "Monitoring: frequent glucose checks بعد از restoration"
+          "هیپوگلایسمی شدید: درمان فوری با دکستروز وریدی اولویت دارد.",
+          "دکستروز ۵۰٪ وریدی باعث اصلاح سریع گلوکز می‌شود.",
+          "پس از اصلاح اولیه: پایش مکرر گلوکز ضروری است."
         ]
       },
       "difficulty": "easy",
-      "tags": [
-        "hypoglycemia",
-        "emergency",
-        "dextrose",
-        "mental status"
-      ],
-      "reference": "Severe Hypoglycemia Management in ICU",
-      "question": "بیمار ۶۲ ساله با سابقه دیابت که ناگهانی دچار hypoglycemia شدید شد. HR ۱۲۰، BP ۸۰/۵۰، GCS ۸. کدام اقدام فوری است؟",
-      "correct_index": 0
+      "tags": ["hypoglycemia", "emergency", "dextrose", "altered mental status"],
+      "reference": "Severe Hypoglycemia Management in ICU"
     },
     {
       "id": 2,
+      "question": "بیمار ۵۸ ساله با DKA و pH ۷.۰۵، PaCO₂ ۲۲ mmHg، HCO₃⁻ ۶ mmol/L، گلوکز ۶۲۰ mg/dL، K⁺ ۶.۸ mEq/L. کدام اقدام اولویت است؟",
       "options": [
-        "IV insulin rapid (۲۰ units IV bolus)",
-        "Fluid resuscitation (۱-۱.۵ L/hr) + insulin infusion (۰.۱ units/kg/hr)",
-        "Sodium bicarbonate + insulin",
-        "Potassium supplementation + insulin"
+        "انسولین سریع‌الاثر وریدی (۲۰ واحد بولوس وریدی)",
+        "احیای مایع (۱ تا ۱.۵ لیتر/ساعت) + انفوزیون انسولین (۰.۱ واحد/کیلو/ساعت)",
+        "سدیم بی‌کربنات + انسولین",
+        "جبران پتاسیم + انسولین"
       ],
+      "correct_index": 1,
       "analysis": {
         "options": [
-          "Insulin bolus: risky بدون fluid expansion",
-          "Fluid first + insulin infusion: correct approach",
-          "Bicarbonate: contraindicated، وزن prove benefit",
-          "K supplementation: بعد از insulin (K drop)"
+          "بولوس انسولین: بدون گسترش حجم و اصلاح اولیه، پرخطر است.",
+          "ابتدا مایع + سپس انفوزیون انسولین: رویکرد استاندارد و صحیح.",
+          "بی‌کربنات: به‌طور روتین توصیه نمی‌شود و شواهد سودمندی محدود است.",
+          "جبران پتاسیم: بسته به سطح K و پس از شروع درمان/پایش انجام می‌شود."
         ],
         "points": [
-          "DKA: fluid resuscitation + insulin infusion ترتیب",
-          "Initial insulin rate: ۰.۱ units/kg/hr infusion",
-          "Fluid: ۱-۱.۵ L/hr اول، سپس titrate"
+          "در DKA: احیای مایع و سپس انسولین انفوزیونی محور درمان است.",
+          "نرخ اولیه انسولین: ۰.۱ واحد/کیلو/ساعت (انفوزیون).",
+          "مایع اولیه معمولاً ۱ تا ۱.۵ لیتر/ساعت و سپس بر اساس وضعیت بیمار تنظیم می‌شود."
         ]
       },
       "difficulty": "hard",
-      "tags": [
-        "DKA",
-        "diabetic ketoacidosis",
-        "insulin",
-        "fluid resuscitation"
-      ],
-      "reference": "DKA Management Protocol in ICU",
-      "question": "بیمار ۵۸ ساله با DKA و pH ۷.۰۵، PaCO₂ ۲۲ mmHg، HCO₃⁻ ۶ mmol/L، glucose ۶۲۰ mg/dL، K⁺ ۶.۸ meq/L. کدام اقدام اول‌ویت است؟",
-      "correct_index": 1
+      "tags": ["DKA", "diabetic ketoacidosis", "insulin", "fluid resuscitation"],
+      "reference": "DKA Management Protocol in ICU"
     },
     {
       "id": 3,
+      "question": "بیمار ۶۵ ساله تحت درمان DKA است. پس از ۶ ساعت انفوزیون انسولین: گلوکز ۲۸۰ mg/dL، K⁺ ۳.۲ mEq/L، HCO₃⁻ ۱۲ mmol/L. کدام اقدام بعدی مناسب است؟",
       "options": [
-        "Increase insulin rate برای further glucose reduction",
-        "Decrease insulin rate + KCl supplementation (۲۰-۴۰ meq/L)",
-        "Stop insulin تا K normalize شود",
-        "Add potassium chloride + continue insulin rate"
+        "افزایش نرخ انسولین برای کاهش بیشتر گلوکز",
+        "کاهش نرخ انسولین + تجویز KCl (۲۰–۴۰ mEq/L)",
+        "قطع انسولین تا زمانی که K طبیعی شود",
+        "افزودن KCl و ادامه همان نرخ انسولین"
       ],
+      "correct_index": 1,
       "analysis": {
         "options": [
-          "Increase insulin: hypoglycemia risk + hypokalemia بدتر",
-          "Decrease rate + supplement K: correct approach",
-          "Stop insulin: ketoacidosis continue می‌شود",
-          "Add K but maintain rate: suboptimal"
+          "افزایش انسولین: خطر هیپوگلایسمی و تشدید هیپوکالمی.",
+          "کاهش نرخ + جبران K: رویکرد مناسب در افت پتاسیم حین درمان.",
+          "قطع انسولین: کتواسیدوز ممکن است پایدار بماند/عود کند.",
+          "افزودن K با همان نرخ: ممکن است کافی نباشد؛ تنظیم انسولین نیز لازم است."
         ],
         "points": [
-          "DKA resolution: insulin can decrease جهت glucose ۲۰۰-۲۵۰",
-          "Hypokalemia: insulin + glucose → K shift → supplementation نیاز",
-          "KCl دوز: ۲۰-۴۰ meq/L IV حسب severity"
+          "در درمان DKA با نزدیک شدن گلوکز به حدود ۲۰۰–۲۵۰، تنظیم/کاهش انسولین مطرح می‌شود.",
+          "انسولین و اصلاح اسیدوز باعث شیفت K به داخل سلول می‌شود؛ جبران پتاسیم ضروری است.",
+          "دوز KCl معمولاً ۲۰–۴۰ mEq/L و بر اساس شدت و پایش تنظیم می‌شود."
         ]
       },
       "difficulty": "hard",
-      "tags": [
-        "DKA",
-        "hypokalemia",
-        "insulin adjustment",
-        "management"
-      ],
-      "reference": "DKA Continuation and Electrolyte Management",
-      "question": "بیمار ۶۵ ساله در DKA treatment. بعد از ۶ ساعت insulin infusion: glucose ۲۸۰ mg/dL، K⁺ ۳.۲ meq/L، HCO₃⁻ ۱۲ mmol/L. کدام اقدام بعدی است؟",
-      "correct_index": 1
+      "tags": ["DKA", "hypokalemia", "insulin adjustment", "electrolyte management"],
+      "reference": "DKA Continuation and Electrolyte Management"
     },
     {
       "id": 4,
+      "question": "بیمار ۷۲ ساله با HHS. گلوکز ۹۸۰ mg/dL، اسمولالیته ۳۲۰ mOsm/kg، Na⁺ ۱۳۸ mEq/L، K⁺ ۵.۲ mEq/L. کدام رژیم اولیه اولویت دارد؟",
       "options": [
-        "Rapid insulin (۱۰۰ units IV bolus)",
-        "Normal saline ۱-۱.۵ L/hr + lower insulin rate (۰.۰۵ units/kg/hr)",
-        "Hypotonic saline + insulin",
-        "Dextrose + insulin برای metabolic correction"
+        "انسولین سریع‌الاثر (۱۰۰ واحد بولوس وریدی)",
+        "نرمال سالین ۱–۱.۵ لیتر/ساعت + انفوزیون انسولین با نرخ کمتر (۰.۰۵ واحد/کیلو/ساعت)",
+        "سالین هیپوتونیک + انسولین",
+        "دکستروز + انسولین برای اصلاح متابولیک"
       ],
+      "correct_index": 1,
       "analysis": {
         "options": [
-          "Rapid insulin: excessive، HHS fragile hemodynamics",
-          "Normal saline + lower insulin: appropriate initial strategy",
-          "Hypotonic saline: risk hyponatremia worsening",
-          "Dextrose: contraindicated اگر glucose ۹۸۰"
+          "بولوس بزرگ انسولین: بیش‌ازحد و پرخطر در HHS با همودینامیک شکننده.",
+          "مایع ایزوتونیک + انسولین با نرخ کمتر: استراتژی اولیه مناسب.",
+          "مایع هیپوتونیک: می‌تواند مشکلات سدیم/اسمولالیته را بدتر کند (در فاز اولیه).",
+          "دکستروز: با گلوکز بسیار بالا اندیکاسیون ندارد."
         ],
         "points": [
-          "HHS: insulin rate کمتر (۰.۰۵ units/kg/hr) vs DKA",
-          "Fluid first: osmotic diuresis compensation",
-          "Gradual glucose reduction: brain edema risk თავი"
+          "در HHS معمولاً نرخ انسولین کمتر از DKA است (مثلاً ۰.۰۵ واحد/کیلو/ساعت).",
+          "اولویت اولیه با احیای مایع برای جبران دهیدراسیون ناشی از دیورز اسموتیک است.",
+          "کاهش تدریجی گلوکز برای کاهش ریسک عوارض اسمولار اهمیت دارد."
         ]
       },
       "difficulty": "hard",
-      "tags": [
-        "HHS",
-        "hyperosmolar state",
-        "insulin rate",
-        "fluid management"
-      ],
-      "reference": "HHS vs DKA Management Differences",
-      "question": "بیمار ۷۲ ساله با HHS (hyperosmolar hyperglycemic state). Glucose ۹۸۰ mg/dL، osmolality ۳۲۰ mOsm/kg، Na⁺ ۱۳۸ meq/L، K⁺ ۵.۲ meq/L. کدام rژیم اول‌ویت است؟",
-      "correct_index": 1
+      "tags": ["HHS", "hyperosmolar state", "insulin infusion", "fluid management"],
+      "reference": "HHS vs DKA Management Differences"
     },
     {
       "id": 5,
+      "question": "بیمار ۵۵ ساله با بحران آدرنال (شوک‌مانند). BP ۷۰/۴۵، HR ۱۱۰، Na⁺ ۱۲۰ mEq/L، K⁺ ۶.۲ mEq/L، گلوکز ۶۰ mg/dL. کدام اقدام فوری است؟",
       "options": [
-        "Dexamethasone ۴ mg IV Q۶H + fluid + vasopressor",
-        "Hydrocortisone ۵۰ mg IV Q۶H + aggressive fluid + vasopressor",
-        "Fluid resuscitation تنها (بدون steroid اول)",
-        "Sodium chloride 3% برای hyponatremia correction"
+        "دگزامتازون ۴ mg وریدی هر ۶ ساعت + مایع + وازوپرسور",
+        "هیدروکورتیزون ۵۰ mg وریدی هر ۶ ساعت + احیای مایع تهاجمی + وازوپرسور",
+        "فقط احیای مایع (بدون استروئید در ابتدا)",
+        "سدیم کلراید ۳٪ برای اصلاح هیپوناترمی"
       ],
+      "correct_index": 1,
       "analysis": {
         "options": [
-          "Dexamethasone: may interfere cortisol assay لاحق",
-          "Hydrocortisone: ideal، allows cortisol measurement + mineralocorticoid effect",
-          "Fluid alone: insufficient بدون steroid",
-          "Hypertonic saline: secondary، primary steroid"
+          "دگزامتازون: ممکن است بر برخی سنجش‌های کورتیزول اثر بگذارد.",
+          "هیدروکورتیزون: انتخاب مناسب در بحران آدرنال (اثر گلوکوکورتیکوئیدی و تا حدی مینرالوکورتیکوئیدی در دوزهای بالا).",
+          "مایع تنها: معمولاً بدون استروئید کافی نیست.",
+          "سرم هیپرتونیک: درمان اصلی بحران آدرنال نیست و در اولویت پایین‌تر قرار می‌گیرد."
         ],
         "points": [
-          "Adrenal crisis: hydrocortisone ۵۰ mg IV immediately",
-          "Steroid + fluid + vasopressor: triple therapy",
-          "Hydrocortisone every ۶ ساعت تا stabilization"
+          "بحران آدرنال: هیدروکورتیزون وریدی باید فوراً شروع شود.",
+          "ترکیب استروئید + مایع + (در صورت نیاز) وازوپرسور، پایه درمان است.",
+          "هیدروکورتیزون معمولاً هر ۶ ساعت تا پایدار شدن بیمار ادامه می‌یابد."
         ]
       },
       "difficulty": "hard",
-      "tags": [
-        "adrenal crisis",
-        "hyponatremia",
-        "hypoglycemia",
-        "hydrocortisone"
-      ],
-      "reference": "Adrenal Crisis Emergency Management",
-      "question": "بیمار ۵۵ ساله با adrenal crisis (shock-like picture). BP ۷۰/۴۵، HR ۱ۂ۰، Na⁺ ۱۲۰ meq/L، K⁺ ۶.۲ meq/L، glucose ۶۰ mg/dL. کدام اقدام فوری است؟",
-      "correct_index": 1
+      "tags": ["adrenal crisis", "shock", "hyponatremia", "hydrocortisone"],
+      "reference": "Adrenal Crisis Emergency Management"
     },
     {
       "id": 6,
+      "question": "بیمار ۶۰ ساله پس از پیوند کلیه با هیپوناترمی حاد. Na⁺ ۱۲۲ mEq/L و فعالیت تشنجی دارد. GCS پس از تشنج ۹. درمان صحیح کدام است؟",
       "options": [
-        "۳% NaCl IV rapid (۱-۲ mL/kg bolus) + seizure control",
-        "۰.۹% NaCl infusion آهسته",
-        "Free water restriction + desmopressin",
-        "Hypotonic fluid (D۵W)"
+        "NaCl ۳٪ وریدی به‌صورت بولوس (۱–۲ mL/kg) + کنترل تشنج",
+        "انفوزیون آهسته NaCl ۰.۹٪",
+        "محدودیت آب آزاد + دسموپرسین",
+        "مایع هیپوتونیک (D5W)"
       ],
+      "correct_index": 0,
       "analysis": {
         "options": [
-          "۳% NaCl rapid: appropriate برای symptomatic hyponatremia",
-          "۰.۹% saline: too slow برای seizures",
-          "Restriction + desmopressin: برای chronic hyponatremia",
-          "Hypotonic: worsens hyponatremia"
+          "NaCl ۳٪: در هیپوناترمی علامت‌دار (تشنج) درمان فوری و مناسب است.",
+          "NaCl ۰.۹٪: برای کنترل فوری علائم عصبی کند است.",
+          "محدودیت آب + دسموپرسین: بیشتر در سناریوهای مزمن/کنترل سرعت اصلاح مطرح می‌شود.",
+          "مایع هیپوتونیک: هیپوناترمی را بدتر می‌کند."
         ],
         "points": [
-          "Symptomatic hyponatremia (seizure): urgent ۳% NaCl",
-          "Goal: increase Na⁺ ۴-۶ meq/L in first ۲ hours",
-          "Target Na⁺: ۱۲۸-۱۳۰ meq/L initial"
+          "هیپوناترمی علامت‌دار با تشنج: NaCl ۳٪ فوری.",
+          "هدف: افزایش Na⁺ حدود ۴–۶ mEq/L در ساعات اولیه برای رفع علائم.",
+          "پایش دقیق سدیم و وضعیت عصبی ضروری است."
         ]
       },
       "difficulty": "hard",
-      "tags": [
-        "hyponatremia",
-        "symptomatic",
-        "seizure",
-        "hypertonic saline"
-      ],
-      "reference": "Symptomatic Hyponatremia Acute Management",
-      "question": "بیمار ۶۰ ساله پس از پیوند کلیه با acute hyponatremia. Na⁺ ۱۲۲ meq/L، seizure activity. GCS بعد از سزیور ۹. کدام درمان درست است؟",
-      "correct_index": 0
+      "tags": ["hyponatremia", "seizure", "hypertonic saline", "transplant"],
+      "reference": "Symptomatic Hyponatremia Acute Management"
     },
     {
       "id": 7,
+      "question": "بیمار ۶۸ ساله با نارسایی کلیه و هایپرکالمی شدید. K⁺ ۷.۸ mEq/L، ECG: موج T نوک‌تیز. اقدام اولویت کدام است؟",
       "options": [
-        "Calcium gluconate ۱۰% (۱۰-۲۰ mL IV) برای cardiac protection",
-        "Insulin + dextrose infusion",
-        "Sodium polystyrene sulfonate (Kayexalate) PO/PR",
-        "Dialysis نهایت"
+        "کلسیم گلوکونات ۱۰٪ (۱۰–۲۰ mL وریدی) برای حفاظت قلبی",
+        "انسولین + دکستروز (انفوزیون/تزریق)",
+        "سدیم پلی‌استایرن سولفونات (Kayexalate) خوراکی/رکتال",
+        "دیالیز (در نهایت)"
       ],
+      "correct_index": 0,
       "analysis": {
         "options": [
-          "Calcium gluconate: immediate cardiac stabilization before shifting K",
-          "Insulin + dextrose: shift K but after calcium",
-          "Kayexalate: removal therapy لکن slow",
-          "Dialysis: definitive لکن بعد از stabilization"
+          "کلسیم گلوکونات: پایدارسازی فوری میوکارد قبل از اقدامات شیفت/حذف پتاسیم.",
+          "انسولین + دکستروز: پتاسیم را به داخل سلول می‌برد، اما پس از حفاظت قلبی.",
+          "Kayexalate: برای حذف پتاسیم است ولی شروع اثر کندتر است.",
+          "دیالیز: درمان قطعی اما پس از پایدارسازی اولیه."
         ],
         "points": [
-          "Symptomatic hyperkalemia (ECG changes): calcium gluconate فوری",
-          "Calcium: stabilize myocardium، doesn't lower K",
-          "Sequential approach: Ca → shift agents → removal"
+          "هایپرکالمی علامت‌دار با تغییرات ECG: کلسیم گلوکونات فوراً.",
+          "کلسیم پتاسیم را کاهش نمی‌دهد؛ فقط میوکارد را پایدار می‌کند.",
+          "رویکرد مرحله‌ای: کلسیم → عوامل شیفت → روش‌های حذف."
         ]
       },
       "difficulty": "medium",
-      "tags": [
-        "hyperkalemia",
-        "ECG changes",
-        "calcium gluconate",
-        "cardiac stabilization"
-      ],
-      "reference": "Acute Hyperkalemia Management Guidelines",
-      "question": "بیمار ۶۸ ساله با renal failure و hyperkalemia شدید. K⁺ ۷.۸ meq/L، ECG: peaked T waves. کدام اقدام اول‌ویت است؟",
-      "correct_index": 0
+      "tags": ["hyperkalemia", "ECG changes", "calcium gluconate", "renal failure"],
+      "reference": "Acute Hyperkalemia Management Guidelines"
     },
     {
       "id": 8,
+      "question": "بیمار ۵۲ ساله با هایپرکالمی K⁺ ۷.۱ mEq/L (بدون تغییرات ECG). کدام ترتیب اقدامات صحیح است؟",
       "options": [
-        "Insulin ۱۰ units IV + dextrose ۲۵ g IV",
-        "Beta-agonist (albuterol) ۱۰-۲۰ mg nebulized",
-        "Sodium bicarbonate IV",
-        "Calcium gluconate ابتدایی"
+        "انسولین ۱۰ واحد وریدی + دکستروز ۲۵ g وریدی",
+        "بتاآگونیست (آلبوترول) ۱۰–۲۰ mg نبولایز",
+        "سدیم بی‌کربنات وریدی",
+        "کلسیم گلوکونات به‌صورت اولیه"
       ],
+      "correct_index": 1,
       "analysis": {
         "options": [
-          "Insulin + dextrose: effective لکن slow start",
-          "Beta-agonist: rapid K shift + effective",
-          "Bicarbonate: less potent، mainly DKA",
-          "Calcium: only اگر ECG changes موجود"
+          "انسولین + دکستروز: مؤثر است اما در مقایسه با برخی گزینه‌ها شروع اثر ممکن است کندتر باشد.",
+          "بتاآگونیست: شیفت سریع پتاسیم به داخل سلول و گزینه مناسب در نبود تغییرات ECG.",
+          "بی‌کربنات: اثر کمتر و عمدتاً در اسیدوز مشخص مطرح‌تر است.",
+          "کلسیم: عمدتاً در صورت تغییرات ECG/خطر آریتمی برای حفاظت قلبی."
         ],
         "points": [
-          "Asymptomatic hyperkalemia: shift agents به جای calcium",
-          "Beta-agonist: rapid onset، single therapy",
-          "Insulin + glucose: adjunctive اگر insufficient"
+          "در هایپرکالمی بدون تغییرات ECG: تمرکز بر عوامل شیفت پتاسیم است، نه کلسیم.",
+          "بتاآگونیست می‌تواند شروع اثر سریعی داشته باشد.",
+          "انسولین + گلوکز می‌تواند به‌عنوان درمان کمکی اضافه شود."
         ]
       },
       "difficulty": "medium",
-      "tags": [
-        "hyperkalemia",
-        "asymptomatic",
-        "shift agents",
-        "beta-agonist"
-      ],
-      "reference": "Asymptomatic Hyperkalemia Management",
-      "question": "بیمار ۵۲ ساله با hyperkalemia K⁺ ۷.۱ meq/L (بدون ECG changes). کدام ترتیب اقدامات صحیح است؟",
-      "correct_index": 1
+      "tags": ["hyperkalemia", "no ECG changes", "beta-agonist", "shift therapy"],
+      "reference": "Asymptomatic Hyperkalemia Management"
     },
     {
       "id": 9,
+      "question": "بیمار ۶۵ ساله با هیپوکلسمی شدید. Ca²⁺ ۶.۲ mg/dL و علامت‌دار (پارستزی، تتانی). کدام رژیم درست است؟",
       "options": [
-        "Calcium chloride ۱۰% (۵-۱۰ mL IV fast)",
-        "Calcium gluconate ۱۰% (۱۰-۲۰ mL IV slow)",
-        "Vitamin D + oral calcium",
-        "Magnesium supplementation تنهایی"
+        "کلسیم کلراید ۱۰٪ (۵–۱۰ mL وریدی سریع)",
+        "کلسیم گلوکونات ۱۰٪ (۱۰–۲۰ mL وریدی آهسته)",
+        "ویتامین D + کلسیم خوراکی",
+        "فقط مکمل منیزیم"
       ],
+      "correct_index": 1,
       "analysis": {
         "options": [
-          "Calcium chloride: irritating، safe in central line فقط",
-          "Calcium gluconate: peripheral vein safe، symptomatic hypocalcemia",
-          "Vitamin D: chronic، not acute management",
-          "Magnesium: adjunctive لکن نه primary"
+          "کلسیم کلراید: تحریک‌کننده است و معمولاً فقط از طریق خط مرکزی ایمن‌تر است.",
+          "کلسیم گلوکونات: برای ورید محیطی مناسب‌تر و انتخاب رایج در هیپوکلسمی علامت‌دار.",
+          "ویتامین D: برای مدیریت مزمن، نه درمان حاد.",
+          "منیزیم: در برخی شرایط کمک‌کننده است اما درمان اصلی هیپوکلسمی حاد نیست."
         ],
         "points": [
-          "Symptomatic hypocalcemia: calcium gluconate IV",
-          "Dose: ۱۰-۲۰ mL ۱۰% solution",
-          "Slow infusion: ۵ دقیقه، repeat PRN"
+          "هیپوکلسمی علامت‌دار: کلسیم گلوکونات وریدی.",
+          "دوز معمول: ۱۰–۲۰ mL از محلول ۱۰٪.",
+          "انفوزیون آهسته (مثلاً طی ~۵ دقیقه) و تکرار در صورت نیاز."
         ]
       },
       "difficulty": "medium",
-      "tags": [
-        "hypocalcemia",
-        "symptomatic",
-        "calcium gluconate",
-        "tetany"
-      ],
-      "reference": "Acute Hypocalcemia Management",
-      "question": "بیمار ۶۵ ساله با profound hypocalcemia. Ca²⁺ ۶.۲ mg/dL، symptomatic (paresthesias، tetany). کدام rژیم درست است؟",
-      "correct_index": 1
+      "tags": ["hypocalcemia", "tetany", "calcium gluconate", "acute management"],
+      "reference": "Acute Hypocalcemia Management"
     },
     {
       "id": 10,
+      "question": "بیمار ۵۸ ساله در فاز بهبود DKA است. روز ۲: آنیون گپ بسته شده اما گلوکز هنوز ۴۵۰ است. K⁺ ۳.۸ mEq/L. کدام استراتژی مناسب است؟",
       "options": [
-        "Continue insulin ۰.۱ units/kg/hr without dextrose",
-        "Switch تا subcutaneous insulin + D۵W infusion",
-        "Decrease insulin rate + start D₅ saline infusion",
-        "Stop insulin، ketoacidosis resolved"
+        "ادامه انسولین ۰.۱ واحد/کیلو/ساعت بدون دکستروز",
+        "تغییر به انسولین زیرجلدی + انفوزیون D5W",
+        "کاهش نرخ انسولین + شروع انفوزیون سالین D5",
+        "قطع انسولین چون کتواسیدوز برطرف شده است"
       ],
+      "correct_index": 2,
       "analysis": {
         "options": [
-          "Continue high-rate insulin: hypoglycemia risk",
-          "Subcutaneous: premature اگر IV glucose still needed",
-          "Decrease rate + dextrose: prevent hypoglycemia + hyperglycemia",
-          "Stop insulin: glucose control lost"
+          "ادامه نرخ بالای انسولین: خطر هیپوگلایسمی (در ادامه مسیر درمان) را افزایش می‌دهد.",
+          "زیرجلدی: می‌تواند زودهنگام باشد اگر هنوز نیاز به تنظیم دقیق/انفوزیون وجود دارد.",
+          "کاهش انسولین + افزودن دکستروز: جلوگیری از هیپوگلایسمی و امکان ادامه اصلاح متابولیک.",
+          "قطع انسولین: کنترل قند از دست می‌رود و خطر عود وجود دارد."
         ],
         "points": [
-          "DKA resolution: anion gap close لکن glucose may remain elevated",
-          "Transition: reduce insulin + add dextrose",
-          "D₅ saline: maintain glucose ۱۵۰-۲۵۰ mg/dL"
+          "پس از بسته شدن آنیون گپ، ممکن است همچنان نیاز به ادامه انسولین باشد.",
+          "برای جلوگیری از افت قند: کاهش انسولین و اضافه کردن دکستروز انجام می‌شود.",
+          "D5 سالین کمک می‌کند گلوکز در محدوده هدف (مثلاً ۱۵۰–۲۵۰) حفظ شود."
         ]
       },
       "difficulty": "hard",
-      "tags": [
-        "DKA recovery",
-        "transition phase",
-        "dextrose",
-        "insulin reduction"
-      ],
-      "reference": "DKA to Subcutaneous Transition Management",
-      "question": "بیمار ۵۸ ساله در DKA recovery. Day ۲: anion gap closed لکن glucose still ۴۵۰. K⁺ ۳.۸ meq/L. کدام strategy مناسب است؟",
-      "correct_index": 2
+      "tags": ["DKA recovery", "transition phase", "dextrose", "insulin titration"],
+      "reference": "DKA to Subcutaneous Transition Management"
     },
     {
       "id": 11,
+      "question": "بیمار ۶۰ ساله با HHS و دهیدراسیون شدید. کسری مایع تخمینی: ۱۰ لیتر. کدام جایگزینی مایع در ابتدا اولویت دارد؟",
       "options": [
-        "۰.۹% saline ۱-۱.۵ L/hr (first ۴ ساعت)",
-        "۰.۴۵% saline ۳-۵ L/hr",
-        "D۵W ۲-۳ L/hr برای glucose dilution",
-        "Hypotonic mixture (۰.۴۵% NaCl + D۵W)"
+        "سالین ۰.۹٪ با سرعت ۱–۱.۵ لیتر/ساعت (۴ ساعت اول)",
+        "سالین ۰.۴۵٪ با سرعت ۳–۵ لیتر/ساعت",
+        "D5W با سرعت ۲–۳ لیتر/ساعت برای رقیق‌سازی گلوکز",
+        "محلول هیپوتونیک ترکیبی (۰.۴۵٪ NaCl + D5W)"
       ],
+      "correct_index": 0,
       "analysis": {
         "options": [
-          "۰.۹% saline: initial choice برای dehydration",
-          "۰.۴۵%: later، after hemodynamic stabilization",
-          "D۵W: risky اگر glucose ۹۰۰+",
-          "Hypotonic: secondary choice"
+          "سالین ۰.۹٪: انتخاب اولیه برای احیای حجم و پرفیوژن.",
+          "سالین ۰.۴۵٪: معمولاً بعد از پایدارسازی همودینامیک مطرح می‌شود.",
+          "D5W: در گلوکز بسیار بالا مناسب نیست.",
+          "ترکیبی هیپوتونیک: انتخاب ثانویه پس از فاز اولیه."
         ],
         "points": [
-          "HHS: initial isotonic saline اول ۱-۲ ساعت",
-          "Goal: restore hemodynamics + perfusion",
-          "Transition تا hypotonic بعد از stabilization"
+          "در HHS: شروع با مایع ایزوتونیک در فاز اولیه درمان.",
+          "هدف اولیه: اصلاح همودینامیک و پرفیوژن.",
+          "پس از پایدارسازی: ممکن است به مایع هیپوتونیک تغییر داده شود."
         ]
       },
       "difficulty": "medium",
-      "tags": [
-        "HHS",
-        "dehydration",
-        "fluid replacement",
-        "isotonic saline"
-      ],
-      "reference": "HHS Fluid Resuscitation Strategy",
-      "question": "بیمار ۶۰ ساله با HHS و severe dehydration. مجموع fluid deficit: ۱۰ لیتر. کدام fluid replacement اول‌ویت است؟",
-      "correct_index": 0
+      "tags": ["HHS", "dehydration", "fluid resuscitation", "normal saline"],
+      "reference": "HHS Fluid Resuscitation Strategy"
     },
     {
       "id": 12,
+      "question": "بیمار ۷۰ ساله با نارسایی ثانویه آدرنال (سابقه pituitary apoplexy). هیپوتانسیون و هیپوناترمی دارد. درمان اولویت کدام است؟",
       "options": [
-        "Hydrocortisone ۵۰ mg IV Q۶H + fluid",
-        "Dexamethasone ۴ mg IV + fluid",
-        "Florinef (fludrocortisone) + hydrocortisone",
-        "Fluid restoration تنهایی"
+        "هیدروکورتیزون ۵۰ mg وریدی هر ۶ ساعت + مایع",
+        "دگزامتازون ۴ mg وریدی + مایع",
+        "فلودروکورتیزون + هیدروکورتیزون",
+        "فقط احیای مایع"
       ],
+      "correct_index": 0,
       "analysis": {
         "options": [
-          "Hydrocortisone: covers glucocorticoid + mineralocorticoid (at high doses)",
-          "Dexamethasone: no mineralocorticoid effect",
-          "Florinef: secondary (mineralocorticoid) بعد از acute",
-          "Fluid alone: insufficient بدون steroid"
+          "هیدروکورتیزون: در دوزهای بالا اثر مینرالوکورتیکوئیدی نسبی هم دارد و انتخاب رایج است.",
+          "دگزامتازون: اثر مینرالوکورتیکوئیدی ندارد.",
+          "فلودروکورتیزون: بیشتر در فاز نگهدارنده/مزمن مطرح است.",
+          "مایع تنها: معمولاً بدون استروئید کافی نیست."
         ],
         "points": [
-          "Secondary adrenal insufficiency: hydrocortisone preferred",
-          "High-dose hydrocortisone: partial mineralocorticoid effect",
-          "Florinef can add later برای chronic maintenance"
+          "نارسایی ثانویه آدرنال با علائم حاد: هیدروکورتیزون وریدی ترجیح داده می‌شود.",
+          "دوزهای بالای هیدروکورتیزون تا حدی اثر مینرالوکورتیکوئیدی دارند.",
+          "فلودروکورتیزون در صورت نیاز می‌تواند در ادامه/مزمن اضافه شود."
         ]
       },
       "difficulty": "hard",
-      "tags": [
-        "secondary adrenal insufficiency",
-        "pituitary",
-        "hydrocortisone",
-        "hyponatremia"
-      ],
-      "reference": "Secondary Adrenal Insufficiency Emergency Management",
-      "question": "بیمار ۷۰ ساله با secondary adrenal insufficiency (pituitary apoplexy history). Hypotension و hyponatremia. کدام treatment اول‌ویت است؟",
-      "correct_index": 0
+      "tags": ["secondary adrenal insufficiency", "pituitary", "hydrocortisone", "hyponatremia"],
+      "reference": "Secondary Adrenal Insufficiency Emergency Management"
     },
     {
       "id": 13,
+      "question": "بیمار ۵۵ ساله با هایپرکلسمی شدید. Ca²⁺ ۱۴ mg/dL، اختلال هوشیاری و پلی‌اوری. اقدام اولویت کدام است؟",
       "options": [
-        "Normal saline aggressive (۲۰۰-۳۰۰ mL/hr)",
-        "Calcitonin IV + bisphosphonate",
-        "Hydration + corticosteroid",
-        "Hemodialysis"
+        "هیدراتاسیون تهاجمی با نرمال سالین (۲۰۰–۳۰۰ mL/hr)",
+        "کلسی‌تونین وریدی + بیس‌فسفونات",
+        "هیدراتاسیون + کورتیکواستروئید",
+        "همودیالیز"
       ],
+      "correct_index": 0,
       "analysis": {
         "options": [
-          "Normal saline: dilution + urine output برای calcium removal",
-          "Calcitonin + bisphosphonate: adjunctive بعد از hydration",
-          "Steroid: selective (sarcoidosis، vitamin D intoxication)",
-          "Dialysis: if renal failure contraindicated hydration"
+          "نرمال سالین: رقیق‌سازی و افزایش دفع ادراری کلسیم؛ اقدام اولیه.",
+          "کلسی‌تونین + بیس‌فسفونات: معمولاً پس از شروع هیدراتاسیون به‌عنوان درمان کمکی.",
+          "استروئید: در علل انتخابی (مثل سارکوئیدوز/مسمومیت ویتامین D) مطرح‌تر است.",
+          "دیالیز: در صورت نارسایی کلیه یا عدم امکان هیدراتاسیون تهاجمی."
         ],
         "points": [
-          "Severe hypercalcemia: aggressive normal saline اول‌ویت",
-          "Goal: urine output ۱۰۰-۲۰۰ mL/hr monitor",
-          "Adjunctive: calcitonin onset ۲-۴ ساعت، bisphosphonate ۴۸-۷۲ ساعت"
+          "هایپرکلسمی شدید: اولویت با هیدراتاسیون وریدی (نرمال سالین).",
+          "هدف: افزایش برون‌ده ادراری (مثلاً ۱۰۰–۲۰۰ mL/hr) با پایش دقیق.",
+          "کلسی‌تونین شروع اثر سریع‌تر (۲–۴ ساعت) و بیس‌فسفونات اثر دیرتر (۴۸–۷۲ ساعت) دارد."
         ]
       },
       "difficulty": "medium",
-      "tags": [
-        "hypercalcemia",
-        "severe",
-        "saline",
-        "emergency management"
-      ],
-      "reference": "Severe Hypercalcemia Acute Management",
-      "question": "بیمار ۵۵ ساله با severe hypercalcemia. Ca²⁺ ۱۴ mg/dL، altered consciousness، polyuria. کدام اقدام اول‌ویت است؟",
-      "correct_index": 0
+      "tags": ["hypercalcemia", "emergency", "saline", "altered mental status"],
+      "reference": "Severe Hypercalcemia Acute Management"
     },
     {
       "id": 14,
+      "question": "بیمار ۶۲ ساله با هیپومنیزیمی شدید. Mg²⁺ ۰.۸ mg/dL، آریتمی و تتانی. کدام رژیم درست است؟",
       "options": [
-        "MgSO₄ ۲۰ g IV (in divided doses) + cardiac monitoring",
-        "Magnesium chloride ۱۰-۲۰ meq IV slow",
-        "Oral magnesium oxide",
-        "Calcium supplementation (hypomagnesemia related)"
+        "MgSO₄ وریدی (مجموعاً ۲۰ گرم در دوزهای تقسیم‌شده) + پایش قلبی",
+        "منیزیم کلراید ۱۰–۲۰ mEq وریدی آهسته",
+        "منیزیم اکسید خوراکی",
+        "فقط مکمل کلسیم"
       ],
+      "correct_index": 0,
       "analysis": {
         "options": [
-          "MgSO₄: rapid IV supplementation برای symptomatic",
-          "Magnesium chloride: alternative لکن MgSO₄ معمول",
-          "Oral: too slow برای symptomatic hypomagnesemia",
-          "Calcium: secondary، magnesium اول اولویت"
+          "MgSO₄: جایگزینی وریدی سریع برای موارد علامت‌دار همراه با پایش.",
+          "MgCl₂: جایگزین ممکن، اما MgSO₄ رایج‌تر است.",
+          "خوراکی: برای موارد علامت‌دار و شدید معمولاً کند است.",
+          "کلسیم: درمان اصلی هیپومنیزیمی نیست."
         ],
         "points": [
-          "Symptomatic hypomagnesemia: IV MgSO₄ اول‌ویت",
-          "Dose: ۲۰ گرم ام gSO₄ (۱۰ meq Mg)",
-          "Divided doses: prevent hypermagnesemia"
+          "هیپومنیزیمی علامت‌دار: جایگزینی وریدی MgSO₄ اولویت دارد.",
+          "تجویز در دوزهای تقسیم‌شده به کاهش ریسک هایپرمنیزیمی کمک می‌کند.",
+          "پایش ECG/علائم و سطح منیزیم ضروری است."
         ]
       },
       "difficulty": "medium",
-      "tags": [
-        "hypomagnesemia",
-        "arrhythmia",
-        "MgSO4",
-        "symptomatic"
-      ],
-      "reference": "Hypomagnesemia Acute Management Guidelines",
-      "question": "بیمار ۶۲ ساله با profound hypomagnesemia. Mg²⁺ ۰.۸ mg/dL، arrhythmias و tetany. کدام rژیم درست است؟",
-      "correct_index": 0
+      "tags": ["hypomagnesemia", "arrhythmia", "MgSO4", "tetany"],
+      "reference": "Hypomagnesemia Acute Management Guidelines"
     },
     {
       "id": 15,
+      "question": "بیمار ۶۸ ساله پس از عمل با هیپوفسفاتمی. فسفات ۱.۲ mg/dL و ضعف تنفسی دارد. کدام اقدام مناسب است؟",
       "options": [
-        "Phosphate IV (Potassium phosphate) ۰.۰۸-۰.۱۶ mmol/kg",
-        "Oral phosphate supplement (Neutra-Phos)",
-        "Calcium supplementation",
-        "Observation (معمولا benign)"
+        "فسفات وریدی (Potassium phosphate) با دوز ۰.۰۸–۰.۱۶ mmol/kg",
+        "مکمل فسفات خوراکی (Neutra-Phos)",
+        "مکمل کلسیم",
+        "فقط مشاهده (معمولاً خوش‌خیم است)"
       ],
+      "correct_index": 0,
       "analysis": {
         "options": [
-          "IV phosphate: urgent برای symptomatic (respiratory weakness)",
-          "Oral: too slow برای respiratory compromise",
-          "Calcium: can worsen phosphate precipitation",
-          "Observation: risky با respiratory symptoms"
+          "فسفات وریدی: در هیپوفسفاتمی علامت‌دار (ضعف تنفسی) اقدام ضروری.",
+          "خوراکی: برای ضعف تنفسی/شرایط بحرانی کند است.",
+          "کلسیم: می‌تواند خطر رسوب کلسیم-فسفات را افزایش دهد.",
+          "مشاهده: در حضور علائم تنفسی پرخطر است."
         ],
         "points": [
-          "Symptomatic hypophosphatemia: IV phosphate replacement",
-          "Monitor renal function + serum calcium",
-          "Rapid correction: respiratory improvement expected"
+          "هیپوفسفاتمی علامت‌دار: جایگزینی وریدی فسفات.",
+          "پایش عملکرد کلیه و کلسیم سرم در حین درمان ضروری است.",
+          "اصلاح سریع می‌تواند به بهبود ضعف تنفسی کمک کند."
         ]
       },
       "difficulty": "hard",
-      "tags": [
-        "hypophosphatemia",
-        "respiratory weakness",
-        "IV phosphate",
-        "critical"
-      ],
-      "reference": "Hypophosphatemia Critical Management in ICU",
-      "question": "بیمار ۶۸ ساله post-op با hypophosphatemia. Phosphate ۱.۲ mg/dL، respiratory weakness. کدام اقدام مناسب است؟",
-      "correct_index": 0
+      "tags": ["hypophosphatemia", "respiratory weakness", "IV phosphate", "critical care"],
+      "reference": "Hypophosphatemia Critical Management in ICU"
     }
   ]
 }
