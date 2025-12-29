@@ -2,660 +2,444 @@
 <html lang="fa" dir="rtl">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Medical ProMax - سوالات تخصصی پزشکی</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="enamad" content="61081844" />
+    <title>Medical ProMax | پلتفرم تخصصی سوالات پزشکی</title>
+
+    <link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, 'IRANSans', 'Vazir';
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            min-height: 100vh;
-            padding: 20px;
-            color: #333;
+            font-family: 'Vazirmatn', sans-serif;
+            background-color: #f8fafc;
+            user-select: none;
+            -webkit-tap-highlight-color: transparent;
         }
-
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
+        
+        .medical-gradient {
+            background: radial-gradient(1200px 600px at 100% 0%, rgba(59,130,246,.25), transparent 60%),
+                        radial-gradient(900px 500px at 0% 40%, rgba(16,185,129,.18), transparent 60%),
+                        linear-gradient(135deg, #0f172a 0%, #111827 100%);
         }
-
-        header {
-            text-align: center;
-            color: white;
-            margin-bottom: 40px;
-            padding: 20px 0;
+        
+        .glass {
+            background: rgba(255,255,255,.78);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255,255,255,.35);
         }
-
-        header h1 {
-            font-size: 2.5em;
-            margin-bottom: 10px;
+        
+        .option-card {
+            transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
         }
-
-        header p {
-            font-size: 1.1em;
-            opacity: 0.9;
+        
+        .option-card:active {
+            transform: scale(.98);
         }
-
-        /* Sections Grid */
-        .sections-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
-            margin-bottom: 30px;
+        
+        @keyframes slideIn {
+            from { opacity: 0; transform: translateX(14px); }
+            to { opacity: 1; transform: translateX(0); }
         }
-
-        .section-card {
-            background: white;
-            border-radius: 10px;
-            padding: 30px;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            text-align: center;
-        }
-
-        .section-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
-        }
-
-        .section-card h2 {
-            font-size: 2em;
-            color: #667eea;
-            margin-bottom: 10px;
-        }
-
-        .section-card p {
-            font-size: 0.9em;
-            color: #666;
-        }
-
-        /* Subsections View */
-        .subsections-view {
-            background: white;
-            border-radius: 10px;
-            padding: 30px;
-            margin-bottom: 30px;
-            display: none;
-        }
-
-        .subsections-view.active {
-            display: block;
-        }
-
-        .back-btn {
-            background: #667eea;
-            color: white;
-            border: none;
-            padding: 10px 20px;
-            border-radius: 5px;
-            cursor: pointer;
-            margin-bottom: 20px;
-            font-size: 1em;
-            transition: background 0.3s;
-        }
-
-        .back-btn:hover {
-            background: #764ba2;
-        }
-
-        .subsections-view h2 {
-            color: #667eea;
-            margin-bottom: 20px;
-            font-size: 1.8em;
-        }
-
-        .subsections-list {
-            list-style: none;
-        }
-
-        .subsection-item {
-            background: #f5f5f5;
-            padding: 15px 20px;
-            margin-bottom: 10px;
-            border-radius: 8px;
-            cursor: pointer;
-            transition: all 0.3s;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .subsection-item:hover {
-            background: #667eea;
-            color: white;
-        }
-
-        .subsection-item-title {
-            flex: 1;
-        }
-
-        .subsection-item-count {
-            background: rgba(102, 126, 234, 0.2);
-            padding: 5px 10px;
-            border-radius: 20px;
-            font-size: 0.85em;
-            margin-right: 10px;
-        }
-
-        .subsection-item:hover .subsection-item-count {
-            background: rgba(255, 255, 255, 0.3);
-        }
-
-        /* Question Viewer */
-        .question-viewer {
-            background: white;
-            border-radius: 10px;
-            padding: 30px;
-            display: none;
-        }
-
-        .question-viewer.active {
-            display: block;
-        }
-
-        .viewer-header {
-            display: flex;
-            gap: 10px;
-            margin-bottom: 20px;
-        }
-
-        .viewer-header .back-btn {
-            flex: 1;
-        }
-
-        .viewer-header .close-btn {
-            flex: 1;
-        }
-
-        .close-btn {
-            background: #764ba2;
-            color: white;
-            border: none;
-            padding: 10px 20px;
-            border-radius: 5px;
-            cursor: pointer;
-            font-size: 1em;
-            transition: background 0.3s;
-        }
-
-        .close-btn:hover {
-            background: #667eea;
-        }
-
-        .viewer-title {
-            color: #667eea;
-            font-size: 1.6em;
-            margin-bottom: 20px;
-            text-align: center;
-        }
-
-        .question-count {
-            text-align: center;
-            color: #999;
-            margin-bottom: 20px;
-            font-size: 0.9em;
-        }
-
-        .empty-state {
-            text-align: center;
-            padding: 40px 20px;
-            color: #999;
-        }
-
-        .empty-state p {
-            font-size: 1.2em;
-            color: #667eea;
-        }
-
-        .question-content {
-            background: #f9f9f9;
-            padding: 20px;
-            border-radius: 8px;
-            margin-bottom: 20px;
-            border-right: 4px solid #667eea;
-        }
-
-        .question-text {
-            font-size: 1.1em;
-            margin-bottom: 20px;
-            line-height: 1.6;
-        }
-
-        .options-list {
-            list-style: none;
-        }
-
-        .option-item {
-            background: white;
-            padding: 12px 16px;
-            margin-bottom: 10px;
-            border-radius: 6px;
-            border: 1px solid #ddd;
-            cursor: pointer;
-            transition: all 0.3s;
-            display: flex;
-            gap: 10px;
-            align-items: center;
-        }
-
-        .option-item:hover {
-            border-color: #667eea;
-            background: #f0f4ff;
-        }
-
-        .option-index {
-            background: #667eea;
-            color: white;
-            width: 28px;
-            height: 28px;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-weight: bold;
-            flex-shrink: 0;
-        }
-
-        .answer-toggle {
-            background: #764ba2;
-            color: white;
-            border: none;
-            padding: 12px 24px;
-            border-radius: 6px;
-            cursor: pointer;
-            font-size: 1em;
-            width: 100%;
-            margin-bottom: 20px;
-            transition: background 0.3s;
-        }
-
-        .answer-toggle:hover {
-            background: #667eea;
-        }
-
-        .answer-section {
-            background: #f0f9ff;
-            border-left: 4px solid #667eea;
-            padding: 20px;
-            border-radius: 6px;
-            margin-bottom: 20px;
-            display: none;
-        }
-
-        .answer-section.shown {
-            display: block;
-        }
-
-        .correct-answer {
-            margin-bottom: 15px;
-        }
-
-        .correct-answer-label {
-            font-weight: bold;
-            color: #667eea;
-            margin-bottom: 5px;
-        }
-
-        .correct-answer-box {
-            background: white;
-            padding: 12px 16px;
-            border-radius: 6px;
-            border: 2px solid #667eea;
-            display: flex;
-            gap: 10px;
-            align-items: center;
-        }
-
-        .correct-index {
-            background: #667eea;
-            color: white;
-            width: 32px;
-            height: 32px;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-weight: bold;
-            flex-shrink: 0;
-            font-size: 1.1em;
-        }
-
+        
         .analysis-section {
-            margin-top: 15px;
-        }
-
-        .analysis-label {
-            font-weight: bold;
-            color: #667eea;
-            margin-bottom: 10px;
-        }
-
-        .analysis-text {
-            color: #555;
-            line-height: 1.6;
-            margin-bottom: 10px;
-        }
-
-        .analysis-options {
-            background: white;
-            padding: 15px;
-            border-radius: 6px;
-            margin-top: 10px;
-        }
-
-        .analysis-option-item {
-            padding: 8px 12px;
-            margin-bottom: 8px;
-            border-radius: 4px;
-            border: 1px solid #ddd;
-            font-size: 0.95em;
-            background: #fafafa;
-        }
-
-        .analysis-option-item:last-child {
-            margin-bottom: 0;
-        }
-
-        /* Navigation buttons */
-        .navigation-buttons {
-            display: flex;
-            gap: 10px;
-            margin-top: 20px;
-            justify-content: center;
-        }
-
-        .nav-btn {
-            background: #667eea;
-            color: white;
-            border: none;
-            padding: 10px 20px;
-            border-radius: 5px;
-            cursor: pointer;
-            font-size: 1em;
-            transition: background 0.3s;
-            min-width: 100px;
-        }
-
-        .nav-btn:hover:not(:disabled) {
-            background: #764ba2;
-        }
-
-        .nav-btn:disabled {
-            opacity: 0.5;
-            cursor: not-allowed;
-        }
-
-        .question-number {
-            text-align: center;
-            color: #667eea;
-            font-weight: bold;
-            margin-top: 10px;
-        }
-
-        @media (max-width: 768px) {
-            header h1 {
-                font-size: 1.8em;
-            }
-
-            .sections-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .viewer-header {
-                flex-direction: column;
-            }
+            border-right: 4px solid rgba(59,130,246,.9);
+            animation: slideIn 0.22s ease-out;
         }
     </style>
 </head>
-<body>
-    <div class="container">
-        <header>
-            <h1>Medical ProMax</h1>
-            <p>سوالات تخصصی پزشکی داخلی</p>
-        </header>
-
-        <!-- Sections Grid -->
-        <div id="sectionsContainer" class="sections-grid"></div>
-
-        <!-- Subsections View -->
-        <div id="subsectionsView" class="subsections-view">
-            <button class="back-btn" onclick="showSections()">← بازگشت</button>
-            <h2 id="subsectionsTitle"></h2>
-            <ul id="subsectionsList" class="subsections-list"></ul>
-        </div>
-
-        <!-- Question Viewer -->
-        <div id="questionViewer" class="question-viewer">
-            <div class="viewer-header">
-                <button class="back-btn" onclick="showSubsections()">← بازگشت</button>
-                <button class="close-btn" onclick="showSections()">بستن</button>
-            </div>
-            <h2 id="viewerTitle" class="viewer-title"></h2>
-            <div id="questionContent"></div>
-        </div>
-    </div>
+<body class="min-h-screen flex flex-col" oncontextmenu="return false;">
+    <div id="app"></div>
 
     <script>
-        let manifest = null;
-        let currentSection = null;
-        let currentSubsection = null;
-        let currentQuestions = [];
-        let currentQuestionIndex = 0;
+        const CONFIG = {
+            brand: "Medical ProMax",
+            user: "محمد براریان",
+            exam: "آمادگی آزمون ارتقا و پره‌انترنی",
+            totalQuestions: 400
+        };
 
-        // Load manifest on page load
-        document.addEventListener('DOMContentLoaded', async () => {
+        const manifest = {
+            sections: [
+                {
+                    id: "heart",
+                    title: "قلب",
+                    icon: "heart",
+                    color: "from-rose-600 to-red-600",
+                    subsections: [
+                        { id: "ihd", title: "ایسکمیک (IHD/CAD)", path: "data/heart/ihd.json" },
+                        { id: "valvular", title: "دریچه‌ای", path: "data/heart/valvular.json" },
+                        { id: "heart_failure", title: "نارسایی و کاردیومیوپاتی", path: "data/heart/heart_failure.json" },
+                        { id: "pericardial", title: "پریکارد", path: "data/heart/pericardial.json" },
+                        { id: "arrhythmia", title: "آریتمی و هدایت", path: "data/heart/arrhythmia.json" },
+                        { id: "vascular_congenital", title: "عروقی و مادرزادی", path: "data/heart/vascular_congenital.json" }
+                    ]
+                },
+                {
+                    id: "icu",
+                    title: "ICU",
+                    icon: "activity",
+                    color: "from-amber-500 to-orange-600",
+                    subsections: [
+                        { id: "shock_hemodynamics", title: "شوک و همودینامیک", path: "data/icu/shock_hemodynamics.json" },
+                        { id: "ventilation_airway", title: "ونتیلاسیون و راه‌هوایی", path: "data/icu/ventilation_airway.json" },
+                        { id: "icu_infections", title: "عفونت‌های ICU", path: "data/icu/icu_infections.json" },
+                        { id: "adrenal_metabolic", title: "آدرنال و بحران‌های متابولیک", path: "data/icu/adrenal_metabolic.json" },
+                        { id: "hypoxia_physiology", title: "فیزیولوژی هیپوکسی", path: "data/icu/hypoxia_physiology.json" }
+                    ]
+                },
+                {
+                    id: "lung",
+                    title: "ریه",
+                    icon: "wind",
+                    color: "from-cyan-500 to-blue-500",
+                    subsections: [
+                        { id: "obstructive", title: "انسدادی (آسم/COPD)", path: "data/lung/obstructive.json" },
+                        { id: "infections_pleura", title: "عفونی و پلور", path: "data/lung/infections_pleura.json" },
+                        { id: "ild_occupational", title: "ILD و شغلی", path: "data/lung/ild_occupational.json" },
+                        { id: "pulmonary_vascular", title: "عروق ریوی (PTE/PH)", path: "data/lung/pulmonary_vascular.json" },
+                        { id: "sleep_disorders", title: "اختلالات خواب (OSA)", path: "data/lung/sleep_disorders.json" }
+                    ]
+                },
+                {
+                    id: "nephro",
+                    title: "نفرو",
+                    icon: "droplet",
+                    color: "from-purple-600 to-violet-700",
+                    subsections: [
+                        { id: "aki_nephrotoxins", title: "AKI و نفروتوکسین‌ها", path: "data/nephro/aki_nephrotoxins.json" },
+                        { id: "glomerular_structural", title: "گلومرولی و ساختاری", path: "data/nephro/glomerular_structural.json" },
+                        { id: "ckd_dialysis", title: "CKD و دیالیز", path: "data/nephro/ckd_dialysis.json" },
+                        { id: "electrolytes_acidbase", title: "الکترولیت/اسید-باز", path: "data/nephro/electrolytes_acidbase.json" },
+                        { id: "stones_uti", title: "سنگ و UTI", path: "data/nephro/stones_uti.json" },
+                        { id: "transplant", title: "پیوند", path: "data/nephro/transplant.json" }
+                    ]
+                }
+            ]
+        };
+
+        let state = {
+            view: 'login',
+            section: null,
+            subsection: null,
+            index: 0,
+            answers: {},
+            showAnalysis: false,
+            currentQuestions: []
+        };
+
+        function save() {
+            localStorage.setItem('mp_state', JSON.stringify({
+                answers: state.answers
+            }));
+        }
+
+        function load() {
             try {
-                const response = await fetch('data/manifest.json');
-                manifest = await response.json();
-                renderSections();
-            } catch (error) {
-                console.error('Error loading manifest:', error);
-                document.getElementById('sectionsContainer').innerHTML = 
-                    '<p style="color: red; text-align: center;">خطا در بارگذاری منابع</p>';
-            }
-        });
-
-        function renderSections() {
-            const container = document.getElementById('sectionsContainer');
-            container.innerHTML = '';
-            
-            manifest.sections.forEach(section => {
-                const card = document.createElement('div');
-                card.className = 'section-card';
-                card.innerHTML = `<h2>${section.title}</h2><p>درس تخصصی</p>`;
-                card.onclick = () => showSubsections(section);
-                container.appendChild(card);
-            });
+                const saved = localStorage.getItem('mp_state');
+                if (saved) {
+                    const data = JSON.parse(saved);
+                    state.answers = data.answers || {};
+                }
+            } catch (e) {}
         }
 
-        function showSections() {
-            document.getElementById('sectionsContainer').style.display = 'block';
-            document.getElementById('subsectionsView').classList.remove('active');
-            document.getElementById('questionViewer').classList.remove('active');
-            currentSection = null;
-            currentSubsection = null;
+        function render() {
+            const root = document.getElementById('app');
+            if (state.view === 'login') root.innerHTML = viewLogin();
+            else if (state.view === 'dashboard') root.innerHTML = viewDashboard();
+            else if (state.view === 'subsections') root.innerHTML = viewSubsections();
+            else if (state.view === 'quiz') root.innerHTML = viewQuiz();
+            lucide.createIcons();
         }
 
-        function showSubsections(section) {
-            currentSection = section;
-            document.getElementById('sectionsContainer').style.display = 'none';
-            document.getElementById('questionViewer').classList.remove('active');
-            document.getElementById('subsectionsView').classList.add('active');
-            
-            document.getElementById('subsectionsTitle').textContent = section.title;
-            const list = document.getElementById('subsectionsList');
-            list.innerHTML = '';
-            
-            section.subsections.forEach(subsection => {
-                const item = document.createElement('li');
-                item.className = 'subsection-item';
-                item.innerHTML = `
-                    <span class="subsection-item-title">${subsection.title}</span>
-                    <span class="subsection-item-count">0 سوال</span>
-                `;
-                item.onclick = () => loadSubsectionQuestions(subsection, item);
-                list.appendChild(item);
-            });
-        }
+        function viewLogin() {
+            return `
+                <div class="min-h-screen flex items-center justify-center p-6 medical-gradient">
+                    <div class="max-w-md w-full glass p-10 rounded-[2.5rem] shadow-2xl text-center">
+                        <div class="mb-8 flex justify-center">
+                            <div class="p-5 bg-blue-50 text-blue-600 rounded-3xl">
+                                <i data-lucide="shield-check" class="w-12 h-12"></i>
+                            </div>
+                        </div>
+                        <h1 class="text-3xl font-black text-slate-800 mb-2">${CONFIG.brand}</h1>
+                        <p class="text-slate-400 font-bold mb-10 tracking-widest uppercase text-[10px]">Medical Examination Portal</p>
 
-        async function loadSubsectionQuestions(subsection, itemElement) {
-            currentSubsection = subsection;
-            try {
-                const response = await fetch(subsection.path);
-                const data = await response.json();
-                currentQuestions = data.questions || [];
-                currentQuestionIndex = 0;
-                
-                // Update count in UI
-                itemElement.querySelector('.subsection-item-count').textContent = 
-                    `${currentQuestions.length} سوال`;
-                
-                showQuestionViewer();
-            } catch (error) {
-                console.error('Error loading subsection:', error);
-                alert('خطا در بارگذاری سوالات');
-            }
-        }
-
-        function showQuestionViewer() {
-            document.getElementById('subsectionsView').classList.remove('active');
-            document.getElementById('questionViewer').classList.add('active');
-            
-            document.getElementById('viewerTitle').textContent = currentSubsection.title;
-            renderQuestion();
-        }
-
-        function showSubsections() {
-            document.getElementById('questionViewer').classList.remove('active');
-            document.getElementById('subsectionsView').classList.add('active');
-        }
-
-        function renderQuestion() {
-            const content = document.getElementById('questionContent');
-            
-            // Show question count
-            const questionNumber = document.createElement('div');
-            questionNumber.className = 'question-count';
-            questionNumber.textContent = `سوال ${currentQuestionIndex + 1} از ${currentQuestions.length}`;
-            
-            if (currentQuestions.length === 0) {
-                content.innerHTML = `
-                    ${questionNumber.outerHTML}
-                    <div class="empty-state">
-                        <p>هنوز سوالی اضافه نشده</p>
+                        <div class="space-y-4 text-right">
+                            <input id="u" type="text" class="w-full px-6 py-4 rounded-2xl border-2 border-slate-100 outline-none focus:border-blue-500 transition" placeholder="نام کاربری" value="admin">
+                            <input id="p" type="password" class="w-full px-6 py-4 rounded-2xl border-2 border-slate-100 outline-none focus:border-blue-500 transition" placeholder="رمز عبور" value="admin">
+                            <button onclick="handleLogin()" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-5 rounded-2xl shadow-lg transition-all active:scale-95">ورود به پنل</button>
+                        </div>
+                        <p class="mt-8 text-[10px] text-slate-500">پزشک: ${CONFIG.user} | ${CONFIG.totalQuestions} سوال</p>
                     </div>
-                `;
-                return;
-            }
-            
-            const question = currentQuestions[currentQuestionIndex];
-            let html = questionNumber.outerHTML;
-            
-            html += `
-                <div class="question-content">
-                    <div class="question-text">${question.question || ''}</div>
+                </div>
             `;
-            
-            if (question.options && question.options.length > 0) {
-                html += '<ul class="options-list">';
-                question.options.forEach((option, idx) => {
-                    html += `
-                        <li class="option-item">
-                            <span class="option-index">${String.fromCharCode(65 + idx)}</span>
-                            <span>${option}</span>
-                        </li>
-                    `;
-                });
-                html += '</ul>';
-            }
-            
-            html += '</div>';
-            
-            // Add answer toggle and answer section
-            html += `<button class="answer-toggle" onclick="toggleAnswer(${currentQuestionIndex})">نمایش پاسخ</button>`;
-            
-            html += '<div id="answerSection" class="answer-section">';
-            
-            if (question.correct_index !== undefined) {
-                html += `
-                    <div class="correct-answer">
-                        <div class="correct-answer-label">پاسخ صحیح:</div>
-                        <div class="correct-answer-box">
-                            <span class="correct-index">${String.fromCharCode(65 + question.correct_index)}</span>
-                            <span>${question.options ? question.options[question.correct_index] : 'نامشخص'}</span>
+        }
+
+        function viewDashboard() {
+            const totalDone = Object.keys(state.answers).length;
+
+            return `
+                <nav class="bg-white border-b px-8 py-4 sticky top-0 z-40">
+                    <div class="max-w-7xl mx-auto flex justify-between items-center">
+                        <div class="flex items-center gap-4">
+                            <div class="bg-blue-600 p-2 rounded-xl text-white shadow-lg"><i data-lucide="activity"></i></div>
+                            <div>
+                                <h2 class="font-black text-xl text-slate-800">${CONFIG.brand}</h2>
+                                <p class="text-[10px] text-slate-400 font-bold tracking-tighter">${CONFIG.exam}</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-4">
+                            <div class="text-right">
+                                <p class="text-[10px] text-slate-400 font-bold">پزشک محترم</p>
+                                <p class="text-sm font-black text-slate-700">${CONFIG.user}</p>
+                            </div>
+                            <button onclick="logout()" class="p-2 text-slate-300 hover:text-red-500 transition"><i data-lucide="power"></i></button>
                         </div>
                     </div>
-                `;
-            }
-            
-            if (question.analysis) {
-                html += '<div class="analysis-section">';
-                if (question.analysis.points) {
-                    html += `
-                        <div class="analysis-label">نکات مهم:</div>
-                        <div class="analysis-text">${question.analysis.points}</div>
-                    `;
-                }
-                if (question.analysis.options && question.analysis.options.length > 0) {
-                    html += '<div class="analysis-label">توضیح گزینه‌ها:</div><div class="analysis-options">';
-                    question.analysis.options.forEach((opt, idx) => {
-                        html += `
-                            <div class="analysis-option-item">
-                                <strong>${String.fromCharCode(65 + idx)}:</strong> ${opt}
+                </nav>
+
+                <main class="max-w-7xl mx-auto p-8">
+                    <div class="bg-blue-600 rounded-[2.5rem] p-10 mb-12 text-white flex flex-col md:flex-row justify-between items-center shadow-2xl shadow-blue-200">
+                        <div>
+                            <h3 class="text-3xl font-black mb-3 text-white">آمادگی برای آزمون</h3>
+                            <p class="opacity-80 font-medium tracking-tight">دسترسی به ${CONFIG.totalQuestions} سوال تخصصی پزشکی داخلی</p>
+                        </div>
+                        <div class="mt-6 md:mt-0 text-center">
+                            <span class="text-5xl font-black block">${totalDone}</span>
+                            <span class="text-xs font-bold opacity-60 uppercase tracking-widest">سوال پاسخ داده</span>
+                        </div>
+                    </div>
+
+                    <h3 class="text-2xl font-black text-slate-800 mb-6">بخش‌های درسی</h3>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                        ${manifest.sections.map(sec => {
+                            const sectionQs = sec.subsections.length * 50; // تقریبی
+                            return `
+                            <div onclick="initSubsections('${sec.id}')" class="group bg-white p-8 rounded-[2rem] border border-slate-100 shadow-sm hover:shadow-2xl hover:-translate-y-2 cursor-pointer transition-all">
+                                <div class="bg-gradient-to-br ${sec.color} w-16 h-16 rounded-2xl flex items-center justify-center text-white mb-6 shadow-lg group-hover:rotate-6 transition">
+                                    <i data-lucide="${sec.icon}" class="w-8 h-8"></i>
+                                </div>
+                                <h4 class="font-bold text-slate-800 text-lg mb-4">${sec.title}</h4>
+                                <div class="flex justify-between items-center">
+                                    <span class="text-xs font-bold text-slate-400">${sec.subsections.length} درس</span>
+                                    <span class="text-xs font-black text-blue-600">50 سوال</span>
+                                </div>
                             </div>
-                        `;
-                    });
-                    html += '</div>';
-                }
-                html += '</div>';
-            }
-            
-            html += '</div>';
-            
-            // Add navigation buttons
-            if (currentQuestions.length > 1) {
-                html += `
-                    <div class="navigation-buttons">
-                        <button class="nav-btn" onclick="previousQuestion()" 
-                            ${currentQuestionIndex === 0 ? 'disabled' : ''}>قبلی</button>
-                        <button class="nav-btn" onclick="nextQuestion()" 
-                            ${currentQuestionIndex === currentQuestions.length - 1 ? 'disabled' : ''}>بعدی</button>
+                        `}).join('')}
+                    </div>
+                </main>
+            `;
+        }
+
+        function viewSubsections() {
+            const section = manifest.sections.find(s => s.id === state.section);
+            if (!section) return `<div>خطا</div>`;
+
+            return `
+                <nav class="bg-white border-b px-8 py-4 sticky top-0 z-40">
+                    <div class="max-w-7xl mx-auto flex items-center justify-between">
+                        <button onclick="state.view='dashboard';render()" class="flex items-center gap-2 text-slate-400 font-bold hover:text-blue-600 transition">
+                            <i data-lucide="arrow-right" class="w-5 h-5"></i>
+                            بازگشت
+                        </button>
+                        <h2 class="font-black text-xl text-slate-800">${section.title}</h2>
+                        <div class="w-10"></div>
+                    </div>
+                </nav>
+
+                <main class="max-w-7xl mx-auto p-8">
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                        ${section.subsections.map(sub => `
+                            <div onclick="initQuiz('${section.id}', '${sub.id}', '${sub.path}')" class="group bg-white p-8 rounded-2xl border border-slate-100 shadow-sm hover:shadow-xl hover:-translate-y-1 cursor-pointer transition-all">
+                                <div class="flex items-start justify-between mb-4">
+                                    <h4 class="font-bold text-slate-800 text-lg flex-1">${sub.title}</h4>
+                                    <i data-lucide="chevron-left" class="text-slate-300 group-hover:text-blue-600 transition"></i>
+                                </div>
+                                <p class="text-xs text-slate-400 font-bold">50 سوال</p>
+                                <div class="mt-4 h-1.5 bg-slate-100 rounded-full overflow-hidden">
+                                    <div class="h-1.5 bg-blue-600 rounded-full" style="width: 0%"></div>
+                                </div>
+                            </div>
+                        `).join('')}
+                    </div>
+                </main>
+            `;
+        }
+
+        function viewQuiz() {
+            const questions = state.currentQuestions;
+            if (!questions.length) {
+                return `
+                    <nav class="bg-white border-b px-8 py-4 sticky top-0 z-40">
+                        <div class="max-w-7xl mx-auto flex items-center justify-between">
+                            <button onclick="state.view='subsections';render()" class="flex items-center gap-2 text-slate-400 font-bold hover:text-blue-600 transition">
+                                <i data-lucide="arrow-right" class="w-5 h-5"></i>
+                                بازگشت
+                            </button>
+                            <div></div>
+                            <div class="w-10"></div>
+                        </div>
+                    </nav>
+                    <div class="flex items-center justify-center min-h-[60vh] p-8">
+                        <p class="text-xl text-slate-500">هنوز سوالی اضافه نشده</p>
                     </div>
                 `;
             }
-            
-            content.innerHTML = html;
+
+            const q = questions[state.index];
+            const answer = state.answers[q.id || state.index];
+
+            return `
+                <div class="flex flex-col min-h-screen">
+                    <header class="bg-white border-b px-8 py-4 flex justify-between items-center sticky top-0 z-40">
+                        <button onclick="state.view='subsections';render()" class="flex items-center gap-2 text-slate-400 font-bold hover:text-blue-600 transition">
+                            <i data-lucide="arrow-right" class="w-5 h-5"></i>
+                            بازگشت
+                        </button>
+                        <div class="text-center">
+                            <p class="text-[10px] font-black text-blue-600 uppercase tracking-widest">${state.subsection}</p>
+                            <p class="text-lg font-black text-slate-800">سوال ${state.index + 1} از ${questions.length}</p>
+                        </div>
+                        <div class="w-10"></div>
+                    </header>
+
+                    <main class="max-w-5xl mx-auto w-full p-8 flex-grow">
+                        <div class="bg-white rounded-[3rem] p-10 md:p-16 shadow-sm border border-slate-100 mb-10">
+                            <h3 class="text-2xl md:text-3xl font-black text-slate-800 leading-relaxed mb-16">
+                                <span class="text-blue-600 ml-4 font-black tracking-tighter">#${state.index + 1}</span>
+                                ${q.question || q.q || ''}
+                            </h3>
+
+                            <div class="grid gap-5">
+                                ${(q.options || q.option || []).map((opt, i) => {
+                                    let cls = "border-slate-100 bg-slate-50";
+                                    let icon = "";
+                                    if (answer !== undefined) {
+                                        if (i === (q.correct_index || q.correct)) {
+                                            cls = "border-emerald-500 bg-emerald-50 text-emerald-900 ring-4 ring-emerald-500/10";
+                                            icon = '<i data-lucide="check-circle" class="text-emerald-500 w-6 h-6"></i>';
+                                        } else if (i === answer) {
+                                            cls = "border-red-500 bg-red-50 text-red-900 ring-4 ring-red-500/10";
+                                            icon = '<i data-lucide="x-circle" class="text-red-500 w-6 h-6"></i>';
+                                        }
+                                    }
+                                    return `
+                                        <div onclick="pick(${state.index}, ${i})" class="option-card p-6 rounded-2xl border-2 flex justify-between items-center cursor-pointer ${cls}">
+                                            <span class="font-bold text-lg">${opt}</span>
+                                            ${icon}
+                                        </div>
+                                    `;
+                                }).join('')}
+                            </div>
+                        </div>
+
+                        ${(answer !== undefined || state.showAnalysis) ? `
+                            <div class="analysis-section bg-white rounded-[2.5rem] p-10 shadow-xl border border-blue-50 mb-20">
+                                <div class="flex items-center gap-4 mb-10">
+                                    <div class="bg-blue-600 text-white p-3 rounded-2xl shadow-lg"><i data-lucide="clipboard-check"></i></div>
+                                    <h4 class="text-2xl font-black text-slate-800 tracking-tight">نکات طلایی</h4>
+                                </div>
+
+                                <div class="p-8 rounded-3xl border-2 border-emerald-100 bg-emerald-50/20">
+                                    ${(q.analysis && q.analysis.points) ? `<p class="text-slate-700 text-lg leading-8 mb-6">${q.analysis.points}</p>` : ''}
+                                    
+                                    ${(q.analysis && q.analysis.options && Array.isArray(q.analysis.options)) ? `
+                                        <ul class="space-y-5">
+                                            ${q.analysis.options.map((pt, idx) => `
+                                                <li class="flex items-start gap-4 text-slate-700 text-lg leading-8">
+                                                    <span class="w-2.5 h-2.5 rounded-full bg-emerald-500 shrink-0 mt-2.5"></span>
+                                                    <strong>${String.fromCharCode(65 + idx)}:</strong> ${pt}
+                                                </li>
+                                            `).join('')}
+                                        </ul>
+                                    ` : ''}
+                                </div>
+                            </div>
+                        ` : ''}
+                    </main>
+
+                    <footer class="bg-white/95 backdrop-blur-md border-t p-6 sticky bottom-0 z-40">
+                        <div class="max-w-5xl mx-auto flex gap-6">
+                            <button onclick="prev()" ${state.index === 0 ? 'disabled' : ''} class="flex-1 py-5 rounded-2xl border-2 border-slate-100 font-black text-slate-500 disabled:opacity-30 hover:bg-slate-50 transition text-lg">قبلی</button>
+                            <button onclick="state.showAnalysis=!state.showAnalysis;render()" class="p-5 rounded-2xl bg-blue-50 text-blue-600 hover:bg-blue-100 transition shadow-inner">
+                                <i data-lucide="lightbulb"></i>
+                            </button>
+                            <button onclick="next()" ${state.index === questions.length - 1 ? 'disabled' : ''} class="flex-1 py-5 rounded-2xl bg-slate-900 text-white font-black shadow-2xl hover:bg-black transition text-lg">بعدی</button>
+                        </div>
+                    </footer>
+                </div>
+            `;
         }
 
-        function toggleAnswer(questionIndex) {
-            const answerSection = document.getElementById('answerSection');
-            const button = event.target;
-            
-            answerSection.classList.toggle('shown');
-            button.textContent = answerSection.classList.contains('shown') 
-                ? 'پنهان کردن پاسخ' 
-                : 'نمایش پاسخ';
+        async function initSubsections(sectionId) {
+            state.view = 'subsections';
+            state.section = sectionId;
+            render();
         }
 
-        function nextQuestion() {
-            if (currentQuestionIndex < currentQuestions.length - 1) {
-                currentQuestionIndex++;
-                renderQuestion();
+        async function initQuiz(sectionId, subsectionId, path) {
+            state.section = sectionId;
+            state.subsection = subsectionId;
+            state.index = 0;
+            state.showAnalysis = false;
+            
+            try {
+                const response = await fetch(path);
+                const data = await response.json();
+                state.currentQuestions = data.questions || [];
+                state.view = 'quiz';
+            } catch (e) {
+                console.error('Error loading questions:', e);
+                state.currentQuestions = [];
+            }
+            
+            render();
+        }
+
+        function handleLogin() {
+            const u = document.getElementById('u').value;
+            const p = document.getElementById('p').value;
+            if (u === 'admin' && p === 'admin') {
+                state.view = 'dashboard';
+                render();
             }
         }
 
-        function previousQuestion() {
-            if (currentQuestionIndex > 0) {
-                currentQuestionIndex--;
-                renderQuestion();
+        function logout() {
+            state.view = 'login';
+            render();
+        }
+
+        function pick(idx, answerIdx) {
+            if (state.answers[idx] !== undefined) return;
+            state.answers[idx] = answerIdx;
+            save();
+            render();
+        }
+
+        function next() {
+            if (state.index < state.currentQuestions.length - 1) {
+                state.index++;
+                state.showAnalysis = false;
+                render();
+                window.scrollTo(0, 0);
             }
         }
+
+        function prev() {
+            if (state.index > 0) {
+                state.index--;
+                state.showAnalysis = false;
+                render();
+                window.scrollTo(0, 0);
+            }
+        }
+
+        load();
+        render();
     </script>
 </body>
 </html>
