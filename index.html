@@ -55,9 +55,7 @@
     <script>
         const CONFIG = {
             brand: "Medical ProMax",
-            user: "محمد براریان",
-            exam: "آمادگی آزمون ارتقا و پره‌انترنی",
-            totalQuestions: 400
+            exam: "آمادگی آزمون ارتقا و پره‌انترنی"
         };
 
         const manifest = {
@@ -119,6 +117,9 @@
             ]
         };
 
+        // Cache for question counts
+        const questionCountCache = {};
+
         let state = {
             view: 'login',
             section: null,
@@ -131,7 +132,11 @@
 
         function save() {
             localStorage.setItem('mp_state', JSON.stringify({
-                answers: state.answers
+                answers: state.answers,
+                view: state.view,
+                section: state.section,
+                subsection: state.subsection,
+                index: state.index
             }));
         }
 
@@ -141,8 +146,33 @@
                 if (saved) {
                     const data = JSON.parse(saved);
                     state.answers = data.answers || {};
+                    
+                    // بازگرداندن کاربر به جایی که بود (اگر وارد بود)
+                    if (data.view && data.view !== 'login') {
+                        state.view = data.view;
+                        state.section = data.section;
+                        state.subsection = data.subsection;
+                        state.index = data.index || 0;
+                    }
                 }
-            } catch (e) {}
+            } catch (e) {
+                console.error('Error loading state:', e);
+            }
+        }
+
+        async function getQuestionCount(path) {
+            if (questionCountCache[path]) {
+                return questionCountCache[path];
+            }
+            try {
+                const response = await fetch(path);
+                const data = await response.json();
+                const count = (data.questions || []).length;
+                questionCountCache[path] = count;
+                return count;
+            } catch (e) {
+                return 0;
+            }
         }
 
         function render() {
@@ -167,11 +197,10 @@
                         <p class="text-slate-400 font-bold mb-10 tracking-widest uppercase text-[10px]">Medical Examination Portal</p>
 
                         <div class="space-y-4 text-right">
-                            <input id="u" type="text" class="w-full px-6 py-4 rounded-2xl border-2 border-slate-100 outline-none focus:border-blue-500 transition" placeholder="نام کاربری" value="admin">
-                            <input id="p" type="password" class="w-full px-6 py-4 rounded-2xl border-2 border-slate-100 outline-none focus:border-blue-500 transition" placeholder="رمز عبور" value="admin">
+                            <input id="u" type="text" class="w-full px-6 py-4 rounded-2xl border-2 border-slate-100 outline-none focus:border-blue-500 transition" placeholder="نام کاربری">
+                            <input id="p" type="password" class="w-full px-6 py-4 rounded-2xl border-2 border-slate-100 outline-none focus:border-blue-500 transition" placeholder="رمز عبور">
                             <button onclick="handleLogin()" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-5 rounded-2xl shadow-lg transition-all active:scale-95">ورود به پنل</button>
                         </div>
-                        <p class="mt-8 text-[10px] text-slate-500">پزشک: ${CONFIG.user} | ${CONFIG.totalQuestions} سوال</p>
                     </div>
                 </div>
             `;
@@ -190,13 +219,7 @@
                                 <p class="text-[10px] text-slate-400 font-bold tracking-tighter">${CONFIG.exam}</p>
                             </div>
                         </div>
-                        <div class="flex items-center gap-4">
-                            <div class="text-right">
-                                <p class="text-[10px] text-slate-400 font-bold">پزشک محترم</p>
-                                <p class="text-sm font-black text-slate-700">${CONFIG.user}</p>
-                            </div>
-                            <button onclick="logout()" class="p-2 text-slate-300 hover:text-red-500 transition"><i data-lucide="power"></i></button>
-                        </div>
+                        <button onclick="logout()" class="p-2 text-slate-300 hover:text-red-500 transition"><i data-lucide="power"></i></button>
                     </div>
                 </nav>
 
@@ -204,7 +227,7 @@
                     <div class="bg-blue-600 rounded-[2.5rem] p-10 mb-12 text-white flex flex-col md:flex-row justify-between items-center shadow-2xl shadow-blue-200">
                         <div>
                             <h3 class="text-3xl font-black mb-3 text-white">آمادگی برای آزمون</h3>
-                            <p class="opacity-80 font-medium tracking-tight">دسترسی به ${CONFIG.totalQuestions} سوال تخصصی پزشکی داخلی</p>
+                            <p class="opacity-80 font-medium tracking-tight">دسترسی به سوالات تخصصی پزشکی داخلی</p>
                         </div>
                         <div class="mt-6 md:mt-0 text-center">
                             <span class="text-5xl font-black block">${totalDone}</span>
@@ -215,9 +238,7 @@
                     <h3 class="text-2xl font-black text-slate-800 mb-6">بخش‌های درسی</h3>
 
                     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-                        ${manifest.sections.map(sec => {
-                            const sectionQs = sec.subsections.length * 50; // تقریبی
-                            return `
+                        ${manifest.sections.map(sec => `
                             <div onclick="initSubsections('${sec.id}')" class="group bg-white p-8 rounded-[2rem] border border-slate-100 shadow-sm hover:shadow-2xl hover:-translate-y-2 cursor-pointer transition-all">
                                 <div class="bg-gradient-to-br ${sec.color} w-16 h-16 rounded-2xl flex items-center justify-center text-white mb-6 shadow-lg group-hover:rotate-6 transition">
                                     <i data-lucide="${sec.icon}" class="w-8 h-8"></i>
@@ -225,18 +246,35 @@
                                 <h4 class="font-bold text-slate-800 text-lg mb-4">${sec.title}</h4>
                                 <div class="flex justify-between items-center">
                                     <span class="text-xs font-bold text-slate-400">${sec.subsections.length} درس</span>
-                                    <span class="text-xs font-black text-blue-600">50 سوال</span>
                                 </div>
                             </div>
-                        `}).join('')}
+                        `).join('')}
                     </div>
                 </main>
             `;
         }
 
-        function viewSubsections() {
+        async function viewSubsections() {
             const section = manifest.sections.find(s => s.id === state.section);
             if (!section) return `<div>خطا</div>`;
+
+            // بارگیری تعداد سوالات برای هر subsection
+            let subsectionsHtml = '';
+            for (const sub of section.subsections) {
+                const count = await getQuestionCount(sub.path);
+                subsectionsHtml += `
+                    <div onclick="initQuiz('${section.id}', '${sub.id}', '${sub.path}')" class="group bg-white p-8 rounded-2xl border border-slate-100 shadow-sm hover:shadow-xl hover:-translate-y-1 cursor-pointer transition-all">
+                        <div class="flex items-start justify-between mb-4">
+                            <h4 class="font-bold text-slate-800 text-lg flex-1">${sub.title}</h4>
+                            <i data-lucide="chevron-left" class="text-slate-300 group-hover:text-blue-600 transition"></i>
+                        </div>
+                        <p class="text-xs text-slate-400 font-bold">${count} سوال</p>
+                        <div class="mt-4 h-1.5 bg-slate-100 rounded-full overflow-hidden">
+                            <div class="h-1.5 bg-blue-600 rounded-full" style="width: 0%"></div>
+                        </div>
+                    </div>
+                `;
+            }
 
             return `
                 <nav class="bg-white border-b px-8 py-4 sticky top-0 z-40">
@@ -252,18 +290,7 @@
 
                 <main class="max-w-7xl mx-auto p-8">
                     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                        ${section.subsections.map(sub => `
-                            <div onclick="initQuiz('${section.id}', '${sub.id}', '${sub.path}')" class="group bg-white p-8 rounded-2xl border border-slate-100 shadow-sm hover:shadow-xl hover:-translate-y-1 cursor-pointer transition-all">
-                                <div class="flex items-start justify-between mb-4">
-                                    <h4 class="font-bold text-slate-800 text-lg flex-1">${sub.title}</h4>
-                                    <i data-lucide="chevron-left" class="text-slate-300 group-hover:text-blue-600 transition"></i>
-                                </div>
-                                <p class="text-xs text-slate-400 font-bold">50 سوال</p>
-                                <div class="mt-4 h-1.5 bg-slate-100 rounded-full overflow-hidden">
-                                    <div class="h-1.5 bg-blue-600 rounded-full" style="width: 0%"></div>
-                                </div>
-                            </div>
-                        `).join('')}
+                        ${subsectionsHtml}
                     </div>
                 </main>
             `;
@@ -377,6 +404,10 @@
         async function initSubsections(sectionId) {
             state.view = 'subsections';
             state.section = sectionId;
+            state.subsection = null;
+            state.index = 0;
+            state.currentQuestions = [];
+            save();
             render();
         }
 
@@ -396,6 +427,7 @@
                 state.currentQuestions = [];
             }
             
+            save();
             render();
         }
 
@@ -404,11 +436,15 @@
             const p = document.getElementById('p').value;
             if (u === 'admin' && p === 'admin') {
                 state.view = 'dashboard';
+                save();
                 render();
+            } else {
+                alert('نام کاربری یا رمز عبور نادرست است');
             }
         }
 
         function logout() {
+            save(); // ذخیره وضعیت قبل از خروج
             state.view = 'login';
             render();
         }
@@ -424,6 +460,7 @@
             if (state.index < state.currentQuestions.length - 1) {
                 state.index++;
                 state.showAnalysis = false;
+                save();
                 render();
                 window.scrollTo(0, 0);
             }
@@ -433,11 +470,13 @@
             if (state.index > 0) {
                 state.index--;
                 state.showAnalysis = false;
+                save();
                 render();
                 window.scrollTo(0, 0);
             }
         }
 
+        // بارگیری وضعیت قبلی و رندر
         load();
         render();
     </script>
