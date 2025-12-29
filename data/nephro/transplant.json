@@ -2,5 +2,411 @@
   "section_id": "nephro",
   "subsection_id": "transplant",
   "title": "پیوند",
-  "questions": []
+  "questions": [
+    {
+      "id": 1,
+      "q": "بیمار ۶۲ ساله with renal transplant (living-related donor، ۶ months post-op). Now with rising creatinine (۱.۴→۲.۱ mg/dL over ۲ weeks). Urinalysis: proteinuria ۲.۵ g/day. تشخیص احتمالی؟",
+      "options": [
+        "Acute rejection",
+        "Chronic rejection",
+        "Calcineurin inhibitor (CNI) toxicity",
+        "Recurrent disease (in allograft)"
+      ],
+      "correct": 0,
+      "analysis": {
+        "options": [
+          "Acute rejection: rapid Cr rise ۲ weeks",
+          "Chronic rejection: months-years gradual",
+          "CNI toxicity: slower chronicity",
+          "Recurrent: depends disease type"
+        ],
+        "points": [
+          "Timeline ۶ months: acute rejection common",
+          "Rapid Cr rise: suggests acute process",
+          "Proteinuria: indication graft dysfunction"
+        ]
+      },
+      "difficulty": "medium",
+      "tags": ["acute rejection", "renal transplant", "creatinine rise", "timeline"],
+      "reference": "Acute Rejection Post-Transplant Diagnosis"
+    },
+    {
+      "id": 2,
+      "q": "بیمار ۵۸ ساله on tacrolimus + mycophenolate + prednisolone. At ۶ months post-transplant. Tacrolimus trough = ۲.۳ ng/mL (goal ۵-۱۵). Creatinine stable. Graft function?",
+      "options": [
+        "Subtherapeutic tacrolimus (increase dose)",
+        "Therapeutic (maintain current)",
+        "Supratherapeutic (decrease dose)",
+        "Tacrolimus should be stopped"
+      ],
+      "correct": 0,
+      "analysis": {
+        "options": [
+          "Low level: rejection risk",
+          "Therapeutic: at goal",
+          "High: toxicity risk",
+          "Stop: contraindicated"
+        ],
+        "points": [
+          "Tacrolimus trough ۲.۳: below goal ۵-۱۵",
+          "۶ months post: therapeutic window important",
+          "Increase dose: prevent rejection"
+        ]
+      },
+      "difficulty": "medium",
+      "tags": ["tacrolimus", "therapeutic drug monitoring", "trough level"],
+      "reference": "Tacrolimus Levels in Renal Transplant"
+    },
+    {
+      "id": 3,
+      "q": "بیمار ۶۵ ساله with renal transplant (۳ years). Presents: fever ۳۹°C + chest pain + dyspnea. CXR: infiltrates bilateral. CD4 count: ۸۵ cells/µL (very low). Suspected diagnosis?",
+      "options": [
+        "Bacterial pneumonia",
+        "Cytomegalovirus (CMV) pneumonitis",
+        "Pneumocystis jirovecii pneumonia (PCP)",
+        "Acute rejection (pulmonary)"
+      ],
+      "correct": 2,
+      "analysis": {
+        "options": [
+          "Bacterial: less likely CD4 ۸۵",
+          "CMV: possible but different timing",
+          "PCP: CD4 <۲۰۰ risk، bilateral infiltrates",
+          "Rejection: not pulmonary primary"
+        ],
+        "points": [
+          "CD4 ۸۵: profound immunosuppression",
+          "PCP classic: CD4 <۲۰۰ + bilateral infiltrates",
+          "Post-transplant timing: ۳ years = chronic immuosuppression"
+        ]
+      },
+      "difficulty": "hard",
+      "tags": ["PCP", "post-transplant infection", "CD4", "opportunistic"],
+      "reference": "Opportunistic Infections Post-Renal Transplant"
+    },
+    {
+      "id": 4,
+      "q": "بیمار ۵۵ ساله post-renal transplant (۲ months). Started mycophenolate ۲ g/day. Now: diarrhea، abdominal pain، low WBC = ۲.۸K. Management?",
+      "options": [
+        "Continue mycophenolate (expected side effect)",
+        "Reduce mycophenolate dose + check MMF level",
+        "Switch to azathioprine (different agent)",
+        "Stop mycophenolate entirely"
+      ],
+      "correct": 1,
+      "analysis": {
+        "options": [
+          "Continue: toxicity developing",
+          "Reduce + monitor: dose adjustment",
+          "Switch: option اگر intolerant",
+          "Stop: unnecessary abrupt"
+        ],
+        "points": [
+          "Mycophenolate GI toxicity: common dose-dependent",
+          "Leukopenia: ۲.۸K concerning",
+          "Dose reduction: often effective"
+        ]
+      },
+      "difficulty": "medium",
+      "tags": ["mycophenolate", "GI toxicity", "leukopenia", "dose adjustment"],
+      "reference": "Mycophenolate Mofetil Adverse Effects"
+    },
+    {
+      "id": 5,
+      "q": "بیمار ۶۰ ساله with stable renal transplant (۱ year). Now with new diagnosis hypertension (BP ۱۶۵/۱۰۰). On tacrolimus (trough ۱۲ ng/mL). Suspected cause?",
+      "options": [
+        "Primary hypertension (separate disease)",
+        "Calcineurin inhibitor (CNI) nephrotoxicity",
+        "Tacrolimus-induced hypertension",
+        "Acute rejection (hypertensive)"
+      ],
+      "correct": 2,
+      "analysis": {
+        "options": [
+          "Primary: possible separate",
+          "Nephrotoxicity: chronic process",
+          "Tacrolimus HTN: common direct effect",
+          "Rejection: not primary cause"
+        ],
+        "points": [
+          "Tacrolimus: causes hypertension ۵۰% patients",
+          "Mechanism: vasoconstriction + Na retention",
+          "Management: antihypertensive + consider tacrolimus reduction"
+        ]
+      },
+      "difficulty": "medium",
+      "tags": ["tacrolimus", "hypertension", "CNI", "adverse effect"],
+      "reference": "Calcineurin Inhibitor-Induced Hypertension"
+    },
+    {
+      "id": 6,
+      "q": "بیمار ۵۶ ساله with renal transplant (۵ years). Creatinine gradually rising (۱.۴→۲.۳ mg/dL over ۲ years). Proteinuria ۲.۸ g/day. Graft biopsy: interstitial fibrosis + tubular atrophy. تشخیص؟",
+      "options": [
+        "Acute rejection",
+        "Chronic allograft rejection",
+        "Recurrent glomerulonephritis",
+        "CNI toxicity"
+      ],
+      "correct": 1,
+      "analysis": {
+        "options": [
+          "Acute: rapid، not ۲ years",
+          "Chronic: gradual fibrosis + atrophy",
+          "Recurrent: glomerular pattern",
+          "CNI: can look similar"
+        ],
+        "points": [
+          "Chronic rejection: interstitial fibrosis hallmark",
+          "Timeline years: indicates chronic process",
+          "Tubular atrophy: chronic damage"
+        ]
+      },
+      "difficulty": "hard",
+      "tags": ["chronic rejection", "interstitial fibrosis", "long-term graft loss"],
+      "reference": "Chronic Allograft Rejection Pathology"
+    },
+    {
+      "id": 7,
+      "q": "بیمار ۶۲ ساله post-renal transplant (۳ weeks). Fever ۳۸.۵°C + dysuria + urinary frequency. Urinalysis: pyuria + bacteriuria. Urine culture: E. coli. Management?",
+      "options": [
+        "Reduce immunosuppression (treat infection first)",
+        "Continue immunosuppression + start antibiotics",
+        "Remove transplant catheter (if present) + antibiotics",
+        "Hold all medications"
+      ],
+      "correct": 2,
+      "analysis": {
+        "options": [
+          "Reduce: risky rejection",
+          "Continue: appropriate + treat UTI",
+          "Remove catheter: if present + antibiotics",
+          "Hold: dangerous"
+        ],
+        "points": [
+          "Early post-op UTI: common catheter-associated",
+          "Continue immunosuppression: maintain graft",
+          "Catheter removal + antibiotics: standard"
+        ]
+      },
+      "difficulty": "medium",
+      "tags": ["UTI", "post-transplant", "early", "catheter"],
+      "reference": "Catheter-Associated UTI Post-Transplant"
+    },
+    {
+      "id": 8,
+      "q": "بیمار ۵۸ ساله on sirolimus (mTOR inhibitor) for renal transplant. Now presenting with: delayed wound healing + proteinuria ۳.۲ g/day + mouth ulcers. Management?",
+      "options": [
+        "Continue sirolimus (expected side effects)",
+        "Switch sirolimus تا tacrolimus",
+        "Reduce sirolimus dose + monitor",
+        "Add prednisone (improve wound healing)"
+      ],
+      "correct": 1,
+      "analysis": {
+        "options": [
+          "Continue: significant toxicity",
+          "Switch: escape sirolimus toxicity",
+          "Reduce: still problematic",
+          "Prednisone: not solution"
+        ],
+        "points": [
+          "Sirolimus: impaired wound healing + proteinuria",
+          "Mouth ulcers: stomatitis toxicity",
+          "Multiple toxicities: switch alternative"
+        ]
+      },
+      "difficulty": "hard",
+      "tags": ["sirolimus", "mTOR inhibitor", "wound healing", "proteinuria"],
+      "reference": "Sirolimus Adverse Effects in Transplantation"
+    },
+    {
+      "id": 9,
+      "q": "بیمار ۶۵ ساله with renal transplant (۱۰ years). Creatinine ۲.۸ mg/dL (stable last ۵ years). On tacrolimus + mycophenolate + prednisone ۵ mg/day. Now developed skin cancer (squamous cell). Risk factor?",
+      "options": [
+        "Prednisone (dose too high)",
+        "Chronic immunosuppression (long-term)",
+        "Tacrolimus neurotoxicity (rare)",
+        "Mycophenolate teratogenicity"
+      ],
+      "correct": 1,
+      "analysis": {
+        "options": [
+          "Prednisone: not primary driver",
+          "Chronic immunosuppression: skin cancer risk",
+          "Tacrolimus neurotoxicity: not dermatologic",
+          "Mycophenolate: no teratogenicity post-transplant"
+        ],
+        "points": [
+          "Post-transplant malignancy: ۵-۸% at ۱۰ years",
+          "Skin cancer most common type",
+          "Chronic T-cell suppression: loss surveillance"
+        ]
+      },
+      "difficulty": "medium",
+      "tags": ["post-transplant malignancy", "immunosuppression", "skin cancer"],
+      "reference": "Malignancy Risk Post-Transplantation"
+    },
+    {
+      "id": 10,
+      "q": "بیمار ۵۲ ساله with renal transplant (۴ months). Suddenly: low-grade fever + graft tenderness + elevated creatinine ۱.۸→۲.۶ mg/dL. Doppler ultrasound: normal perfusion. تشخیص احتمالی؟",
+      "options": [
+        "Acute rejection",
+        "Acute tubular necrosis (ATN)",
+        "Urinary tract obstruction",
+        "Lymphocele (fluid collection)"
+      ],
+      "correct": 0,
+      "analysis": {
+        "options": [
+          "Rejection: fever + graft tenderness + Cr rise",
+          "ATN: would be earlier post-op",
+          "Obstruction: normal ultrasound",
+          "Lymphocele: would compress not fever"
+        ],
+        "points": [
+          "Acute rejection: ۴ months typical timeframe",
+          "Graft tenderness: classic rejection sign",
+          "Normal perfusion: rules vascular issue"
+        ]
+      },
+      "difficulty": "medium",
+      "tags": ["acute rejection", "4 months post-op", "graft tenderness"],
+      "reference": "Acute Rejection Clinical Presentation"
+    },
+    {
+      "id": 11,
+      "q": "بیمار ۶۰ ساله on tacrolimus + mycophenolate. CYP3A4 inhibitor prescribed (verapamil for hypertension). Expected interaction?",
+      "options": [
+        "No interaction (separate pathways)",
+        "Increased tacrolimus levels (reduce dose)",
+        "Decreased mycophenolate (increase dose)",
+        "Both tacrolimus + mycophenolate levels change"
+      ],
+      "correct": 1,
+      "analysis": {
+        "options": [
+          "No interaction: false",
+          "Tacrolimus: CYP3A4 metabolized",
+          "Mycophenolate: UDPGT pathway",
+          "Both: only tacrolimus affected"
+        ],
+        "points": [
+          "Verapamil: CYP3A4 inhibitor",
+          "Tacrolimus clearance reduced: levels rise",
+          "Monitor trough + reduce dose likely"
+        ]
+      },
+      "difficulty": "hard",
+      "tags": ["tacrolimus", "drug interaction", "CYP3A4", "verapamil"],
+      "reference": "Calcineurin Inhibitor Drug Interactions"
+    },
+    {
+      "id": 12,
+      "q": "بیمار ۵۵ ساله post-renal transplant (۲ months). Presenting: white oral plaques (mouth) + esophageal pain. CD4 likely normal. Diagnosis?",
+      "options": [
+        "Candidiasis (fungal infection)",
+        "CMV esophagitis",
+        "Aphthous ulcers",
+        "Acute rejection (oral mucosa)"
+      ],
+      "correct": 0,
+      "analysis": {
+        "options": [
+          "Candidiasis: common post-transplant",
+          "CMV: typically CD4 <۵۰",
+          "Aphthous: not typical post-transplant",
+          "Rejection: systemic not localized"
+        ],
+        "points": [
+          "Candidiasis: common fungal post-transplant",
+          "Oral plaques + esophageal: oropharyngeal candidiasis",
+          "Early post-op: immunosuppression window"
+        ]
+      },
+      "difficulty": "medium",
+      "tags": ["candidiasis", "oral infection", "post-transplant", "fungal"],
+      "reference": "Candidiasis Post-Transplant Management"
+    },
+    {
+      "id": 13,
+      "q": "بیمار ۶۲ ساله with renal transplant (۶ months). Biopsy with borderline changes + acute tubular injury. No antibody deposition (negative IF). Diagnosis?",
+      "options": [
+        "Acute T-cell mediated rejection",
+        "Antibody-mediated rejection (AMR)",
+        "Cyclosporine toxicity",
+        "Recurrent disease"
+      ],
+      "correct": 0,
+      "analysis": {
+        "options": [
+          "T-cell mediated: negative IF، tubulitis",
+          "AMR: C4d deposition expected",
+          "Cyclosporine: fibrosis pattern",
+          "Recurrent: depends original disease"
+        ],
+        "points": [
+          "Borderline changes: mild acute rejection",
+          "Negative IF: rules out AMR",
+          "Tubular injury: T-cell effect"
+        ]
+      },
+      "difficulty": "hard",
+      "tags": ["T-cell rejection", "borderline changes", "immunofluorescence"],
+      "reference": "Banff Classification Acute Rejection"
+    },
+    {
+      "id": 14,
+      "q": "بیمار ۵۸ ساله with functioning renal transplant (۳ years). Now developed CMV viremia (PCR = ۲۴,۰۰۰ copies/mL). Asymptomatic. Management?",
+      "options": [
+        "Observation (asymptomatic)",
+        "Valganciclovir therapy + reduce immunosuppression",
+        "Increase immunosuppression (boost)",
+        "Transplant nephrectomy"
+      ],
+      "correct": 1,
+      "analysis": {
+        "options": [
+          "Observation: CMV viremia risks disease",
+          "Valganciclovir: treat + reduce immuosuppression",
+          "Increase: worse viremia",
+          "Nephrectomy: not indicated"
+        ],
+        "points": [
+          "CMV viremia: prophylaxis/treatment indicated",
+          "Asymptomatic: early intervention",
+          "Valganciclovir: standard therapy"
+        ]
+      },
+      "difficulty": "medium",
+      "tags": ["CMV", "viremia", "valganciclovir", "post-transplant"],
+      "reference": "CMV Post-Transplant Management"
+    },
+    {
+      "id": 15,
+      "q": "بیمار ۶۵ ساله on calcineurin inhibitor. Magnesium = ۱.۴ mg/dL (low). Potassium = ۶.۸ mEq/L (high). تشخیص CNI effect؟",
+      "options": [
+        "Hypomagnesemia only",
+        "Hyperkalemia + hyperuricemia",
+        "CNI-induced tubular wasting (Mg loss + K retention)",
+        "Unrelated to CNI"
+      ],
+      "correct": 2,
+      "analysis": {
+        "options": [
+          "Hypomagnesemia: CNI-related partial",
+          "Hyperkalemia: true but incomplete",
+          "Dual effect: CNI blocks distal secretion",
+          "Unrelated: false"
+        ],
+        "points": [
+          "CNI: Mg wasting in distal tubule",
+          "CNI: impairs K secretion → hyperkalemia",
+          "Combination pattern: diagnostic"
+        ]
+      },
+      "difficulty": "hard",
+      "tags": ["calcineurin inhibitor", "hypomagnesemia", "hyperkalemia", "tubular effect"],
+      "reference": "CNI-Induced Electrolyte Disturbances"
+    }
+  ]
 }
