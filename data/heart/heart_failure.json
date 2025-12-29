@@ -2,5 +2,286 @@
   "section_id": "heart",
   "subsection_id": "heart_failure",
   "title": "نارسایی و کاردیومیوپاتی",
-  "questions": []
+  "questions": [
+    {
+      "id": 1,
+      "q": "مردی 67 ساله با HFrEF (LVEF 30%) ارائه شده است. دارویی برای کاهش مرگ‌ومیر تحت دریافت قرار دارد: ACE-I، beta-blocker، و spironolactone. کدام درمان بیفزائید برای بهبود بیشتر پیش‌آگاه؟",
+      "options": [
+        "Digoxin برای inotropic effect",
+        "ARNI (Sacubitril/Valsartan) جایگزین ACE-I",
+        "SGLT2 inhibitor (Empagliflozin)",
+        "Furosemide high-dose برای symptom relief"
+      ],
+      "correct": 2,
+      "analysis": {
+        "options": [
+          "Digoxin برای mortality reduction نیست؛ تنها برای rate control در AF یا inotropic support short-term است.",
+          "ARNI بهتر از ACE-I است لکن نیاز دارد بدون ACE-I تغییر شود (نه اضافه).",
+          "درست: SGLT2i (empagliflozin/dapagliflozin) کاهش mortality 25% در HFrEF تأیید شده (DAPA-HF، EMPEROR-Reduced).",
+          "Furosemide برای symptom relief است نه mortality reduction."
+        ],
+        "points": [
+          "SGLT2i نسل جدید prognostic drugs برای HFrEF است (regardless of diabetes).",
+          "GDMT HFrEF: ACE-I/ARB (یا ARNI) + beta-blocker + MRA + SGLT2i = target therapy.",
+          "SGLT2i برای HFpEF هم beneficial است (DELIVER trial).",
+          "Finerenone (non-steroidal MRA) گزینه اگر K+ high باشد."
+        ]
+      },
+      "difficulty": "medium",
+      "tags": ["HFrEF", "SGLT2i", "GDMT", "mortality_reduction", "prognostic_drug"],
+      "reference": "ESC 2021 HF Guidelines; DAPA-HF EMPEROR-Reduced trials"
+    },
+    {
+      "id": 2,
+      "q": "زن 54 ساله با HFpEF (LVEF 58%) و dyspnea on exertion ارائه شده است. Comorbidities: hypertension، obesity (BMI 32)، diabetes. کدام درمان برای کاهش symptoms و hospitalizations مناسب است؟",
+      "options": [
+        "Diuretics برای congestion + ACE-I + beta-blocker traditional",
+        "SGLT2i (dapagliflozin یا empagliflozin) برای HFpEF",
+        "Ivabradine برای heart rate reduction",
+        "BiDil (hydralazine + isosorbide dinitrate)"
+      ],
+      "correct": 1,
+      "analysis": {
+        "options": [
+          "Traditional HFpEF management adequate نیست؛ نیاز ارزیابی کاهش hospitalization است.",
+          "درست: SGLT2i (DELIVER trial) کاهش hospitalization 21% در HFpEF. First-line recommendation.",
+          "Ivabradine برای HFrEF با HR > 70 در SR است نه HFpEF اولویت.",
+          "BiDil برای African Americans with HFrEF است (RESERVE-EF)."
+        ],
+        "points": [
+          "HFpEF چالش: نبودن prognostic drugs تا اخیر. SGLT2i نیاز جدید.",
+          "DELIVER: dapagliflozin 10 mg OD کاهش cardiovascular death/hospitalization 21%.",
+          "HFpEF management: congestion relief (diuretics) + SGLT2i + blood pressure control.",
+          "Weight loss + exercise critical برای HFpEF (non-pharmacologic)."
+        ]
+      },
+      "difficulty": "medium",
+      "tags": ["HFpEF", "SGLT2i", "DELIVER", "congestion", "hospitalization"],
+      "reference": "ESC 2021 HF Guidelines; DELIVER trial"
+    },
+    {
+      "id": 3,
+      "q": "بیمار با ADHF (acute decompensated HF)، BP 88/56 mmHg، HR 115، respiratory rate 28، و severe pulmonary edema. Creatinine 2.1 (up from 1.0)، potassium 3.2. وضعیت حالی: cardiogenic shock. کدام گام بعدی اول است؟",
+      "options": [
+        "Start ACE-I فوری برای afterload reduction",
+        "IV furosemide high-dose + dobutamine for inotropy",
+        "CPAP/NIV + vasopressor (norepinephrine) برای BP",
+        "IABP یا mechanical support consideration"
+      ],
+      "correct": 2,
+      "analysis": {
+        "options": [
+          "ACE-I contraindicated در hypotension (SBP < 90). Risk further deterioration.",
+          "Furosemide + dobutamine reasonable لکن inadequate BP support. Vasopressor needed first.",
+          "درست: CPAP/NIV برای respiratory distress + vasopressor برای maintain perfusion pressure. THEN inotrope if EF drop.",
+          "IABP secondary اگر medical therapy insufficient; نه first-line."
+        ],
+        "points": [
+          "Cardiogenic shock algorithm: CPAP/NIV + vasopressor (maintain MAP > 65) → inotrope → mechanical if refractory.",
+          "Norepinephrine > dopamine برای cardiogenic shock (SOAP II trial).",
+          "Diuretic hold یا reduce اگر worsening renal function. Monitor output carefully.",
+          "K+ replacement critical (3.2 low; target > 4.0 in HF + arrhythmia risk)."
+        ]
+      },
+      "difficulty": "hard",
+      "tags": ["cardiogenic_shock", "ADHF", "vasopressor", "CPAP", "hypotension"],
+      "reference": "ACC/AHA 2022 HF Guidelines; SOAP II trial"
+    },
+    {
+      "id": 4,
+      "q": "مردی 72 ساله با HFrEF (EF 25%) + CKD (Cr 2.5) ارائه شده است. Current therapy: lisinopril 10 mg، metoprolol 95 mg، spironolactone 25 mg. K+ = 5.8 mEq/L (high). بهترین مرحله بعدی چیست؟",
+      "options": [
+        "Increase spironolactone برای MRA benefit",
+        "Stop spironolactone; start finerenone (non-steroidal MRA)",
+        "ACE-I replace با ARB; reduce spironolactone",
+        "Start SGLT2i دون تغییر دیگر دارویی"
+      ],
+      "correct": 1,
+      "analysis": {
+        "options": [
+          "Increase spironolactone خطرناک است: K+ 5.8 already high، CKD present.",
+          "درست: Finerenone non-steroidal MRA است؛ less K+ retention نسبت به spironolactone. FIDELITY trial showed benefit.",
+          "ARB alone reduce benefit MRA. Finerenone بهتر option.",
+          "SGLT2i good لکن K+ issue ابتدا حل شود."
+        ],
+        "points": [
+          "Finerenone (kerendia) non-steroidal selective FXR agonist. Reduce K+ risk vs spironolactone.",
+          "Hyperkalemia in CKD + HFrEF: finerenone preferred over MRA spironolactone.",
+          "Monitor K+ closely. If K+ > 6.0، urgent management: dietary K+ restriction، loop diuretics، patiromer/sodium zirconium cyclosilicate.",
+          "SGLT2i safe even with K+ elevation; can be used with finerenone."
+        ]
+      },
+      "difficulty": "hard",
+      "tags": ["hyperkalemia", "CKD", "MRA", "finerenone", "HFrEF"],
+      "reference": "ESC 2021 HF Guidelines; FIDELITY trial"
+    },
+    {
+      "id": 5,
+      "q": "زن 45 ساله با dilated cardiomyopathy (EF 20%) و NYHA III به علت recurrent infections/autoimmune features ارائه شده است. بیوپسی نشان می‌دهد: lymphocytic inflammatory infiltrate. Diagnosis: myocarditis. کدام دارو برای myocarditis مؤثر است؟",
+      "options": [
+        "Immunosuppression (corticosteroids + azathioprine یا mycophenolate)",
+        "Standard GDMT alone (ACE-I، beta-blocker، MRA)",
+        "High-dose IV immunoglobulin (IVIG)",
+        "Supportive therapy + mechanical support (VAD) اگر fulminant"
+      ],
+      "correct": 0,
+      "analysis": {
+        "options": [
+          "درست: Lymphocytic myocarditis → immunosuppressive therapy considered. IMAC-2 trial: steroids + azathioprine improve EF.",
+          "GDMT alone insufficient برای active lymphocytic myocarditis.",
+          "IVIG controversial; بدون strong RCT evidence.",
+          "VAD considered اگر fulminant/cardiogenic shock؛ immunosuppression tried first اگر chronic."
+        ],
+        "points": [
+          "Lymphocytic myocarditis diagnosis: require biopsy + immunosuppressive therapy consideration.",
+          "IMAC-2: corticosteroids + azathioprine/mycophenolate improved LVEF in selected patients.",
+          "Exclusion: viral prodrome باید resolve. Immunosuppression اگر persistent inflammation.",
+          "Giant cell myocarditis → aggressive immunosuppression + VAD/transplant consideration (fulminant course)."
+        ]
+      },
+      "difficulty": "hard",
+      "tags": ["myocarditis", "immunosuppression", "lymphocytic", "DCM", "inflammatory"],
+      "reference": "ESC Myocarditis Guidelines; IMAC-2 trial"
+    },
+    {
+      "id": 6,
+      "q": "مردی 60 ساله با HFrEF (EF 28%) و persistent AF (rate > 80 at rest) تحت دریافت digoxin + furosemide. دارای syncope episodes. ECG نشان می‌دهد: QRS 140 ms، deep S-waves. کدام intervention مناسب است؟",
+      "options": [
+        "Increase digoxin برای بهتر rate control",
+        "Add beta-blocker (bisoprolol یا carvedilol) برای rate control",
+        "CRT (cardiac resynchronization therapy) پس از beta-blocker optimization",
+        "AF ablation برای rhythm control"
+      ],
+      "correct": 2,
+      "analysis": {
+        "options": [
+          "Digoxin insufficient برای rate control در HFrEF + AF. Beta-blocker superior.",
+          "Beta-blocker essential برای HFrEF (mortality reduction)؛ لکن QRS 140 = BBB → CRT indicated.",
+          "درست: NYHA III + EF ≤ 35% + QRS ≥ 120 (especially 140) = CRT indication. First optimize beta-blocker then CRT.",
+          "AF ablation controversial در HFrEF. AATAC trial: no mortality benefit. Rate control + CRT better."
+        ],
+        "points": [
+          "CRT indication: NYHA II-IV + EF ≤ 35% + QRS ≥ 120 ms + sinus rhythm یا AF با controlled rate.",
+          "Syncope + HFrEF + AF → check for VT (ICD). Syncope may be arrhythmic.",
+          "AF management in HFrEF: rate control (beta-blocker/diltiazem) + anticoagulation. Rhythm control not superior.",
+          "CRT-D (defibrillator + pacing) preferred اگر EF < 35% + suitable QRS morphology."
+        ]
+      },
+      "difficulty": "hard",
+      "tags": ["CRT", "BBB", "HFrEF", "AF", "rate_control", "syncope"],
+      "reference": "ESC 2021 HF Guidelines; AATAC trial"
+    },
+    {
+      "id": 7,
+      "q": "بیمار با ADHF به دلیل worsening renal function (creatinine doubled) تحت دریافت diuretics. Urine sodium low، serum sodium 130 mEq/L، hypovolemia apparent. نشانه cardiorenal syndrome type 1. کدام درمان مناسب است؟",
+      "options": [
+        "Aggressive diuretics برای 'dry out'",
+        "IV fluids bolus برای increase cardiac output",
+        "Optimize GDMT + judicious diuretics + afterload reduction (nitrates/ARNI)",
+        "Dialysis/ultrafiltration urgent"
+      ],
+      "correct": 2,
+      "analysis": {
+        "options": [
+          "Aggressive diuretics worsen CRS1; preload-dependent state.",
+          "IV fluids risky: pulmonary edema hazard. Measured approach needed.",
+          "درست: CRS1 management = optimize cardiac function (ARNI/beta-blocker target) + gentle diuretics + maintain renal perfusion. Recovery of renal function possible.",
+          "Ultrafiltration considered اگر refractory congestion + oliguric AKI."
+        ],
+        "points": [
+          "CRS1 (cardiorenal): worsening renal function due to reduced cardiac output. Different from CRS2 (HTN → renal disease).",
+          "Management: GDMT optimization (ARNI/BB) + diuretics (judicious) + afterload reduction → improve cardiac output → renal recovery.",
+          "Avoid NSAIDs، ACE-I discontinuation premature. Continue GDMT optimization.",
+          "Urine sodium < 20 suggests prerenal state; low sodium diet + GDMT key."
+        ]
+      },
+      "difficulty": "hard",
+      "tags": ["cardiorenal_syndrome", "AKI", "ADHF", "diuretics", "renal_function"],
+      "reference": "ESC 2021 HF Guidelines; KDIGO guidelines"
+    },
+    {
+      "id": 8,
+      "q": "مردی 58 ساله با HFrEF (EF 32%) + diabetes + albuminuria سابقه دارد. تحت GDMT: ACE-I 10 mg، metoprolol 95 mg، spironolactone 25 mg. A1C 8.5%. HbA1c‌-lowering therapy کدام باید باشد؟",
+      "options": [
+        "GLP-1 agonist (semaglutide) برای weight loss + glucose",
+        "SGLT2i (dapagliflozin) برای HF + renal protection",
+        "Insulin برای tight glucose control (target < 7%)",
+        "Sulfonylurea + metformin برای HbA1c"
+      ],
+      "correct": 1,
+      "analysis": {
+        "options": [
+          "GLP-1 agonist beneficial برای weight loss + CV risk لکن نه HF mortality reduction priority.",
+          "درست: SGLT2i primary choice برای HFrEF + diabetes. Dual benefit: HF (mortality -25%) + diabetes + renal protection.",
+          "Insulin excessive glycemic control (< 7%) increases hypoglycemia risk in HFrEF.",
+          "Sulfonylurea/metformin alone outdated; SGLT2i + GLP-1 preferred اگر A1C control needed."
+        ],
+        "points": [
+          "SGLT2i is both HF drug AND diabetes drug in HFrEF + diabetes population.",
+          "Diabetes + HF: prioritize SGLT2i over tight glucose control (ACCORD trial: tight control não benefit).",
+          "GLP-1 secondary; can combine with SGLT2i if HbA1c still > 8%.",
+          "DPP-4 inhibitors safe بدون mortality benefit/harm in HF."
+        ]
+      },
+      "difficulty": "medium",
+      "tags": ["HFrEF", "diabetes", "SGLT2i", "A1C", "albuminuria"],
+      "reference": "ESC 2021 HF Guidelines; ACCORD trial"
+    },
+    {
+      "id": 9,
+      "q": "زن 55 ساله با restrictive cardiomyopathy (etiologie نامعلوم) + dyspnea + edema. Echo: normal systolic function (EF 55%)، LV dysfunction diastolic، restrictive pattern LV filling. Cardiac biopsy planned. کدام etiologies بخش اساسی differential است؟",
+      "options": [
+        "Amyloidosis (AL یا ATTR)، constrictive pericarditis، myocarditis",
+        "Hypertrophic cardiomyopathy، dilated cardiomyopathy، peripartum cardiomyopathy",
+        "Ischemic cardiomyopathy، post-viral myocarditis، tachycardia-induced cardiomyopathy",
+        "Iron overload (hemochromatosis)، Takotsubo، HOCM"
+      ],
+      "correct": 0,
+      "analysis": {
+        "options": [
+          "درست: Restrictive pattern = amyloidosis (AL/ATTR) top، periannular inflammation (myocarditis)، constrictive pericarditis.",
+          "HCM/DCM/peripartum = systolic dysfunction دیده می‌شود; اینجا EF preserved.",
+          "Ischemic/post-viral mostly systolic.",
+          "Iron overload/Takotsubo/HOCM نه restrictive pattern classical."
+        ],
+        "points": [
+          "Restrictive physiology: diastolic dysfunction + preserved systolic function. LVEDP elevated; restrictive pattern on catheterization.",
+          "Amyloidosis: AL (lambda/kappa light chain) vs ATTR (wild-type یا hereditary).",
+          "Diagnosis amyloidosis: biopsy (Congo red stain)، TTR gene testing، hematologic workup (AL).",
+          "Management: etiologyگی-specific. AL: chemotherapy. ATTR: tafamidis (transthyretin stabilizer). TTR: supportive."
+        ]
+      },
+      "difficulty": "hard",
+      "tags": ["restrictive_CMP", "amyloidosis", "diastolic_dysfunction", "biopsy", "cardiac_physiology"],
+      "reference": "ESC Cardiomyopathy Guidelines; Harrison Ch 269-271"
+    },
+    {
+      "id": 10,
+      "q": "بیمار با HFrEF (EF 25%) + ICD implanted. دریافت: ACE-I 10 mg، metoprolol 95 mg، spironolactone 25 mg. دنبال تزریق inotropic support (dobutamine continuous home infusion) برای 6 ماه شده است. کدام intervention بعدی مناسب است؟",
+      "options": [
+        "Continue dobutamine infusion indefinitely برای symptom relief",
+        "Mechanical circulatory support (LVAD) یا transplant evaluation + palliative care",
+        "Increase ACE-I/add ARNI + optimize SGLT2i",
+        "Heart transplant فوری بدون device trial"
+      ],
+      "correct": 1,
+      "analysis": {
+        "options": [
+          "Dobutamine chronic worsens outcomes (REMATCH trial: tachycardia، arrhythmia، mortality). Bridge only، نه indefinite.",
+          "درست: LVAD (mechanical support) یا transplant evaluation indication. Dobutamine weaning + transition to device. Palliative care if transplant contraindicated.",
+          "Medication optimization attempted; insufficient (already on agents). Mechanical solution needed.",
+          "Transplant evaluated اگر suitable candidate; LVAD bridge-to-transplant یا destination therapy."
+        ],
+        "points": [
+          "Advanced HF (NYHA IV refractory to GDMT) = mechanical support indication.",
+          "LVAD destination therapy یا bridge-to-transplant (transplant candidates only).",
+          "Dobutamine temporary bridge; chronic use worsens HF (REMATCH trial).",
+          "Palliative care/comfort-focused care if LVAD/transplant not suitable."
+        ]
+      },
+      "difficulty": "hard",
+      "tags": ["advanced_HF", "LVAD", "transplant", "mechanical_support", "dobutamine"],
+      "reference": "ESC 2021 HF Guidelines; REMATCH trial"
+    }
+  ]
 }
