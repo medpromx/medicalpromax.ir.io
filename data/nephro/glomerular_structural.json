@@ -2,5 +2,411 @@
   "section_id": "nephro",
   "subsection_id": "glomerular_structural",
   "title": "گلومرولی و ساختاری",
-  "questions": []
+  "questions": [
+    {
+      "id": 1,
+      "q": "بیمار ۳۵ ساله with nephrotic syndrome: proteinuria ۵.۲ g/day، serum albumin ۲.۱ g/dL، edema، hyperlipidemia. Urine: minimal RBCs. Kidney function normal. تشخیص احتمالی؟",
+      "options": [
+        "IgA nephropathy",
+        "Minimal change disease (MCD)",
+        "Post-infectious GN",
+        "Membranous nephropathy"
+      ],
+      "correct": 1,
+      "analysis": {
+        "options": [
+          "IgA: often hematuria + nephritic features",
+          "MCD: pure nephrotic، minimal hematuria",
+          "Post-infectious: nephritic + variable proteinuria",
+          "Membranous: nephrotic لکن usually older age"
+        ],
+        "points": [
+          "Nephrotic syndrome: proteinuria >۳.۵ g/day",
+          "Minimal hematuria: favors MCD",
+          "Age ۳۵: MCD reasonable diagnosis"
+        ]
+      },
+      "difficulty": "medium",
+      "tags": ["nephrotic syndrome", "MCD", "minimal change disease", "proteinuria"],
+      "reference": "Nephrotic Syndrome Classification and Differential"
+    },
+    {
+      "id": 2,
+      "q": "بیمار ۴۸ ساله with hematuria + proteinuria ۱.۸ g/day. UA: dysmorphic RBCs + RBC casts. Normal kidney function. Strep serology: negative. تشخیص احتمالی؟",
+      "options": [
+        "Post-infectious GN",
+        "IgA nephropathy",
+        "Minimal change disease",
+        "Membranoproliferative GN"
+      ],
+      "correct": 1,
+      "analysis": {
+        "options": [
+          "Post-infectious: recent strep infection history",
+          "IgA: dysmorphic RBC + RBC casts + no infection",
+          "MCD: proteinuria > RBC features",
+          "MPGN: variable presentation"
+        ],
+        "points": [
+          "Dysmorphic RBC + RBC casts: glomerular origin",
+          "Negative strep serology: rules post-infectious",
+          "IgA: most common GN worldwide"
+        ]
+      },
+      "difficulty": "medium",
+      "tags": ["IgA nephropathy", "hematuria", "RBC casts", "dysmorphic RBC"],
+      "reference": "IgA Nephropathy Presentation and Diagnosis"
+    },
+    {
+      "id": 3,
+      "q": "بیمار ۶۲ ساله with nephrotic syndrome (proteinuria ۶.۵ g/day). Serology: ANA negative، ANCA negative. No systemic disease. Kidney biopsy: subepithelial immune deposits (spikes). تشخیص؟",
+      "options": [
+        "Membranous nephropathy",
+        "Membranoproliferative GN",
+        "Focal segmental glomerulosclerosis (FSGS)",
+        "Minimal change disease"
+      ],
+      "correct": 0,
+      "analysis": {
+        "options": [
+          "Membranous: subepithelial deposits characteristic",
+          "MPGN: intramembranous + subendothelial",
+          "FSGS: segmental sclerosis, not spikes",
+          "MCD: no deposits on EM"
+        ],
+        "points": [
+          "Subepithelial spikes: membranous pathognomonic",
+          "Nephrotic syndrome: membranous common",
+          "Negative serology: primary membranous likely"
+        ]
+      },
+      "difficulty": "medium",
+      "tags": ["membranous nephropathy", "kidney biopsy", "subepithelial deposits"],
+      "reference": "Membranous Nephropathy Pathology and Diagnosis"
+    },
+    {
+      "id": 4,
+      "q": "بیمار ۴۲ ساله with hematuria + RBC casts + proteinuria ۳.۲ g/day. Creatinine rising (۱.۲→۲.۱ mg/dL). ANA۱:۶۴۰ (high-titer)، anti-dsDNA positive. تشخیص؟",
+      "options": [
+        "IgA nephropathy",
+        "Lupus nephritis",
+        "ANCA-associated vasculitis",
+        "Post-infectious GN"
+      ],
+      "correct": 1,
+      "analysis": {
+        "options": [
+          "IgA: serology negative",
+          "Lupus: positive ANA + anti-dsDNA diagnostic",
+          "ANCA: different serology pattern",
+          "Post-infectious: strep exposure likely"
+        ],
+        "points": [
+          "High-titer ANA + anti-dsDNA: lupus nephritis",
+          "Hematuria + proteinuria + rising Cr: active GN",
+          "Nephritic presentation: lupus type III/IV"
+        ]
+      },
+      "difficulty": "medium",
+      "tags": ["lupus nephritis", "SLE", "ANA", "anti-dsDNA"],
+      "reference": "Lupus Nephritis Serology and Classification"
+    },
+    {
+      "id": 5,
+      "q": "بیمار ۵۸ ساله with acute hematuria + dyspnea. UA: dysmorphic RBCs + RBC casts + proteinuria ۲.۵ g/day. Creatinine ۲.۸ mg/dL (rapid rise). ANCA: c-ANCA positive (anti-PR3). تشخیص؟",
+      "options": [
+        "IgA nephropathy",
+        "Granulomatosis with polyangiitis (GPA)",
+        "Membranoproliferative GN",
+        "Post-infectious GN"
+      ],
+      "correct": 1,
+      "analysis": {
+        "options": [
+          "IgA: ANCA negative",
+          "GPA: c-ANCA + anti-PR3 diagnostic",
+          "MPGN: ANCA negative",
+          "Post-infectious: ANCA negative"
+        ],
+        "points": [
+          "c-ANCA (anti-PR3): GPA marker",
+          "Rapid progression: RPGN pattern",
+          "Pulmonary involvement (dyspnea): systemic vasculitis"
+        ]
+      },
+      "difficulty": "hard",
+      "tags": ["GPA", "ANCA", "vasculitis", "RPGN"],
+      "reference": "ANCA-Associated Vasculitis and GPA"
+    },
+    {
+      "id": 6,
+      "q": "بیمار ۶۸ ساله with sudden hematuria + flank pain (kidney infarction suspicion). UA: RBC + protein. No fever. New murmur on exam. Blood culture positive (Streptococcus viridans). تشخیص احتمالی GN؟",
+      "options": [
+        "Infective endocarditis-associated GN",
+        "ANCA-associated vasculitis",
+        "Lupus nephritis",
+        "IgA nephropathy"
+      ],
+      "correct": 0,
+      "analysis": {
+        "options": [
+          "Endocarditis: positive blood culture + murmur + hematuria",
+          "ANCA: ANCA-negative",
+          "Lupus: ANA negative expected",
+          "IgA: infection history بدون"
+        ],
+        "points": [
+          "Infective endocarditis: acute GN mechanism",
+          "Positive blood culture: diagnostic",
+          "UA findings: immune complex deposition"
+        ]
+      },
+      "difficulty": "hard",
+      "tags": ["infective endocarditis", "GN", "hematuria", "blood culture"],
+      "reference": "Endocarditis-Associated Glomerulonephritis"
+    },
+    {
+      "id": 7,
+      "q": "بیمار ۴۵ ساله with nephrotic syndrome (proteinuria ۴.۸ g/day). Serology: all negative (ANA، ANCA، anti-GBM). Biopsy: extensive endocapillary proliferation + subendothelial deposits. تشخیص احتمالی؟",
+      "options": [
+        "Membranoproliferative GN",
+        "Lupus nephritis (seronegative)",
+        "Post-infectious GN",
+        "Membranous nephropathy"
+      ],
+      "correct": 0,
+      "analysis": {
+        "options": [
+          "MPGN: endocapillary proliferation + deposits",
+          "Lupus: seronegative rare لکن possible",
+          "Post-infectious: transient گام بیمار",
+          "Membranous: no proliferation"
+        ],
+        "points": [
+          "Endocapillary proliferation: MPGN hallmark",
+          "Subendothelial deposits: immune complex pattern",
+          "Negative serology: idiopathic MPGN"
+        ]
+      },
+      "difficulty": "hard",
+      "tags": ["MPGN", "membranoproliferative", "endocapillary proliferation", "deposits"],
+      "reference": "Membranoproliferative GN Pathology"
+    },
+    {
+      "id": 8,
+      "q": "بیمار ۳۲ ساله with nephrotic syndrome (proteinuria ۴.۵ g/day)، normal kidney function. Biopsy: segmental sclerosis in ۲ of ۱۲ glomeruli. Negative immunofluorescence. تشخیص؟",
+      "options": [
+        "Minimal change disease",
+        "Focal segmental glomerulosclerosis (FSGS)",
+        "Membranous nephropathy",
+        "IgA nephropathy"
+      ],
+      "correct": 1,
+      "analysis": {
+        "options": [
+          "MCD: normal EM، no sclerosis",
+          "FSGS: segmental sclerosis definition",
+          "Membranous: no sclerosis",
+          "IgA: IgA deposits expected"
+        ],
+        "points": [
+          "Segmental sclerosis: FSGS diagnostic",
+          "۲/۱۲ glomeruli: fits segmental pattern",
+          "Negative IF: primary FSGS"
+        ]
+      },
+      "difficulty": "medium",
+      "tags": ["FSGS", "focal segmental glomerulosclerosis", "nephrotic syndrome"],
+      "reference": "FSGS Pathology and Clinical Features"
+    },
+    {
+      "id": 9,
+      "q": "بیمار ۵۶ ساله with acute nephritic syndrome (hematuria + proteinuria ۲.۱ g/day). Creatinine ۲.۲ mg/dL. UA: RBC casts. C3 level ۳۵ mg/dL (low)، C4 normal. تشخیص احتمالی؟",
+      "options": [
+        "Post-infectious GN (post-streptococcal)",
+        "Lupus nephritis",
+        "IgA nephropathy",
+        "Membranoproliferative GN"
+      ],
+      "correct": 0,
+      "analysis": {
+        "options": [
+          "Post-infectious: low C3، normal C4 classic",
+          "Lupus: low C3 + C4 expected",
+          "IgA: normal complement",
+          "MPGN: variable complement"
+        ],
+        "points": [
+          "Low C3، normal C4: post-infectious pattern",
+          "Acute nephritic: post-streptococcal typical",
+          "RBC casts: glomerular hematuria"
+        ]
+      },
+      "difficulty": "medium",
+      "tags": ["post-infectious GN", "post-streptococcal", "low C3", "complement"],
+      "reference": "Post-Infectious GN Complement Pattern"
+    },
+    {
+      "id": 10,
+      "q": "بیمار ۲۸ ساله with nephrotic syndrome (proteinuria ۶ g/day)، normal kidney function. Responds to prednisolone ۵۰ mg/day (complete remission). Biopsy: normal light microscopy + normal EM. تشخیص؟",
+      "options": [
+        "Membranous nephropathy",
+        "Minimal change disease",
+        "Focal segmental glomerulosclerosis",
+        "Membranoproliferative GN"
+      ],
+      "correct": 1,
+      "analysis": {
+        "options": [
+          "Membranous: less responsive steroids",
+          "MCD: steroid-responsive definition",
+          "FSGS: steroid-resistant often",
+          "MPGN: steroid-resistant"
+        ],
+        "points": [
+          "Normal light/electron microscopy: MCD",
+          "Complete steroid response: MCD hallmark",
+          "Young age: MCD common"
+        ]
+      },
+      "difficulty": "medium",
+      "tags": ["minimal change disease", "MCD", "steroid-responsive", "nephrotic"],
+      "reference": "Minimal Change Disease Diagnosis and Steroid Response"
+    },
+    {
+      "id": 11,
+      "q": "بیمار ۶۵ ساله with hematuria + proteinuria ۲.۸ g/day + creatinine ۲.۱. UA: dysmorphic RBC + RBC casts. ANA negative. ANCA negative. Anti-GBM positive (۲۰۰ units). تشخیص؟",
+      "options": [
+        "Anti-GBM disease",
+        "ANCA-associated vasculitis",
+        "Lupus nephritis",
+        "Membranoproliferative GN"
+      ],
+      "correct": 0,
+      "analysis": {
+        "options": [
+          "Anti-GBM: positive antibody diagnostic",
+          "ANCA: negative",
+          "Lupus: ANA negative",
+          "MPGN: negative serology"
+        ],
+        "points": [
+          "Anti-GBM antibody: linear IgG on IF",
+          "Rapid progressive GN: anti-GBM typical",
+          "Dysmorphic RBC + casts: glomerular disease"
+        ]
+      },
+      "difficulty": "medium",
+      "tags": ["anti-GBM disease", "Goodpasture", "RPGN", "linear IgG"],
+      "reference": "Anti-GBM Disease Diagnosis and Serology"
+    },
+    {
+      "id": 12,
+      "q": "بیمار ۵۲ ساله with nephrotic syndrome. Biopsy: electron-dense subepithelial deposits (humps). Immunofluorescence: granular IgG + C3. تشخیص احتمالی؟",
+      "options": [
+        "Post-infectious GN (post-streptococcal)",
+        "Lupus nephritis",
+        "Membranoproliferative GN",
+        "IgA nephropathy"
+      ],
+      "correct": 0,
+      "analysis": {
+        "options": [
+          "Post-infectious: subepithelial humps pathognomonic",
+          "Lupus: subendothelial + mesangial usually",
+          "MPGN: different deposit pattern",
+          "IgA: IgA deposits primary"
+        ],
+        "points": [
+          "Subepithelial humps: post-infectious hallmark",
+          "Granular IgG + C3: immune complex",
+          "Timing: usually after strep infection"
+        ]
+      },
+      "difficulty": "medium",
+      "tags": ["post-infectious GN", "humps", "subepithelial deposits"],
+      "reference": "Post-Infectious GN Electron Microscopy"
+    },
+    {
+      "id": 13,
+      "q": "بیمار ۳۸ ساله with hematuria (dysmorphic RBC + casts) + proteinuria ۱.۵ g/day + normal creatinine. Serology: all negative. Biopsy: segmental IgA deposits. تشخیص؟",
+      "options": [
+        "IgA nephropathy",
+        "Post-infectious GN",
+        "Membranoproliferative GN",
+        "Lupus nephritis"
+      ],
+      "correct": 0,
+      "analysis": {
+        "options": [
+          "IgA: IgA deposits diagnostic",
+          "Post-infectious: non-IgA deposits",
+          "MPGN: variable deposits",
+          "Lupus: ANA expected positive"
+        ],
+        "points": [
+          "IgA deposits: IgA nephropathy diagnostic",
+          "Hematuria-dominant: typical IgA presentation",
+          "Normal kidney function: early/mild IgA"
+        ]
+      },
+      "difficulty": "easy",
+      "tags": ["IgA nephropathy", "IgA deposits", "hematuria"],
+      "reference": "IgA Nephropathy Immunofluorescence"
+    },
+    {
+      "id": 14,
+      "q": "بیمار ۵۸ ساله with rapidly progressive hematuria + dyspnea (hemoptysis). Creatinine ۳.۵ mg/dL (rapid rise). UA: dysmorphic RBC + RBC casts + proteinuria. Anti-GBM positive + c-ANCA positive. تشخیص احتمالی؟",
+      "options": [
+        "Anti-GBM disease alone",
+        "Pulmonary-renal syndrome (anti-GBM + GPA overlap)",
+        "GPA (c-ANCA positive)",
+        "Lupus with pulmonary involvement"
+      ],
+      "correct": 1,
+      "analysis": {
+        "options": [
+          "Anti-GBM: no pulmonary disease usually",
+          "Overlap: both positive antibodies rare لکن possible",
+          "GPA: c-ANCA alone no anti-GBM",
+          "Lupus: serology different"
+        ],
+        "points": [
+          "Pulmonary-renal syndrome: hemoptysis + hematuria",
+          "Both anti-GBM + c-ANCA: overlap syndrome",
+          "Rapid progression: serious RPGN"
+        ]
+      },
+      "difficulty": "hard",
+      "tags": ["pulmonary-renal syndrome", "anti-GBM", "GPA", "overlap"],
+      "reference": "Anti-GBM and ANCA Overlap Syndrome"
+    },
+    {
+      "id": 15,
+      "q": "بیمار ۴۵ ساله with nephrotic syndrome (۶.۸ g/day proteinuria). Serology: negative. Biopsy pending. At what point do you recommend kidney biopsy for nephrotic syndrome?",
+      "options": [
+        "Never (drug treatment empiric)",
+        "Only if treatment fails (steroid resistance)",
+        "Initial workup if atypical features (age، rapid onset، hematuria)",
+        "Always routine (diagnostic gold standard)"
+      ],
+      "correct": 2,
+      "analysis": {
+        "options": [
+          "Never: wrong، biopsy essential diagnosis",
+          "Treatment failure: late timing",
+          "Atypical: appropriate early biopsy",
+          "Always: routine unnecessary if classic MCD"
+        ],
+        "points": [
+          "Nephrotic biopsy indications: age >۴۰، hematuria، reduced GFR",
+          "Age ۴۵: borderline، hematuria status determine",
+          "Early diagnosis: guides appropriate treatment"
+        ]
+      },
+      "difficulty": "hard",
+      "tags": ["kidney biopsy", "nephrotic syndrome", "indications", "diagnosis"],
+      "reference": "Nephrotic Syndrome Biopsy Indications"
+    }
+  ]
 }
