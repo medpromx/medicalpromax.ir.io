@@ -1,0 +1,50 @@
+{
+  "sections": [
+    {
+      "id": "heart",
+      "title": "قلب",
+      "subsections": [
+        { "id": "ihd", "title": "ایسکمیک (IHD/CAD)", "path": "data/heart/ihd.json" },
+        { "id": "valvular", "title": "دریچه‌ای", "path": "data/heart/valvular.json" },
+        { "id": "heart_failure", "title": "نارسایی و کاردیومیوپاتی", "path": "data/heart/heart_failure.json" },
+        { "id": "pericardial", "title": "پریکارد", "path": "data/heart/pericardial.json" },
+        { "id": "arrhythmia", "title": "آریتمی و هدایت", "path": "data/heart/arrhythmia.json" },
+        { "id": "vascular_congenital", "title": "عروقی و مادرزادی", "path": "data/heart/vascular_congenital.json" }
+      ]
+    },
+    {
+      "id": "icu",
+      "title": "ICU",
+      "subsections": [
+        { "id": "shock_hemodynamics", "title": "شوک و همودینامیک", "path": "data/icu/shock_hemodynamics.json" },
+        { "id": "ventilation_airway", "title": "ونتیلاسیون و راه‌هوایی", "path": "data/icu/ventilation_airway.json" },
+        { "id": "icu_infections", "title": "عفونت‌های ICU", "path": "data/icu/icu_infections.json" },
+        { "id": "adrenal_metabolic", "title": "آدرنال و بحران‌های متابولیک", "path": "data/icu/adrenal_metabolic.json" },
+        { "id": "hypoxia_physiology", "title": "فیزیولوژی هیپوکسی", "path": "data/icu/hypoxia_physiology.json" }
+      ]
+    },
+    {
+      "id": "lung",
+      "title": "ریه",
+      "subsections": [
+        { "id": "obstructive", "title": "انسدادی (آسم/COPD)", "path": "data/lung/obstructive.json" },
+        { "id": "infections_pleura", "title": "عفونی و پلور", "path": "data/lung/infections_pleura.json" },
+        { "id": "ild_occupational", "title": "ILD و شغلی", "path": "data/lung/ild_occupational.json" },
+        { "id": "pulmonary_vascular", "title": "عروق ریوی (PTE/PH)", "path": "data/lung/pulmonary_vascular.json" },
+        { "id": "sleep_disorders", "title": "اختلالات خواب (OSA)", "path": "data/lung/sleep_disorders.json" }
+      ]
+    },
+    {
+      "id": "nephro",
+      "title": "نفرو",
+      "subsections": [
+        { "id": "aki_nephrotoxins", "title": "AKI و نفروتوکسین‌ها", "path": "data/nephro/aki_nephrotoxins.json" },
+        { "id": "glomerular_structural", "title": "گلومرولی و ساختاری", "path": "data/nephro/glomerular_structural.json" },
+        { "id": "ckd_dialysis", "title": "CKD و دیالیز", "path": "data/nephro/ckd_dialysis.json" },
+        { "id": "electrolytes_acidbase", "title": "الکترولیت/اسید-باز", "path": "data/nephro/electrolytes_acidbase.json" },
+        { "id": "stones_uti", "title": "سنگ و UTI", "path": "data/nephro/stones_uti.json" },
+        { "id": "transplant", "title": "پیوند", "path": "data/nephro/transplant.json" }
+      ]
+    }
+  ]
+}
