@@ -2,5 +2,276 @@
   "section_id": "lung",
   "subsection_id": "obstructive",
   "title": "انسدادی (آسم/COPD)",
-  "questions": []
+  "questions": [
+    {
+      "id": 1,
+      "q": "بیمار ۴۲ ساله با تنگی نفس تکراری و سیاق حساسیت. اسپیرومتری: FEV₁ ۶۵% predicted، FEV₁/FVC ۰.۶۲، بهبودی ۲۲% بعد از bronchodilator. تشخیص احتمالی چیست؟",
+      "options": [
+        "Mild persistent asthma",
+        "COPD with air trapping",
+        "Restrictive pattern",
+        "Normal spirometry with exercise-induced symptoms"
+      ],
+      "correct": 0,
+      "analysis": {
+        "options": [
+          "FEV₁/FVC <۰.۷ = obstructive pattern",
+          "Bronchodilator response >۱۲% + ۲۰۰ mL = asthma",
+          "FEV₁ ۶۵% = mild obstruction",
+          "Restrictive: FVC کاهش first"
+        ],
+        "points": [
+          "Asthma: reversibility به bronchodilator >۱۲%",
+          "FEV₁ ۶۵%: mild-to-moderate severity",
+          "History + reversibility: asthma diagnosis"
+        ]
+      },
+      "difficulty": "medium",
+      "tags": ["asthma", "spirometry", "bronchodilator response", "reversibility"],
+      "reference": "GINA Asthma Diagnosis and Spirometry Criteria"
+    },
+    {
+      "id": 2,
+      "q": "بیمار ۶۸ ساله سیگاری ۳۰ سال. Spirometry: FEV₁ ۴۵% predicted، FEV₁/FVC ۰.۵۸، bronchodilator response ۸%. کدام stage COPD است؟",
+      "options": [
+        "GOLD Stage 1 (Mild)",
+        "GOLD Stage 2 (Moderate)",
+        "GOLD Stage 3 (Severe)",
+        "GOLD Stage 4 (Very Severe)"
+      ],
+      "correct": 2,
+      "analysis": {
+        "options": [
+          "Stage 1: FEV₁ ≥۸۰%",
+          "Stage 2: FEV₁ ۵۰-۷۹%",
+          "Stage 3: FEV₁ ۳۰-۴۹%",
+          "Stage 4: FEV₁ <۳۰%"
+        ],
+        "points": [
+          "GOLD staging: بر اساس FEV₁ میزان",
+          "FEV₁ ۴۵% = Stage 3 (Severe)",
+          "Limited reversibility: COPD نه asthma"
+        ]
+      },
+      "difficulty": "easy",
+      "tags": ["COPD", "GOLD classification", "spirometry", "FEV1"],
+      "reference": "GOLD COPD Classification 2024"
+    },
+    {
+      "id": 3,
+      "q": "خانم ۳۵ ساله با asthma exacerbation شدید. Peak expiratory flow (PEF) ۴۰% predicted، stridor، altered speech. کدام اقدام فوری است؟",
+      "options": [
+        "Systemic corticosteroid + SABA آئروسول",
+        "Oxygen + systemic steroid + SABA + ipratropium IV",
+        "Magnesium sulfate IV + oxygen + steroid + SABA",
+        "Urgent intubation"
+      ],
+      "correct": 2,
+      "analysis": {
+        "options": [
+          "SABA + steroid: mild-to-moderate exacerbation",
+          "Ipratropium: added برای severe",
+          "Magnesium: refractory exacerbation کمک می‌کند",
+          "Intubation: اگر altered mental + fatigue"
+        ],
+        "points": [
+          "Severe asthma exacerbation: combined approach",
+          "Magnesium sulfate: clinical benefit refractory cases",
+          "PEF <۴۰%: hospitalization + intensive therapy"
+        ]
+      },
+      "difficulty": "hard",
+      "tags": ["asthma exacerbation", "severe", "magnesium", "emergency"],
+      "reference": "GINA Acute Asthma Exacerbation Management"
+    },
+    {
+      "id": 4,
+      "q": "بیمار ۵۵ ساله COPD with FEV₁ ۴۸% predicted، مناسب برای کدام stepwise therapy؟",
+      "options": [
+        "LAMA یا LABA تکی",
+        "LABA + ICS combination",
+        "LAMA + LABA (dual therapy)",
+        "Triple therapy (LAMA + LABA + ICS)"
+      ],
+      "correct": 2,
+      "analysis": {
+        "options": [
+          "Single: FEV₁ ۶۰-۸۰%",
+          "LABA + ICS: اگر exacerbations recurring",
+          "LAMA + LABA: FEV₁ <۵۰% یا recurrent exacerbation",
+          "Triple: اگر exacerbation severe/recurrent"
+        ],
+        "points": [
+          "GOLD stepwise: FEV₁ based + exacerbation history",
+          "FEV₁ ۴۸%: moderate-to-severe obstruction",
+          "Dual bronchodilator: standard برای این level"
+        ]
+      },
+      "difficulty": "medium",
+      "tags": ["COPD", "stepwise therapy", "LAMA", "LABA", "FEV1"],
+      "reference": "GOLD COPD Pharmacological Management"
+    },
+    {
+      "id": 5,
+      "q": "بیمار ۶۲ ساله COPD exacerbation with PaO₂ ۶۲ mmHg (oxygen ۲L/min). تاریخ سیگار ۴۰ سال. کدام درمان oxygen strategy درست است؟",
+      "options": [
+        "Target SpO₂ ۹۸-۱۰۰% برای بهترین oxygenation",
+        "Target SpO₂ ۹۰-۹۴% برای جلوگیری CO₂ retention",
+        "Target SpO₂ ۸۸-۹۲% برای دوام respiratory drive",
+        "Target SpO₂ >۹۵% برای safety margin"
+      ],
+      "correct": 1,
+      "analysis": {
+        "options": [
+          "۹۸-۱۰۰%: hypoxia over-correction و CO₂ retention risk",
+          "۹۰-۹۴%: balance oxygenation + preserve drive",
+          "۸۸-۹۲%: too low برای exacerbation acute",
+          ">۹۵%: contraindicated COPD with CO₂ sensitivity"
+        ],
+        "points": [
+          "COPD + CO₂ retention: cautious oxygen approach",
+          "Target SpO₂ ۹۰-۹۴%: guideline-recommended",
+          "Over-oxygenation: removes respiratory stimulus"
+        ]
+      },
+      "difficulty": "hard",
+      "tags": ["COPD exacerbation", "oxygen therapy", "CO2 retention", "hypercapnia"],
+      "reference": "COPD Exacerbation Oxygen Management Guidelines"
+    },
+    {
+      "id": 6,
+      "q": "بیمار ۷۰ ساله Alpha-1 antitrypsin deficiency (بدون smoking history). تصویر: basilar-predominant emphysema. Spirometry: FEV₁ ۵۲% predicted. درمان مناسب؟",
+      "options": [
+        "Bronchodilators + smoking cessation",
+        "Bronchodilators + Alpha-1 protease inhibitor replacement",
+        "ICS + LABA برای سوزاندن رشد",
+        "Lung transplantation immediate"
+      ],
+      "correct": 1,
+      "analysis": {
+        "options": [
+          "Smoking cessation: standard لکن Alpha-1 needs replacement",
+          "Alpha-1 replacement: slows decline significantly",
+          "ICS: not primary therapy برای Alpha-1",
+          "Transplantation: FEV₁ <۲۵% و symptomatic hypercapnia"
+        ],
+        "points": [
+          "Alpha-1 deficiency: unique diagnosis و treatment",
+          "Replacement therapy: proven benefit progression",
+          "FEV₁ ۵۲%: eligible برای Alpha-1 therapy"
+        ]
+      },
+      "difficulty": "hard",
+      "tags": ["Alpha-1 antitrypsin deficiency", "replacement therapy", "emphysema"],
+      "reference": "Alpha-1 Antitrypsin Deficiency Management"
+    },
+    {
+      "id": 7,
+      "q": "بیمار ۴۵ ساله mild asthma with GINA step ۲ (need controller). کدام بهترین initial controller است؟",
+      "options": [
+        "Low-dose ICS",
+        "LTRA (montelukast)",
+        "Long-acting beta-2 agonist (LABA) تکی",
+        "Theophylline"
+      ],
+      "correct": 0,
+      "analysis": {
+        "options": [
+          "Low-dose ICS: first-line gold standard",
+          "LTRA: alternative اگر ICS contraindicated",
+          "LABA: never monotherapy، always with ICS",
+          "Theophylline: outdated، adverse profile"
+        ],
+        "points": [
+          "GINA Step 2: low-dose ICS preferred",
+          "ICS efficacy: superior به alternatives",
+          "Timing: daily regular use، not PRN"
+        ]
+      },
+      "difficulty": "medium",
+      "tags": ["asthma", "GINA step 2", "ICS", "low-dose controller"],
+      "reference": "GINA Asthma Step-wise Treatment Approach"
+    },
+    {
+      "id": 8,
+      "q": "بیمار ۵۸ ساله COPD + asthma overlap. FEV₁ ۵۰% predicted، reversibility ۲۰%، smoking history ۲۵ سال. درمان مناسب؟",
+      "options": [
+        "LAMA + LABA + low-dose ICS",
+        "LAMA + LABA (بدون ICS)",
+        "High-dose ICS monotherapy",
+        "Triple therapy with high-dose ICS"
+      ],
+      "correct": 0,
+      "analysis": {
+        "options": [
+          "LAMA + LABA + low-dose ICS: appropriate mixture",
+          "Dual برای pure COPD لکن asthma features حاضر",
+          "ICS monotherapy: inadequate bronchodilation",
+          "High-dose ICS: may excess اگر asthma limited"
+        ],
+        "points": [
+          "ACO (Asthma-COPD Overlap): ICS beneficial",
+          "Reversibility ۲۰%: asthma component present",
+          "Triple with low-dose ICS: optimal ترکیب"
+        ]
+      },
+      "difficulty": "hard",
+      "tags": ["asthma-COPD overlap", "ACO", "triple therapy", "ICS"],
+      "reference": "Asthma-COPD Overlap Syndrome Management"
+    },
+    {
+      "id": 9,
+      "q": "بیمار ۵۲ ساله COPD with frequent exacerbation (۴ exacerbation/سال). Current therapy: LAMA + LABA. کدام اضافه شود؟",
+      "options": [
+        "Roflumilast (phosphodiesterase-4 inhibitor)",
+        "Low-dose ICS",
+        "High-dose ICS",
+        "Theophylline"
+      ],
+      "correct": 0,
+      "analysis": {
+        "options": [
+          "Roflumilast: reduces exacerbation frequency",
+          "Low-dose ICS: اگر eosinophil >۱۰۰",
+          "High-dose ICS: overkill اگر no asthma",
+          "Theophylline: obsolete"
+        ],
+        "points": [
+          "Frequent exacerbation: roflumilast indication",
+          "Roflumilast: PDE4 inhibitor reduce inflammation",
+          "Dual bronchodilator + roflumilast: standard"
+        ]
+      },
+      "difficulty": "hard",
+      "tags": ["COPD exacerbation", "roflumilast", "frequent exacerbation"],
+      "reference": "Roflumilast in COPD Management"
+    },
+    {
+      "id": 10,
+      "q": "بیمار ۶۵ ساله with COPD exacerbation and acute cor pulmonale. RV dilatation visible، elevated JVP. Oxygen بدون کنترل تنگی نفس. کدام عامل مقصر است؟",
+      "options": [
+        "Excessive oxygen causing CO₂ narcosis + hypoventilation",
+        "Underlying pneumonia deteriorating",
+        "Acute PE superimposed",
+        "Myocardial infarction"
+      ],
+      "correct": 0,
+      "analysis": {
+        "options": [
+          "Oxygen: removes hypoxic stimulus → CO₂ rise",
+          "Pneumonia: present لکن oxygen not cause",
+          "PE: possible لکن less likely context",
+          "MI: possible لکن oxygen not direct cause"
+        ],
+        "points": [
+          "COPD + high-flow oxygen: CO₂ narcosis risk",
+          "Cor pulmonale: manifestation RV strain",
+          "Appropriate oxygen titration: SpO₂ ۹۰-۹۴%"
+        ]
+      },
+      "difficulty": "hard",
+      "tags": ["COPD exacerbation", "cor pulmonale", "CO2 narcosis", "oxygen"],
+      "reference": "COPD Exacerbation Hypercapnia Management"
+    }
+  ]
 }
