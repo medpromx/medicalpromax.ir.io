@@ -2,5 +2,286 @@
   "section_id": "heart",
   "subsection_id": "valvular",
   "title": "دریچه‌ای",
-  "questions": []
+  "questions": [
+    {
+      "id": 1,
+      "q": "مردی 45 ساله با تب و TIA 5 ماه بعد از جایگذاری دریچه aortic artificial، TEE یک vegetation بزرگ روی دریچه prosthetic aortic نشان می‌دهد. کدام میکروارگانیسم شایع‌ترین علت endocarditis در این بیمار است؟",
+      "options": [
+        "Streptococcus viridans",
+        "Staphylococcus aureus",
+        "Staphylococcus epidermidis",
+        "Enterococcus"
+      ],
+      "correct": 1,
+      "analysis": {
+        "options": [
+          "Strep viridans برای native valve endocarditis معمول است (نه prosthetic).",
+          "درست: Staph aureus برای prosthetic valve endocarditis (خصوصاً early PVE) سبب شایع است.",
+          "CoNS در endocarditis prosthetic valve ولی کمتر از Staph aureus.",
+          "Enterococcus نادر است برای دریچه prosthetic."
+        ],
+        "points": [
+          "Early PVE (< 1 سال post-op): Staph aureus/epidermidis بیشتر (از جراحی).",
+          "Late PVE (> 1 سال): Strep viridans یا Enterococcus (like native).",
+          "Fever + vegetation post-AVR = تشک برای عفونت prosthetic.",
+          "TEE sensitivity 90% برای prosthetic valve vegetation."
+        ]
+      },
+      "difficulty": "medium",
+      "tags": ["endocarditis", "prosthetic_valve", "Staph_aureus", "PVE", "TEE"],
+      "reference": "Harrison Ch 128; Infective Endocarditis guidelines"
+    },
+    {
+      "id": 2,
+      "q": "در بیمار با endocarditis دریچه aortic، کدام یک از موارد زیر آشکارتر‌ترین بیانگر نیاز فوری جراحی است؟",
+      "options": [
+        "ظهور sudden first degree AV block در ECG",
+        "تب مستمر بیش از یک هفته بدون پاسخ به آنتی‌بیوتیک",
+        "AR متوسط تا شدید بدون علایم نارسایی قلبی",
+        "Brucella به عنوان علت endocarditis"
+      ],
+      "correct": 0,
+      "analysis": {
+        "options": [
+          "درست: AV block جدید = perivalvular abscess → نیاز جراحی فوری برای drain و repair.",
+          "تب persistent معمولاً به آنتی‌بیوتیک پاسخ می‌دهد؛ نشانه جراحی نیست مگر مقاوم باشد.",
+          "AR بدون HF symptoms: expectant management با careful hemodynamic monitoring.",
+          "Brucella بیشتر با medical therapy responsive است؛ نه strictly surgical indication."
+        ],
+        "points": [
+          "Surgical indication in IE: perivalvular abscess، large vegetation with septic emboli، prosthetic valve dysfunction.",
+          "AV block جدید = pathognomonic برای abscess در aortic root or conduction system.",
+          "First-degree AV block sudden onset = نشانه extension of infection beyond leaflet.",
+          "TEE یا cardiac CT برای confirm abscess ضروری است قبل از surgery."
+        ]
+      },
+      "difficulty": "hard",
+      "tags": ["endocarditis", "surgical_indication", "AV_block", "abscess", "periannular"],
+      "reference": "Harrison Ch 128 Endocarditis; ESC 2015 IE Guidelines"
+    },
+    {
+      "id": 3,
+      "q": "کدام شرایط زیر نیاز به prophylaxis آنتی‌بیوتیکی قبل از دندان‌پزشکی (extraction) ندارد؟",
+      "options": [
+        "Prosthetic mitral valve replacement",
+        "Closure of ASD (2 ماه قبل انجام شده)",
+        "Bicuspid aortic valve with severe AR",
+        "Unrepaired Tetralogy of Fallot"
+      ],
+      "correct": 1,
+      "analysis": {
+        "options": [
+          "Prosthetic valve = highest risk برای IE → always prophylaxis required.",
+          "درست: ASD closure > 6 ماه = endothelialization تکمیل شده → NO prophylaxis more required.",
+          "Bicuspid AV + AR = structural abnormality + hemodynamics → prophylaxis recommended.",
+          "Unrepaired TOF = cyanotic heart disease → high risk IE → prophylaxis required."
+        ],
+        "points": [
+          "IE prophylaxis needed for prosthetic valves, cyanotic disease, prior IE, PDA, VSD, complex congenital.",
+          "ASD timing: prophylaxis برای 6 ماه بعد از closure; سپس discontinued.",
+          "Native valve disease (AS، MR) ≥ mild = prophylaxis recommended (controversial).",
+          "Regimen: Amoxicillin 2g PO 1h قبل یا Clindamycin 600mg (اگر allergy)."
+        ]
+      },
+      "difficulty": "medium",
+      "tags": ["IE_prophylaxis", "dental", "ASD", "endocarditis_prevention", "prosthetic_valve"],
+      "reference": "AHA 2007 IE Prophylaxis Guidelines; Harrison Ch 128"
+    },
+    {
+      "id": 4,
+      "q": "زن 38 ساله با mitral stenosis (MS) rheumatic دارای نشانه‌های NYHA FC II است. Echocardiography: MVA 1.3 cm²، SPAP 60 mmHg، PTMC score 14 (echo score for valvotomy). بهترین مرحله بعدی تیمان چیست؟",
+      "options": [
+        "Monitoring (تحت نظارت) تا FC III شود",
+        "Percutaneous transvenous mitral commissurotomy (PTMC)",
+        "Surgical mitral valve replacement (MVR)",
+        "Conservative اما با start diuretics و β-blockers"
+      ],
+      "correct": 1,
+      "analysis": {
+        "options": [
+          "Monitoring too late چون SPAP بالاست و PTMC مرشح قابل درمان است.",
+          "درست: PTMC نشانه‌شناخت واضح: FC II + MVA ≤ 1.5 + PTMC score ≤ 8 (favorable) + no LA thrombus.",
+          "MVR برای PTMC unfavorable anatomy یا failed PTMC است (اینجا suitable نیست).",
+          "Conservative therapy might delay مداخلهء appropriate."
+        ],
+        "points": [
+          "PTMC indications: symptomatic MS (FC II-III) + favorable anatomy (echo score ≤ 8) + no left atrial thrombus.",
+          "Echo score: calcification، thickening، mobility، subcommissural involvement کل ≤ 8 suitable for PTMC.",
+          "MVA ≤ 1.5 cm² + symptoms = بهترین نامزد برای PTMC (بدون نیاز to MVR).",
+          "Success rate PTMC: 90% relief + long-term benefit; repeat PTMC اگر restenosis باشد."
+        ]
+      },
+      "difficulty": "medium",
+      "tags": ["mitral_stenosis", "PTMC", "echocardiography", "echo_score", "rheumatic_heart"],
+      "reference": "Harrison Ch 272; ESC Valvular Disease Guidelines"
+    },
+    {
+      "id": 5,
+      "q": "مردی 68 ساله با aortic stenosis شدید (AS) بدون علایم تحت نظارت قرار دارد. Echo: AVA 0.8 cm²، peak systolic gradient 92 mmHg، LVEF 55%. کدام یک از موارد جراحی indication را satisfy نمی‌کند؟",
+      "options": [
+        "Asymptomatic LVEF drop to 50%",
+        "Symptom onset (angina، syncope، dyspnea)",
+        "Left ventricular ejection fraction ≥ 50% with very high gradient (peak > 80) at rest",
+        "Concentric LVH alone without symptoms یا EF drop"
+      ],
+      "correct": 3,
+      "analysis": {
+        "options": [
+          "EF drop 55% → 50% = hemodynamic deterioration → AVR indication است.",
+          "Symptom onset = classic indication برای AVR در AS.",
+          "Very high gradient (> 80) + EF preserved = high risk SCD even asymptomatic → some guidelines advocate AVR.",
+          "درست: Concentric LVH صرف (بدون symptom یا EF drop یا abnormal stress test) = NOT indication for AVR."
+        ],
+        "points": [
+          "AS surgery indication (Class I): symptoms + severe AS یا asymptomatic + LV dysfunction یا abnormal stress test.",
+          "Severe AS criteria: AVA < 1.0 cm² یا peak gradient ≥ 80 mmHg یا mean gradient ≥ 50 mmHg.",
+          "Asymptomatic AS class 2b indication اگر EF drops یا LV strain markers abnormal.",
+          "Structural LVH alone ≠ indication; need functional parameters (EF، strain) یا symptoms."
+        ]
+      },
+      "difficulty": "hard",
+      "tags": ["aortic_stenosis", "AVR_indication", "asymptomatic", "LVEF", "severe_AS"],
+      "reference": "ACC/AHA 2020 Valvular Disease Guidelines; Harrison Ch 272"
+    },
+    {
+      "id": 6,
+      "q": "مردی 62 ساله با AS شدید (Vmax 4.2 m/s) و EF preserved (55%) asymptomatic است. اگر exercise stress test inducible symptoms نشان ندهد، کدام intervention مناسب است؟",
+      "options": [
+        "فوری AVR (surgical aortic valve replacement)",
+        "TAVI (transcatheter aortic valve implantation)",
+        "Watchful waiting با serial echo هر 6-12 ماه",
+        "Balloon valvuloplasty temporary"
+      ],
+      "correct": 2,
+      "analysis": {
+        "options": [
+          "Surgical AVR indications require یا symptoms یا LV dysfunction - asymptomatic + normal EF نیست indication.",
+          "TAVI reserved for surgical high-risk یا inoperable patients.",
+          "درست: Asymptomatic severe AS + normal EF + negative stress test = expectant management با close surveillance.",
+          "Balloon valvuloplasty temporary measure; not definitive therapy."
+        ],
+        "points": [
+          "Asymptomatic severe AS: AVR indicated اگر LV dysfunction یا markedly abnormal stress test یا rapid progression.",
+          "Serial echocardiography: check for EF decline، change in gradients، onset of symptoms.",
+          "Sudden symptom onset requires immediate investigation و AVR consideration.",
+          "Risk stratification: very high gradient (> 80) + concentric LVH = closer follow-up despite current asymptomatic status."
+        ]
+      },
+      "difficulty": "medium",
+      "tags": ["aortic_stenosis", "watchful_waiting", "asymptomatic", "AVR", "exercise_stress"],
+      "reference": "ACC/AHA 2020 Guidelines; ESC Valvular Disease"
+    },
+    {
+      "id": 7,
+      "q": "زن 56 ساله با mitral regurgitation شدید (severe MR) و LVEF 65% asymptomatic است. چه یکی از اینها AVR indication را ارائه نمی‌دهد؟",
+      "options": [
+        "LV dilatation (LVEDD > 40 mm) + preserved EF",
+        "LVEF drop to 60% (from prior 65%)",
+        "Atrial fibrillation جدید",
+        "Normal LVEDD و LVEF with mild symptoms (NYHA I)"
+      ],
+      "correct": 3,
+      "analysis": {
+        "options": [
+          "LV dilatation + preserved EF = sign of progressive disease → intervention indicated (class 2a).",
+          "EF drop 65% → 60% = hemodynamic deterioration → intervention indicated.",
+          "AF جدید = increased risk thromboemboli + may worsen MR hemodynamics → intervention considered.",
+          "درست: Normal geometry + mild symptoms = conservative management است (نه surgery indication)."
+        ],
+        "points": [
+          "Asymptomatic severe MR + LV dysfunction (EF < 60%) یا LV dilatation (LVEDD > 45) = intervention indicated.",
+          "LVEDD > 40 normal; abnormal است اگر > 40 with MR + preserved EF = early surgical intervention class 2a.",
+          "AF + severe MR = higher risk; intervention generally recommended.",
+          "Mild symptoms (NYHA I) alone + normal LV parameters = continue medical management."
+        ]
+      },
+      "difficulty": "medium",
+      "tags": ["mitral_regurgitation", "surgical_indication", "LV_function", "LVEDD", "asymptomatic_MR"],
+      "reference": "ACC/AHA 2020 Valvular Guidelines; Harrison Ch 272"
+    },
+    {
+      "id": 8,
+      "q": "مردی 55 ساله با AR شدید (aortic regurgitation)، Vmax 5.2 m/s، ERO (effective regurgitant orifice) 0.5 cm²، و regurgitant volume > 60 mL/beat. LVEF 58%، LVEDD 52 mm. کدام statement درست نیست؟",
+      "options": [
+        "LVEDD > 50 mm = علامت early LV dilatation به دلیل chronic AR",
+        "ERO > 0.3 cm² + regurgitation volume > 30 mL = severe AR",
+        "LVEF 58% preserved است لکن declining trend نیاز دارد AVR",
+        "ACE inhibitor monotherapy sufficient برای long-term management"
+      ],
+      "correct": 3,
+      "analysis": {
+        "options": [
+          "LVEDD > 50 mm = sign of LV remodeling در chronic AR - correct.",
+          "ERO > 0.3 + volume > 30 mL/beat = criteria severe AR - correct.",
+          "LVEF 58% preserved لکن در AR declining = hemodynamic deterioration → AVR indicated - correct.",
+          "درست: ACE inhibitor monotherapy NOT sufficient برای severe AR + dilated LV. AVR پیشنهادی است."
+        ],
+        "points": [
+          "Severe AR surgical indications: symptoms (angina، dyspnea، syncope) یا LVEF < 50% یا LVEDD > 55 mm.",
+          "Chronic AR + normal EF + normal size: vasodilators (ACE-I/ARBs) can delay surgery.",
+          "LVEDD > 50 mm = borderline threshold; if trending upward + EF dropping → surgery indicated.",
+          "Vasodilator alone inadequate برای severe AR with LV dilatation; surgery needed."
+        ]
+      },
+      "difficulty": "hard",
+      "tags": ["aortic_regurgitation", "ERO", "LVEDD", "surgical_indication", "vasodilators"],
+      "reference": "ACC/AHA 2020 Valve Guidelines; Harrison Ch 272"
+    },
+    {
+      "id": 9,
+      "q": "مردی 48 ساله با بیمنی rheumatic mitral stenosis و atrial fibrillation جدید ارائه شده است. چه مورد بهترین مرحله بعدی management است؟",
+      "options": [
+        "Rate control with β-blockers + anticoagulation فقط",
+        "Cardioversion دنبال شده توسط PTMC یا valve surgery",
+        "Aggressive diuretics + continue monitoring",
+        "TAVI برای mechanical relief"
+      ],
+      "correct": 1,
+      "analysis": {
+        "options": [
+          "Rate control alone insufficient؛ MS + AF = stasis risk + stroke + hemodynamic مشکل.",
+          "درست: AF new-onset + MS = نشانه برای rhythm control یا cardioversion دنبال شده توسط definitive MS intervention.",
+          "Diuretics help congestion لکن نه MS را fix نمی‌کند یا AF علاج نمی‌کند.",
+          "TAVI برای aortic نه mitral disease است."
+        ],
+        "points": [
+          "AF + MS = high thromboemboli risk + hemodynamic deterioration; need definitive intervention.",
+          "Anticoagulation mandatory در AF (even after cardioversion).",
+          "PTMC یا MVR decision based on anatomy + symptoms.",
+          "Cardioversion can improve hemodynamics; if unsuccessful, pace-control adequate لکن PTMC/MVR still needed."
+        ]
+      },
+      "difficulty": "medium",
+      "tags": ["mitral_stenosis", "atrial_fibrillation", "cardioversion", "PTMC", "anticoagulation"],
+      "reference": "ESC Valvular Guidelines; Harrison Ch 272"
+    },
+    {
+      "id": 10,
+      "q": "در echocardiography، «aortic stenosis» با bicuspid aortic valve و LVEF 25%، peak gradient 27 mmHg، mean gradient 17 mmHg ارائه شده است. شما فکر می‌کنید این «pseudosevere» یا «true severe low-gradient» AS است؟ کدام test بعدی؟",
+      "options": [
+        "فوری AVR بدون further testing",
+        "Dobutamine stress echocardiography برای assess contractility reserve",
+        "Medical therapy conservative ",
+        "Computed tomography aortic root"
+      ],
+      "correct": 1,
+      "analysis": {
+        "options": [
+          "AVR bدون contractility reserve assessment risky اگر pseudo-severe باشد.",
+          "درست: Low-gradient AS + reduced EF = need dobutamine echo برای see اگر gradient increase (true severe) یا stay low (pseudosevere).",
+          "Conservative therapy اگر pseudo-severe است; لکن need confirmation اول.",
+          "CT useful برای aortic anatomy نه برای contractility reserve."
+        ],
+        "points": [
+          "Low-gradient AS definition: mean gradient < 40 mmHg + EF < 40% (sometimes ≤ 50%).",
+          "Pseudosevere: AVA < 1.0 لکن low gradient due to low flow (low EF, low cardiac output).",
+          "True severe low-gradient: severe anatomic stenosis لکن EF too low to generate gradient.",
+          "Dobutamine echo: contractility improves EF + gradient increases = true severe → AVR indicated. If gradient NOT increase = pseudosevere → reconsider."
+        ]
+      },
+      "difficulty": "hard",
+      "tags": ["aortic_stenosis", "low_gradient", "pseudosevere", "dobutamine_echo", "contractility_reserve"],
+      "reference": "Harrison Ch 272; ACC/AHA Valve Guidelines"
+    }
+  ]
 }
