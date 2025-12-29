@@ -2,5 +2,411 @@
   "section_id": "lung",
   "subsection_id": "ild_occupational",
   "title": "ILD و شغلی",
-  "questions": []
+  "questions": [
+    {
+      "id": 1,
+      "q": "بیمار ۶۸ ساله with progressive dyspnea ۲ سال. سابقه ۴۰ سال کار در کارخانه نساجی (کتان/پنبه). HRCT: basilar-predominant fibrosis + ground-glass opacities. PFTs: FVC ۶۵% predicted، DLCO ۴۰%. تشخیص احتمالی؟",
+      "options": [
+        "Silicosis",
+        "Byssinosis",
+        "Asbestosis",
+        "Talcosis"
+      ],
+      "correct": 2,
+      "analysis": {
+        "options": [
+          "Silicosis: mining/sandblasting history، وسط-بالا fibrosis",
+          "Byssinosis: textile acute symptoms، وسط-بالا bronchial",
+          "Asbestosis: construction/insulation، basilar pleural thickening",
+          "Talcosis: powder/cosmetics، similar to asbestos"
+        ],
+        "points": [
+          "Asbestos exposure: textile industry معمول است",
+          "Basilar fibrosis + pleural involvement: asbestos characteristic",
+          "Long latency: ۲۰-۴۰ سال after exposure"
+        ]
+      },
+      "difficulty": "hard",
+      "tags": ["asbestosis", "occupational exposure", "textile industry", "fibrosis"],
+      "reference": "Asbestos-Related Lung Disease Diagnosis"
+    },
+    {
+      "id": 2,
+      "q": "بیمار ۵۸ ساله with dry cough و dyspnea ۱ سال. سابقه ۱۵ سال کار در معادن (مس استخراج). HRCT: bilateral nodular opacities mid-to-upper lobes + hilar lymphadenopathy. PFTs: FVC ۷۲%، DLCO ۶۵%. تشخیص؟",
+      "options": [
+        "Asbestosis",
+        "Silicosis",
+        "IPF (Idiopathic Pulmonary Fibrosis)",
+        "Sarcoidosis"
+      ],
+      "correct": 1,
+      "analysis": {
+        "options": [
+          "Asbestosis: basilar + pleural، construction typical",
+          "Silicosis: mining history + nodular mid-upper + lymph",
+          "IPF: subpleural + basilar predominantly",
+          "Sarcoidosis: bilateral symmetric lymph (hilar/mediastinal)"
+        ],
+        "points": [
+          "Silicosis: mining/sand exposure characteristic",
+          "Mid-upper nodular + hilar lymph: silicosis pattern",
+          "FVC/DLCO relatively preserved compared to IPF"
+        ]
+      },
+      "difficulty": "hard",
+      "tags": ["silicosis", "mining exposure", "occupational", "nodular pattern"],
+      "reference": "Silicosis Classification and Diagnosis"
+    },
+    {
+      "id": 3,
+      "q": "بیمار ۷۲ ساله with progressive dyspnea ۵ سال. No occupational exposure stated. HRCT: bilateral basilar UIP pattern (reticular + honeycombing) + traction bronchiectasis. PFTs: FVC ۵۰%، DLCO ۳۵%. تشخیص احتمالی؟",
+      "options": [
+        "Occupational ILD (silicosis/asbestosis)",
+        "Idiopathic Pulmonary Fibrosis (IPF)",
+        "NSIP (Nonspecific Interstitial Pneumonia)",
+        "Asthma with fibrosis"
+      ],
+      "correct": 1,
+      "analysis": {
+        "options": [
+          "Occupational: requires exposure history + compatible pattern",
+          "IPF: UIP pattern + basilar + traction bronchiectasis",
+          "NSIP: more uniform + less honeycombing",
+          "Asthma: not typical ILD fibrosis pattern"
+        ],
+        "points": [
+          "UIP pattern + no occupational history: IPF diagnosis",
+          "Basilar honeycombing: hallmark IPF",
+          "Traction bronchiectasis: advanced fibrosis sign"
+        ]
+      },
+      "difficulty": "medium",
+      "tags": ["IPF", "UIP pattern", "idiopathic", "fibrosis"],
+      "reference": "IPF Diagnosis Criteria ATS/ERS"
+    },
+    {
+      "id": 4,
+      "q": "بیمار ۵۲ ساله with dyspnea and cough. سابقه ۲۰ سال کار در نقاشی و صنعت (aerosol exposure). HRCT: upper-lobe predominant nodular/reticular opacities + upper-lobe fibrosis. PFTs: FVC ۶۸%، DLCO ۷۲%. تشخیص؟",
+      "options": [
+        "Silicosis",
+        "Sarcoidosis",
+        "Talcosis",
+        "IPF"
+      ],
+      "correct": 2,
+      "analysis": {
+        "options": [
+          "Silicosis: mining history + mid-upper nodules",
+          "Sarcoidosis: symmetric hilar + systemic involvement",
+          "Talcosis: powder/cosmetics exposure + upper-lobe",
+          "IPF: basilar-predominant usually"
+        ],
+        "points": [
+          "Talcosis: industrial talc exposure pattern",
+          "Upper-lobe predominance: talc characteristic",
+          "Painters/aerosol workers: talc exposure risk"
+        ]
+      },
+      "difficulty": "hard",
+      "tags": ["talcosis", "occupational exposure", "painter", "upper-lobe"],
+      "reference": "Talc-Related Occupational Lung Disease"
+    },
+    {
+      "id": 5,
+      "q": "بیمار ۴۸ ساله with fever، fatigue، dyspnea ۲ سال. No smoking. HRCT: bilateral symmetric hilar lymphadenopathy + mediastinal lymph + ground-glass opacities (basal). ACE level ۲۸ (elevated). Calcium normal. تشخیص احتمالی؟",
+      "options": [
+        "Silicosis",
+        "Sarcoidosis",
+        "Tuberculosis (TB)",
+        "Lymphoma"
+      ],
+      "correct": 1,
+      "analysis": {
+        "options": [
+          "Silicosis: occupational history + upper-mid nodules",
+          "Sarcoidosis: symmetric hilar/mediastinal + ACE elevated",
+          "TB: unilateral upper-lobe typical",
+          "Lymphoma: asymmetric + systemic features"
+        ],
+        "points": [
+          "Sarcoidosis: bilateral symmetric lymphadenopathy hallmark",
+          "ACE elevation: granulomatous disease marker",
+          "Ground-glass: pulmonary involvement"
+        ]
+      },
+      "difficulty": "medium",
+      "tags": ["sarcoidosis", "hilar lymphadenopathy", "ACE level", "granulomatous"],
+      "reference": "Sarcoidosis Diagnosis Kveim Test"
+    },
+    {
+      "id": 6,
+      "q": "بیمار ۶۵ ساله ILD (type unclear). PFTs: FVC ۷۰%، TLC ۶۲%، DLCO ۲۸%. HRCT: extensive fibrosis. Bronchoalveolar lavage (BAL): lymphocytosis ۴۵%. کدام ILD احتمالی؟",
+      "options": [
+        "IPF (idiopathic pulmonary fibrosis)",
+        "Sarcoidosis یا Hypersensitivity Pneumonitis",
+        "NSIP (Nonspecific Interstitial Pneumonia)",
+        "Asbestosis"
+      ],
+      "correct": 1,
+      "analysis": {
+        "options": [
+          "IPF: low BAL lymphocytes + neutrophils",
+          "Sarcoidosis/HP: elevated lymphocytes (۲۵-۶۰%)",
+          "NSIP: variable، typically lower lymph",
+          "Asbestosis: history + lower lymph"
+        ],
+        "points": [
+          "High BAL lymphocytes: granulomatous/inflammatory pattern",
+          "Sarcoidosis vs HP: clinical context + exposure differentiate",
+          "IPF: opposite pattern (low lymph، high neutrophils)"
+        ]
+      },
+      "difficulty": "hard",
+      "tags": ["BAL", "lymphocytosis", "sarcoidosis", "hypersensitivity pneumonitis"],
+      "reference": "BAL Lymphocyte Count ILD Diagnosis"
+    },
+    {
+      "id": 7,
+      "q": "بیمار ۷۰ ساله with IPF (confirmed UIP pattern). FVC ۴۵%، DLCO ۳۲%. Comorbidity: hypertension (controlled). کدام antifibrotic مناسب است؟",
+      "options": [
+        "Prednisone high-dose alone",
+        "Pirfenidone یا Nintedanib",
+        "N-acetylcysteine (NAC) monotherapy",
+        "Observation (mild disease)"
+      ],
+      "correct": 1,
+      "analysis": {
+        "options": [
+          "Prednisone: not effective IPF، adverse effects",
+          "Pirfenidone/Nintedanib: antifibrotic approved",
+          "NAC: not effective monotherapy IPF",
+          "Observation: contraindicated with FVC ۴۵%"
+        ],
+        "points": [
+          "IPF: antifibrotic (pirfenidone یا nintedanib) standard",
+          "FVC <۵۰%: advanced disease، need therapy",
+          "Slow decline: antifibrotic goal"
+        ]
+      },
+      "difficulty": "medium",
+      "tags": ["IPF", "antifibrotic", "pirfenidone", "nintedanib"],
+      "reference": "IPF Antifibrotic Treatment Guidelines"
+    },
+    {
+      "id": 8,
+      "q": "بیمار ۵۵ ساله with acute onset fever، dyspnea، chills. Occupational: farmer (hay exposure). HRCT: diffuse ground-glass opacities + micronodules. PFTs: FVC ۸۰%، DLCO ۶۵%. تشخیص؟",
+      "options": [
+        "Chronic Hypersensitivity Pneumonitis (HP)",
+        "Acute HP",
+        "CAP (Community-Acquired Pneumonia)",
+        "Sarcoidosis"
+      ],
+      "correct": 1,
+      "analysis": {
+        "options": [
+          "Chronic HP: insidious، progressive fibrosis",
+          "Acute HP: fever + dyspnea hours-days after exposure",
+          "CAP: consolidation typical، not micronodules",
+          "Sarcoidosis: hilar lymph + systemic"
+        ],
+        "points": [
+          "Acute HP: fever + GGO + micronodules + exposure",
+          "Farmer: organic antigen exposure (moldy hay)",
+          "Temporal relationship: exposure → symptoms"
+        ]
+      },
+      "difficulty": "hard",
+      "tags": ["acute hypersensitivity pneumonitis", "HP", "farmer", "organic exposure"],
+      "reference": "Hypersensitivity Pneumonitis Acute vs Chronic"
+    },
+    {
+      "id": 9,
+      "q": "بیمار ۶۰ ساله COPD-like symptoms but HRCT: NSIP pattern (uniform interstitial fibrosis no honeycombing). PFTs: FVC ۶۸%، DLCO ۴۵%. No exposure history mentioned. درمان اولیه؟",
+      "options": [
+        "Bronchodilators (as COPD)",
+        "Antifibrotic (pirfenidone/nintedanib)",
+        "Corticosteroid + azathioprine (immunosuppression)",
+        "Observation only"
+      ],
+      "correct": 2,
+      "analysis": {
+        "options": [
+          "Bronchodilators: not primary NSIP therapy",
+          "Antifibrotic: for IPF/UIP، not NSIP",
+          "Corticosteroid + immunosuppression: NSIP responsive",
+          "Observation: progressive without treatment"
+        ],
+        "points": [
+          "NSIP: steroid-responsive ILD",
+          "Immunosuppression: azathioprine/mycophenolate",
+          "Different from IPF: better prognosis"
+        ]
+      },
+      "difficulty": "hard",
+      "tags": ["NSIP", "immunosuppression", "corticosteroid", "azathioprine"],
+      "reference": "NSIP Treatment Approach"
+    },
+    {
+      "id": 10,
+      "q": "بیمار ۵۸ ساله with ILD. HRCT: patchy ground-glass + consolidation (peribronchovascular). Bronchoscopy BAL: foamy macrophages. تشخیص احتمالی؟",
+      "options": [
+        "IPF",
+        "Organizing Pneumonia (OP/COP)",
+        "Sarcoidosis",
+        "Hypersensitivity Pneumonitis"
+      ],
+      "correct": 1,
+      "analysis": {
+        "options": [
+          "IPF: UIP pattern + honeycombing",
+          "OP: patchy GGO + peribronchovascular consolidation",
+          "Sarcoidosis: nodular + hilar lymph",
+          "HP: diffuse GGO + micronodules"
+        ],
+        "points": [
+          "Organizing Pneumonia: patchy consolidation + bronchocentric",
+          "Foamy macrophages: non-specific لکن consistent",
+          "Steroid-responsive: OP prognosis favorable"
+        ]
+      },
+      "difficulty": "hard",
+      "tags": ["organizing pneumonia", "COP", "foamy macrophages", "consolidation"],
+      "reference": "Organizing Pneumonia HRCT and Diagnosis"
+    },
+    {
+      "id": 11,
+      "q": "بیمار ۶۵ ساله with dyspnea و cough. Smoking history ۲۰ سال. HRCT: lower-lobe fibrosis + paraseptal emphysema. PFTs: FVC ۶۰%، DLCO ۴۰%. تشخیص احتمالی؟",
+      "options": [
+        "IPF",
+        "Respiratory Bronchiolitis-ILD (RB-ILD)",
+        "COPD with some fibrosis",
+        "Asbestosis"
+      ],
+      "correct": 1,
+      "analysis": {
+        "options": [
+          "IPF: basilar-UIP، less emphysema",
+          "RB-ILD: smoking-related، fibrosis + emphysema",
+          "COPD: upper-lobe emphysema typical",
+          "Asbestosis: occupational + pleural"
+        ],
+        "points": [
+          "RB-ILD: smoking-induced interstitial + respiratory bronchiolitis",
+          "Lower-lobe fibrosis + emphysema: smoking pattern",
+          "Better prognosis than IPF: smoking cessation key"
+        ]
+      },
+      "difficulty": "hard",
+      "tags": ["RB-ILD", "smoking-related", "respiratory bronchiolitis", "emphysema"],
+      "reference": "Respiratory Bronchiolitis-ILD Diagnosis"
+    },
+    {
+      "id": 12,
+      "q": "بیمار ۴۵ ساله sarcoidosis (confirmed). Pulmonary: FVC ۸۰%، DLCO ۸۵%. Extra-pulmonary: erythema nodosum + anterior uveitis. کدام اقدام initial؟",
+      "options": [
+        "Observation only (mild pulmonary)",
+        "Systemic corticosteroid برای extraPulmonary",
+        "Inhaled corticosteroid برای lung",
+        "Antituberculosis (TB exclusion first)"
+      ],
+      "correct": 1,
+      "analysis": {
+        "options": [
+          "Observation: FVC ۸۰% acceptable لکن extraPulmonary active",
+          "Systemic steroid: extraPulmonary symptoms indication",
+          "Inhaled: insufficient for systemic sarcoidosis",
+          "TB: must exclude before steroid"
+        ],
+        "points": [
+          "Sarcoidosis systemic: corticosteroid indicated",
+          "Erythema nodosum + uveitis: inflammatory markers",
+          "TB tuberculin skin test: exclude before steroid"
+        ]
+      },
+      "difficulty": "medium",
+      "tags": ["sarcoidosis", "systemic manifestations", "corticosteroid", "extraPulmonary"],
+      "reference": "Sarcoidosis Systemic Treatment Indications"
+    },
+    {
+      "id": 13,
+      "q": "بیمار ۶۲ ساله with IPF (FVC ۶۰%، DLCO ۳۳%). متأسفانه، Pirfenidone allergy (rash). کدام alternative?",
+      "options": [
+        "Nintedanib (tyrosine kinase inhibitor)",
+        "N-acetylcysteine",
+        "Prednisone + mycophenolate",
+        "Observation (stop any antifibrotic)"
+      ],
+      "correct": 0,
+      "analysis": {
+        "options": [
+          "Nintedanib: alternative antifibrotic to pirfenidone",
+          "NAC: not effective monotherapy IPF",
+          "Prednisone: harmful IPF",
+          "Observation: contraindicated FVC ۶۰%"
+        ],
+        "points": [
+          "Nintedanib: second antifibrotic option IPF",
+          "Similar efficacy: slow decline",
+          "Tolerability: different side effect profile"
+        ]
+      },
+      "difficulty": "medium",
+      "tags": ["IPF", "nintedanib", "antifibrotic alternative", "allergy"],
+      "reference": "IPF Antifibrotic Options"
+    },
+    {
+      "id": 14,
+      "q": "بیمار ۵۰ ساله with chronic HP (bird breeder). FVC ۶۲%، DLCO ۵۵%. HRCT: upper-lobe fibrosis. Active symptoms despite avoidance. درمان؟",
+      "options": [
+        "Complete antigen avoidance only",
+        "Corticosteroid + azathioprine",
+        "IPF antifibrotic (pirfenidone)",
+        "Immunoglobulin therapy"
+      ],
+      "correct": 1,
+      "analysis": {
+        "options": [
+          "Avoidance: essential لکن insufficient here",
+          "Corticosteroid + ISS: standard chronic HP therapy",
+          "Pirfenidone: not for HP، for IPF",
+          "Immunoglobulin: not standard"
+        ],
+        "points": [
+          "Chronic HP: progressive fibrosis despite avoidance",
+          "Immunosuppression: treatment of choice",
+          "Prognosis: better than IPF لکن still significant"
+        ]
+      },
+      "difficulty": "hard",
+      "tags": ["chronic hypersensitivity pneumonitis", "bird breeder", "immunosuppression"],
+      "reference": "Chronic HP Treatment Guidelines"
+    },
+    {
+      "id": 15,
+      "q": "بیمار ۷۰ ساله IPF candidate transplant consideration. FVC ۴۰%، DLCO ۲۵%. O₂ desaturation ۸۸% with 6-minute walk. تشخیص progression و urgency?",
+      "options": [
+        "FVC >۴۰% + normal O₂ = low urgency",
+        "FVC decline >۱۰% + O₂ desaturation = high urgency",
+        "Waiting (FVC ۴۰% stable borderline)",
+        "Not eligible (age ۷۰)"
+      ],
+      "correct": 1,
+      "analysis": {
+        "options": [
+          "FVC ۴۰%: already low، decline risk",
+          "FVC decline ۱۰% + desaturation: transplant markers",
+          "Waiting: high risk mortality",
+          "Age: relative not absolute contraindication"
+        ],
+        "points": [
+          "FVC ۴۰% + desaturation: high-risk period",
+          "6-minute walk drop: functional deterioration",
+          "Transplant evaluation: urgent in this scenario"
+        ]
+      },
+      "difficulty": "hard",
+      "tags": ["IPF", "lung transplant", "FVC decline", "urgency assessment"],
+      "reference": "IPF Transplant Referral Criteria"
+    }
+  ]
 }
