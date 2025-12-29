@@ -2,5 +2,411 @@
   "section_id": "nephro",
   "subsection_id": "electrolytes_acidbase",
   "title": "الکترولیت/اسید-باز",
-  "questions": []
+  "questions": [
+    {
+      "id": 1,
+      "q": "بیمار ۵۸ ساله with hyponatremia. Na⁺ = ۱۲۸ mEq/L (baseline ۱۴۰). Serum osmolality = ۲۶۰ mOsm/kg. Urine osmolality = ۶۸۰ mOsm/kg. تشخیص احتمالی؟",
+      "options": [
+        "SIADH (Syndrome of Inappropriate ADH)",
+        "Hypovolemic hyponatremia (volume depletion)",
+        "Hypervolemic hyponatremia (heart failure)",
+        "Psychogenic polydipsia"
+      ],
+      "correct": 0,
+      "analysis": {
+        "options": [
+          "SIADH: low serum osmolality + concentrated urine",
+          "Hypovolemic: would have lower urine osmolality",
+          "Hypervolemic: edema + reduced Na⁺ excretion",
+          "Polydipsia: dilute urine typical"
+        ],
+        "points": [
+          "SIADH hallmark: hypotonic hyponatremia + concentrated urine",
+          "Urine osmolality >۲۰۰: inappropriate concentration",
+          "Serum osmolality <۲۸۰: hypo-osmolal state"
+        ]
+      },
+      "difficulty": "medium",
+      "tags": ["SIADH", "hyponatremia", "osmolality", "diagnostic algorithm"],
+      "reference": "Hyponatremia Diagnostic Approach"
+    },
+    {
+      "id": 2,
+      "q": "بیمار ۶۲ ساله with Na⁺ = ۱۱۸ mEq/L (acute onset ۲۰ ساعت). Symptomatic: headache + confusion. Serum osmolality = ۲۳۸ mOsm/kg. Correction rate management?",
+      "options": [
+        "Rapid correction to ۱۴۰ (fix hyponatremia quickly)",
+        "Slow correction (ۈ mEq/L per day) to avoid ODS",
+        "Hypertonic saline ۳% fast infusion",
+        "Fluid restriction only (conservative)"
+      ],
+      "correct": 2,
+      "analysis": {
+        "options": [
+          "Rapid: risks osmotic demyelination syndrome (ODS)",
+          "Slow: appropriate chronic hyponatremia",
+          "Hypertonic: indicated acute symptomatic",
+          "Fluid restriction: inadequate acute symptoms"
+        ],
+        "points": [
+          "Acute symptomatic hyponatremia: hypertonic saline first",
+          "Correction rate: ۱۰-۱۲ mEq/L first ۲۴ hours",
+          "ODS risk: slower chronic → avoid over-correction"
+        ]
+      },
+      "difficulty": "hard",
+      "tags": ["hyponatremia", "acute symptomatic", "hypertonic saline", "ODS"],
+      "reference": "Acute Symptomatic Hyponatremia Management"
+    },
+    {
+      "id": 3,
+      "q": "بیمار ۷۰ ساله with Na⁺ = ۱۵۲ mEq/L (baseline ۱۴۰). Serum osmolality = ۳۰۸ mOsm/kg. Urine osmolality = ۲۸۰ mOsm/kg. تشخیص؟",
+      "options": [
+        "Central diabetes insipidus",
+        "Nephrogenic diabetes insipidus",
+        "Primary polydipsia",
+        "Pure water loss (inability drink)"
+      ],
+      "correct": 0,
+      "analysis": {
+        "options": [
+          "Central DI: low urine osmolality + high serum osmolality",
+          "Nephrogenic DI: very low urine osmolality (<۳۰۰)",
+          "Polydipsia: would have normal serum osmolality",
+          "Water loss: similar but history different"
+        ],
+        "points": [
+          "Central DI: impaired ADH secretion/release",
+          "Urine osmolality ۲۸۰: mildly concentrated",
+          "High serum osmolality: indicates DI type"
+        ]
+      },
+      "difficulty": "medium",
+      "tags": ["diabetes insipidus", "hypernatremia", "osmolality", "central DI"],
+      "reference": "Diabetes Insipidus Classification"
+    },
+    {
+      "id": 4,
+      "q": "بیمار ۵۲ ساله with K⁺ = ۶.۸ mEq/L. ECG: peaked T waves. Creatinine ۃ.۹ mg/dL. Anion gap = ۱۸ (metabolic acidosis). تفسیر؟",
+      "options": [
+        "Hyperkalemia from renal failure",
+        "Hyperkalemia + metabolic acidosis (combined problem)",
+        "Metabolic acidosis causing transcellular shift",
+        "All above correct"
+      ],
+      "correct": 3,
+      "analysis": {
+        "options": [
+          "Renal failure: impaired K⁺ excretion",
+          "Metabolic acidosis: H⁺ shift → K⁺ out cells",
+          "Transcellular shift: acidosis mechanism",
+          "Combined: both mechanisms operate"
+        ],
+        "points": [
+          "Metabolic acidosis worsens hyperkalemia",
+          "High anion gap: organic acid accumulation",
+          "Dual treatment: acidosis + hyperkalemia"
+        ]
+      },
+      "difficulty": "hard",
+      "tags": ["hyperkalemia", "metabolic acidosis", "anion gap", "combined"],
+      "reference": "Hyperkalemia and Acidosis Interaction"
+    },
+    {
+      "id": 5,
+      "q": "بیمار ۶۵ ساله with ABG: pH ۷.۲۰، PaCO₂ ۴۸ mmHg، HCO₃⁻ = ۱۸ mEq/L. Anion gap = ۱۶. Interpretation?",
+      "options": [
+        "Metabolic acidosis فقط",
+        "Respiratory acidosis فقط",
+        "High anion gap metabolic acidosis + concurrent respiratory acidosis",
+        "Metabolic acidosis + respiratory compensation"
+      ],
+      "correct": 2,
+      "analysis": {
+        "options": [
+          "Metabolic: HCO₃⁻ low، anion gap high",
+          "Respiratory: PaCO₂ ۴۸ not low",
+          "Combined: both pH low + inadequate respiratory",
+          "Compensation: respiratory should be lower"
+        ],
+        "points": [
+          "High anion gap: organic acid source",
+          "PaCO₂ ۴۸: should be <۳۰ for proper compensation",
+          "Dual pathology: metabolic + respiratory failure"
+        ]
+      },
+      "difficulty": "hard",
+      "tags": ["anion gap", "metabolic acidosis", "respiratory acidosis", "ABG"],
+      "reference": "ABG Interpretation Delta Gap"
+    },
+    {
+      "id": 6,
+      "q": "بیمار ۴۸ ساله on diuretics. K⁺ = ۳.۲ mEq/L (low). ABG: pH ۷.۵۲، PaCO₂ ۳۲ mmHg، HCO₃⁻ = ۲۸ mEq/L. تشخیص؟",
+      "options": [
+        "Hypokalemic metabolic acidosis",
+        "Hypokalemic metabolic alkalosis + respiratory alkalosis",
+        "Pure respiratory alkalosis",
+        "Mixed metabolic + respiratory alkalosis"
+      ],
+      "correct": 1,
+      "analysis": {
+        "options": [
+          "Acidosis: HCO₃⁻ high rules out",
+          "Diuretics: K⁺ loss + metabolic alkalosis",
+          "Respiratory alkalosis: low PaCO₂ present",
+          "Mixed: both alkalosis types"
+        ],
+        "points": [
+          "Diuretic-induced: hypokalemia + alkalosis",
+          "Loop/thiazide: K⁺ depletion + metabolic alk",
+          "Respiratory compensation: hyperventilation"
+        ]
+      },
+      "difficulty": "hard",
+      "tags": ["diuretics", "hypokalemia", "metabolic alkalosis", "respiratory alkalosis"],
+      "reference": "Diuretic-Induced Acid-Base and Electrolyte Disorders"
+    },
+    {
+      "id": 7,
+      "q": "بیمار ۵۶ ساله with diarrhea (۲ weeks). K⁺ = ۲.۸ mEq/L، Cl⁻ = ۯ۲ mEq/L. ABG: pH ۷.۳۸، HCO₃⁻ = ۲۲ mEq/L. کدام mechanism hypokalemia؟",
+      "options": [
+        "Metabolic alkalosis from GI loss",
+        "Normal anion gap acidosis from diarrhea",
+        "Hypokalemic metabolic alkalosis",
+        "Diarrhea causing volume depletion hypokalemia"
+      ],
+      "correct": 1,
+      "analysis": {
+        "options": [
+          "Alkalosis: HCO₃⁻ ۲۲ low for alkalosis",
+          "Hyperchloremic acidosis: diarrheal pattern",
+          "Alkalosis: pH normal/low",
+          "Volume: secondary mechanism"
+        ],
+        "points": [
+          "Diarrhea: bicarbonate loss (HCO₃⁻ low)",
+          "Hyperchloremic non-gap acidosis: classic",
+          "K⁺ loss: osmotic effect + volume depletion"
+        ]
+      },
+      "difficulty": "medium",
+      "tags": ["diarrhea", "hyperchloremic acidosis", "hypokalemia", "anion gap"],
+      "reference": "Diarrhea-Associated Acidosis and Hypokalemia"
+    },
+    {
+      "id": 8,
+      "q": "بیمار ۶۲ ساله with vomiting. K⁺ = ۲.۹ mEq/L، Cl⁻ = ۹۶ mEq/L. ABG: pH ۷.۵۲، HCO₃⁻ = ۳۲ mEq/L. Management for alkalosis?",
+      "options": [
+        "Sodium chloride + potassium chloride (KCl) replacement",
+        "Hypertonic saline",
+        "Acetazolamide (carbonic anhydrase inhibitor)",
+        "Mechanical ventilation (CO₂ retention)"
+      ],
+      "correct": 0,
+      "analysis": {
+        "options": [
+          "NaCl + KCl: chloride-responsive alkalosis",
+          "Hypertonic saline: contraindicated",
+          "Acetazolamide: alternative if volume-overloaded",
+          "Ventilation: not primary therapy"
+        ],
+        "points": [
+          "Vomiting: loss HCl → metabolic alkalosis",
+          "Low chloride: chloride-responsive pattern",
+          "NaCl repletion: allows HCO₃⁻ excretion"
+        ]
+      },
+      "difficulty": "medium",
+      "tags": ["vomiting", "metabolic alkalosis", "hypokalemia", "chloride-responsive"],
+      "reference": "Metabolic Alkalosis Chloride Responsiveness"
+    },
+    {
+      "id": 9,
+      "q": "بیمار ۵۴ ساله with anion gap = ۲۲ (high). Cl⁻ = ۱ۀ۵ mEq/L (high). HCO₃⁻ = ۱۸ mEq/L (low). Na⁺ = ۱۳۸ mEq/L. Interpretation?",
+      "options": [
+        "Pure high anion gap metabolic acidosis",
+        "High anion gap acidosis + normal anion gap acidosis",
+        "Respiratory compensation",
+        "Hyperchloremic acidosis"
+      ],
+      "correct": 1,
+      "analysis": {
+        "options": [
+          "Pure: chloride normal expected",
+          "Combined: high gap + high chloride pattern",
+          "Respiratory: different mechanism",
+          "Hyperchloremic: anion gap normal"
+        ],
+        "points": [
+          "Delta gap: anion gap rise > HCO₃⁻ fall",
+          "Indicates dual acid source",
+          "Organic acid + hyperchloremic component"
+        ]
+      },
+      "difficulty": "hard",
+      "tags": ["anion gap", "delta gap", "mixed acidosis", "chloride"],
+      "reference": "Delta Gap Analysis in Metabolic Acidosis"
+    },
+    {
+      "id": 10,
+      "q": "بیمار ۶۸ ساله with Ca²⁺ = ۱۲.۲ mg/dL (ionized = ۶.۲ mg/dL). Albumin = ۲.۸ g/dL (low). Corrected calcium؟",
+      "options": [
+        "۱۲.۲ mg/dL (measured correct)",
+        "۱۳.۵ mg/dL (adjusted for albumin)",
+        "۱۰.۸ mg/dL (lower)",
+        "Ionized calcium ۶.۲ is sufficient"
+      ],
+      "correct": 1,
+      "analysis": {
+        "options": [
+          "Measured: not adjusted",
+          "Corrected: = measured + ۰.۸ × (۴ - albumin)",
+          "Lower: miscalculation",
+          "Ionized: useful but total measured"
+        ],
+        "points": [
+          "Correction formula: account for hypoalbuminemia",
+          "۰.۸ mg/dL increase per g/dL albumin below ۴",
+          "Corrected ۱۳.۵: indicates true hypercalcemia"
+        ]
+      },
+      "difficulty": "medium",
+      "tags": ["hypercalcemia", "corrected calcium", "albumin", "formula"],
+      "reference": "Corrected Calcium Calculation"
+    },
+    {
+      "id": 11,
+      "q": "بیمار ۵۸ ساله with ABG: pH ۷.۳۲، PaCO₂ ۵۸ mmHg، HCO₃⁻ = ۲۸ mEq/L. Anion gap = ۱۲ (normal). Interpretation?",
+      "options": [
+        "Respiratory acidosis with metabolic compensation",
+        "Metabolic alkalosis with respiratory acidosis",
+        "Pure respiratory acidosis",
+        "Acute respiratory failure"
+      ],
+      "correct": 1,
+      "analysis": {
+        "options": [
+          "Compensation: HCO₃⁻ too high for compensation",
+          "Concurrent: both acidosis patterns",
+          "Pure: HCO₃⁻ would be low",
+          "Failure: acute acute process"
+        ],
+        "points": [
+          "HCO₃⁻ ۲۸: metabolic alkalosis present",
+          "PaCO₂ ۵۸: respiratory acidosis component",
+          "Dual pathology: mixed picture"
+        ]
+      },
+      "difficulty": "hard",
+      "tags": ["respiratory acidosis", "metabolic alkalosis", "ABG", "mixed disorder"],
+      "reference": "ABG Mixed Acid-Base Disorders"
+    },
+    {
+      "id": 12,
+      "q": "بیمار ۷۲ ساله with K⁺ = ۲.۸ mEq/L. ECG: flat T waves + U waves. EKG changes correlate with?",
+      "options": [
+        "Serum K⁺ level directly",
+        "Intracellular K⁺ + rate of correction",
+        "Absolute K⁺ deficit in body",
+        "Medications (loop diuretics)"
+      ],
+      "correct": 1,
+      "analysis": {
+        "options": [
+          "Direct correlation: not perfect",
+          "Intracellular status: better predictor",
+          "Deficit: complex calculation",
+          "Medications: contributing factor"
+        ],
+        "points": [
+          "ECG changes: intracellular K⁺ depletion",
+          "Serum K⁺ may not reflect total deficit",
+          "Chronic hypokalemia: less dramatic ECG"
+        ]
+      },
+      "difficulty": "medium",
+      "tags": ["hypokalemia", "ECG changes", "U waves", "intracellular"],
+      "reference": "Hypokalemia ECG Manifestations"
+    },
+    {
+      "id": 13,
+      "q": "بیمار ۶۵ ساله with Mg²⁺ = ہ.۵ mg/dL (normal ۱.۷-۲.۲). Refractory hypokalemia (K⁺ doesn't increase with KCl). Management?",
+      "options": [
+        "Increase KCl dose further",
+        "Magnesium repletion (MgSO₄) first",
+        "Calcium supplementation",
+        "Observation (K⁺ will normalize)"
+      ],
+      "correct": 1,
+      "analysis": {
+        "options": [
+          "Increase: won't work without Mg²⁺",
+          "Mg repletion: enables K⁺ correction",
+          "Calcium: unrelated",
+          "Observation: risky"
+        ],
+        "points": [
+          "Hypomagnesemia: worsens hypokalemia",
+          "Mg⁺ needed for Na-K-ATPase function",
+          "Replicate Mg first → then correct K"
+        ]
+      },
+      "difficulty": "hard",
+      "tags": ["hypokalemia", "hypomagnesemia", "refractory", "magnesium repletion"],
+      "reference": "Hypokalemia and Hypomagnesemia Relationship"
+    },
+    {
+      "id": 14,
+      "q": "بیمار ۵۰ ساله with metabolic acidosis (HCO₃⁻ = ۱۲ mEq/L)، hyperglycemia، ketosis. Expected PaCO₂ by Winter formula?",
+      "options": [
+        "PaCO₂ = ۱.۲۵ × HCO₃⁻ + ۲ ± ۲ = ۱۷ ± ۲ (۱۵-۱۹)",
+        "PaCO₂ = ۲ × HCO₃⁻ = ۲۴",
+        "PaCO₂ <۱۰ (severe hyperventilation)",
+        "PaCO₲ ۳۰-۴۰ (normal)"
+      ],
+      "correct": 0,
+      "analysis": {
+        "options": [
+          "Winter formula: expected respiratory compensation",
+          "Simple calculation: not accurate",
+          "Severe: possible but formula predict",
+          "Normal: contradicts acidosis"
+        ],
+        "points": [
+          "Winter formula: predict PaCO₂ in metabolic acidosis",
+          "Deviation: suggests concurrent respiratory disorder",
+          "PaCO₂ higher than predicted = respiratory failure"
+        ]
+      },
+      "difficulty": "hard",
+      "tags": ["metabolic acidosis", "respiratory compensation", "Winter formula"],
+      "reference": "Winter Formula for Respiratory Compensation"
+    },
+    {
+      "id": 15,
+      "q": "بیمار ۶۲ ساله with chronic kidney disease (eGFR = ۲۵). Presenting with ABG: pH ۷.۲۸، HCO₃⁻ = ۱۴ mEq/L. Anion gap = ۱۴. Management priority?",
+      "options": [
+        "Sodium bicarbonate infusion (neutralize acid)",
+        "Treat underlying CKD + oral alkali (sodium bicarbonate or potassium citrate)",
+        "Aggressive dialysis initiation",
+        "Observation (pH ۷.۲۸ acceptable)"
+      ],
+      "correct": 1,
+      "analysis": {
+        "options": [
+          "IV NaHCO₃: acute setting primarily",
+          "Chronic CKD: oral alkali + disease management",
+          "Dialysis: if severe or renal failure urgent",
+          "Observation: risky with pH ۷.۲۸"
+        ],
+        "points": [
+          "CKD-associated metabolic acidosis: chronic management",
+          "Oral alkali: corrects acidosis without volume overload",
+          "NaHCO₃ may worsen sodium/volume"
+        ]
+      },
+      "difficulty": "medium",
+      "tags": ["CKD", "metabolic acidosis", "oral alkali", "bicarbonate"],
+      "reference": "CKD-Associated Metabolic Acidosis Treatment"
+    }
+  ]
 }
