@@ -2,5 +2,411 @@
   "section_id": "lung",
   "subsection_id": "sleep_disorders",
   "title": "اختلالات خواب (OSA)",
-  "questions": []
+  "questions": [
+    {
+      "id": 1,
+      "q": "بیمار ۵۸ ساله with snoring و daytime somnolence. Epworth Sleepiness Scale = ۱۵. Polysomnography: AHI = ۴۲/hr، nadir O₂ sat = ۸۲%. کدام درمان اول‌ویت است؟",
+      "options": [
+        "Observation + lifestyle modification تنهایی",
+        "CPAP therapy initiation",
+        "Uvulopalatopharyngoplasty (UPPP) surgery",
+        "Antihypertensive escalation"
+      ],
+      "correct": 1,
+      "analysis": {
+        "options": [
+          "Observation: AHI ۴۲ moderate-severe OSA نیاز تحت‌نظر",
+          "CPAP: gold standard moderate-severe OSA",
+          "UPPP: surgical option اگر CPAP fail/intolerant",
+          "Antihypertensive: supportive درمان نه اصلی"
+        ],
+        "points": [
+          "AHI ۴۲: moderate OSA = CPAP indicated",
+          "Nadir O₂ ۸۲%: oxygen desaturation significant",
+          "Daytime somnolence + AHI: symptomatic OSA"
+        ]
+      },
+      "difficulty": "medium",
+      "tags": ["OSA", "AHI", "CPAP", "polysomnography"],
+      "reference": "AASM OSA Treatment Recommendations"
+    },
+    {
+      "id": 2,
+      "q": "بیمار ۶۵ ساله with suspected OSA. Epworth ۱۲، BMI ۳۳. Home sleep apnea test (HSAT): AHI = ۈ.۵/hr. Interpretation?",
+      "options": [
+        "Mild OSA (۵-۱۵ AHI) = observation",
+        "Borderline (۵-۱۵) = consider CPAP if symptomatic",
+        "Normal (AHI <۵) = no OSA",
+        "Moderate OSA (۱۵-۳۰) = CPAP indicated"
+      ],
+      "correct": 1,
+      "analysis": {
+        "options": [
+          "Mild OSA: ۵-۱۵ range",
+          "Symptomatic mild: treatment consideration",
+          "AHI ۸.۵: borderline zone",
+          "۱۵-۳۰: moderate category"
+        ],
+        "points": [
+          "AHI ۸.۵: mild-borderline OSA",
+          "Epworth ۱۲: some daytime symptoms",
+          "Treatment decision: symptoms + AHI combination"
+        ]
+      },
+      "difficulty": "medium",
+      "tags": ["OSA", "mild", "HSAT", "AHI interpretation"],
+      "reference": "AASM AHI Classification Severity"
+    },
+    {
+      "id": 3,
+      "q": "بیمار ۵۵ ساله with severe OSA (AHI = ۶۸/hr) started CPAP. Compliance poor (۲ hr/night). AHI still ۳۵ on CPAP. کدام step?",
+      "options": [
+        "Increase CPAP pressure (AHI persistently high)",
+        "Add supplemental oxygen (residual desaturation)",
+        "Switch تا BiPAP (tolerance improvement)",
+        "Sleep study repeat (validate CPAP adherence)"
+      ],
+      "correct": 2,
+      "analysis": {
+        "options": [
+          "Increase pressure: may worsen tolerance",
+          "Supplemental O₂: adjunctive اگر desaturation",
+          "BiPAP: easier exhalation + tolerance better",
+          "Repeat study: after optimizing device"
+        ],
+        "points": [
+          "Poor compliance: tolerance issue likely",
+          "BiPAP: dual-pressure may improve comfort",
+          "Pressure optimization: secondary تو tolerance"
+        ]
+      },
+      "difficulty": "hard",
+      "tags": ["OSA", "CPAP compliance", "BiPAP", "treatment failure"],
+      "reference": "CPAP Compliance and Alternative Devices"
+    },
+    {
+      "id": 4,
+      "q": "بیمار ۴۸ ساله with newly diagnosed OSA (AHI = ۲۲/hr) و hypertension (BP ۱۶۰/۱۰۰). Cardiovascular risk?",
+      "options": [
+        "Low (OSA alone not major risk)",
+        "Moderate (OSA + untreated HTN = additive)",
+        "High (OSA amplifies cardiac complications)",
+        "No additional risk (separate conditions)"
+      ],
+      "correct": 2,
+      "analysis": {
+        "options": [
+          "OSA alone: significant risk",
+          "Additive: true لکن synergistic",
+          "Synergistic: OSA worsens HTN outcomes",
+          "Separate: false combination is synergistic"
+        ],
+        "points": [
+          "OSA + HTN: compounding cardiovascular stress",
+          "Sympathetic activation + apneic episodes",
+          "CPAP improves BP control"
+        ]
+      },
+      "difficulty": "medium",
+      "tags": ["OSA", "hypertension", "cardiovascular risk", "synergistic"],
+      "reference": "OSA and Hypertension Cardiovascular Consequences"
+    },
+    {
+      "id": 5,
+      "q": "بیمار ۷۲ ساله with OSA (AHI = ۱۸/hr) و cardiac arrhythmia history. Nocturnal oxygen saturation: frequently <۸۵%. Management?",
+      "options": [
+        "CPAP monotherapy",
+        "CPAP + supplemental oxygen during sleep",
+        "Oxygen تنهایی (without CPAP)",
+        "Cardiac monitoring + defer sleep treatment"
+      ],
+      "correct": 1,
+      "analysis": {
+        "options": [
+          "CPAP: primary treatment OSA",
+          "CPAP + O₂: residual desaturation + arrhythmia",
+          "Oxygen alone: inadequate апnea management",
+          "Defer: risky with arrhythmia"
+        ],
+        "points": [
+          "Residual hypoxemia: supplemental O₂ consideration",
+          "Arrhythmia history: oxygen importance magnified",
+          "CPAP + O₂: additive benefit"
+        ]
+      },
+      "difficulty": "hard",
+      "tags": ["OSA", "supplemental oxygen", "arrhythmia", "hypoxemia"],
+      "reference": "OSA with Residual Desaturation Management"
+    },
+    {
+      "id": 6,
+      "q": "بیمار ۴۵ ساله with OSA (AHI = ۱۲/hr) declined CPAP (mask discomfort). Non-compliant. Alternative option?",
+      "options": [
+        "Observation (AHI mild، non-urgent)",
+        "Mandibular advancement device (MAD) + positional therapy",
+        "Uvulopalatopharyngoplasty (UPPP) first-line",
+        "Lifestyle modification + weight loss alone"
+      ],
+      "correct": 1,
+      "analysis": {
+        "options": [
+          "Observation: suboptimal if symptomatic",
+          "MAD: non-invasive، efficacy ۵۰-۷۰%",
+          "UPPP: surgical after conservative fail",
+          "Lifestyle: adjunctive not monotherapy"
+        ],
+        "points": [
+          "CPAP refusal: mandibular device alternative",
+          "Positional therapy: supine avoidance",
+          "Surgical option: after device trial"
+        ]
+      },
+      "difficulty": "medium",
+      "tags": ["OSA", "CPAP intolerance", "mandibular device", "alternative treatment"],
+      "reference": "OSA Non-CPAP Treatment Options"
+    },
+    {
+      "id": 7,
+      "q": "بیمار ۶۰ ساله sleep apnea (AHI = ۴۵/hr) started CPAP optimal settings (CPAP pressure ۱۲ cmH₂O). Repeat PSG on CPAP: residual AHI = ۱۵/hr. Success criterion?",
+      "options": [
+        "Success (AHI <۲۰ acceptable)",
+        "Partial response (۵۰% reduction)",
+        "Failure (residual AHI >۵/hr)",
+        "Adequate (AHI drop by ۳۰/hr)"
+      ],
+      "correct": 0,
+      "analysis": {
+        "options": [
+          "Success: residual AHI <۲۰ is adequate",
+          "۵۰% reduction: met (۴۵→۱۵ = ۶۷% reduction)",
+          "Failure: too strict threshold",
+          "۳۰/hr drop: large improvement achieved"
+        ],
+        "points": [
+          "CPAP success: residual AHI <۲۰ target",
+          "۶۷% reduction: excellent response",
+          "Symptomatic improvement likely"
+        ]
+      },
+      "difficulty": "medium",
+      "tags": ["OSA", "CPAP titration", "residual AHI", "success criteria"],
+      "reference": "CPAP Titration Success Criteria"
+    },
+    {
+      "id": 8,
+      "q": "بیمار ۵۰ ساله with OSA (AHI = ۲۸/hr) و type 2 diabetes. HbA۱c = ۸.۵%. CPAP impact on glycemic control?",
+      "options": [
+        "No effect (separate metabolic pathways)",
+        "Modest improvement (۰.۲-۰.۵% HbA۱c reduction)",
+        "Significant improvement (۱-۲% HbA۱c reduction)",
+        "Worsening (sleep disruption increases hyperglycemia)"
+      ],
+      "correct": 1,
+      "analysis": {
+        "options": [
+          "No effect: false، OSA linked insulin resistance",
+          "Modest: typical CPAP effect on glucose",
+          "Significant: less consistent",
+          "Worsening: paradoxical to CPAP benefit"
+        ],
+        "points": [
+          "OSA + diabetes: bidirectional relationship",
+          "CPAP improves insulin sensitivity",
+          "Modest HbA۱c drop expected"
+        ]
+      },
+      "difficulty": "medium",
+      "tags": ["OSA", "CPAP", "type 2 diabetes", "metabolic"],
+      "reference": "OSA Treatment Effect on Glycemic Control"
+    },
+    {
+      "id": 9,
+      "q": "بیمار ۶۵ ساله with central sleep apnea (CSA) from heart failure (EF = ۳۰%). AHI = ۲۵/hr، central events ۸۰%. Management?",
+      "options": [
+        "CPAP (same as obstructive)",
+        "Optimize heart failure therapy + consider ASV",
+        "Oxygen supplementation",
+        "BiPAP only"
+      ],
+      "correct": 1,
+      "analysis": {
+        "options": [
+          "CPAP: not effective central mechanism",
+          "HF optimization + ASV: dual approach",
+          "Oxygen: adjunctive فقط",
+          "BiPAP: limited CSA effectiveness"
+        ],
+        "points": [
+          "CSA from HF: different mechanism than OSA",
+          "Adaptive servo-ventilation (ASV): CSA treatment",
+          "HF therapy optimization: crucial"
+        ]
+      },
+      "difficulty": "hard",
+      "tags": ["CSA", "central sleep apnea", "heart failure", "ASV"],
+      "reference": "Central Sleep Apnea Management in HF"
+    },
+    {
+      "id": 10,
+      "q": "بیمار ۵۸ ساله with CPAP therapy ۸ months. Symptom improvement plateau. Still daytime somnolence (ESS = ۱۱). CPAP compliance ۶ hr/night. کدام assessment?",
+      "options": [
+        "Increase CPAP pressure blindly",
+        "Reassess PSG on CPAP (validate adequacy)",
+        "Switch تا BiPAP (device change)",
+        "Consider other causes daytime somnolence"
+      ],
+      "correct": 1,
+      "analysis": {
+        "options": [
+          "Increase: without validation unnecessary",
+          "Reassess PSG: standard practice inadequate response",
+          "Switch: after validate current therapy",
+          "Other causes: consider after CPAP optimization"
+        ],
+        "points": [
+          "Persistent somnolence: CPAP adequacy question",
+          "Repeat PSG: assess residual AHI + leak",
+          "Pressure optimization: based on data"
+        ]
+      },
+      "difficulty": "hard",
+      "tags": ["OSA", "CPAP failure", "residual somnolence", "reassessment"],
+      "reference": "CPAP Inadequate Response Management"
+    },
+    {
+      "id": 11,
+      "q": "بیمار ۴۲ ساله with mild OSA (AHI = ۸/hr) و no daytime symptoms. Sleepy colleague referred him. Population screening?",
+      "options": [
+        "Treat all mild OSA (prevent complications)",
+        "Observation if asymptomatic (no treatment)",
+        "Screen for symptoms + comorbidities",
+        "CPAP trial (see if tolerates)"
+      ],
+      "correct": 2,
+      "analysis": {
+        "options": [
+          "Treat all: evidence not strong mild OSA",
+          "No treatment: may miss complications",
+          "Assess symptoms + CV risk: rational approach",
+          "Trial: inappropriate without indication"
+        ],
+        "points": [
+          "Mild asymptomatic OSA: individualized approach",
+          "Comorbidities (HTN، CAD): lower threshold treatment",
+          "Pure AHI alone: may observe"
+        ]
+      },
+      "difficulty": "hard",
+      "tags": ["mild OSA", "asymptomatic", "screening", "treatment threshold"],
+      "reference": "Asymptomatic OSA Treatment Decision"
+    },
+    {
+      "id": 12,
+      "q": "بیمار ۷۰ ساله diagnosed OSA recently. Wants surgery (UPPP) to avoid CPAP. AHI = ۲۴/hr. Surgical candidacy assessment?",
+      "options": [
+        "Good candidate (moderate OSA responsive surgery)",
+        "Relative contraindication (age + surgical risk)",
+        "Requires upper airway imaging first (identify obstruction site)",
+        "Not candidate (CPAP first-line always)"
+      ],
+      "correct": 2,
+      "analysis": {
+        "options": [
+          "Moderate OSA: UPPP might help لکن not first",
+          "Age: relative not absolute contraindication",
+          "Imaging: essential pre-surgical evaluation",
+          "CPAP: first-line لکن surgery option exists"
+        ],
+        "points": [
+          "Pre-surgical workup: endoscopy/imaging必要",
+          "Success UPPP: ۵۰% overcome AHI >۵۰%",
+          "Patient selection: crucial surgical success"
+        ]
+      },
+      "difficulty": "hard",
+      "tags": ["OSA", "UPPP surgery", "surgical candidacy", "imaging"],
+      "reference": "Surgical Treatment OSA Patient Selection"
+    },
+    {
+      "id": 13,
+      "q": "بیمار ۵۵ ساله with severe OSA (AHI = ۶۵/hr) started CPAP. Unexpectedly، reports worsening symptoms (anxiety، claustrophobia with mask). Objective data?",
+      "options": [
+        "Continue CPAP (adjustment period normal)",
+        "Switch BiPAP + consider nasal pillows mask",
+        "Add sedative (help mask tolerance)",
+        "Discontinue + defer treatment (severe intolerance)"
+      ],
+      "correct": 1,
+      "analysis": {
+        "options": [
+          "Continue: some adjustment normal لکن significant anxiety",
+          "BiPAP + mask option: improve tolerance",
+          "Sedative: not standard first approach",
+          "Discontinue: premature without trying alternatives"
+        ],
+        "points": [
+          "Mask intolerance: common early barrier",
+          "Mask types: many options available",
+          "Device trials: necessary for compliance"
+        ]
+      },
+      "difficulty": "medium",
+      "tags": ["OSA", "CPAP intolerance", "mask", "anxiety"],
+      "reference": "CPAP Tolerance and Adaptation Strategies"
+    },
+    {
+      "id": 14,
+      "q": "بیمار ۶۸ ساله with untreated moderate OSA (AHI = ۲۸/hr). Non-compliant with CPAP therapy. Atrial fibrillation newly diagnosed. Connection?",
+      "options": [
+        "No association (separate cardiac condition)",
+        "OSA increases AF risk (sympathetic activation)",
+        "AF protects from OSA complications",
+        "CPAP prevents AF (treatment indication)"
+      ],
+      "correct": 1,
+      "analysis": {
+        "options": [
+          "No association: false، risk increased",
+          "Sympathetic: OSA mechanism AF risk",
+          "Protects: illogical",
+          "CPAP prevents: true لکن AF therapy also needed"
+        ],
+        "points": [
+          "OSA-AF relationship: bidirectional risk",
+          "Untreated OSA: AF recurrence risk higher",
+          "CPAP + AF treatment: combined approach"
+        ]
+      },
+      "difficulty": "medium",
+      "tags": ["OSA", "atrial fibrillation", "AF risk", "sympathetic activation"],
+      "reference": "OSA and Atrial Fibrillation Relationship"
+    },
+    {
+      "id": 15,
+      "q": "بیمار ۵۲ ساله with severe OSA on CPAP optimal settings. Polysomnography repeat: residual AHI = ۲۲/hr (within goal <۲۰). But nadir O₂ sat = ۷۸% (down from ۸۵% baseline). Interpretation?",
+      "options": [
+        "Success (AHI adequate)",
+        "Partial success (AHI good لکن oxygen concern)",
+        "Inadequate (oxygen desaturation unacceptable)",
+        "Pressure too low (increase CPAP)"
+      ],
+      "correct": 2,
+      "analysis": {
+        "options": [
+          "Success: AHI criterion met",
+          "Partial: both parameters matter",
+          "Inadequate: oxygen <۷۹% concerning",
+          "Increase: may worsen compliance"
+        ],
+        "points": [
+          "CPAP success: AHI + oxygenation both important",
+          "Nadir ۷۸%: significant desaturation hazard",
+          "Need supplemental O₂ addition"
+        ]
+      },
+      "difficulty": "hard",
+      "tags": ["OSA", "CPAP adequacy", "oxygen desaturation", "nadir"],
+      "reference": "CPAP Success Oxygenation and AHI Criteria"
+    }
+  ]
 }
