@@ -2,5 +2,411 @@
   "section_id": "lung",
   "subsection_id": "pulmonary_vascular",
   "title": "عروق ریوی (PTE/PH)",
-  "questions": []
+  "questions": [
+    {
+      "id": 1,
+      "q": "بیمار ۶۲ ساله with acute onset dyspnea و chest pain. PE suspicion. Wells score = ۶ (high probability). D-dimer elevated. CTPA: no PE. کدام اقدام بعدی؟",
+      "options": [
+        "Start anticoagulation (high probability)",
+        "Repeat CTPA (may be false negative)",
+        "Stop workup (CTPA negative = ruled out)",
+        "Compression ultrasound bilateral legs"
+      ],
+      "correct": 3,
+      "analysis": {
+        "options": [
+          "Anticoagulation: CTPA negative، not indicated",
+          "Repeat CTPA: low sensitivity proximal DVT",
+          "Stop: premature، DVT may exist",
+          "Compression US: assess DVT (PE source)"
+        ],
+        "points": [
+          "High Wells + negative CTPA: DVT likely",
+          "Leg compression ultrasound: should follow",
+          "DVT without PE: still requires anticoagulation"
+        ]
+      },
+      "difficulty": "hard",
+      "tags": ["PE", "CTPA negative", "DVT", "compression ultrasound"],
+      "reference": "PE Diagnosis Algorithm with Leg Imaging"
+    },
+    {
+      "id": 2,
+      "q": "بیمار ۷۵ ساله with acute PE (CTPA-confirmed). Systolic BP ۹۵ mmHg، RV dilatation on echo، elevated troponin. کدام درمان اول‌ویت؟",
+      "options": [
+        "Anticoagulation (LMWH/UFH) تنهایی",
+        "Systemic thrombolysis (alteplase/reteplase)",
+        "Anticoagulation + rescue thrombolysis (if decompensates)",
+        "IVC filter (anticoagulation contraindicated)"
+      ],
+      "correct": 1,
+      "analysis": {
+        "options": [
+          "Anticoagulation: insufficient for massive PE",
+          "Systemic thrombolysis: hemodynamic compromise indication",
+          "Rescue: secondary approach",
+          "IVC filter: not for anticoagulation contraindication"
+        ],
+        "points": [
+          "Massive PE: systolic <۹۰ mmHg یا shock",
+          "RV strain + troponin: high-risk PE",
+          "Thrombolysis approved: mortality reduction"
+        ]
+      },
+      "difficulty": "hard",
+      "tags": ["PE", "massive", "thrombolysis", "hemodynamic instability"],
+      "reference": "Massive PE Thrombolysis Guidelines"
+    },
+    {
+      "id": 3,
+      "q": "بیمار ۴۸ ساله with submassive PE (RV dilatation، troponin ۰.۲۸). Hemodynamically stable (BP ۱۲۰/۷۵). کدام درمان?",
+      "options": [
+        "Anticoagulation (LMWH/UFH) + observation",
+        "Systemic thrombolysis",
+        "Catheter-directed thrombolysis",
+        "Embolectomy"
+      ],
+      "correct": 0,
+      "analysis": {
+        "options": [
+          "Anticoagulation: standard برای submassive + stable",
+          "Systemic thrombolysis: not standard submassive",
+          "Catheter thrombolysis: rescue اگر deterioration",
+          "Embolectomy: rare indications"
+        ],
+        "points": [
+          "Submassive PE: RV dilatation لکن hemodynamic stability",
+          "Anticoagulation: adequate management",
+          "Close monitoring: thrombolysis اگر decompensates"
+        ]
+      },
+      "difficulty": "medium",
+      "tags": ["submassive PE", "RV dilatation", "anticoagulation", "stable"],
+      "reference": "Submassive PE Management"
+    },
+    {
+      "id": 4,
+      "q": "بیمار ۶۵ ساله with PE (hemodynamically stable، no RV strain). Duration anticoagulation = ۳ months. Provoked by surgery ۴ ماه قبل. کدام recommendation?",
+      "options": [
+        "Stop anticoagulation (provoked PE، ۳ months adequate)",
+        "Extended anticoagulation (surgery provocation)حول",
+        "Lifelong anticoagulation",
+        "Switch تا antiplatelet only"
+      ],
+      "correct": 0,
+      "analysis": {
+        "options": [
+          "۳ months: standard duration provoked PE",
+          "Extended: for unprovoked or recurrent",
+          "Lifelong: unprovoked recurrence high",
+          "Antiplatelet: not alternative anticoagulation"
+        ],
+        "points": [
+          "Provoked PE (surgery): ۳ months anticoagulation standard",
+          "Surgery: reversible risk factor",
+          "Recurrence risk low بعد از cessation"
+        ]
+      },
+      "difficulty": "medium",
+      "tags": ["PE", "provoked", "duration anticoagulation", "surgery"],
+      "reference": "Duration Anticoagulation PE Guidelines"
+    },
+    {
+      "id": 5,
+      "q": "بیمار ۵۸ ساله PE unprovoked (no surgery، no malignancy، no thrombophilia). Completed ۶ months anticoagulation. Extended anticoagulation?",
+      "options": [
+        "Stop (۶ months adequate)",
+        "Continue indefinite (unprovoked = lifelong)",
+        "Switch تا aspirin",
+        "Restart اگر symptom recurrence"
+      ],
+      "correct": 1,
+      "analysis": {
+        "options": [
+          "۶ months: initial therapy فقط",
+          "Extended/indefinite: unprovoked highest recurrence",
+          "Aspirin: inadequate PE prevention",
+          "Restart: preventive treatment از اول needed"
+        ],
+        "points": [
+          "Unprovoked PE: lifelong anticoagulation benefit",
+          "Recurrence rate: ۲۰-۳۰% بعد از cessation",
+          "Extended: prevents morbidity/mortality"
+        ]
+      },
+      "difficulty": "medium",
+      "tags": ["PE unprovoked", "extended anticoagulation", "lifelong"],
+      "reference": "Unprovoked PE Extended Anticoagulation"
+    },
+    {
+      "id": 6,
+      "q": "بیمار ۷۰ ساله on warfarin برای AF. INR ۴.۵. Acute PE discovered. کدام management?",
+      "options": [
+        "Continue warfarin (already anticoagulated)",
+        "Bridge with LMWH + adjust warfarin",
+        "Switch تا DOAC",
+        "Hold warfarin (over-anticoagulated)"
+      ],
+      "correct": 1,
+      "analysis": {
+        "options": [
+          "Continue: INR ۴.۵ concerning bleeding",
+          "Bridge: LMWH therapeutic + warfarin adjust",
+          "DOAC: reasonable alternative لکن bridge preferred",
+          "Hold: anticoagulation gap dangerous"
+        ],
+        "points": [
+          "INR ۴.۵: supratherapeutic، bleeding risk",
+          "Bridge: LMWH therapeutic dose urgently",
+          "Warfarin adjustment: target INR ۲-۳"
+        ]
+      },
+      "difficulty": "hard",
+      "tags": ["PE", "warfarin", "INR elevated", "bridging"],
+      "reference": "PE Treatment in Warfarin-Treated Patients"
+    },
+    {
+      "id": 7,
+      "q": "بیمار ۵۲ ساله with PAH (WHO group 1). mPAP = ۶۵ mmHg، PCWP = ۱۲ mmHg، PVR = ۹.۲ Wood units. کدام first-line therapy?",
+      "options": [
+        "Supportive care + diuretics",
+        "Endothelin receptor antagonist (ambrisentan) + inhaled pulmonary vasodilator",
+        "Sildenafil monotherapy",
+        "Calcium channel blocker (diltiazem)"
+      ],
+      "correct": 1,
+      "analysis": {
+        "options": [
+          "Supportive: insufficient برای advanced PAH",
+          "ERA + inhaled: combination initial therapy modern",
+          "Sildenafil: monotherapy اگر mild",
+          "CCB: تنها اگر acute vasodilator response"
+        ],
+        "points": [
+          "PAH moderate-severe: combination therapy indicated",
+          "PVR ۹.۲: significant pulmonary vascular disease",
+          "mPAP ۶۵: advanced stage"
+        ]
+      },
+      "difficulty": "hard",
+      "tags": ["PAH", "pulmonary arterial hypertension", "endothelin antagonist", "combination therapy"],
+      "reference": "PAH Initial Treatment Guidelines"
+    },
+    {
+      "id": 8,
+      "q": "بیمار ۶۸ ساله with systemic sclerosis. HRCT: ILD + normal PFTs (FVC ۸۵%، DLCO ۷۰%). Suspicion PH. Screen?",
+      "options": [
+        "Echocardiography برای TR velocity",
+        "Right heart catheterization (RHC) directly",
+        "Chest CT + PFTs بهتر characterization",
+        "Observation (PFTs normal)"
+      ],
+      "correct": 0,
+      "analysis": {
+        "options": [
+          "Echo: non-invasive screening first-line",
+          "RHC: confirmatory اگر echo suspicious",
+          "CT/PFTs: assess ILD severity",
+          "Observation: missed PH risk"
+        ],
+        "points": [
+          "Systemic sclerosis: PH screening important",
+          "Normal PFTs: does not exclude PH",
+          "Echo: assess RVSP/TR velocity"
+        ]
+      },
+      "difficulty": "medium",
+      "tags": ["PAH", "systemic sclerosis", "echocardiography", "screening"],
+      "reference": "PAH Screening in Systemic Sclerosis"
+    },
+    {
+      "id": 9,
+      "q": "بیمار ۷۲ ساله PE (provoked by immobility post-op). Anticoagulation: day ۱۰ (therapeutic). Sudden dyspnea، RV strain on echo، troponin ۰.۳. کدام diagnosis?",
+      "options": [
+        "PE recurrence (despite anticoagulation)",
+        "Right ventricular infarction (MI)",
+        "Acute cor pulmonale progression",
+        "Anticoagulation failure (sub-therapeutic dosing)"
+      ],
+      "correct": 0,
+      "analysis": {
+        "options": [
+          "PE recurrence: ۲-۳% despite therapeutic anticoagulation",
+          "RV MI: less likely with PE context",
+          "Cor pulmonale: sequela not new event",
+          "Dosing failure: therapeutic INR/aPTT"
+        ],
+        "points": [
+          "PE recurrence: possible despite therapeutic anticoagulation",
+          "Consider: IVC filter اگر multiple recurrence",
+          "Thrombolysis/embolectomy: rescue option"
+        ]
+      },
+      "difficulty": "hard",
+      "tags": ["PE", "recurrence", "therapeutic anticoagulation", "treatment failure"],
+      "reference": "PE Recurrence Despite Anticoagulation"
+    },
+    {
+      "id": 10,
+      "q": "بیمار ۶۵ ساله with chronic PH from left heart disease. mPAP ۴۵ mmHg، PCWP ۲۳ mmHg (group ۲). کدام درمان?",
+      "options": [
+        "Pulmonary vasodilator (sildenafil) monotherapy",
+        "Diuretics + ACE inhibitor/beta-blocker (left heart therapy)",
+        "Ambrisentan + inhaled treprostinil",
+        "Atrial septostomy"
+      ],
+      "correct": 1,
+      "analysis": {
+        "options": [
+          "Vasodilator: ineffective/harmful group ۲ PH",
+          "Left heart therapy: management focus",
+          "Combination PAH: inappropriate for group ۲",
+          "Septostomy: rare indication"
+        ],
+        "points": [
+          "PH from left heart (group ۲): different mechanism",
+          "Treat underlying: HF، valve disease",
+          "Vasodilators may worsen renal perfusion"
+        ]
+      },
+      "difficulty": "hard",
+      "tags": ["PH", "group 2", "left heart disease", "HF management"],
+      "reference": "PH Group 2 vs Group 1 Management Distinction"
+    },
+    {
+      "id": 11,
+      "q": "بیمار ۴۵ ساله PE (CT-confirmed). Creatinine clearance ۳۰ mL/min (CKD stage ۴). Anticoagulation?",
+      "options": [
+        "LMWH standard dosing",
+        "LMWH dose-adjusted + monitor anti-Xa",
+        "UFH (renal-independent) IV",
+        "DOAC (apixaban) standard dose"
+      ],
+      "correct": 2,
+      "analysis": {
+        "options": [
+          "LMWH standard: accumulates with renal failure",
+          "LMWH adjusted: possible لکن complex",
+          "UFH: safest renal failure (titrate aPTT)",
+          "DOAC: most apixaban safe CKD (۲۳۵ mL/min)"
+        ],
+        "points": [
+          "Severe CKD (۳۰ mL/min): UFH preferred",
+          "UFH: no renal clearance، predictable",
+          "Monitor: aPTT therapeutic ۱.۵-۲.۵× control"
+        ]
+      },
+      "difficulty": "hard",
+      "tags": ["PE", "renal failure", "UFH", "anticoagulation dosing"],
+      "reference": "Anticoagulation in Renal Failure"
+    },
+    {
+      "id": 12,
+      "q": "بیمار ۶۸ ساله with PE. Unfractionated heparin (UFH) infusion day ۲. aPTT ۴۵ (therapeutic ۶۰-۸۰). تنگی نفس بدتر، HR ۱۲۰، BP ۱۰۲/۶۵. کدام step?",
+      "options": [
+        "Increase UFH rate (subtherapeutic aPTT)",
+        "Check PE recurrence + assess PE burden",
+        "Continue UFH (still within acceptable)",
+        "Switch تا LMWH (faster anticoagulation)"
+      ],
+      "correct": 1,
+      "analysis": {
+        "options": [
+          "Increase UFH: aPTT ۴۵ therapeutic window",
+          "Recurrence concern: clinical deterioration significant",
+          "Continue: monitoring inadequate",
+          "LMWH: no faster loading"
+        ],
+        "points": [
+          "Clinical deterioration: PE recurrence possible",
+          "Repeat imaging: CTPA یا echocardiography",
+          "Consider thrombolysis/embolectomy اگر recurrence confirmed"
+        ]
+      },
+      "difficulty": "hard",
+      "tags": ["PE", "UFH", "aPTT", "deterioration"],
+      "reference": "PE Treatment Failure Assessment"
+    },
+    {
+      "id": 13,
+      "q": "بیمار ۵۶ ساله with acute PE. Bleeding risk: high (peptic ulcer history، on aspirin). Anticoagulation contraindicated?",
+      "options": [
+        "IVC filter تنهایی (no anticoagulation)",
+        "IVC filter + anticoagulation (as soon as safe)",
+        "Postpone IVC filter (high bleeding risk)",
+        "Antifibrinolytic therapy (tranexamic acid)"
+      ],
+      "correct": 1,
+      "analysis": {
+        "options": [
+          "IVC filter alone: recurrence risk ongoing",
+          "Filter + anticoagulation: when bleeding controlled",
+          "Postpone: PE recurrence risk high",
+          "Antifibrinolytic: no role PE"
+        ],
+        "points": [
+          "IVC filter: temporary bridge to anticoagulation",
+          "Bleeding contraindication: temporary",
+          "Resumption: anticoagulation as soon as safe"
+        ]
+      },
+      "difficulty": "hard",
+      "tags": ["PE", "IVC filter", "bleeding risk", "contraindication"],
+      "reference": "IVC Filter Indications and Anticoagulation"
+    },
+    {
+      "id": 14,
+      "q": "بیمار ۶۲ ساله post-op day ۱ abdominal surgery. Sudden dyspnea، chest pain. Wells score = ۴.۵ (intermediate). D-dimer ۰.۹۹ (high). CTPA not immediately available. کدام management?",
+      "options": [
+        "Observe (intermediate probability)",
+        "Start anticoagulation (anticoagulation justified)",
+        "Compression US legs first (proximal DVT screen)",
+        "Delay CTPA ۲۴ ساعت (post-op monitoring)"
+      ],
+      "correct": 1,
+      "analysis": {
+        "options": [
+          "Observe: not safe intermediate probability + high D-dimer",
+          "Anticoagulation: justified intermediate + D-dimer",
+          "Compression US: useful لکن delay treatment",
+          "Delay CTPA: risks PE progression"
+        ],
+        "points": [
+          "Post-op: PE risk very high",
+          "Intermediate Wells + elevated D-dimer: anticoagulation",
+          "CTPA: should follow but treat first"
+        ]
+      },
+      "difficulty": "hard",
+      "tags": ["PE", "post-operative", "intermediate probability", "empiric treatment"],
+      "reference": "PE Diagnosis and Empiric Treatment in Post-op"
+    },
+    {
+      "id": 15,
+      "q": "بیمار ۷۵ ساله with chronic PH (PAH). On ambrisentan + inhaled iloprost. mPAP still ۶۲ mmHg. RVEF ۲۸%. کدام intensification?",
+      "options": [
+        "Add phosphodiesterase-۵ inhibitor (sildenafil)",
+        "Add soluble guanylate cyclase stimulator (riociguat)",
+        "Increase inhaled iloprost dosing",
+        "Lung transplant evaluation"
+      ],
+      "correct": 0,
+      "analysis": {
+        "options": [
+          "Sildenafil: add to dual therapy (ERA + inhaled)",
+          "Riociguat: not combined with PDE-۵ inhibitor (safety)",
+          "Increase iloprost: limited effectiveness alone",
+          "Transplant: evaluation appropriate eventually"
+        ],
+        "points": [
+          "PAH inadequately controlled: triple therapy",
+          "Sildenafil adds: phosphodiesterase pathway",
+          "Different mechanism: complementary effect"
+        ]
+      },
+      "difficulty": "hard",
+      "tags": ["PAH", "inadequate control", "triple therapy", "sildenafil"],
+      "reference": "PAH Triple Therapy Guidelines"
+    }
+  ]
 }
