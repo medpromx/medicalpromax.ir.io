@@ -2,5 +2,411 @@
   "section_id": "nephro",
   "subsection_id": "stones_uti",
   "title": "سنگ و UTI",
-  "questions": []
+  "questions": [
+    {
+      "id": 1,
+      "q": "بیمار ۴۲ ساله with acute flank pain + hematuria. CT non-contrast (NCCT): ۸ mm stone in right ureter. Creatinine normal. Management?",
+      "options": [
+        "Immediate ureteroscopy (remove stone)",
+        "Extracorporeal shock wave lithotripsy (ESWL)",
+        "Conservative management + hydration + analgesics",
+        "Percutaneous nephrolithotomy (PNL)"
+      ],
+      "correct": 2,
+      "analysis": {
+        "options": [
+          "Ureteroscopy: for refractory pain/obstruction",
+          "ESWL: option اگر fails conservative",
+          "Conservative: ۸۵% pass stones <۶ mm",
+          "PNL: for large/staghorn stones"
+        ],
+        "points": [
+          "Stone size ۸ mm: high passage rate expected",
+          "Uncomplicated: initial conservative therapy",
+          "Reassess اگر persistent symptoms/infection"
+        ]
+      },
+      "difficulty": "medium",
+      "tags": ["nephrolithiasis", "stone size", "conservative management", "passage"],
+      "reference": "Nephrolithiasis Management Guidelines AUA"
+    },
+    {
+      "id": 2,
+      "q": "بیمار ۵۸ ساله with recurrent kidney stones (۵ episodes). CT: bilateral multiple stones. Labs: urine pH = ۸.۵، urine culture: Proteus mirabilis. Stone composition likely؟",
+      "options": [
+        "Calcium oxalate (most common)",
+        "Struvite (magnesium ammonium phosphate)",
+        "Uric acid",
+        "Cystine"
+      ],
+      "correct": 1,
+      "analysis": {
+        "options": [
+          "Calcium oxalate: most common نه ۵ recurrences",
+          "Struvite: urease-producing bacteria (Proteus)",
+          "Uric acid: acidic urine، gout",
+          "Cystine: genetic disorder"
+        ],
+        "points": [
+          "Proteus: urease enzyme → ammonia → alkaline pH",
+          "Alkaline urine (pH ۸.۵): struvite stone risk",
+          "Struvite: often staghorn، bilateral"
+        ]
+      },
+      "difficulty": "hard",
+      "tags": ["struvite stone", "Proteus", "recurrent stones", "urease"],
+      "reference": "Struvite Stones and Bacterial Urinary Infections"
+    },
+    {
+      "id": 3,
+      "q": "بیمار ۲۸ ساله pregnant (۲۰ weeks) with dysuria + frequency. Urinalysis: pyuria + bacteriuria. Urine culture: E. coli ۱۰۵ CFU/mL. Management?",
+      "options": [
+        "Nitrofurantoin (contraindicated pregnancy)",
+        "Cephalexin ۵۰۰ mg QID × ۷ days",
+        "Fluoroquinolone (better coverage)",
+        "Observation (asymptomatic bacteriuria)"
+      ],
+      "correct": 1,
+      "analysis": {
+        "options": [
+          "Nitrofurantoin: teratogenic second/third trimester",
+          "Cephalosporin: safe pregnancy-associated UTI",
+          "Fluoroquinolone: relatively contraindicated",
+          "Observation: wrong pregnancy pyelonephritis risk"
+        ],
+        "points": [
+          "Pregnancy + bacteriuria: 20-40% risk pyelonephritis",
+          "Treatment indicated: prevent complications",
+          "Safe antibiotics: beta-lactams + macrolides"
+        ]
+      },
+      "difficulty": "medium",
+      "tags": ["pregnancy", "UTI", "asymptomatic bacteriuria", "cephalosporin"],
+      "reference": "UTI in Pregnancy Treatment Guidelines"
+    },
+    {
+      "id": 4,
+      "q": "بیمار ۶۲ ساله with fever ۳۹.۲°C + flank pain + nausea. Urinalysis: pyuria + hematuria + WBC casts. Labs: WBC ۱۸K، creatinine ۲.۱ (baseline ۱.۰). تشخیص احتمالی؟",
+      "options": [
+        "Uncomplicated cystitis",
+        "Pyelonephritis (complicated)",
+        "Glomerulonephritis",
+        "Septic shock"
+      ],
+      "correct": 1,
+      "analysis": {
+        "options": [
+          "Cystitis: dysuria درون fever نه",
+          "Pyelonephritis: fever + flank pain + casts",
+          "GN: RBC casts typically",
+          "Shock: yet hemodynamic instability"
+        ],
+        "points": [
+          "WBC casts: pyelonephritis marker",
+          "Fever + flank pain: upper UTI",
+          "Creatinine elevation: possible sepsis"
+        ]
+      },
+      "difficulty": "medium",
+      "tags": ["pyelonephritis", "complicated UTI", "WBC casts", "fever"],
+      "reference": "Pyelonephritis Diagnosis and Severity Assessment"
+    },
+    {
+      "id": 5,
+      "q": "بیمار ۵۵ ساله with first-time kidney stone. CT: ۶ mm calcium oxalate stone right ureter. Uncomplicated passage expected. Prevention strategy?",
+      "options": [
+        "High-dose vitamin D supplementation",
+        "Thiazide diuretic (hydrochlorothiazide)",
+        "Increased fluid intake + dietary modification",
+        "Potassium citrate supplementation"
+      ],
+      "correct": 2,
+      "analysis": {
+        "options": [
+          "High-dose vitamin D: increases hypercalcemia",
+          "Thiazide: reduces urine calcium excretion",
+          "Hydration + diet: conservative first-line",
+          "Citrate: useful specific aciduria/RTA"
+        ],
+        "points": [
+          "First episode + uncomplicated: conservative approach",
+          "Increase fluid: maintain urine output >۲۵۰۰ mL/day",
+          "Dietary calcium: normal (restriction harmful)"
+        ]
+      },
+      "difficulty": "medium",
+      "tags": ["calcium oxalate stone", "prevention", "hydration", "diet"],
+      "reference": "Nephrolithiasis Prevention Strategies"
+    },
+    {
+      "id": 6,
+      "q": "بیمار ۳۵ ساله with recurrent uric acid stones. Serum uric acid = ۸.۲ mg/dL. Urine pH = ۵.۲. Management?",
+      "options": [
+        "Allopurinol (reduce uric acid production)",
+        "Alkalization (sodium bicarbonate, potassium citrate)",
+        "NSAIDs (reduce pain)",
+        "Both allopurinol + alkalization"
+      ],
+      "correct": 3,
+      "analysis": {
+        "options": [
+          "Allopurinol: reduces production",
+          "Alkalization: increases solubility",
+          "NSAIDs: not preventive",
+          "Combined: dual mechanism"
+        ],
+        "points": [
+          "Uric acid stones: form acidic urine",
+          "Alkalization (pH >۶): primary prevention",
+          "Allopurinol: if hyperuricemia/gout"
+        ]
+      },
+      "difficulty": "hard",
+      "tags": ["uric acid stones", "alkalization", "allopurinol", "pH"],
+      "reference": "Uric Acid Nephrolithiasis Treatment"
+    },
+    {
+      "id": 7,
+      "q": "بیمار ۶۸ ساله with staghorn calculus (left kidney). Serum creatinine ۱.۸ mg/dL. Urine culture: sterile. Imaging: no hydronephrosis. Management?",
+      "options": [
+        "Immediate percutaneous nephrolithotomy (PNL)",
+        "Observation + monitoring (asymptomatic)",
+        "ESWL (less invasive)",
+        "Nephrectomy (remove kidney)"
+      ],
+      "correct": 0,
+      "analysis": {
+        "options": [
+          "Observation: staghorn risk chronic pyelonephritis",
+          "PNL: gold standard staghorn",
+          "ESWL: inadequate staghorn",
+          "Nephrectomy: reserved salvage"
+        ],
+        "points": [
+          "Staghorn calculus: high risk renal damage",
+          "Even asymptomatic: recommended treatment",
+          "PNL: highest success rate staghorn"
+        ]
+      },
+      "difficulty": "hard",
+      "tags": ["staghorn calculus", "PNL", "asymptomatic", "management"],
+      "reference": "Staghorn Calculus Treatment Algorithm"
+    },
+    {
+      "id": 8,
+      "q": "بیمار ۴۵ ساله with recurrent cystitis (۳ episodes/year). Urinalysis: normal between episodes. Post-void residual (PVR) = ۲۰ mL. Prophylaxis?",
+      "options": [
+        "Daily nitrofurantoin ۱۰۰ mg (continuous prophylaxis)",
+        "Post-coital antibiotic (single dose)",
+        "Cranberry supplement (preventive)",
+        "Observation + counseling (avoid triggers)"
+      ],
+      "correct": 0,
+      "analysis": {
+        "options": [
+          "Post-coital: if sexually related",
+          "Continuous: for ۲-۳+ recurrences/year",
+          "Cranberry: weak evidence",
+          "Counseling: adjunctive"
+        ],
+        "points": [
+          "Recurrent uncomplicated cystitis: prophylaxis indicated",
+          "Nitrofurantoin: safe long-term prophylaxis",
+          "Normal anatomy: rules obstruction"
+        ]
+      },
+      "difficulty": "medium",
+      "tags": ["recurrent cystitis", "UTI prophylaxis", "nitrofurantoin"],
+      "reference": "Recurrent UTI Prophylaxis Strategies"
+    },
+    {
+      "id": 9,
+      "q": "بیمار ۵۲ ساله with acute pyelonephritis (fever ۴۰°C + flank pain). Labs: WBC ۲۰K، creatinine ۲.۸ mg/dL، BP ۹۵/۶۰. Urine culture pending. Empiric antibiotics?",
+      "options": [
+        "Oral fluoroquinolone (cipro) outpatient",
+        "IV ceftriaxone ۱g Q۱۲H ± gentamicin (hospitalized)",
+        "Ampicillin + gentamicin",
+        "Nitrofurantoin (oral)"
+      ],
+      "correct": 1,
+      "analysis": {
+        "options": [
+          "Oral: inadequate sepsis/hemodynamic",
+          "IV combination: sepsis guideline",
+          "Ampicillin + gent: reasonable alternative",
+          "Nitrofurantoin: uncomplicated cystitis only"
+        ],
+        "points": [
+          "Septic pyelonephritis: hospitalization + IV therapy",
+          "Hemodynamic instability: broad spectrum",
+          "Cephalosporin + aminoglycoside: coverage"
+        ]
+      },
+      "difficulty": "hard",
+      "tags": ["pyelonephritis", "sepsis", "IV antibiotics", "ceftriaxone"],
+      "reference": "Pyelonephritis Complicated Sepsis Treatment"
+    },
+    {
+      "id": 10,
+      "q": "بیمار ۶۰ ساله with imaging: ہ۲ mm stone in proximal ureter + moderate hydronephrosis. Asymptomatic. Management?",
+      "options": [
+        "Immediate ureteroscopy (remove stone)",
+        "ESWL (external shock wave)",
+        "Conservative management + follow-up imaging",
+        "Percutaneous nephrostomy (decompression)"
+      ],
+      "correct": 0,
+      "analysis": {
+        "options": [
+          "Conservative: stone >۱۰ mm passage rate ۰%",
+          "Ureteroscopy: indicated large stone",
+          "ESWL: alternative لکن ureteroscopy preferred",
+          "Nephrostomy: if infected/decompression"
+        ],
+        "points": [
+          "Stone ہ۲ mm: unlikely spontaneous passage",
+          "Moderate hydronephrosis: intervention",
+          "Ureteroscopy: gold standard proximal ureter"
+        ]
+      },
+      "difficulty": "medium",
+      "tags": ["large stone", "ureteroscopy", "hydronephrosis"],
+      "reference": "Large Ureteral Stone Management"
+    },
+    {
+      "id": 11,
+      "q": "بیمار ۲۵ ساله with history cystine stones. Labs: urine cystine = ۵۰۰ mg/day (normal <۲۵۰). Management priority?",
+      "options": [
+        "High-dose penicillamine (chelation)",
+        "Aggressive hydration (۴+ L/day urine output)",
+        "Alkalization (pH >۷.۵)",
+        "All above combined"
+      ],
+      "correct": 3,
+      "analysis": {
+        "options": [
+          "Hydration: increases solubility",
+          "Penicillamine: reduces cystine production",
+          "Alkalization: low cystine solubility acidic",
+          "Combined: most effective approach"
+        ],
+        "points": [
+          "Cystine stones: genetic cystinuria",
+          "Multi-pronged therapy: hydration + alkali + medication",
+          "Goal: urine output >۳۵۰۰ mL/day + pH >۷"
+        ]
+      },
+      "difficulty": "hard",
+      "tags": ["cystine stones", "cystinuria", "penicillamine", "alkalization"],
+      "reference": "Cystinuria and Cystine Stone Management"
+    },
+    {
+      "id": 12,
+      "q": "بیمار ۳۸ ساله with asymptomatic bacteriuria (E. coli ۱۰۵ CFU/mL). Not pregnant، non-urologic procedure planned. Management?",
+      "options": [
+        "Treat with antibiotics (eradicate)",
+        "No treatment (observation، no indication)",
+        "Prophylactic antibiotics before procedures",
+        "Urine culture every month"
+      ],
+      "correct": 1,
+      "analysis": {
+        "options": [
+          "Treatment: not indicated non-pregnant",
+          "Observation: standard approach",
+          "Prophylaxis: only before genitourinary procedures",
+          "Monitoring: unnecessary"
+        ],
+        "points": [
+          "Asymptomatic bacteriuria: screening not recommended",
+          "Treat only: pregnant + certain urologic procedures",
+          "Non-pregnant: increased antibiotics risks"
+        ]
+      },
+      "difficulty": "medium",
+      "tags": ["asymptomatic bacteriuria", "screening", "no treatment"],
+      "reference": "Asymptomatic Bacteriuria Guidelines IDSA"
+    },
+    {
+      "id": 13,
+      "q": "بیمار ۵۸ ساله with kidney stone (calcium oxalate). Labs: PTH = ۹۵ pg/mL (high)، serum calcium = ۱۰.۲ mg/dL، serum phosphate = ۲.۸ mg/dL. Evaluation?",
+      "options": [
+        "Parathyroid imaging + surgery referral",
+        "Recheck calcium (may be artifact)",
+        "Continue stone management only",
+        "Vitamin D supplementation"
+      ],
+      "correct": 0,
+      "analysis": {
+        "options": [
+          "Recheck: reasonable but PTH high",
+          "Parathyroid evaluation: indicated high PTH",
+          "Stone management: secondary to PTH",
+          "Vitamin D: contraindicated hypercalcemia"
+        ],
+        "points": [
+          "High PTH + stone = primary hyperparathyroidism",
+          "۲۰-۲۵% calcium oxalate stones have PHPT",
+          "Parathyroid surgery: definitive treatment"
+        ]
+      },
+      "difficulty": "hard",
+      "tags": ["calcium oxalate stone", "hyperparathyroidism", "PTH"],
+      "reference": "Primary Hyperparathyroidism and Nephrolithiasis"
+    },
+    {
+      "id": 14,
+      "q": "بیمار ۴۸ ساله with acute pyelonephritis + pregnancy (۲۲ weeks). Fever ۴۰°C + CVA tenderness. Management?",
+      "options": [
+        "Oral cephalexin outpatient",
+        "Hospitalization + IV ceftriaxone ۱g Q۱۲H",
+        "ESWL (remove stone)",
+        "Observation (antibiotics delay)"
+      ],
+      "correct": 1,
+      "analysis": {
+        "options": [
+          "Oral: inadequate fever/symptoms",
+          "IV hospitalization: indicated complicated",
+          "ESWL: contraindicated pregnancy",
+          "Observation: risky sepsis"
+        ],
+        "points": [
+          "Pregnancy pyelonephritis: complications risk",
+          "Hospitalization + IV therapy: standard",
+          "Cephalosporin: safe pregnancy"
+        ]
+      },
+      "difficulty": "hard",
+      "tags": ["pyelonephritis", "pregnancy", "hospitalization", "IV antibiotics"],
+      "reference": "Complicated UTI in Pregnancy"
+    },
+    {
+      "id": 15,
+      "q": "بیمار ۵۵ ساله with stone imaging showing mixed dense + lucent (radiopaque). Laboratory: calcium + uric acid. Best imaging modality for follow-up?",
+      "options": [
+        "Plain abdominal X-ray (KUB)",
+        "Non-contrast CT (NCCT)",
+        "Ultrasound",
+        "Contrast-enhanced CT"
+      ],
+      "correct": 1,
+      "analysis": {
+        "options": [
+          "KUB: misses lucent stones (uric acid)",
+          "NCCT: detects all stones accurately",
+          "Ultrasound: operator-dependent",
+          "Contrast CT: unnecessary radiation"
+        ],
+        "points": [
+          "Mixed stone composition: NCCT best",
+          "Uric acid radiolucent: X-ray misses",
+          "NCCT sensitivity >۹۸% all stones"
+        ]
+      },
+      "difficulty": "medium",
+      "tags": ["mixed stones", "imaging selection", "NCCT", "KUB"],
+      "reference": "Stone Imaging Modality Selection"
+    }
+  ]
 }
