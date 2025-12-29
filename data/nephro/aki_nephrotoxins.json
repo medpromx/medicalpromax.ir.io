@@ -2,5 +2,412 @@
   "section_id": "nephro",
   "subsection_id": "aki_nephrotoxins",
   "title": "AKI و نفروتوکسین‌ها",
-  "questions": []
+  "questions": [
+    {
+      "id": 1,
+      "q": "بیمار ۶۵ ساله با creatinine ۲.۸ mg/dL (baseline ۱.۰)، BUN ۴۸ mg/dL. Urine osmolality ۶۵۰ mOsm/kg، urine sodium ۲۰ mEq/L. FENa = ۰.۳%. تشخیص؟",
+      "options": [
+        "Prerenal AKI (volume depletion)",
+        "ATN (Acute Tubular Necrosis)",
+        "Postrenal AKI",
+        "CKD exacerbation"
+      ],
+      "correct": 0,
+      "analysis": {
+        "options": [
+          "Prerenal: FENa <۱%، high urine osmolality، low Na",
+          "ATN: FENa >۲%، low osmolality عام",
+          "Postrenal: obstruction imaging needed",
+          "CKD: gradually progressive"
+        ],
+        "points": [
+          "FENa ۰.۳%: strongly suggests prerenal",
+          "Urine osmolality ۶۵۰: kidney concentrating well",
+          "Low urine Na: avid sodium reabsorption"
+        ]
+      },
+      "difficulty": "medium",
+      "tags": ["AKI", "prerenal", "FENa", "urine osmolality"],
+      "reference": "FENa and AKI Differentiation"
+    },
+    {
+      "id": 2,
+      "q": "بیمار ۵۸ ساله with AKI (creatinine ۳.۲ mg/dL). Urine microscopy: muddy brown casts. FENa = ۲.۸%. Urine osmolality ۳۲۰ mOsm/kg. تشخیص؟",
+      "options": [
+        "Prerenal AKI",
+        "Acute Tubular Necrosis (ATN)",
+        "Glomerulonephritis",
+        "Postrenal AKI"
+      ],
+      "correct": 1,
+      "analysis": {
+        "options": [
+          "Prerenal: FENa <۱%، no muddy casts",
+          "ATN: FENa >۲%، muddy casts pathognomonic",
+          "GN: dysmorphic RBC/RBC casts",
+          "Postrenal: obstruction findings"
+        ],
+        "points": [
+          "Muddy brown casts: ATN hallmark",
+          "FENa ۲.۸%: >۲% = ATN",
+          "Low urine osmolality: loss concentrating ability"
+        ]
+      },
+      "difficulty": "medium",
+      "tags": ["ATN", "AKI", "muddy casts", "FENa"],
+      "reference": "ATN Diagnosis Urinalysis Findings"
+    },
+    {
+      "id": 3,
+      "q": "بیمار ۷۲ ساله with AKI history (sepsis-induced ATN). Day ۱۰: creatinine ۳.۵ mg/dL، still oliguric. Urine output ۰.۲ mL/kg/hr. Prognosis؟",
+      "options": [
+        "Recovery expected within ۱ week",
+        "Prolonged course (۲-۳ weeks)، may need dialysis",
+        "Permanent renal failure",
+        "Immediate kidney transplant needed"
+      ],
+      "correct": 1,
+      "analysis": {
+        "options": [
+          "Quick recovery: ATN فقط ۳-۷ روز نه معمول",
+          "Oliguria: worse prognosis، longer course",
+          "Sepsis-induced: recovery ممکن لکن slow",
+          "Permanent: ATN recoverable اگر supportive"
+        ],
+        "points": [
+          "Oliguria (>۲۸ روز): higher mortality + longer duration",
+          "ATN: inherently recoverable اگر survive acute",
+          "Dialysis may be needed supportive care برای"
+        ]
+      },
+      "difficulty": "hard",
+      "tags": ["ATN", "AKI", "oliguria", "prognosis"],
+      "reference": "Oliguria in AKI Prognostic Significance"
+    },
+    {
+      "id": 4,
+      "q": "بیمار ۶۰ ساله with normal baseline creatinine. بعد از cardiac catheterization: creatinine ۲.۵ mg/dL day ۲. Urine shows no casts. FENa ۱.۵%. کدام mechanism؟",
+      "options": [
+        "Contrast-induced nephropathy (CIN)",
+        "Cholesterol embolism",
+        "Atheroemboli",
+        "Atheroembolism + ATN"
+      ],
+      "correct": 0,
+      "analysis": {
+        "options": [
+          "CIN: contrast mechanism، FENa borderline",
+          "Cholesterol embolism: skin findings + eosinophilia",
+          "Atheroemboli: late (week ۲-۴) + systemic",
+          "Combined: possible لکن pure CIN typical"
+        ],
+        "points": [
+          "Post-catheterization: CIN high suspicion",
+          "No casts: not classic ATN",
+          "FENa ۱.۵%: intermediate (CIN mixed prerenal/intrinsic)"
+        ]
+      },
+      "difficulty": "hard",
+      "tags": ["contrast-induced nephropathy", "CIN", "cardiac catheterization"],
+      "reference": "Contrast-Induced Nephropathy Pathophysiology"
+    },
+    {
+      "id": 5,
+      "q": "بیمار ۵۵ ساله diabetic started enalapril. Baseline: Cr ۱.۲، K ۴.۲. Post-ACE inhibitor: Cr ۱.۶، K ۵.۸. GFR fell ۳۵%. AKI mechanism؟",
+      "options": [
+        "Prerenal from ACE inhibition (glomerular filtration drop)",
+        "ATN (drug toxicity)",
+        "ACE inhibitor allergy",
+        "Postrenal (obstruction)"
+      ],
+      "correct": 0,
+      "analysis": {
+        "options": [
+          "ACE inhibitor: reduces efferent arteriole pressure",
+          "ATN: not direct mechanism",
+          "Allergy: rash/anaphylaxis other findings",
+          "Obstruction: no postrenal finding"
+        ],
+        "points": [
+          "ACE inhibitor effect: GFR reduction normal",
+          "۳۵% drop + hyperkalemia: typical response",
+          "Prerenal pathophysiology: glomerular hemodynamic change"
+        ]
+      },
+      "difficulty": "medium",
+      "tags": ["ACE inhibitor", "AKI", "prerenal", "hyperkalemia"],
+      "reference": "ACE Inhibitor AKI Mechanism"
+    },
+    {
+      "id": 6,
+      "q": "بیمار ۶۸ ساله on vancomycin (renal failure). Vancomycin trough ۱۸ µg/mL. Creatinine ۳.۵ mg/dL (baseline ۰.۹). Urine: granular casts، eosinophiluria. تشخیص؟",
+      "options": [
+        "Vancomycin-induced ATN",
+        "Vancomycin-induced AIN (Acute Interstitial Nephritis)",
+        "Contrast toxicity",
+        "GN"
+      ],
+      "correct": 1,
+      "analysis": {
+        "options": [
+          "ATN: muddy casts expected",
+          "AIN: eosinophiluria + granular casts + allergy findings",
+          "Contrast: different exposure",
+          "GN: RBC casts typical"
+        ],
+        "points": [
+          "Vancomycin toxicity: both ATN + AIN possible",
+          "Eosinophiluria: AIN marker",
+          "High trough: AIN risk increased"
+        ]
+      },
+      "difficulty": "hard",
+      "tags": ["vancomycin", "AIN", "acute interstitial nephritis", "eosinophiluria"],
+      "reference": "Vancomycin-Induced Acute Interstitial Nephritis"
+    },
+    {
+      "id": 7,
+      "q": "بیمار ۵۰ ساله on NSAIDs (chronic use). Baseline Cr ۰.۸. بعد از ۲ هفته NSAID: Cr ۲.۱. BUN/Cr ratio ۳۵. Urine sodium ۱۰ mEq/L. FENa ۰.۴%. AKI type؟",
+      "options": [
+        "Prerenal (NSAID effect on glomerular hemodynamics)",
+        "ATN",
+        "NSAID-induced GN",
+        "Postrenal"
+      ],
+      "correct": 0,
+      "analysis": {
+        "options": [
+          "Prerenal: FENa <۱%، BUN/Cr >۲۰، low Na",
+          "ATN: FENa >۲% expected",
+          "GN: RBC/casts typical",
+          "Postrenal: obstruction clinical"
+        ],
+        "points": [
+          "NSAID mechanism: decreases renal perfusion",
+          "Prerenal pattern: classic NSAID-induced",
+          "Low urine Na: avid reabsorption"
+        ]
+      },
+      "difficulty": "medium",
+      "tags": ["NSAID", "prerenal AKI", "FENa", "glomerular hemodynamics"],
+      "reference": "NSAID-Induced Renal Dysfunction"
+    },
+    {
+      "id": 8,
+      "q": "بیمار ۶۲ ساله with AKI (Cr ۲.۸ mg/dL). Ultrasound: bilateral hydronephrosis + dilated bladder. Post-void residual ۴۰۰ mL. تشخیص و management؟",
+      "options": [
+        "Postrenal AKI: foley catheterization",
+        "Prerenal: fluid resuscitation",
+        "ATN: supportive care",
+        "Observation (may resolve spontaneously)"
+      ],
+      "correct": 0,
+      "analysis": {
+        "options": [
+          "Hydronephrosis + retention: postrenal AKI",
+          "Foley: diagnostic + therapeutic",
+          "Prerenal: wrong mechanism",
+          "ATN: no obstruction",
+          "Observation: risky with obstruction"
+        ],
+        "points": [
+          "Postrenal AKI: structural obstruction imaging evidence",
+          "Foley catheterization: first intervention",
+          "May improve Cr اگر early intervention"
+        ]
+      },
+      "difficulty": "medium",
+      "tags": ["postrenal AKI", "hydronephrosis", "foley", "obstruction"],
+      "reference": "Postrenal AKI Management"
+    },
+    {
+      "id": 9,
+      "q": "بیمار ۷۰ ساله with postrenal AKI (urinary retention from BPH). Foley placed: dramatic urine drainage (۱.۵ L first hour). Post-Foley: creatinine fell from ۴.۲ تو ۲.۸ mg/dL in ۲۴ ساعت. Expected course?",
+      "options": [
+        "Complete recovery expected (glomerular function restored)",
+        "Post-obstructive polyuria risk (monitor fluid/electrolyte)",
+        "Permanent renal damage (CKD stage ۴)",
+        "Recurrent obstruction likely (repeat Foley needed)"
+      ],
+      "correct": 1,
+      "analysis": {
+        "options": [
+          "Recovery: possible لکن post-obstructive polyuria risk",
+          "Polyuria: AQP2 dysregulation post-relief",
+          "CKD: chronic fibrosis if prolonged obstruction",
+          "Recurrence: depends on underlying pathology"
+        ],
+        "points": [
+          "Post-obstructive diuresis: common after relief",
+          "Monitor: fluid status + electrolytes (K، Na، phosphate)",
+          "Risk: over-diuresis → dehydration"
+        ]
+      },
+      "difficulty": "hard",
+      "tags": ["postrenal AKI", "post-obstructive diuresis", "polyuria"],
+      "reference": "Post-obstructive Diuresis Management"
+    },
+    {
+      "id": 10,
+      "q": "بیمار ۵۵ ساله with rhabdomyolysis (crush injury). CK ۱۲,۰۰۰ U/L، myoglobin elevated. Cr ۲.۱ (baseline ۀ.۹). Urine: cola-colored + positive blood dipstick (no RBC on micro). Management؟",
+      "options": [
+        "IV hydration + alkalinization (sodium bicarbonate)",
+        "Furosemide diuresis",
+        "Dopamine (renal protection)",
+        "Observation (rhabdomyolysis self-limited)"
+      ],
+      "correct": 0,
+      "analysis": {
+        "options": [
+          "Hydration + alkaline urine: prevent myoglobin precipitation",
+          "Furosemide: debatable، may worsen dehydration",
+          "Dopamine: no benefit rhabdomyolysis",
+          "Observation: risky with AKI development"
+        ],
+        "points": [
+          "Rhabdomyolysis-induced AKI: myoglobin nephrotoxicity",
+          "Alkaline urine (target pH >۶.۵): solubility increase",
+          "Aggressive hydration: cornerstone treatment"
+        ]
+      },
+      "difficulty": "hard",
+      "tags": ["rhabdomyolysis", "myoglobin", "AKI", "alkalinization"],
+      "reference": "Rhabdomyolysis-Associated AKI Treatment"
+    },
+    {
+      "id": 11,
+      "q": "بیمار ۶۵ ساله on gentamicin (aminoglycoside). Day ۴: Cr ۱.۹ (baseline ۱.۰). Urine casts negative، FENa ۲.۳%. CK normal. تشخیص؟",
+      "options": [
+        "Aminoglycoside-induced ATN",
+        "Prerenal AKI",
+        "Aminoglycoside-induced AIN",
+        "Contrast-induced nephropathy"
+      ],
+      "correct": 0,
+      "analysis": {
+        "options": [
+          "Aminoglycoside-induced ATN: FENa >۲%",
+          "Prerenal: FENa <۱%",
+          "AIN: eosinophiluria + hypersensitivity signs",
+          "Contrast: different exposure"
+        ],
+        "points": [
+          "Aminoglycoside: proximal tubule accumulation",
+          "ATN pattern: FENa >۲%",
+          "Day ۴: timing consistent aminoglycoside effect"
+        ]
+      },
+      "difficulty": "medium",
+      "tags": ["aminoglycoside", "gentamicin", "ATN", "nephrotoxicity"],
+      "reference": "Aminoglycoside-Induced Nephrotoxicity"
+    },
+    {
+      "id": 12,
+      "q": "بیمار ۶۰ ساله with AKI. Calculated FENa = ۰.۴%، suggesting prerenal. لکن urine specific gravity = ۱.۰۱۰ (dilute). Interpretation?",
+      "options": [
+        "FENa interpretation صحیح (prerenal AKI)",
+        "Dilute urine contradicts FENa (assess again)",
+        "Dilute urine: early or partial prerenal AKI",
+        "FENa unreliable here (ignore FENa)"
+      ],
+      "correct": 2,
+      "analysis": {
+        "options": [
+          "FENa <۱%: generally prerenal",
+          "Dilute urine: concerning for ATN",
+          "Partial/early: kidney trying concentrate",
+          "Never ignore FENa: useful tool"
+        ],
+        "points": [
+          "Discordant findings: dilute urine + low FENa",
+          "Possible: early ATN or early prerenal",
+          "Clinical context: volume status assessment needed"
+        ]
+      },
+      "difficulty": "hard",
+      "tags": ["FENa", "discordant findings", "urine osmolality", "interpretation"],
+      "reference": "FENa Limitations and Interpretation Pitfalls"
+    },
+    {
+      "id": 13,
+      "q": "بیمار ۷۵ ساله with amphotericin B infusion (fungal infection treatment). Day ۶: Cr ۲.۸ mg/dL (baseline ۱.۲). K ۲.۸ meq/L، tubular dysfunction evident. تشخیص؟",
+      "options": [
+        "ATN from amphotericin B",
+        "Prerenal (volume depletion)",
+        "Amphotericin B-induced tubular injury (RTA-like)",
+        "Postrenal AKI"
+      ],
+      "correct": 2,
+      "analysis": {
+        "options": [
+          "ATN: typical but not always with amp B",
+          "Prerenal: no volume context",
+          "Tubular injury: characteristic amp B mechanism",
+          "Postrenal: obstruction absent"
+        ],
+        "points": [
+          "Amphotericin B: direct tubular toxicity",
+          "Hypokalemia: RTA mechanism (K wasting)",
+          "Combination: AKI + electrolyte abnormalities"
+        ]
+      },
+      "difficulty": "hard",
+      "tags": ["amphotericin B", "nephrotoxicity", "RTA", "hypokalemia"],
+      "reference": "Amphotericin B Nephrotoxicity Mechanism"
+    },
+    {
+      "id": 14,
+      "q": "بیمار ۵۸ ساله on cisplatin (cancer treatment). Post-infusion: Cr ۲.۵ mg/dL (baseline ۀ.۸)، magnesium ۱.۲ mg/dL (low)، Cr clearance ۲۸ mL/min. Mechanism?",
+      "options": [
+        "Cisplatin-induced ATN",
+        "Cisplatin-induced AIN",
+        "Cisplatin-induced hypomagnesemia + AKI",
+        "Prerenal (volume depletion)"
+      ],
+      "correct": 2,
+      "analysis": {
+        "options": [
+          "ATN: acute mechanism",
+          "AIN: unlikely primary",
+          "Hypomagnesemia: cisplatin cause + worsen AKI",
+          "Prerenal: different pattern"
+        ],
+        "points": [
+          "Cisplatin: proximal tubule injury + Mg wasting",
+          "Hypomagnesemia: exacerbates AKI",
+          "Combination: tubular + electrolyte dysregulation"
+        ]
+      },
+      "difficulty": "hard",
+      "tags": ["cisplatin", "hypomagnesemia", "nephrotoxicity", "ATN"],
+      "reference": "Cisplatin Nephrotoxicity and Electrolyte Wasting"
+    },
+    {
+      "id": 15,
+      "q": "بیمار ۶۲ ساله with AKI stage ۲ (Cr ۲.۲ mg/dL). Started dialysis. Day ۵ post-dialysis: Cr ۲.۳ mg/dL (not improving). BUN ۷۵ mg/dL (rising). Prognosis assessment؟",
+      "options": [
+        "Recovery imminent (dialysis working، slow decline expected)",
+        "Dialysis inadequate (increase frequency/duration)",
+        "ATN recovery delayed (oliguria risk، longer course)",
+        "Permanent renal failure likely (prepare transplant)"
+      ],
+      "correct": 2,
+      "analysis": {
+        "options": [
+          "Recovery: timing possible لکن slow",
+          "Dialysis inadequacy: possible factor",
+          "Delayed: oliguria ominous sign",
+          "Permanent: ATN usually recoverable"
+        ],
+        "points": [
+          "No improvement day ۵: prolonged ATN typical",
+          "Oliguria: associated worse prognosis",
+          "Average ATN duration: ۱۰-۱۴ روز"
+        ]
+      },
+      "difficulty": "hard",
+      "tags": ["AKI", "dialysis", "prolonged course", "prognosis"],
+      "reference": "Oliguria in AKI Clinical Course"
+    }
+  ]
 }
